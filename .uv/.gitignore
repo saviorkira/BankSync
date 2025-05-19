@@ -1,0 +1,43 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# uv 虚拟环境（保留）
+!.uv/
+.venv/
+env/
+venv/
+
+# VS Code 配置（如果你用的是 VS Code）
+.vscode/
+
+# PyCharm IDE 设置
+# 忽略本地设置
+.idea/*
+# 保留共享配置
+!.idea/codeStyles/
+!.idea/runConfigurations/
+!.idea/misc.xml
+!.idea/modules.xml
+
+# 项目日志/数据库/临时文件等
+*.log
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
+
+# 单元测试缓存
+.pytest_cache/
+htmlcov/
+coverage.xml
+.cache/
+
+# 打包构建产物
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
