@@ -1,43 +1,27 @@
-# Python 缓存
+# 忽略 Python 虚拟环境目录
+.uv/
+
+# 忽略 PyCharm IDE 配置文件
+.idea/
+
+# 忽略 Python 编译生成的字节码文件
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
-# uv 虚拟环境（保留）
-!.uv/
-.venv/
-env/
-venv/
-
-# VS Code 配置（如果你用的是 VS Code）
-.vscode/
-
-# PyCharm IDE 设置
-# 忽略本地设置
-.idea/*
-# 保留共享配置
-!.idea/codeStyles/
-!.idea/runConfigurations/
-!.idea/misc.xml
-!.idea/modules.xml
-
-# 项目日志/数据库/临时文件等
+# 忽略日志文件
 *.log
-*.sqlite3
-*.db
+
+# 忽略系统文件
 .DS_Store
 Thumbs.db
 
-# 单元测试缓存
-.pytest_cache/
-htmlcov/
-coverage.xml
-.cache/
+# 忽略 VSCode 配置（如果用的话）
+.vscode/
 
-# 打包构建产物
-build/
-dist/
-*.egg-info/
+# 忽略环境变量文件
+.env
 
-# Jupyter Notebook 检查点
-.ipynb_checkpoints/
+# 忽略 pipenv 和 poetry 文件（如果用）
+Pipfile.lock
+poetry.lock
