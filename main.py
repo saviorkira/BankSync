@@ -99,7 +99,7 @@ def run(playwright: Playwright) -> None:
     except Exception as e:
         with open(log_path, "a", encoding="utf-8") as f:
             f.write(f"导出失败：{xiangmu} {kaishiriqi}~{jieshuriqi} 错误：{str(e)}\n")
-
+1
 
 with sync_playwright() as playwright:
     run(playwright)
