@@ -100,6 +100,6 @@ def run(playwright: Playwright) -> None:
         with open(log_path, "a", encoding="utf-8") as f:
             f.write(f"导出失败：{xiangmu} {kaishiriqi}~{jieshuriqi} 错误：{str(e)}\n")
 
-1
+2
 with sync_playwright() as playwright:
     run(playwright)
