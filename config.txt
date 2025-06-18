@@ -1,0 +1,12 @@
+[general]
+xiazaiwenjianjia=D:\Desktop
+
+[ningbo_bank]
+username=18323580933
+password=2780zjj?
+login_url=https://www.e-custody.com/#/login
+
+[another_bank]
+username=another_user
+password=another_pass
+login_url=https://bank.example.com/login
