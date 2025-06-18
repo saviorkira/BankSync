@@ -1,0 +1,25 @@
+# 忽略虚拟环境
+.venv/
+
+# Python 编译缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略构建文件夹
+build/
+dist/
+*.egg-info/
+
+# 忽略PyCharm配置文件（可选）
+.idea/
+
+# 忽略日志文件
+*.log
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# Playwright 浏览器内核
+playwright-browsers/
