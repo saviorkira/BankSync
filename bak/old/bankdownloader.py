@@ -21,7 +21,7 @@ def force_check_expiration_local(expire_date_str="2025-06-30"):
         sys.exit(0)
 
 def read_bank_config():
-    config_path = get_resource_path("../config.txt")
+    config_path = get_resource_path("../../config.txt")
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"配置文件不存在: {config_path}")
     config = configparser.ConfigParser()
@@ -56,7 +56,8 @@ def run_ningbo_bank(playwright: Playwright, base_path, projects_accounts, kaishi
         page.get_by_role("link", name="账户管理").click()
         page.get_by_role("link", name="账户明细").click()
 
-        for xiangmu, account in projects_accounts:
+        previous_xiangmu = None  # 跟踪上一个项目名称
+        for index, (xiangmu, account) in enumerate(projects_accounts):
             log(f"处理项目：{xiangmu}，银行账号：{account}")
             try:
                 duizhang_path = os.path.join(base_path, xiangmu, "银行流水")
@@ -64,17 +65,61 @@ def run_ningbo_bank(playwright: Playwright, base_path, projects_accounts, kaishi
                 os.makedirs(duizhang_path, exist_ok=True)
                 os.makedirs(huidan_path, exist_ok=True)
 
-                page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
-                page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").fill(account)
-                log(f"使用银行账号查询：{account}")
-                page.get_by_role("listitem").filter(has_text=xiangmu).locator("span").nth(2).click()
-                page.get_by_text("展开").first.click()
-                page.get_by_role("textbox", name="开始日期").fill(kaishiriqi)
-                page.get_by_role("textbox", name="开始日期").press("Enter")
-                page.get_by_role("textbox", name="结束日期").fill(jieshuriqi)
-                page.get_by_role("textbox", name="结束日期").press("Enter")
+                # 搜索和点击逻辑
+                if index == 0:
+                    # 第一个项目：使用原逻辑
+                    page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
+                    page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").fill(account)
+                    log(f"使用银行账号查询：{account}")
+                    page.wait_for_timeout(1000)  # 等待结果加载
+                    try:
+                        page.get_by_role("listitem").filter(has_text=xiangmu).locator("span").nth(2).click()
+                    except Exception as e:
+                        log(f"点击搜索结果失败（项目：{xiangmu}，账号：{account}）：{str(e)}")
+                        page.screenshot(path=f"error_select_{xiangmu}.png")
+                        log(f"已保存选择错误截图：error_select_{xiangmu}.png")
+                        continue
+                    # 执行展开和日期填充
+                    page.get_by_text("展开").first.click()
+                    page.get_by_role("textbox", name="开始日期").fill(kaishiriqi)
+                    page.get_by_role("textbox", name="开始日期").press("Enter")
+                    page.get_by_role("textbox", name="结束日期").fill(jieshuriqi)
+                    page.get_by_role("textbox", name="结束日期").press("Enter")
+                else:
+                    # 后续项目：简化三段式逻辑
+                    page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
+                    page.get_by_role("textbox", name=f"- {previous_xiangmu}").fill(account)
+                    log(f"使用银行账号查询：{account}")
+                    page.wait_for_timeout(1000)  # 等待结果加载
+                    try:
+                        page.get_by_role("link", name=account).click()
+                    except Exception as e:
+                        log(f"点击链接失败（项目：{xiangmu}，账号：{account}）：{str(e)}")
+                        page.screenshot(path=f"error_select_{xiangmu}.png")
+                        log(f"已保存选择错误截图：error_select_{xiangmu}.png")
+                        continue
+
+                # 查询
                 page.get_by_role("button", name=" 查询").click()
-                page.get_by_role("checkbox", name="Toggle Selection of All Rows").check()
+                page.wait_for_timeout(1000)  # 等待查询结果加载
+
+                # 检查复选框状态
+                checkbox = page.get_by_role("checkbox", name="Toggle Selection of All Rows")
+                if not (checkbox.is_visible() and checkbox.is_enabled()):
+                    log(f"无回单或流水数据，跳过导出（项目：{xiangmu}，账号：{account}）")
+                    page.screenshot(path=f"error_no_data_{xiangmu}.png")
+                    log(f"已保存无数据截图：error_no_data_{xiangmu}.png")
+                    continue
+
+                # 全选并导出
+                try:
+                    checkbox.check()
+                except Exception as e:
+                    log(f"选中复选框失败（项目：{xiangmu}，账号：{account}）：{str(e)}")
+                    page.screenshot(path=f"error_checkbox_{xiangmu}.png")
+                    log(f"已保存复选框错误截图：error_checkbox_{xiangmu}.png")
+                    continue
+
                 page.get_by_role("button", name="导出 ").click()
                 try:
                     page.wait_for_timeout(1000)
@@ -108,16 +153,13 @@ def run_ningbo_bank(playwright: Playwright, base_path, projects_accounts, kaishi
                 download.save_as(os.path.join(duizhang_path, filename))
                 log(f"银行流水导出完成：{filename}")
 
-                # # 导航回账户明细页面，为下一个项目做准备
-                # page.get_by_role("link", name="账户管理").click()
-                # page.get_by_role("link", name="账户明细").click()
+                previous_xiangmu = xiangmu  # 更新上一个项目名称
             except Exception as e:
                 with open(log_path, "a", encoding="utf-8") as f:
                     f.write(f"导出失败：{xiangmu} {kaishiriqi}~{jieshuriqi} 错误：{str(e)}\n")
                 log(f"导出失败（项目：{xiangmu}）：{str(e)}")
                 continue  # 继续处理下一个项目
 
-        # os.startfile(os.path.join(base_path, xiangmu))
         context.close()
         browser.close()
     except Exception as e:

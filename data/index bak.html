@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>银行流水回单导出</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #log-area {
+            white-space: pre-wrap;
+            overflow-y: auto;
+            height: 120px;
+            background-color: #f5f5f5;
+            border-radius: 6px;
+            padding: 8px;
+        }
+        .custom-button {
+            transition: background-color 0.2s;
+        }
+        .custom-button:hover:not(:disabled) {
+            background-color: #2563eb;
+        }
+        .custom-button:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-start min-h-screen p-4">
+    <div class="bg-white rounded-lg shadow-lg p-4 w-full max-w-md">
+        <h1 class="text-xl font-bold text-blue-900 mb-4">银行流水回单导出</h1>
+        <div class="space-y-4">
+            <!-- Bank Dropdown -->
+            <select id="bank-dropdown" class="w-full p-2 border rounded-md text-sm" title="选择要导出的银行">
+                <option value="">选择银行</option>
+                <option value="Ningbo Bank">宁波银行</option>
+            </select>
+            <!-- File and Path Selection -->
+            <div class="flex space-x-2">
+                <button id="import-excel" class="flex-1 bg-blue-100 text-blue-700 py-2 rounded-md custom-button" title="点击导入 Excel 文件">
+                    <svg class="inline w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6m-3-9v12"></path></svg>
+                    导入 Excel
+                </button>
+                <button id="select-path" class="flex-1 bg-blue-100 text-blue-700 py-2 rounded-md custom-button" title="点击选择下载路径">
+                    <svg class="inline w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18m-9 5h9"></path></svg>
+                    下载路径
+                </button>
+            </div>
+            <!-- Base Path -->
+            <input id="base-path" type="text" class="w-full p-2 border rounded-md text-sm" value="D:\Data" placeholder="输入或选择下载路径" title="输入或选择下载路径">
+            <!-- Date Fields -->
+            <div class="flex space-x-2">
+                <input id="start-date" type="text" class="flex-1 p-2 border rounded-md text-sm" value="2025-03-01" placeholder="YYYY-MM-DD" title="输入开始日期 (格式: YYYY-MM-DD)">
+                <input id="end-date" type="text" class="flex-1 p-2 border rounded-md text-sm" value="2025-03-31" placeholder="YYYY-MM-DD" title="输入结束日期 (格式: YYYY-MM-DD)">
+            </div>
+            <!-- Run Button -->
+            <button id="run-button" class="w-full bg-blue-700 text-white py-2 rounded-md custom-button flex items-center justify-center" title="点击开始导出银行流水和回单">
+                <span id="run-text">运行</span>
+                <svg id="progress-ring" class="hidden w-5 h-5 ml-2 animate-spin text-white" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg>
+            </button>
+            <!-- Project List -->
+            <div>
+                <h2 class="text-sm font-bold text-blue-900">项目列表</h2>
+                <div id="project-table" class="border border-gray-300 rounded-md max-h-40 overflow-y-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-2 text-left font-bold">项目名称</th>
+                                <th class="p-2 text-left font-bold">银行账户</th>
+                            </tr>
+                        </thead>
+                        <tbody id="project-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Log Area -->
+            <div>
+                <h2 class="text-sm font-bold text-blue-900">导出日志</h2>
+                <div id="log-area" class="border border-gray-300 rounded-md p-2 text-sm"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="snackbar" class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md text-white"></div>
+
+    <script>
+        let excelData = [];
+        let isRunning = false;
+
+        // Show snackbar
+        function showSnackbar(message, isError = false) {
+            const snackbar = document.getElementById('snackbar');
+            snackbar.textContent = message;
+            snackbar.className = `fixed bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md text-white ${isError ? 'bg-red-600' : 'bg-green-600'}`;
+            snackbar.classList.remove('hidden');
+            setTimeout(() => snackbar.classList.add('hidden'), 3000);
+        }
+
+        // Update log area
+        function updateLog(message) {
+            const logArea = document.getElementById('log-area');
+            logArea.textContent += message + '\n';
+            logArea.scrollTop = logArea.scrollHeight;
+        }
+
+        // Update project table
+        function updateProjectTable(data) {
+            const tbody = document.getElementById('project-table-body');
+            tbody.innerHTML = '';
+            data.forEach(([project, account]) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td class="p-2 border-t">${project}</td><td class="p-2 border-t">${account}</td>`;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Handle bank selection
+        document.getElementById('bank-dropdown').addEventListener('change', async (e) => {
+            const value = e.target.value;
+            if (value) {
+                updateLog(`已选择银行: ${value === 'Ningbo Bank' ? '宁波银行' : '未知'}`);
+                showSnackbar(`已选择: ${value === 'Ningbo Bank' ? '宁波银行' : '未知'}`, false);
+            } else {
+                updateLog('银行选择已清空');
+                showSnackbar('银行选择已清空', true);
+            }
+        });
+
+        // Handle Excel import
+        document.getElementById('import-excel').addEventListener('click', async () => {
+            try {
+                const files = await window.pywebview.api.pick_file(['xlsx', 'xls']);
+                if (files && files.length > 0) {
+                    const formData = new FormData();
+                    const file = await fetch(files[0]).then(res => res.blob());
+                    formData.append('file', file, files[0].split('/').pop());
+                    const response = await fetch('/upload_excel', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const result = await response.json();
+                    if (result.success) {
+                        excelData = result.data;
+                        updateProjectTable(excelData);
+                        updateLog(`成功导入 Excel 文件: ${files[0]}`);
+                        showSnackbar(`成功导入: ${files[0]}`, false);
+                    } else {
+                        updateLog(`导入 Excel 失败: ${result.error}`);
+                        showSnackbar(`导入失败: ${result.error}`, true);
+                    }
+                } else {
+                    updateLog('错误: 请选择有效的 Excel 文件');
+                    showSnackbar('请选择有效的 Excel 文件', true);
+                }
+            } catch (err) {
+                updateLog(`导入 Excel 失败: ${err.message}`);
+                showSnackbar(`导入失败: ${err.message}`, true);
+            }
+        });
+
+        // Handle directory selection
+        document.getElementById('select-path').addEventListener('click', async () => {
+            try {
+                const path = await window.pywebview.api.pick_directory();
+                if (path) {
+                    document.getElementById('base-path').value = path;
+                    updateLog(`已选择路径: ${path}`);
+                    showSnackbar(`已选择路径: ${path}`, false);
+                }
+            } catch (err) {
+                updateLog(`选择路径失败: ${err.message}`);
+                showSnackbar(`选择路径失败: ${err.message}`, true);
+            }
+        });
+
+        // Handle run button
+        document.getElementById('run-button').addEventListener('click', async () => {
+            if (isRunning) {
+                updateLog('提示: 导出进程正在运行，请等待');
+                showSnackbar('导出进程正在运行', true);
+                return;
+            }
+            const bank = document.getElementById('bank-dropdown').value;
+            const startDate = document.getElementById('start-date').value;
+            const endDate = document.getElementById('end-date').value;
+            const basePath = document.getElementById('base-path').value;
+            if (!bank) {
+                updateLog('错误: 请先选择银行');
+                showSnackbar('请先选择银行', true);
+                return;
+            }
+            if (bank !== 'Ningbo Bank') {
+                updateLog('错误: 仅支持宁波银行');
+                showSnackbar('仅支持宁波银行', true);
+                return;
+            }
+            if (!excelData.length) {
+                updateLog('提示: 请先导入 Excel 文件');
+                showSnackbar('请先导入 Excel 文件', true);
+                return;
+            }
+            if (!startDate || !endDate || !basePath) {
+                updateLog('提示: 请填写完整日期和下载路径');
+                showSnackbar('请填写完整日期和路径', true);
+                return;
+            }
+            isRunning = true;
+            const runButton = document.getElementById('run-button');
+            const runText = document.getElementById('run-text');
+            const progressRing = document.getElementById('progress-ring');
+            runButton.disabled = true;
+            runText.textContent = '运行中...';
+            progressRing.classList.remove('hidden');
+            updateLog('开始运行宁波银行导出...');
+            try {
+                const response = await fetch('/run_export', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ bank, startDate, endDate, basePath, excelData })
+                });
+                const result = await response.json();
+                if (result.success) {
+                    updateLog('导出完成');
+                    showSnackbar('导出完成', false);
+                } else {
+                    updateLog(`执行出错: ${result.error}`);
+                    showSnackbar(`执行出错: ${result.error}`, true);
+                }
+            } catch (err) {
+                updateLog(`执行出错: ${err.message}`);
+                showSnackbar(`执行出错: ${err.message}`, true);
+            } finally {
+                isRunning = false;
+                runButton.disabled = false;
+                runText.textContent = '运行';
+                progressRing.classList.add('hidden');
+            }
+        });
+
+        // WebSocket for real-time log updates
+        const ws = new WebSocket(`ws://${window.location.host}/ws`);
+        ws.onmessage = (event) => {
+            updateLog(event.data);
+        };
+        ws.onclose = () => {
+            updateLog('WebSocket 连接已关闭');
+        };
+    </script>
+</body>
+</html>

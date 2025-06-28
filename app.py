@@ -11,18 +11,47 @@ from playwright.sync_api import sync_playwright, Playwright
 import pyautogui
 from pywinauto import Desktop
 from pywinauto.application import Application
-import flet as ft
-from flet import Page, FilePicker, FilePickerResultEvent, Container, border, Colors
+import win32gui
+import win32con
+import ctypes
+import platform
+from flask import Flask, request, jsonify, send_from_directory
+from flask_sock import Sock
+import webview
+import tempfile
 
+# 设置 DPI 感知
+ctypes.windll.shcore.SetProcessDpiAwareness(2)  # 每监视器 DPI 感知
+
+app = Flask(__name__, static_folder='data', template_folder='data')
+sock = Sock(app)
+
+# WebSocket for real-time logging
+connected_clients = []
+
+@sock.route('/ws')
+def websocket(ws):
+    connected_clients.append(ws)
+    try:
+        while True:
+            ws.receive()  # Keep connection alive
+    except:
+        connected_clients.remove(ws)
+
+def broadcast_log(msg):
+    for client in connected_clients:
+        try:
+            client.send(msg)
+        except:
+            connected_clients.remove(client)
 
 def force_check_expiration_local(expire_date_str="2026-01-01"):
     """检查程序是否过期，过期则退出"""
     expire_date = datetime.strptime(expire_date_str, "%Y-%m-%d")
     current_date = datetime.now()
     if current_date > expire_date:
-        log(f"程序已过期（截止日期：{expire_date_str}）")
+        log(f"程序已过期（截止日期：{expire_date_str})")
         sys.exit()
-
 
 def log(msg: str, base_path: str = r"D:\Data", log_callback=None):
     """记录日志到文件和界面"""
@@ -33,7 +62,6 @@ def log(msg: str, base_path: str = r"D:\Data", log_callback=None):
         f.write(f"{datetime.now()}: {msg}\n")
     if log_callback:
         log_callback(msg)
-
 
 def get_resource_path(relative_path: str, subfolder: str = "data") -> str:
     """获取资源文件路径，支持开发和打包环境"""
@@ -46,13 +74,12 @@ def get_resource_path(relative_path: str, subfolder: str = "data") -> str:
     if os.path.exists(full_path) and os.path.getsize(full_path) > 0:
         return full_path
     full_path = os.path.join(base_path, relative_path)
-    log(f"备用路径: {full_path}, 是否存在: {os.path.exists(full_path)}", base_path)
+    log(f"尝试备用路径: {full_path}, 是否存在: {os.path.exists(full_path)}", base_path)
     if os.path.exists(full_path) and os.path.getsize(full_path) > 0:
         return full_path
     return full_path
 
-
-def read_bank_config(base_path: str) -> tuple:
+def read_bank_config(base_path: str):
     """读取宁波银行配置"""
     config_path = get_resource_path("config.txt")
     log(f"加载配置文件: {config_path}", base_path)
@@ -69,7 +96,6 @@ def read_bank_config(base_path: str) -> tuple:
     if not all([username, password, login_url]):
         raise ValueError("宁波银行配置不完整")
     return username, password, login_url, config_path
-
 
 def find_and_click_image(template_path: str, offset_x: int = 0, offset_y: int = 0, threshold: float = 0.5,
                          max_attempts: int = 10) -> tuple:
@@ -99,7 +125,6 @@ def find_and_click_image(template_path: str, offset_x: int = 0, offset_y: int = 
     log(f"未找到模板: {template_path}, 尝试次数: {max_attempts}")
     return None
 
-
 def handle_overwrite_dialog():
     """处理文件覆盖对话框"""
     try:
@@ -114,19 +139,18 @@ def handle_overwrite_dialog():
     except Exception as e:
         log(f"未检测到覆盖对话框或点击失败: {e}")
 
-
 def handle_save_dialog(save_path: str, pdf_filename: str):
     """处理另存为对话框"""
     full_path = os.path.join(save_path, pdf_filename)
-    log(f"尝试处理另存对话框，目标路径: {full_path}")
+    log(f"尝试处理另存文件对话框，目标路径: {full_path}")
     try:
         desktop = Desktop(backend="win32")
         dialogs = desktop.windows(title_re="^另存为$")
         if not dialogs:
             raise Exception("未找到 '另存为' 对话框")
-        for i, dlg_wrapper in enumerate(dialogs):
+        for i, dialog in enumerate(dialogs):
             try:
-                handle = dlg_wrapper.handle
+                handle = dialog.handle
                 app = Application(backend="win32").connect(handle=handle)
                 dlg = app.window(handle=handle)
                 dlg.set_focus()
@@ -150,15 +174,13 @@ def handle_save_dialog(save_path: str, pdf_filename: str):
         log(f"处理另存对话框失败: {e}")
         raise
 
-
 def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: list, kaishiriqi: str, jieshuriqi: str,
                     log_callback=None):
     """执行宁波银行流水、回单和对账单导出"""
-
+    log("进入 run_ningbo_bank 函数", base_path, log_callback)
     def log_local(msg):
         log(msg, base_path, log_callback)
-
-    log_local("开始宁波银行导出...")
+    log_local("开始宁波银行处理...")
     log_local(f"Playwright 浏览器路径: {os.environ.get('PLAYWRIGHT_BROWSERS_PATH')}")
     try:
         username, password, login_url, config_path = read_bank_config(base_path)
@@ -169,19 +191,19 @@ def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: l
     browser_path = os.environ.get('PLAYWRIGHT_BROWSERS_PATH')
     if not os.path.exists(browser_path):
         log_local(f"Playwright 浏览器路径不存在: {browser_path}")
-        raise FileNotFoundError(f"Playwright 浏览器路径未找到: {browser_path}")
+        raise FileNotFoundError(f"浏览器路径不存在: {browser_path}")
     try:
         log_local("启动浏览器...")
         browser = playwright.chromium.launch(headless=False, timeout=30000)
         context = browser.new_context(viewport=None)
         page = context.new_page()
         page.set_default_timeout(90000)
-        log_local(f"导航到登录页面: {login_url}")
+        log_local(f"登录页面导航: {login_url}")
         page.goto(login_url)
         log_local("输入用户名和密码...")
         page.get_by_role("textbox", name="用户名").fill(username)
         page.get_by_role("textbox", name="请输入您的密码").fill(password)
-        log_local("等待账户管理页面...")
+        log_local("等待账户管理页面加载...")
         page.wait_for_selector('text=账户管理', timeout=90000)
         page.get_by_role("link", name="账户管理").click()
         page.get_by_role("link", name="账户明细").click()
@@ -222,23 +244,28 @@ def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: l
                         log_local(f"点击链接失败 (项目: {xiangmu}, 账户: {account}): {str(e)}")
                         page.screenshot(path=os.path.join(base_path, f"error_select_{xiangmu}.png"))
                         continue
+
+                # 查询
                 page.get_by_role("button", name=" 查询").click()
-                page.wait_for_selector('role=checkbox[name="Toggle Selection of All Rows"]', timeout=10000)
+                page.wait_for_timeout(1000)  # 等待查询结果加载
+
+
+                page.wait_for_selector('role=checkbox[name="Toggle Selection of All Rows"]"', timeout=10000)
                 checkbox = page.get_by_role("checkbox", name="Toggle Selection of All Rows")
-                if not (checkbox.is_visible() and checkbox.is_enabled()):
-                    log_local(f"无回单或流水数据，跳过导出 (项目: {xiangmu}, 账户: {account})")
+                if not checkbox.is_visible() and checkbox.is_enabled():
+                    log_local(f"无回单或流水数据，跳过 (项目: {xiangmu}, 账户: {account})")
                     page.screenshot(path=os.path.join(base_path, f"error_no_data_{xiangmu}.png"))
                     continue
                 try:
                     if not checkbox.is_checked():
                         checkbox.check()
-                    log_local("已选中复选框")
+                    log_local("已勾选复选框")
                 except Exception as e:
-                    log_local(f"选择复选框失败 (项目: {xiangmu}, 账户: {account}): {str(e)}")
-                    page.screenshot(path=os.path.join(base_path, f"error_checkbox_{xiangmu}.png"))
+                    log_local(f"复选框选择失败 (项目: {xiangmu}, 账户: {account}): {e}")
+                    page.screenshot(path=os.path.join(base_path, f"error_{xiangmu}_checkbox.png"))
                     continue
                 # 导出回单
-                page.get_by_role("button", name="导出 ").click()
+                page.get_by_role("button", name="export").click()
                 try:
                     page.wait_for_timeout(1000)
                     menus = page.locator("css=[id^='dropdown-menu-']")
@@ -250,7 +277,7 @@ def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: l
                             with page.expect_download() as download_info:
                                 item.click()
                             download = download_info.value
-                            filename = f"{xiangmu}_银行回单_{kaishiriqi}_{jieshuriqi}.pdf"
+                            filename = f"{xiangmu}_银行_回单_{kaishiriqi}_{jieshuriqi}.pdf"
                             download.save_as(os.path.join(huidan_path, filename))
                             log_local(f"已导出银行回单: {filename}")
                             found = True
@@ -259,18 +286,18 @@ def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: l
                         log_local(f"未找到 '凭证导出' 菜单项 (项目: {xiangmu})")
                         page.screenshot(path=os.path.join(base_path, f"error_menu_{xiangmu}.png"))
                 except Exception as e:
-                    log_local(f"导出银行回单失败: {str(e)}")
+                    log_local(f"银行回单导出失败: {str(e)}")
                 # 导出流水
-                page.get_by_role("button", name="导出").click()
+                page.get_by_role("button", name="导出").click()
                 with page.expect_download() as download_info:
-                    page.get_by_text("对账单导出", exact=True).click()
+                    page.get_by_text("对账单导出").click()
                 download = download_info.value
                 filename = f"{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                 download.save_as(os.path.join(duizhang_path, filename))
-                log_local(f"已导出银行流水: {filename}")
+                log_local(f"已导出流水: {filename}")
                 # 打印对账单为 PDF
                 try:
-                    page.get_by_role("button", name="打印 ").click()
+                    page.get_by_role("button", name="打印").click()
                     page.wait_for_timeout(2000)
                     menus = page.locator("css=[id^='dropdown-menu-']")
                     count = menus.count()
@@ -289,12 +316,13 @@ def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: l
                     log_local("等待 Chrome 打印对话框...")
                     time.sleep(5)
                     target_printer_path = get_resource_path("target_printer.bmp", subfolder="seek")
-                    save_as_pdf_default_path = get_resource_path("save_as_pdf_default.bmp", subfolder="seek")
-                    save_as_pdf_hover_path = get_resource_path("save_as_pdf_hover.bmp", subfolder="seek")
-                    save_button_path = get_resource_path("save_button.bmp", subfolder="seek")
-                    if not (os.path.exists(target_printer_path) and os.path.exists(save_as_pdf_default_path) and
-                            os.path.exists(save_as_pdf_hover_path) and os.path.exists(save_button_path)):
-                        log_local(f"模板图片缺失或为空")
+                    save_as_pdf_default_path = os.path.join(base_path, "save_as_pdf_default.jpg")
+                    save_as_pdf_hover_path = os.path.join(base_path, "save_as_pdf_hover.jpg")
+                    save_button_path = os.path.join(base_path, "save_button.jpg")
+                    if not (os.path.exists(target_printer_path) and os.path.exists(
+                            save_as_pdf_default_path) and os.path.exists(save_as_pdf_hover_path) and os.path.exists(
+                            save_button_path)):
+                        log_local("模板图片缺失或为空")
                         raise FileNotFoundError("请在 seek 文件夹准备模板图片")
                     log_local("定位 'Target Printer'...")
                     target_pos = find_and_click_image(target_printer_path)
@@ -357,246 +385,117 @@ def run_ningbo_bank(playwright: Playwright, base_path: str, projects_accounts: l
         if 'browser' in locals():
             browser.close()
 
+@app.route('/')
+def index():
+    return send_from_directory('data', 'index.html')
 
-def main(page: Page):
-    """Flet 桌面应用主函数"""
-    page.title = "银行流水回单导出"
-    page.window_width = 600
-    page.window_height = 800
-    page.window_resizable = False
-    page.padding = 20
-    page.scroll = ft.ScrollMode.AUTO
+@app.route('/upload_excel', methods=['POST'])
+def upload_excel():
+    try:
+        log("收到上传 Excel 请求", base_path=r"D:\Data", log_callback=broadcast_log)
+        if 'file' not in request.files:
+            log("未收到文件上传请求", base_path=r"D:\Data", log_callback=broadcast_log)
+            return jsonify({'success': False, 'error': '未收到文件上传请求'})
+        file = request.files['file']
+        if not file or not file.filename:
+            log("文件为空或文件名缺失", base_path=r"D:\Data", log_callback=broadcast_log)
+            return jsonify({'success': False, 'error': '请选择有效的 Excel 文件'})
+        if not (file.filename.endswith('.xlsx') or file.filename.endswith('.xls')):
+            log(f"文件格式不支持: {file.filename}", base_path=r"D:\Data", log_callback=broadcast_log)
+            return jsonify({'success': False, 'error': '请选择有效的 Excel 文件 (.xlsx 或 .xls)'})
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.xlsx') as tmp:
+            file.save(tmp.name)
+            df = pd.read_excel(tmp.name, header=0)
+        os.unlink(tmp.name)
+        if df.empty or len(df.columns) < 2:
+            log("Excel 文件格式错误，至少需要两列", base_path=r"D:\Data", log_callback=broadcast_log)
+            return jsonify({'success': False, 'error': 'Excel 文件格式错误，至少需要两列（项目名称和银行账户）'})
+        excel_data = [(str(project).strip(), str(account).strip()) for project, account in
+                      zip(df.iloc[:, 0], df.iloc[:, 1]) if str(project).strip() and str(account).strip()]
+        log(f"Excel 文件上传成功，数据行数: {len(excel_data)}", base_path=r"D:\Data", log_callback=broadcast_log)
+        return jsonify({'success': True, 'data': excel_data})
+    except Exception as e:
+        log(f"上传 Excel 失败: {str(e)}", base_path=r"D:\Data", log_callback=broadcast_log)
+        return jsonify({'success': False, 'error': str(e)})
 
-    # ========== 字体加载 ==========
-    def get_font_path():
-        if getattr(sys, 'frozen', False):
-            return os.path.join(sys._MEIPASS, "data", "方正兰亭准黑_GBK.ttf")
-        else:
-            return os.path.join(os.path.abspath(os.path.dirname(__file__)), "data", "方正兰亭准黑_GBK.ttf")
+@app.route('/run_export', methods=['POST'])
+def run_export():
+    try:
+        data = request.json
+        bank = data.get('bank')
+        start_date = data.get('startDate')
+        end_date = data.get('endDate')
+        base_path = data.get('basePath')
+        excel_data = data.get('excelData')
+        if not all([bank, start_date, end_date, base_path, excel_data]):
+            log("请填写完整日期、路径和 Excel 数据", base_path=r"D:\Data", log_callback=broadcast_log)
+            return jsonify({'success': False, 'error': '请填写完整日期、路径和 Excel 数据'})
+        if bank != 'Ningbo Bank':
+            log("仅支持宁波银行", base_path=r"D:\Data", log_callback=broadcast_log)
+            return jsonify({'success': False, 'error': '仅支持宁波银行'})
+        with sync_playwright() as playwright:
+            run_ningbo_bank(playwright, base_path, excel_data, start_date, end_date, log_callback=broadcast_log)
+        log("导出任务完成", base_path=r"D:\Data", log_callback=broadcast_log)
+        return jsonify({'success': True})
+    except Exception as e:
+        log(f"执行出错: {str(e)}", base_path=r"D:\Data", log_callback=broadcast_log)
+        return jsonify({'success': False, 'error': str(e)})
 
-    font_path = get_font_path()
-    if os.path.exists(font_path):
-        page.fonts = {"FangZhengLanTingZhunHei": font_path}
-        log(f"加载字体文件: {font_path}")
-    else:
-        log(f"字体文件未找到: {font_path}，使用默认字体")
+class Api:
+    def pick_directory(self):
+        try:
+            log("调用 pick_directory，尝试打开文件夹选择对话框", base_path=r"D:\Data", log_callback=broadcast_log)
+            if not webview.windows:
+                log("窗口列表为空，无法打开文件夹对话框", base_path=r"D:\Data", log_callback=broadcast_log)
+                return ''
+            path = webview.windows[0].create_file_dialog(webview.FOLDER_DIALOG)
+            log(f"文件夹选择结果: {path}", base_path=r"D:\Data", log_callback=broadcast_log)
+            return path or ''
+        except Exception as e:
+            log(f"选择文件夹失败: {str(e)}", base_path=r"D:\Data", log_callback=broadcast_log)
+            return ''
 
-    # ========== 图标加载 ==========
-    def load_icon_or_default(path: str, fallback_icon: str):
-        """如果图标文件存在，则加载图片，否则使用默认图标"""
-        if os.path.exists(path):
-            return ft.Image(src=path, width=20, height=20)
-        else:
-            return ft.Icon(fallback_icon)
-
-    excel_icon = load_icon_or_default(get_resource_path("excel_icon.png"), ft.Icons.TABLE_CHART)
-    folder_icon = load_icon_or_default(get_resource_path("folder_icon.png"), ft.Icons.FOLDER)
-
-
-    # ========== UI 状态变量 ==========
-    excel_data = []
-    base_path = r"D:\Data"
-
-    start_date = ft.TextField(label="开始日期", value="2025-03-01", width=180, border_radius=10)
-    end_date = ft.TextField(label="结束日期", value="2025-03-31", width=180, border_radius=10)
-
-    bank_dropdown = ft.Dropdown(
-        label="选择银行",
-        options=[ft.dropdown.Option("Ningbo Bank", "宁波银行")],
-        value=None,
-        width=360,
-        border_radius=10,
-    )
-
-    data_table = ft.DataTable(
-        columns=[
-            ft.DataColumn(ft.Text("项目名称")),
-            ft.DataColumn(ft.Text("银行账户")),
-        ],
-        rows=[],
-        expand=True,
-    )
-
-    log_area = ft.TextField(
-        multiline=True,
-        min_lines=5,
-        max_lines=8,
-        read_only=True,
-        expand=True,
-        border_radius=10,
-    )
-
-    run_button = ft.ElevatedButton(
-        "运行",
-        disabled=False,
-        width=360,
-        height=40,
-        color=ft.Colors.WHITE,
-        bgcolor=ft.Colors.BLUE_600,
-        style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10)),
-    )
-
-    is_running = [False]
-
-
-    def update_log(msg):
-        log_area.value += f"{msg}\n"
-        log_area.update()
-
-    def on_bank_select(e):
-        if bank_dropdown.value:
-            update_log(f"已选择银行: {bank_dropdown.options[0].text if bank_dropdown.value == 'Ningbo Bank' else '未知'}")
-        else:
-            update_log("银行选择已清空")
-
-    bank_dropdown.on_change = on_bank_select
-
-    def import_excel(e: FilePickerResultEvent):
-        if e.files and any(f.name.endswith(('.xlsx', '.xls')) for f in e.files):
-            file_path = e.files[0].path
-            try:
-                df = pd.read_excel(file_path, header=0)
-                if df.empty or len(df.columns) < 2:
-                    update_log("错误: Excel 文件格式错误，至少需要两列（项目名称和银行账户）")
-                    return
-                nonlocal excel_data
-                excel_data.clear()
-                excel_data.extend([(str(project).strip(), str(account).strip()) for project, account in
-                                   zip(df.iloc[:, 0], df.iloc[:, 1]) if str(project).strip() and str(account).strip()])
-                data_table.rows = [
-                    ft.DataRow(cells=[
-                        ft.DataCell(ft.Text(project)),
-                        ft.DataCell(ft.Text(account)),
-                    ]) for project, account in excel_data
-                ]
-                update_log(f"成功导入 Excel 文件: {file_path}")
-                page.update()
-            except Exception as ex:
-                update_log(f"导入 Excel 失败: {str(ex)}")
-        else:
-            update_log("错误: 请选择有效的 Excel 文件")
-
-    def select_base_path(e: FilePickerResultEvent):
-        if e.path:
-            nonlocal base_path
-            base_path = e.path
-            base_path_text.value = f"下载路径: {base_path}"
-            update_log(f"已选择路径: {base_path}")
-            page.update()
-
-    def run_export(e):
-        nonlocal is_running
-        if is_running[0]:
-            update_log("提示: 导出进程正在运行，请等待")
-            return
-        if not bank_dropdown.value:
-            update_log("错误: 请先选择银行")
-            return
-        if bank_dropdown.value != "Ningbo Bank":
-            update_log("错误: 仅支持宁波银行")
-            return
-        if not excel_data:
-            update_log("提示: 请先导入 Excel 文件")
-            return
-        kaishi = start_date.value.strip()
-        jieshu = end_date.value.strip()
-        if not (kaishi and jieshu and base_path):
-            update_log("提示: 请填写完整日期和下载路径")
-            return
-        is_running[0] = True
-        run_button.disabled = True
-        run_button.text = "运行中..."
-        run_button.update()
-        update_log("开始运行宁波银行导出...")
-
-        def worker():
-            try:
-                with sync_playwright() as playwright:
-                    run_ningbo_bank(playwright, base_path, excel_data, kaishi, jieshu, log_callback=update_log)
-                update_log("导出完成")
-            except Exception as ex:
-                update_log(f"执行出错: {str(ex)}")
-            finally:
-                nonlocal is_running
-                is_running[0] = False
-                run_button.disabled = False
-                run_button.text = "运行"
-                run_button.update()
-
-        threading.Thread(target=worker, daemon=True).start()
-
-    run_button.on_click = run_export
-
-    # 文件选择器
-    file_picker = FilePicker(on_result=import_excel)
-    dir_picker = FilePicker(on_result=select_base_path)
-    page.overlay.extend([file_picker, dir_picker])
-
-    # 下载路径文本
-    base_path_text = ft.Text(f"下载路径: {base_path}")
-
-    # 创建统一样式的图标按钮
-    def create_icon_button(label, icon, on_click):
-        return ft.ElevatedButton(
-            content=ft.Row([icon, ft.Text(label)]),
-            width=180,
-            height=40,
-            style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10)),
-            on_click=on_click,
-        )
-
-    # 页面主内容
-    page.add(
-        ft.Container(
-            content=ft.Column(
-                controls=[
-                    bank_dropdown,
-
-                    ft.Row(
-                        controls=[
-                            create_icon_button("导入 Excel", excel_icon, lambda _: file_picker.pick_files(
-                                allow_multiple=False, allowed_extensions=["xlsx", "xls"])
-                                               ),
-                            create_icon_button("浏览路径", folder_icon, lambda _: dir_picker.get_directory_path()),
-                        ],
-                        spacing=10,
-                        alignment="center"
-                    ),
-
-                    base_path_text,
-
-                    ft.Row(
-                        controls=[start_date, end_date],
-                        spacing=10,
-                        alignment="start"
-                    ),
-
-                    run_button,
-
-                    ft.Text("运行数据", size=16, weight="bold"),
-
-                    ft.Container(
-                        content=data_table,
-                        border=border.all(1, Colors.GREY_800),
-                        border_radius=10,
-                        padding=10,
-                        height=200,
-                    ),
-
-                    ft.Text("导出日志", size=16, weight="bold"),
-                    log_area,
-                ],
-                spacing=15,
-                alignment="start",
-            ),
-            padding=20,
-            border_radius=15,
-            expand=True,
-        )
-    )
-
-    page.update()
-
+def fix_window_size(window):
+    hwnd = None
+    def enum_windows_callback(hwnd, results):
+        title = win32gui.GetWindowText(hwnd)
+        if "银行流水回单导出" in title:
+            results.append(hwnd)
+    for attempt in range(10):
+        hwnd_list = []
+        win32gui.EnumWindows(enum_windows_callback, hwnd_list)
+        if hwnd_list:
+            hwnd = hwnd_list[0]
+            log(f"找到窗口句柄: {hwnd}, 标题: {win32gui.GetWindowText(hwnd)}", base_path=r"D:\Data")
+            break
+        log(f"尝试 {attempt + 1}/10: 未找到应用窗口，等待 0.2 秒", base_path=r"D:\Data")
+        time.sleep(0.2)
+    if not hwnd:
+        log("错误: 无法找到应用窗口，跳过窗口调整", base_path=r"D:\Data")
+        return
+    win32gui.ShowWindow(hwnd, win32con.SW_HIDE)
+    style = win32gui.GetWindowLong(hwnd, win32con.GWL_STYLE)
+    style &= ~(win32con.WS_SIZEBOX | win32con.WS_MAXIMIZEBOX)  # 禁用调整大小和最大化
+    style |= win32con.WS_MINIMIZEBOX  # 显式启用最小化按钮
+    win32gui.SetWindowLong(hwnd, win32con.GWL_STYLE, style)
+    screen_width = ctypes.windll.user32.GetSystemMetrics(0)
+    screen_height = ctypes.windll.user32.GetSystemMetrics(1)
+    window_width = 600
+    window_height = 700
+    x = (screen_width - window_width) // 2
+    y = (screen_height - window_height) // 2
+    win32gui.SetWindowPos(hwnd, None, x, y, window_width, window_height,
+                          win32con.SWP_NOZORDER | win32con.SWP_NOACTIVATE)
+    window.resize(window_width, window_height)
+    window.move(x, y)
+    win32gui.ShowWindow(hwnd, win32con.SW_SHOW)
+    # 再次验证窗口样式
+    style = win32gui.GetWindowLong(hwnd, win32con.GWL_STYLE)
+    rect = win32gui.GetWindowRect(hwnd)
+    actual_width = rect[2] - rect[0]
+    actual_height = rect[3] - rect[1]
+    log(f"窗口大小验证: {actual_width}x{actual_height}, 位置: ({x}, {y})", base_path=r"D:\Data")
+    log(f"窗口样式验证: WS_SIZEBOX={bool(style & win32con.WS_SIZEBOX)}, WS_MAXIMIZEBOX={bool(style & win32con.WS_MAXIMIZEBOX)}, WS_MINIMIZEBOX={bool(style & win32con.WS_MINIMIZEBOX)}", base_path=r"D:\Data")
 
 if __name__ == "__main__":
     force_check_expiration_local()
@@ -605,8 +504,20 @@ if __name__ == "__main__":
     else:
         base_path = os.path.abspath(os.path.dirname(__file__))
     os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(base_path, "playwright-browsers")
-    log(f"设置 PLAYWRIGHT_BROWSERS_PATH: {os.environ['PLAYWRIGHT_BROWSERS_PATH']}")
+    log(f"设置 PLAYWRIGHT_BROWSERS_PATH: {os.environ['PLAYWRIGHT_BROWSERS_PATH']}", base_path=r"D:\Data")
+    threading.Thread(target=lambda: app.run(host='127.0.0.1', port=5000), daemon=True).start()
+    time.sleep(1)  # Wait for Flask to start
+    api = Api()
+    window = webview.create_window(
+        title='银行流水回单导出',
+        url='http://127.0.0.1:5000',
+        width=600,
+        height=700,
+        resizable=False,
+        js_api=api
+    )
+    window.events.loaded += lambda: fix_window_size(window)
     try:
-        ft.app(target=main)
+        webview.start()
     except Exception as e:
-        log(f"应用启动失败: {e}")
+        log(f"应用启动失败: {e}", base_path=r"D:\Data")

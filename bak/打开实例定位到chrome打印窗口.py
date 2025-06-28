@@ -48,7 +48,7 @@ def get_resource_path(relative_path, subfolder=""):
 
 def read_bank_config():
     """读取 config.txt 中的宁波银行配置"""
-    config_path = get_resource_path("config.txt")
+    config_path = get_resource_path("../config.txt")
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"配置文件不存在: {config_path}")
     config = configparser.ConfigParser()
