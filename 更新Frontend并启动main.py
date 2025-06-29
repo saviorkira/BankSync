@@ -68,7 +68,7 @@ def main():
     if not os.path.isdir(frontend_path):
         print("❌ 未找到 frontend 目录，请检查路径")
         sys.exit(1)
-    # run_command("npm install", cwd=frontend_path, step_name="安装前端依赖")
+    run_command("npm install", cwd=frontend_path, step_name="安装前端依赖")
     run_command("npm run build", cwd=frontend_path, step_name="构建前端项目")
 
     # Step 3: 启动 Python 主程序
