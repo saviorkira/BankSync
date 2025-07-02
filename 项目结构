@@ -1,0 +1,22 @@
+D:\OneDrive\Documents\PycharmProjects\BankSync
+├── main.py               # Python 主脚本（更新为独立后端）
+├── ningbo_bank.py        # 宁波银行导出逻辑
+├── utils.py              # 工具函数（图像识别、日志等）
+├── config.txt            # 配置文件
+├── seek/                 # 图像文件
+│   ├── ningbo_duizhangdandayin.bmp
+│   ├── target_printer.bmp
+│   ├── save_as_pdf_default.bmp
+│   ├── save_as_pdf_hover.bmp
+│   ├── save_button.bmp
+├── playwright-browsers/  # Playwright 浏览器内核
+├── electron/             # Electron 项目目录
+│   ├── main.js          # Electron 主进程
+│   ├── preload.js       # 预加载脚本
+│   ├── src/             # React 前端代码
+│   │   ├── App.jsx      # 主组件
+│   │   ├── components/  # Mantine 组件
+│   │   ├── editor/      # Craft.js 编辑器
+│   │   ├── index.jsx    # React 入口
+│   ├── package.json     # Node.js 依赖
+│   ├── public/          # 静态资源
