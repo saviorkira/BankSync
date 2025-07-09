@@ -9,29 +9,29 @@ import flet as ft
 from flet import (
     Page, FilePicker, FilePickerResultEvent, Theme, Container, Column, Row, Text,
     ElevatedButton, Dropdown, DataTable, DataColumn, DataRow, DataCell, TextField, ListView,
-    NavigationRail, NavigationRailDestination, VerticalDivider, Ref, GestureDetector
+    NavigationRail, NavigationRailDestination, Ref, AnimatedSwitcher
 )
+import time
+
 from ningbo_bank import run_ningbo_bank
 from utils import log, read_bank_config, get_resource_path
 
 def main(page: Page):
-    """Flet 桌面应用主函数，带可拖动 NavigationRail 和美化界面"""
+    """Flet 桌面应用主函数，带固定 NavigationRail 和美化界面"""
     # 设置窗口和主题
     page.title = "BankSync"
     page.window.title_bar_hidden = True
     page.window.title_bar_buttons_hidden = True
     page.padding = 0
     page.window.maximizable = False
-
     page.window.left = 100
     page.window.top = 100
-
-    page.window.width = 636
+    page.window.width = 580
     page.window.height = 520
     page.window_resizable = False
     page.window.min_width = 380
     page.window.min_height = 520
-    page.window.max_width = 636
+    page.window.max_width = 580
     page.window.max_height = 520
 
     page.theme = Theme(
@@ -39,12 +39,12 @@ def main(page: Page):
             primary=ft.Colors.BLUE_700,
             primary_container=ft.Colors.BLUE_100,
             secondary=ft.Colors.GREEN_600,
-            background=ft.Colors.GREY_50,
+            background=ft.Colors.WHITE,
         ),
         visual_density=ft.VisualDensity.COMPACT,
         font_family="FZLanTingHei",
     )
-    page.bgcolor = ft.Colors.GREY_50
+    page.bgcolor = ft.Colors.WHITE  # 页面背景色为纯白色
 
     # 加载自定义字体
     project_root = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.abspath(os.path.dirname(__file__))
@@ -58,8 +58,7 @@ def main(page: Page):
     is_running = [False]
     selected_index = ft.Ref()
     selected_index.current = 0
-    rail_width = ft.Ref()
-    rail_width.current = 50
+    log_messages = []  # 缓存日志消息
 
     # UI 组件
     bank_dropdown = ft.Dropdown(
@@ -120,7 +119,7 @@ def main(page: Page):
     log_area = ft.TextField(
         multiline=True,
         min_lines=4,
-        max_lines=6,
+        max_lines=10,
         read_only=True,
         expand=True,
         border_radius=8,
@@ -180,9 +179,15 @@ def main(page: Page):
 
     # 日志更新函数
     def update_log(msg):
-        log_area.value += f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: {msg}\n"
-        log_area.update()
-        page.scroll_to(key="log_area", duration=500)
+        log_messages.append(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: {msg}\n")
+        if selected_index.current == 2 and log_area.page is not None:
+            try:
+                time.sleep(0.5)  # 同步延迟 500ms
+                log_area.value = "".join(log_messages)
+                log_area.update()
+                page.scroll_to(key="log_area", duration=500)
+            except Exception as ex:
+                log_messages.append(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: 日志更新错误: {str(ex)}\n")
 
     # 银行选择事件
     def on_bank_select(e):
@@ -190,7 +195,6 @@ def main(page: Page):
             update_log(f"已选择银行: {bank_dropdown.options[0].text if bank_dropdown.value == 'Ningbo Bank' else '未知'}")
         else:
             update_log("银行选择已清空")
-        page.update()
 
     bank_dropdown.on_change = on_bank_select
 
@@ -298,37 +302,30 @@ def main(page: Page):
     select_path_button.on_click = lambda _: dir_picker.get_directory_path()
 
     # 文件选择器
-    file_picker = FilePicker(on_result=import_excel)
-    dir_picker = FilePicker(on_result=select_base_path)
+    file_picker = ft.FilePicker(on_result=import_excel)
+    dir_picker = ft.FilePicker(on_result=select_base_path)
     page.overlay.extend([file_picker, dir_picker])
 
-    # NavigationRail 可拖动实现
-    def on_drag(e: ft.DragUpdateEvent):
-        new_width = rail_width.current + e.delta_x
-        if 80 <= new_width <= 200:  # 限制宽度范围
-            rail_width.current = new_width
-            rail_container.width = rail_width.current
-            page.update()
-
     # NavigationRail 配置
-    rail = NavigationRail(
+    rail = ft.NavigationRail(
         selected_index=selected_index.current,
         label_type=ft.NavigationRailLabelType.ALL,
-        min_width=80,
-        min_extended_width=200,
-        expand=True,  # 确保 NavigationRail 填充容器高度
+        min_width=50,
+        min_extended_width=50,
+        expand=True,
+        bgcolor=ft.Colors.WHITE,
         destinations=[
-            NavigationRailDestination(
+            ft.NavigationRailDestination(
                 icon=ft.Icons.HOME_OUTLINED,
                 selected_icon=ft.Icons.HOME,
                 label="银行",
             ),
-            NavigationRailDestination(
+            ft.NavigationRailDestination(
                 icon=ft.Icons.DATASET_OUTLINED,
                 selected_icon=ft.Icons.DATASET,
                 label="其他",
             ),
-            NavigationRailDestination(
+            ft.NavigationRailDestination(
                 icon=ft.Icons.SETTINGS_OUTLINED,
                 selected_icon=ft.Icons.SETTINGS,
                 label="日志",
@@ -336,8 +333,9 @@ def main(page: Page):
         ],
         on_change=lambda e: [
             setattr(selected_index, "current", e.control.selected_index),
-            update_log(f"选中导航项: {rail.destinations[e.control.selected_index].label}"),
+            setattr(content_ref.current, "content", get_content()),
             page.update(),
+            update_log(f"选中导航项: {rail.destinations[e.control.selected_index].label}"),
         ],
     )
 
@@ -346,69 +344,52 @@ def main(page: Page):
         icon=ft.Icons.CLOSE,
         on_click=lambda _: page.window.close(),
         icon_size=15,
-        # tooltip="关闭应用",
-        style=ft.ButtonStyle(color=ft.Colors.RED_600),
+        style=ft.ButtonStyle(
+            color=ft.Colors.RED_600,
+            bgcolor=ft.Colors.WHITE,
+        ),
     )
 
     # NavigationRail 容器
-    rail_container = Container(
-        content=Column(
+    rail_container = ft.Container(
+        content=ft.Column(
             [
                 rail,
-                Container(
+                ft.Container(
                     content=close_button,
                     alignment=ft.alignment.bottom_left,
                     padding=10,
+                    bgcolor=ft.Colors.WHITE,
                 ),
             ],
-            expand=True,  # 确保 Column 填充容器
+            expand=True,
         ),
-        width=rail_width.current,
-        height=page.window.height,  # 明确设置高度为窗口高度
+        width=50,
+        height=page.window.height,  # 填充整个窗口高度
         bgcolor=ft.Colors.WHITE,
         border_radius=ft.border_radius.only(top_right=10, bottom_right=10),
         shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
     )
 
-    # 可拖动分隔条
-    drag_handle = GestureDetector(
-        content=Container(width=5, bgcolor=ft.Colors.GREY_300),
-        on_horizontal_drag_update=on_drag,
-    )
-
     # 主内容区域
-    home_content = Column(
+    home_content = ft.Column(
         [
-            Text("", size=2, weight=ft.FontWeight.BOLD),
             bank_dropdown,
-
-
-
-            Row(
+            ft.Row(
                 [
                     start_date,
                     end_date,
                 ],
                 spacing=10,
                 width=490,
+                expand=True,
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                # alignment=ft.MainAxisAlignment.START,  # 可选：设置对齐方式
             ),
-            # Container(
-            #     content=Row(
-            #         [
-            #             start_date,  #, expand=True
-            #             end_date,#, expand=True
-            #         ],
-            #         spacing=10,
-            #         # expand=True,
-            #     ),
-            # ),
             select_path_button,
             base_path_text,
             import_excel_button,
-            Container(
-                content=ListView(
+            ft.Container(
+                content=ft.ListView(
                     controls=[data_table],
                     auto_scroll=False,
                 ),
@@ -420,27 +401,43 @@ def main(page: Page):
                 height=100,
             ),
             run_button,
-            Container(
+        ],
+        spacing=10,
+        scroll=ft.ScrollMode.AUTO,
+        alignment=ft.MainAxisAlignment.START,
+    )
+
+    # 其他页面内容
+    data_content = ft.Column(
+        [
+            ft.Text("数据页面（占位）", size=16),
+        ],
+        spacing=10,
+        scroll=ft.ScrollMode.AUTO,
+        alignment=ft.MainAxisAlignment.START,
+    )
+    settings_content = ft.Column(
+        [
+            ft.Text("日志", size=16, weight=ft.FontWeight.BOLD),
+            ft.Container(
                 content=log_area,
                 padding=5,
                 border_radius=8,
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=490,
-                height=100,
+                height=300,
                 key="log_area",
+                alignment=ft.alignment.top_left,
             ),
         ],
         spacing=10,
         scroll=ft.ScrollMode.AUTO,
+        alignment=ft.MainAxisAlignment.START,
     )
 
-    # 其他页面占位内容
-    data_content = Column([Text("数据页面（占位）", size=16)])
-    settings_content = Column([Text("设置页面（占位）", size=16)])
-
     # 动态内容选择
-    content_ref = ft.Ref[Container]()
+    content_ref = ft.Ref[ft.AnimatedSwitcher]()
     def get_content():
         if selected_index.current == 0:
             return home_content
@@ -449,39 +446,35 @@ def main(page: Page):
         else:
             return settings_content
 
-    main_content = Container(
-            content=Container(ref=content_ref, content=get_content()),
-            padding=10,
-            border_radius=10,
-            bgcolor=ft.Colors.WHITE,
-            shadow=ft.BoxShadow(
-                blur_radius=10,
-                spread_radius=2,
-                color=ft.Colors.GREY_400,
+    # 主内容区域（使用 WindowDragArea）
+    main_content = ft.WindowDragArea(
+        content=ft.Container(
+            content=ft.AnimatedSwitcher(
+                content=get_content(),
+                ref=content_ref,
+                transition=ft.AnimatedSwitcherTransition.FADE,
+                duration=300,
+                reverse_duration=300,
+                switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
+                switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
             ),
-            margin=5,
-            expand=True
-        )
+            padding=ft.padding.symmetric(vertical=10, horizontal=10),
+            bgcolor=ft.Colors.WHITE,
+            alignment=ft.alignment.top_left,
+        ),
+        expand=True,
+    )
 
     # UI 布局
     page.add(
-
-        Row(
+        ft.Row(
             [
                 rail_container,
-                # drag_handle,
-                # Container(
-                # ft.WindowDragArea(
-                # ft.Container(main_content, expand=True),
-                main_content
-                # )
-                # , expand=True
-                # ),
+                main_content,
             ],
             expand=True,
-            spacing=0,
+            spacing=4,
         )
-
     )
 
 if __name__ == "__main__":
