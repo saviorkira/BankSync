@@ -8,37 +8,30 @@ from playwright.sync_api import sync_playwright
 import flet as ft
 from flet import (
     Page, FilePicker, FilePickerResultEvent, Theme, Container, Column, Row, Text,
-    ElevatedButton, Dropdown, DataTable, DataColumn, DataRow, DataCell, TextField, ListView
+    ElevatedButton, Dropdown, DataTable, DataColumn, DataRow, DataCell, TextField, ListView,
+    NavigationRail, NavigationRailDestination, VerticalDivider, Ref, GestureDetector
 )
 from ningbo_bank import run_ningbo_bank
 from utils import log, read_bank_config, get_resource_path
 
 def main(page: Page):
-    """Flet 桌面应用主函数，带美化界面"""
+    """Flet 桌面应用主函数，带可拖动 NavigationRail 和美化界面"""
     # 设置窗口和主题
     page.title = "BankSync"
-    # page.window_max_width = 600
-    # page.window_max_height = 700
-
-
     page.window.title_bar_hidden = True
     page.window.title_bar_buttons_hidden = True
-    page.padding = 0  # 移除页面默认边距
-
-    # 禁用双击最大化
+    page.padding = 0
     page.window.maximizable = False
-    # 设置窗口位置和大小
+
     page.window.left = 100
     page.window.top = 100
-    page.window.width = 536
+
+    page.window.width = 636
     page.window.height = 520
     page.window_resizable = False
-
-    # 设置最小、最大尺寸
-    # page.window.min_width = 536
-    # page.window.min_height = 520
-
-    page.window.max_width = 536
+    page.window.min_width = 380
+    page.window.min_height = 520
+    page.window.max_width = 636
     page.window.max_height = 520
 
     page.theme = Theme(
@@ -51,7 +44,6 @@ def main(page: Page):
         visual_density=ft.VisualDensity.COMPACT,
         font_family="FZLanTingHei",
     )
-    # page.padding = 10
     page.bgcolor = ft.Colors.GREY_50
 
     # 加载自定义字体
@@ -64,6 +56,10 @@ def main(page: Page):
     excel_data = []
     base_path = r"D:\Desktop"
     is_running = [False]
+    selected_index = ft.Ref()
+    selected_index.current = 0
+    rail_width = ft.Ref()
+    rail_width.current = 50
 
     # UI 组件
     bank_dropdown = ft.Dropdown(
@@ -74,7 +70,7 @@ def main(page: Page):
         border_radius=8,
         filled=True,
         bgcolor=ft.Colors.WHITE,
-        fill_color=ft.Colors.WHITE,  # 强制背景为白色
+        fill_color=ft.Colors.WHITE,
         content_padding=10,
         border_color=ft.Colors.GREY_300,
         color=ft.Colors.BLACK,
@@ -140,7 +136,7 @@ def main(page: Page):
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(size=14),  # 使用 text_style
+            text_style=ft.TextStyle(size=14),
         ),
         tooltip="开始导出银行流水和回单",
         width=490,
@@ -285,7 +281,7 @@ def main(page: Page):
                     run_ningbo_bank(playwright, project_root, base_path, excel_data, kaishi, jieshu, log_callback=update_log)
                 update_log("导出完成。")
             except Exception as ex:
-                update_log(f"执行出错: {str(ex)}")
+                update_log(f"执行出错：{str(ex)}")
             finally:
                 is_running[0] = False
                 run_button.disabled = False
@@ -304,96 +300,172 @@ def main(page: Page):
     dir_picker = FilePicker(on_result=select_base_path)
     page.overlay.extend([file_picker, dir_picker])
 
-    # UI 布局
-    # page.add(
-    #     ft.Row(
-    #         [
-    #             ft.WindowDragArea(
-    #                 ft.Container(
-    #                     ft.Text(
-    #                         "BankSync",
-    #                         size=12,
-    #                     ),
-    #                     # bgcolor=ft.Colors.AMBER_300,
-    #                     padding=ft.padding.only(left=10, top=5, right=5, bottom=5),  # 仅左侧保留少量padding
-    #                     margin=0,  # Container移除边距
-    #                     height=30,
-    #                 ),
-    #                 expand=True,
-    #             ),
-    #             ft.IconButton(
-    #                 ft.Icons.CLOSE,
-    #                 on_click=lambda _: page.window.close(),
-    #                 icon_size=16,
-    #                 padding=5,
-    #                 width=30,
-    #                 height=30,
-    #             ),
-    #         ],
-    #         height=30,
-    #         alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-    #         vertical_alignment=ft.CrossAxisAlignment.CENTER,
-    #         spacing=0,  # 移除子控件间距
-    #     )
-    # )
+    # NavigationRail 可拖动实现
+    def on_drag(e: ft.DragUpdateEvent):
+        new_width = rail_width.current + e.delta_x
+        if 80 <= new_width <= 200:  # 限制宽度范围
+            rail_width.current = new_width
+            rail_container.width = rail_width.current
+            page.update()
 
-    page.add(
-        ft.WindowDragArea(
-            ft.Container(
-                content=ft.Column(
+    # NavigationRail 配置
+    rail = NavigationRail(
+        selected_index=selected_index.current,
+        label_type=ft.NavigationRailLabelType.ALL,
+        min_width=80,
+        min_extended_width=200,
+        expand=True,  # 确保 NavigationRail 填充容器高度
+        destinations=[
+            NavigationRailDestination(
+                icon=ft.Icons.HOME_OUTLINED,
+                selected_icon=ft.Icons.HOME,
+                label="银行",
+            ),
+            NavigationRailDestination(
+                icon=ft.Icons.DATASET_OUTLINED,
+                selected_icon=ft.Icons.DATASET,
+                label="其他",
+            ),
+            NavigationRailDestination(
+                icon=ft.Icons.SETTINGS_OUTLINED,
+                selected_icon=ft.Icons.SETTINGS,
+                label="日志",
+            ),
+        ],
+        on_change=lambda e: [
+            setattr(selected_index, "current", e.control.selected_index),
+            update_log(f"选中导航项: {rail.destinations[e.control.selected_index].label}"),
+            page.update(),
+        ],
+    )
+
+    # 关闭按钮
+    close_button = ft.IconButton(
+        icon=ft.Icons.CLOSE,
+        on_click=lambda _: page.window.close(),
+        icon_size=15,
+        # tooltip="关闭应用",
+        style=ft.ButtonStyle(color=ft.Colors.RED_600),
+    )
+
+    # NavigationRail 容器
+    rail_container = Container(
+        content=Column(
+            [
+                rail,
+                Container(
+                    content=close_button,
+                    alignment=ft.alignment.bottom_left,
+                    padding=10,
+                ),
+            ],
+            expand=True,  # 确保 Column 填充容器
+        ),
+        width=rail_width.current,
+        height=page.window.height,  # 明确设置高度为窗口高度
+        bgcolor=ft.Colors.WHITE,
+        border_radius=ft.border_radius.only(top_right=10, bottom_right=10),
+        shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
+    )
+
+    # 可拖动分隔条
+    drag_handle = GestureDetector(
+        content=Container(width=5, bgcolor=ft.Colors.GREY_300),
+        on_horizontal_drag_update=on_drag,
+    )
+
+    # 主内容区域
+    home_content = Column(
+        [
+            Text("BankSync", size=16, weight=ft.FontWeight.BOLD),
+            bank_dropdown,
+            Container(
+                content=Row(
                     [
-                        bank_dropdown,
-                        ft.Container(
-                            content=ft.Row(
-                                [
-                                    ft.Container(start_date, expand=True),
-                                    ft.Container(end_date, expand=True),
-                                ],
-                                spacing=10,
-                            ),
-                        ),
-
-                        select_path_button,
-                        base_path_text,
-                        import_excel_button,
-                        ft.Container(
-                            content=ft.ListView(
-                                controls=[data_table],
-                                auto_scroll=False,
-                            ),
-                            padding=5,
-                            border_radius=8,
-                            bgcolor=ft.Colors.WHITE,
-                            shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
-                            width=490,
-                            height=100,
-                        ),
-                        run_button,
-                        ft.Container(
-                            content=log_area,
-                            padding=5,
-                            border_radius=8,
-                            bgcolor=ft.Colors.WHITE,
-                            shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
-                            width=490,
-                            height=100,
-                            key="log_area",
-                        ),
+                        Container(start_date, expand=True),
+                        Container(end_date, expand=True),
                     ],
                     spacing=10,
-                    scroll=ft.ScrollMode.AUTO,
                 ),
-                padding=10,
-                border_radius=10,
+            ),
+            select_path_button,
+            base_path_text,
+            import_excel_button,
+            Container(
+                content=ListView(
+                    controls=[data_table],
+                    auto_scroll=False,
+                ),
+                padding=5,
+                border_radius=8,
                 bgcolor=ft.Colors.WHITE,
-                shadow=ft.BoxShadow(
-                    blur_radius=10,
-                    spread_radius=2,
-                    color=ft.Colors.GREY_400,
-                ),
-                margin=5,
-            )
+                shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
+                width=490,
+                height=100,
+            ),
+            run_button,
+            Container(
+                content=log_area,
+                padding=5,
+                border_radius=8,
+                bgcolor=ft.Colors.WHITE,
+                shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
+                width=490,
+                height=100,
+                key="log_area",
+            ),
+        ],
+        spacing=10,
+        scroll=ft.ScrollMode.AUTO,
+    )
+
+    # 其他页面占位内容
+    data_content = Column([Text("数据页面（占位）", size=16)])
+    settings_content = Column([Text("设置页面（占位）", size=16)])
+
+    # 动态内容选择
+    content_ref = ft.Ref[Container]()
+    def get_content():
+        if selected_index.current == 0:
+            return home_content
+        elif selected_index.current == 1:
+            return data_content
+        else:
+            return settings_content
+
+    main_content = Container(
+            content=Container(ref=content_ref, content=get_content()),
+            padding=10,
+            border_radius=10,
+            bgcolor=ft.Colors.WHITE,
+            shadow=ft.BoxShadow(
+                blur_radius=10,
+                spread_radius=2,
+                color=ft.Colors.GREY_400,
+            ),
+            margin=5,
+            expand=True
         )
+
+    # UI 布局
+    page.add(
+
+        Row(
+            [
+                rail_container,
+                # drag_handle,
+                # Container(
+                # ft.WindowDragArea(
+                # ft.Container(main_content, expand=True),
+                    main_content
+                # )
+                # , expand=True
+                # ),
+            ],
+            expand=True,
+            spacing=0,
+        )
+
     )
 
 if __name__ == "__main__":
@@ -411,4 +483,4 @@ if __name__ == "__main__":
     try:
         ft.app(target=main)
     except Exception as e:
-        log(f"应用启动失败: {str(e)}", base_path)
+        log(f"应用启动失败：{str(e)}", base_path)
