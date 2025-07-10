@@ -954,8 +954,8 @@ def main(page: Page):
             content=get_content(),
             ref=content_ref,
             transition=ft.AnimatedSwitcherTransition.FADE,
-            duration=0,  # 设置动画时长为 300ms
-            reverse_duration=0,
+            duration=300,  # 设置动画时长为 300ms
+            reverse_duration=300,
             switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
             switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
         ),
