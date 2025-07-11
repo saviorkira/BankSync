@@ -36,7 +36,7 @@ def read_bank_config(project_root):
         raise ValueError("ningbo_bank 配置不完整，请检查 config.txt")
     return username, password, login_url, config_path
 
-def get_resource_path(relative_path, project_root, subfolder="seek"):
+def get_resource_path(relative_path, project_root, subfolder="data/cv2"):
     """获取资源文件的绝对路径，始终从项目根目录加载"""
     # config.txt 在项目根目录，图像文件在 seek/
     if relative_path == "config.txt":
