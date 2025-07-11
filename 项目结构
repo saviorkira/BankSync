@@ -1,0 +1,20 @@
+project_root/
+├── data/
+│   ├── login/
+│   │   ├── ningbo_bank.png
+│   │   └── other_site.png  # 示例其他网站图标
+│   └── 方正兰亭准黑_GBK.ttf
+├── playwright-browsers/
+├── seek/
+│   ├── ningbo_duizhangdandayin.bmp
+│   ├── target_printer.bmp
+│   ├── save_as_pdf_default.bmp
+│   ├── save_as_pdf_hover.bmp
+│   └── save_button.bmp
+├── config.txt
+├── config.json
+├── gui.py
+├── ningbo_bank.py
+├── utils.py
+├── login_manager.py
+├── todo_manager.py

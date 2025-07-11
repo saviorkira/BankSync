@@ -740,7 +740,7 @@ def main(page: Page):
                         page.get_by_role("textbox", name="请输入您的密码").fill(password)
                         log_local("等待账户管理页面加载...")
                         context.close()
-                        browser.close()
+                        # browser.close()
                         log_local("宁波银行登录流程完成")
                 except Exception as e:
                     update_log(f"宁波银行登录失败：{str(e)}")

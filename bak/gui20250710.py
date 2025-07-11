@@ -113,7 +113,6 @@ class TodoApp(ft.Column):
             tabs=[ft.Tab(text="全部"), ft.Tab(text="未完成"), ft.Tab(text="已完成")],
         )
         self.items_left = ft.Text("0 项未完成", style=ft.TextStyle(font_family="FZLanTingHei", size=14))
-        self.width = 490
         self.controls = [
             ft.Row(
                 controls=[
@@ -349,7 +348,7 @@ def main(page: Page):
 
     ai_input = ft.TextField(
         label="输入消息",
-        expand=True,  # 自适应宽度
+        expand=True,
         border_radius=8,
         filled=True,
         bgcolor=ft.Colors.WHITE,
@@ -605,7 +604,7 @@ def main(page: Page):
 
     # 切换窗口大小按钮
     toggle_size_button = ft.IconButton(
-        icon=ft.Icons.FULLSCREEN_EXIT,  # 初始为最大化状态，显示最小化图标
+        icon=ft.Icons.FULLSCREEN_EXIT,
         on_click=lambda _: toggle_window_size(),
         icon_size=15,
         style=ft.ButtonStyle(
@@ -626,13 +625,13 @@ def main(page: Page):
         ),
     )
 
-    # 切换窗口大小函数（平滑动画）
+    # 切换窗口大小函数（优化动画，减少抖动）
     def toggle_window_size():
         nonlocal is_maximized
         current_page = selected_index.current
         sizes = page_sizes.get(current_page, page_sizes[0])
-        steps = 10
-        duration = 0.02  # 每帧 20ms，总计 200ms
+        steps = 15  # 15 帧，约 75 FPS
+        duration = 0.0133  # 每帧 13.3ms，总计约 200ms
         start_width = page.window.width
         start_height = page.window.height
         if is_maximized[0]:
@@ -644,28 +643,27 @@ def main(page: Page):
             target_height = sizes["max_height"]
             toggle_size_button.icon = ft.Icons.FULLSCREEN_EXIT
 
-        def animate(t):
-            page.window.width = start_width + (target_width - start_width) * t
-            page.window.height = start_height + (target_height - start_height) * t
-            # 更新所有动态宽度组件
-            bank_dropdown.width = page.window.width - 70
-            start_date.width = (page.window.width - 80) / 2
-            end_date.width = (page.window.width - 80) / 2
-            run_button.width = page.window.width - 70
-            select_path_button.width = page.window.width - 70
-            import_excel_button.width = page.window.width - 70
-            bank_export_content.controls[1].width = page.window.width - 70
-            bank_export_content.controls[5].width = page.window.width - 70
-            ai_content.controls[0].width = page.window.width - 70
-            ai_content.controls[1].width = page.window.width - 70
-            todo_content.controls[0].width = page.window.width - 70
-            settings_content.controls[0].width = page.window.width - 70
-            page.update()
-
         for i in range(steps + 1):
             t = i / steps
-            animate(t)
+            page.window.width = start_width + (target_width - start_width) * t
+            page.window.height = start_height + (target_height - start_height) * t
             time.sleep(duration)
+
+        # 动画结束后统一更新组件宽度
+        bank_dropdown.width = page.window.width - 70
+        start_date.width = (page.window.width - 80) / 2
+        end_date.width = (page.window.width - 80) / 2
+        run_button.width = page.window.width - 70
+        select_path_button.width = page.window.width - 70
+        import_excel_button.width = page.window.width - 70
+        bank_export_content.controls[1].width = page.window.width - 70
+        bank_export_content.controls[5].width = page.window.width - 70
+        ai_content.controls[0].width = page.window.width - 70
+        ai_content.controls[1].width = page.window.width - 70
+        todo_content.controls[0].width = page.window.width - 70
+        settings_content.controls[0].width = page.window.width - 70
+        main_content.width = page.window.width - 70
+        page.update()
 
         is_maximized[0] = not is_maximized[0]
         toggle_size_button.update()
@@ -743,7 +741,7 @@ def main(page: Page):
 
     home_content = ft.Column(
         [
-            ft.Text("银行图标区域", size=14, font_family="FZLanTingHei"),  # 调试用
+            ft.Text("银行图标区域", size=14, font_family="FZLanTingHei"),
             ft.Row(
                 controls=load_bank_icons(),
                 wrap=True,
@@ -871,6 +869,7 @@ def main(page: Page):
             icon=page["icon"],
             selected_icon=page["selected_icon"],
             label=page["label"],
+            label_content=ft.Text(page["label"], font_family="FZLanTingHei", size=14),
         ) for page in pages
     ]
     destinations.append(
@@ -878,6 +877,7 @@ def main(page: Page):
             icon=ft.Icons.SETTINGS_OUTLINED,
             selected_icon=ft.Icons.SETTINGS,
             label="日志",
+            label_content=ft.Text("日志", font_family="FZLanTingHei", size=14),
         )
     )
 
@@ -937,6 +937,7 @@ def main(page: Page):
         bgcolor=ft.Colors.WHITE,
         border_radius=ft.border_radius.only(top_right=10, bottom_right=10),
         shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
+        expand=False,
     )
 
     # 动态内容选择
@@ -953,14 +954,15 @@ def main(page: Page):
             content=get_content(),
             ref=content_ref,
             transition=ft.AnimatedSwitcherTransition.FADE,
-            duration=300,
-            reverse_duration=300,
+            duration=0,  # 设置动画时长为 300ms
+            reverse_duration=0,
             switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
             switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
         ),
         padding=ft.padding.symmetric(vertical=10, horizontal=10),
         bgcolor=ft.Colors.WHITE,
         alignment=ft.alignment.top_left,
+        width=page.window.width-70,
         expand=True,
     )
 
