@@ -19,20 +19,20 @@ if __name__ == "__main__":
         page = context.new_page()
 
         page.goto("https://www.e-custody.com/#/login")  # 你可以换成你的银行地址
-        page.get_by_role("textbox", name="用户名").fill("18323580933")
-        page.get_by_role("textbox", name="请输入您的密码").fill("2780zjj?")
-        page.wait_for_selector('text=账户管理', timeout=90000)
-        page.get_by_role("link", name="账户管理").click()
-        page.get_by_role("link", name="账户明细").click()
+        # page.get_by_role("textbox", name="用户名").fill("18323580933")
+        # page.get_by_role("textbox", name="请输入您的密码").fill("2780zjj?")
+        # page.wait_for_selector('text=账户管理', timeout=90000)
+        # page.get_by_role("link", name="账户管理").click()
+        # page.get_by_role("link", name="账户明细").click()
 
 
         page.pause()  # ✅ 打开 Inspector 并暂停
 
         # 🔧 打开交互式控制台，手动输入指令操作 page
-        print("\n你现在可以使用 Python 控制 page，如：")
-        print("page.get_by_role('button', name='打印 ').click()")
-        print("menus = page.locator(\"css=[id^='dropdown-menu-']\")")
-        print("menus.count() 或 menus.nth(0).inner_text() 等")
+        # print("\n你现在可以使用 Python 控制 page，如：")
+        # print("page.get_by_role('button', name='打印 ').click()")
+        # print("menus = page.locator(\"css=[id^='dropdown-menu-']\")")
+        # print("menus.count() 或 menus.nth(0).inner_text() 等")
 
         # 启动交互式 shell
         code.interact(local=locals())

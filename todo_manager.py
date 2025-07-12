@@ -2,7 +2,7 @@ import os
 import json
 import flet as ft
 from flet import Column, Row, TextField, Checkbox, IconButton, FloatingActionButton, Tabs, Tab, OutlinedButton
-from utils import log  # 导入 log 函数
+from utils import log
 
 class Task(ft.Column):
     def __init__(self, task_name, task_status_change, task_delete, completed=False):
@@ -84,11 +84,8 @@ class Task(ft.Column):
         """仅在控件已添加到页面时调用 update()"""
         if hasattr(self, 'page') and self.page is not None:
             self.update()
-            # 调试日志
-            from utils import log
             log(f"Task 更新: {self.task_name}, 已添加到页面", os.path.abspath(os.path.dirname(__file__)))
         else:
-            from utils import log
             log(f"Task 未更新: {self.task_name}, 未添加到页面", os.path.abspath(os.path.dirname(__file__)))
 
 class TodoApp(ft.Column):
@@ -169,12 +166,20 @@ class TodoApp(ft.Column):
     def save_tasks(self):
         config_path = os.path.join(self.project_root, "config.json")
         try:
+            # 读取现有配置文件，保留其他部分（如 ningbo_bank）
+            config = {}
+            if os.path.exists(config_path):
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    config = json.load(f)
+            # 更新 tasks 部分
             tasks = [
                 {"name": task.display_task.label, "completed": task.completed}
                 for task in self.tasks.controls
             ]
+            config["tasks"] = tasks
+            # 写入更新后的配置
             with open(config_path, 'w', encoding='utf-8') as f:
-                json.dump({"tasks": tasks}, f, ensure_ascii=False, indent=2)
+                json.dump(config, f, ensure_ascii=False, indent=2)
             log(f"成功保存任务到 config.json，任务数: {len(tasks)}", self.project_root)
         except Exception as e:
             log(f"保存待办任务失败：{str(e)}", self.project_root)

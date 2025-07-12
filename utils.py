@@ -1,6 +1,6 @@
 import os
 import time
-import configparser
+import json  # 替换 configparser
 import numpy as np
 import cv2
 import pyautogui
@@ -10,7 +10,7 @@ from datetime import datetime
 def log(message, base_path, log_callback=None):
     """记录日志到文件和回调函数"""
     print(message)
-    log_dir = os.path.join(base_path, "导出日志")
+    log_dir = os.path.join(base_path, "data", "log")
     os.makedirs(log_dir, exist_ok=True)
     log_file = os.path.join(log_dir, "导出错误日志.txt")
     with open(log_file, "a", encoding="utf-8") as f:
@@ -20,26 +20,28 @@ def log(message, base_path, log_callback=None):
 
 def read_bank_config(project_root):
     """读取配置文件"""
-    config_path = get_resource_path("config.txt", project_root)
+    config_path = get_resource_path("config.json", project_root, subfolder="")  # 调整为根目录
     log(f"尝试加载配置文件: {config_path}", project_root)
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"配置文件不存在: {config_path}")
-    config = configparser.ConfigParser()
-    config.read(config_path, encoding="utf-8")
-    if "ningbo_bank" not in config:
-        raise KeyError("配置文件中缺少 [ningbo_bank] 配置项")
-    bank_conf = config["ningbo_bank"]
-    username = bank_conf.get("username")
-    password = bank_conf.get("password")
-    login_url = bank_conf.get("login_url")
-    if not all([username, password, login_url]):
-        raise ValueError("ningbo_bank 配置不完整，请检查 config.txt")
-    return username, password, login_url, config_path
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        if "ningbo_bank" not in config:
+            raise KeyError("配置文件中缺少 'ningbo_bank' 配置项")
+        bank_conf = config["ningbo_bank"]
+        username = bank_conf.get("username")
+        password = bank_conf.get("password")
+        login_url = bank_conf.get("login_url")
+        if not all([username, password, login_url]):
+            raise ValueError("ningbo_bank 配置不完整，请检查 config.json")
+        return username, password, login_url, config_path
+    except json.JSONDecodeError as e:
+        raise ValueError(f"JSON 配置文件解析失败: {str(e)}")
 
 def get_resource_path(relative_path, project_root, subfolder="data/cv2"):
     """获取资源文件的绝对路径，始终从项目根目录加载"""
-    # config.txt 在项目根目录，图像文件在 seek/
-    if relative_path == "config.txt":
+    if relative_path == "config.json":  # config.json 在项目根目录
         full_path = os.path.join(project_root, relative_path)
     else:
         full_path = os.path.join(project_root, subfolder, relative_path)

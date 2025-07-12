@@ -1,16 +1,16 @@
-project_root/
+BankSync/
 ├── data/
+│   ├── CV2/
+│   │   ├── ningbo_duizhangdandayin.bmp
+│   │   ├── target_printer.bmp
+│   │   ├── save_as_pdf_default.bmp
+│   │   ├── save_as_pdf_hover.bmp
+│   │   └── save_button.bmp
 │   ├── login/
 │   │   ├── ningbo_bank.png
 │   │   └── other_site.png  # 示例其他网站图标
 │   └── 方正兰亭准黑_GBK.ttf
 ├── playwright-browsers/
-├── seek/
-│   ├── ningbo_duizhangdandayin.bmp
-│   ├── target_printer.bmp
-│   ├── save_as_pdf_default.bmp
-│   ├── save_as_pdf_hover.bmp
-│   └── save_button.bmp
 ├── config.txt
 ├── config.json
 ├── gui.py

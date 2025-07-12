@@ -76,8 +76,6 @@ def main(page: Page):
     # 银行处理函数映射，仅用于导出
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
-        # 未来添加其他银行，例如：
-        # "huaxia_bank": run_huaxia_bank,
     }
 
     # UI 组件
@@ -162,7 +160,7 @@ def main(page: Page):
         label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         multiline=True,
         min_lines=2,
-        max_lines=4,
+        max_lines=2,
         on_submit=lambda e: send_ai_message(e, ai_input, ai_output, update_log, selected_index, project_root),
     )
 
@@ -329,8 +327,8 @@ def main(page: Page):
                 if not os.path.exists(os.path.join(project_root, "playwright-browsers")):
                     update_log("错误: playwright-browsers 文件夹不存在")
                     return
-                if not os.path.exists(os.path.join(project_root, "config.txt")):
-                    update_log("错误: config.txt 文件不存在")
+                if not os.path.exists(os.path.join(project_root, "config.json")):
+                    update_log("错误: config.json 文件不存在")
                     return
                 if not os.path.exists(os.path.join(project_root, "data", "cv2")):
                     update_log("错误: data/cv2 文件夹不存在")
@@ -469,7 +467,7 @@ def main(page: Page):
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width-70,
-                height=150,
+                height=173,
             ),
             run_button,
         ],
@@ -487,7 +485,7 @@ def main(page: Page):
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width-70,
-                height=page.window.height-165,
+                height=page.window.height-150,
                 key="ai_output",
                 alignment=ft.alignment.top_left,
             ),
@@ -515,7 +513,7 @@ def main(page: Page):
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width-70,
-                height=page.window.height-65,
+                height=page.window.height-70,
                 alignment=ft.alignment.top_left,
             ),
         ],
@@ -533,7 +531,7 @@ def main(page: Page):
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width-70,
-                height=page.window.height-65,
+                height=page.window.height-70,
                 key="log_area",
                 alignment=ft.alignment.top_left,
             ),
@@ -638,7 +636,7 @@ def main(page: Page):
             duration=0,
             reverse_duration=0,
             switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
-            switch_out_curve=ft.AnimatedSwitcherTransition.FADE,
+            switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
         ),
         padding=ft.padding.symmetric(vertical=10, horizontal=10),
         bgcolor=ft.Colors.WHITE,
