@@ -122,7 +122,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                 try:
                     page.get_by_role("button", name="打印 ").click()
                     log_local("点击打印按钮，等待对账单打印按钮...")
-                    time.sleep(5)
+                    time.sleep(2)
                     duizhangdan_button_path = get_resource_path("ningbo_duizhangdandayin.bmp", project_root)
                     if not os.path.exists(duizhangdan_button_path):
                         log_local(f"模板图像不存在: {duizhangdan_button_path}")
@@ -135,7 +135,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         pyautogui.screenshot(os.path.join(download_path, f"error_duizhangdan_button_{xiangmu}.png"))
                         continue
                     log_local("等待 Chrome 打印窗口...")
-                    time.sleep(5)
+                    time.sleep(2)
                     target_printer_path = get_resource_path("target_printer.bmp", project_root)
                     save_as_pdf_default_path = get_resource_path("save_as_pdf_default.bmp", project_root)
                     save_as_pdf_hover_path = get_resource_path("save_as_pdf_hover.bmp", project_root)
@@ -162,12 +162,12 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         if find_and_click_image(save_as_pdf_default_path, download_path):
                             log_local("成功点击默认状态的‘另存为 PDF’按钮")
                             pdf_clicked = True
-                            time.sleep(2)
+                            time.sleep(1)
                             break
                         elif find_and_click_image(save_as_pdf_hover_path, download_path):
                             log_local("成功点击悬停状态的‘另存为 PDF’按钮")
                             pdf_clicked = True
-                            time.sleep(2)
+                            time.sleep(1)
                             break
                     if not pdf_clicked:
                         log_local("未找到‘另存为 PDF’按钮")
@@ -175,7 +175,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         continue
                     if find_and_click_image(save_button_path, download_path):
                         log_local("成功点击‘保存’按钮")
-                        time.sleep(2)
+                        time.sleep(1)
                     else:
                         log_local("未找到‘保存’按钮")
                         pyautogui.screenshot(os.path.join(download_path, f"error_save_button_{xiangmu}.png"))

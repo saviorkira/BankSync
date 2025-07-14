@@ -2,6 +2,10 @@ import os
 import sys
 import code
 from playwright.sync_api import sync_playwright
+import time
+import pyautogui
+import pygetwindow as gw
+import keyboard
 
 # 假设日志函数如下（你可以替换成 log()）
 def log_local(msg):
@@ -18,12 +22,10 @@ if __name__ == "__main__":
         context = browser.new_context(viewport=None)
         page = context.new_page()
 
-        page.goto("https://www.e-custody.com/#/login")  # 你可以换成你的银行地址
-        # page.get_by_role("textbox", name="用户名").fill("18323580933")
-        # page.get_by_role("textbox", name="请输入您的密码").fill("2780zjj?")
-        # page.wait_for_selector('text=账户管理', timeout=90000)
-        # page.get_by_role("link", name="账户管理").click()
-        # page.get_by_role("link", name="账户明细").click()
+        page.goto("https://custody.hzbank.com.cn/#/login")  # 你可以换成你的银行地址
+        page.get_by_role("textbox", name="请输入客户号").fill("800067725")
+        page.get_by_role("textbox", name="请输入操作员号").fill("2001")
+        page.get_by_role("textbox", name="请输入登录密码").click()
 
 
         page.pause()  # ✅ 打开 Inspector 并暂停

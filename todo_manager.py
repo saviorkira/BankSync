@@ -104,7 +104,7 @@ class TodoApp(ft.Column):
             scrollable=False,
             selected_index=0,
             on_change=self.tabs_changed,
-            tabs=[ft.Tab(text="全部"), ft.Tab(text="未完成"), ft.Tab(text="已完成")],
+            tabs=[ ft.Tab(text="未完成"), ft.Tab(text="已完成"),ft.Tab(text="全部")],
         )
         self.items_left = ft.Text("0 项未完成", style=ft.TextStyle(font_family="FZLanTingHei", size=14))
         self.controls = [

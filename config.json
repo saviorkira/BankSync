@@ -2,7 +2,7 @@
   "tasks": [
     {
       "name": "示例任务1",
-      "completed": false
+      "completed": true
     },
     {
       "name": "示例任务2",
@@ -13,5 +13,10 @@
     "username": "18323580933",
     "password": "2780zjj?",
     "login_url": "https://www.e-custody.com/#/login"
+  },
+  "hangzhou_bank": {
+    "username": "800067725",
+    "password": "your_password",
+    "login_url": "https://custody.hzbank.com.cn/#/login"
   }
 }

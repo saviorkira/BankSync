@@ -16,6 +16,7 @@ from flet import (
 from login_manager import load_site_icons, login_site
 from todo_manager import TodoApp
 from ningbo_bank import run_ningbo_bank
+from hangzhou_bank import run_hangzhou_bank
 from utils import log, read_bank_config, get_resource_path
 from AI import update_ai_output, send_ai_message
 
@@ -76,12 +77,22 @@ def main(page: Page):
     # 银行处理函数映射，仅用于导出
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
+        "hangzhou_bank": run_hangzhou_bank,
+    }
+
+    # 银行名称映射，用于显示用户友好的名称
+    BANK_NAMES = {
+        "ningbo_bank": "宁波银行",
+        "hangzhou_bank": "杭州银行",
     }
 
     # UI 组件
     bank_dropdown = ft.Dropdown(
         label="选择银行",
-        options=[ft.dropdown.Option(key="ningbo_bank", text="宁波银行")],
+        options=[
+            ft.dropdown.Option(key=key, text=BANK_NAMES.get(key, key))
+            for key in BANK_HANDLERS.keys()
+        ],
         value=None,
         width=page.window.width-70,
         border_radius=8,
@@ -246,7 +257,7 @@ def main(page: Page):
     # 银行选择事件
     def on_bank_select(e):
         if bank_dropdown.value:
-            update_log(f"已选择银行: 宁波银行")
+            update_log(f"已选择银行: {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)}")
         else:
             update_log("银行选择已清空")
 
@@ -427,7 +438,7 @@ def main(page: Page):
     # 登录页面
     home_content = ft.Column(
         [
-            ft.Text("网站图标区域", size=14, font_family="FZLanTingHei"),
+            # ft.Text("网站图标区域", size=14, font_family="FZLanTingHei"),
             ft.Row(
                 controls=load_site_icons(project_root, update_log, lambda name: login_site(name, project_root, update_log, last_click_time=[0])),
                 wrap=True,

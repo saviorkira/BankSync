@@ -7,6 +7,7 @@ import pyautogui
 from pywinauto import Desktop, Application
 from datetime import datetime
 
+
 def log(message, base_path, log_callback=None):
     """记录日志到文件和回调函数"""
     print(message)
@@ -18,23 +19,23 @@ def log(message, base_path, log_callback=None):
     if log_callback:
         log_callback(message)
 
-def read_bank_config(project_root):
-    """读取配置文件"""
+def read_bank_config(project_root, site_name):
+    """读取指定银行的配置文件"""
     config_path = get_resource_path("config.json", project_root, subfolder="")  # 调整为根目录
-    log(f"尝试加载配置文件: {config_path}", project_root)
+    log(f"尝试加载配置文件: {config_path} for {site_name}", project_root)
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"配置文件不存在: {config_path}")
     try:
         with open(config_path, 'r', encoding='utf-8') as f:
             config = json.load(f)
-        if "ningbo_bank" not in config:
-            raise KeyError("配置文件中缺少 'ningbo_bank' 配置项")
-        bank_conf = config["ningbo_bank"]
+        if site_name not in config:
+            raise KeyError(f"配置文件中缺少 '{site_name}' 配置项")
+        bank_conf = config[site_name]
         username = bank_conf.get("username")
         password = bank_conf.get("password")
         login_url = bank_conf.get("login_url")
         if not all([username, password, login_url]):
-            raise ValueError("ningbo_bank 配置不完整，请检查 config.json")
+            raise ValueError(f"{site_name} 配置不完整，请检查 config.json")
         return username, password, login_url, config_path
     except json.JSONDecodeError as e:
         raise ValueError(f"JSON 配置文件解析失败: {str(e)}")

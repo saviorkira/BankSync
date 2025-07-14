@@ -18,3 +18,12 @@ BankSync/
 ├── utils.py
 ├── login_manager.py
 ├── todo_manager.py
+
+
+添加新银行
+1.添加图标
+2.修改config 添加账号密码网址
+3.login_manager添加登录代码
+4.gui import new bank
+4.gui 字典添加 new bank（下拉菜单会自动更新）
+5.编辑new_bank.py代码
