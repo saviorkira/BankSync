@@ -7,7 +7,7 @@ import pyautogui
 def run_hangzhou_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
     """执行宁波银行流水、回单导出及对账单打印"""
     def log_local(msg):
-        log(msg, download_path, log_callback)  # 日志保存到 download_path
+        log(msg, project_root, log_callback)  # 日志保存到 download_path
     log_local("启动杭州银行导出流程...")
     log_local(f"Playwright内核路径: {os.environ.get('PLAYWRIGHT_BROWSERS_PATH')}")
     try:

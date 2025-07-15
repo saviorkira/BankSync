@@ -7,11 +7,11 @@ import pyautogui
 def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
     """执行宁波银行流水、回单导出及对账单打印"""
     def log_local(msg):
-        log(msg, download_path, log_callback)  # 日志保存到 download_path
+        log(msg, project_root, log_callback)  # 日志保存到 download_path
     log_local("启动宁波银行导出流程...")
     log_local(f"Playwright内核路径: {os.environ.get('PLAYWRIGHT_BROWSERS_PATH')}")
     try:
-        username, password, login_url, config_path = read_bank_config(project_root)
+        username, password, login_url, config_path = read_bank_config(project_root, "ningbo_bank")
         log_local(f"加载配置文件: {config_path}")
     except Exception as e:
         log_local(f" config.txt 文件加载失败: {str(e)}")

@@ -8,14 +8,16 @@ from pywinauto import Desktop, Application
 from datetime import datetime
 
 
-def log(message, base_path, log_callback=None):
+def log(message, project_root, log_callback=None):
     """记录日志到文件和回调函数"""
     print(message)
-    log_dir = os.path.join(base_path, "data", "log")
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_message = f"{timestamp}: {message}\n"
+    log_dir = os.path.join(project_root, "data", "log")
     os.makedirs(log_dir, exist_ok=True)
     log_file = os.path.join(log_dir, "导出错误日志.txt")
     with open(log_file, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.now()}: {message}\n")
+        f.write(log_message)
     if log_callback:
         log_callback(message)
 

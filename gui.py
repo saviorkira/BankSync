@@ -264,25 +264,37 @@ def main(page: Page):
     bank_dropdown.on_change = on_bank_select
 
     # 导入 Excel 文件
-    def import_excel(e: FilePickerResultEvent):
+    def import_excel(e: ft.FilePickerResultEvent):
+        if not bank_dropdown.value:
+            update_log("错误: 请先选择银行")
+            return
         if e.files and any(f.name.endswith(('.xlsx', '.xls')) for f in e.files):
             file_path = e.files[0].path
             try:
-                df = pd.read_excel(file_path, header=0)
-                if df.empty or len(df.columns) < 2:
-                    update_log("错误: Excel 文件格式错误，至少需要两列（项目名称和银行账号）")
+                # 获取 Sheet 名称
+                sheet_name = BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)
+                # 读取指定 Sheet
+                df = pd.read_excel(file_path, sheet_name=sheet_name, header=0)
+                # 检查必需列
+                required_columns = ["项目名称", "银行账号"]
+                if df.empty or not all(col in df.columns for col in required_columns):
+                    update_log(f"错误: Excel 文件 '{sheet_name}' 工作表格式错误，至少需要列：{required_columns}")
                     return
                 nonlocal excel_data
                 excel_data.clear()
-                excel_data.extend([(str(project).strip(), str(account).strip()) for project, account in zip(df.iloc[:, 0], df.iloc[:, 1]) if str(project).strip() and str(account).strip()])
+                excel_data.extend([(str(project).strip(), str(account).strip()) for project, account in
+                                   zip(df["项目名称"], df["银行账号"]) if
+                                   str(project).strip() and str(account).strip()])
                 data_table.rows = [
                     ft.DataRow(cells=[
                         ft.DataCell(ft.Text(project, size=14, font_family="FZLanTingHei")),
                         ft.DataCell(ft.Text(account, size=14, font_family="FZLanTingHei")),
                     ]) for project, account in excel_data
                 ]
-                update_log(f"成功导入 Excel 文件：{file_path}")
+                update_log(f"成功导入 Excel 文件：{file_path}，工作表：{sheet_name}，包含 {len(excel_data)} 条记录")
                 page.update()
+            except ValueError as ve:
+                update_log(f"错误: 未找到 '{sheet_name}' 工作表：{str(ve)}")
             except Exception as ex:
                 update_log(f"导入 Excel 失败：{str(ex)}")
         else:
@@ -331,7 +343,8 @@ def main(page: Page):
         run_button.text = "运行中..."
         run_button.icon = ft.Icons.HOURGLASS_TOP
         run_button.update()
-        update_log(f"开始运行 宁波银行 导出...")
+        update_log(
+            f"开始运行 {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)} 导出，包含 {len(excel_data)} 条记录...")
 
         def worker():
             try:
@@ -348,7 +361,8 @@ def main(page: Page):
                     update_log(f"错误: 下载路径不可访问或不可写: {base_path}")
                     return
                 with sync_playwright() as playwright:
-                    BANK_HANDLERS[bank_dropdown.value](playwright, project_root, base_path, excel_data, kaishi, jieshu, log_callback=update_log)
+                    BANK_HANDLERS[bank_dropdown.value](playwright, project_root, base_path, excel_data, kaishi, jieshu,
+                                                       log_callback=update_log)
                 update_log("导出完成。")
             except Exception as ex:
                 update_log(f"执行出错：{str(ex)}")
