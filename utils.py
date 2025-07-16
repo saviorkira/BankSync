@@ -15,7 +15,7 @@ def log(message, project_root, log_callback=None):
     log_message = f"{timestamp}: {message}\n"
     log_dir = os.path.join(project_root, "data", "log")
     os.makedirs(log_dir, exist_ok=True)
-    log_file = os.path.join(log_dir, "导出错误日志.txt")
+    log_file = os.path.join(log_dir, "导出日志.txt")
     with open(log_file, "a", encoding="utf-8") as f:
         f.write(log_message)
     if log_callback:

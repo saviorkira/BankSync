@@ -1,8 +1,11 @@
-from playwright.sync_api import Playwright
-from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_overwrite_dialog, handle_save_dialog
 import os
 import time
+
 import pyautogui
+from playwright.sync_api import Playwright
+
+from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog
+
 
 def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
     """执行宁波银行流水、回单导出及对账单打印"""
@@ -36,25 +39,26 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
         page.get_by_role("link", name="账户管理").click()
         page.get_by_role("link", name="账户明细").click()
         previous_xiangmu = None
-        for index, (xiangmu, account) in enumerate(projects_accounts):
-            log_local(f"处理项目：{xiangmu}，银行账号：{account}")
+        for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
+            log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
             try:
-                duizhang_path = os.path.join(download_path, xiangmu, "银行流水")
-                huidan_path = os.path.join(download_path, xiangmu, "银行回单")
-                duizhangdan_path = os.path.join(download_path, xiangmu, "银行对账单")
+                folder_name = f"{xiangmuid}_{xiangmu}"
+                duizhang_path = os.path.join(download_path, folder_name, "银行流水")
+                huidan_path = os.path.join(download_path, folder_name, "银行回单")
+                duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                 os.makedirs(duizhang_path, exist_ok=True)
                 os.makedirs(huidan_path, exist_ok=True)
                 os.makedirs(duizhangdan_path, exist_ok=True)
                 if index == 0:
                     page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
                     page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").fill(account)
-                    log_local(f"使用银行账号查询：{account}")
+                    log_local(f"使用托管账户查询：{account}")
                     page.wait_for_timeout(1000)
                     try:
                         page.get_by_role("listitem").filter(has_text=xiangmu).locator("span").nth(2).click()
                     except Exception as e:
-                        log_local(f"点击搜索结果失败（项目：{xiangmu}，账号：{account}）：{str(e)}")
-                        page.screenshot(path=os.path.join(download_path, f"error_select_{xiangmu}.png"))
+                        log_local(f"点击搜索结果失败（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）：{str(e)}")
+                        page.screenshot(path=os.path.join(download_path, f"error_select_{xiangmuid}_{xiangmu}.png"))
                         continue
                     page.get_by_text("展开").first.click()
                     page.get_by_role("textbox", name="开始日期").fill(kaishiriqi)
@@ -64,28 +68,28 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                 else:
                     page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
                     page.get_by_role("textbox", name=f"- {previous_xiangmu}").fill(account)
-                    log_local(f"使用银行账号查询：{account}")
+                    log_local(f"使用托管账户查询：{account}")
                     page.wait_for_timeout(1000)
                     try:
                         page.get_by_role("link", name=account).click()
                     except Exception as e:
-                        log_local(f"点击链接失败（项目：{xiangmu}，账号：{account}）：{str(e)}")
-                        page.screenshot(path=os.path.join(download_path, f"error_select_{xiangmu}.png"))
+                        log_local(f"点击链接失败（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）：{str(e)}")
+                        page.screenshot(path=os.path.join(download_path, f"error_select_{xiangmuid}_{xiangmu}.png"))
                         continue
                 page.get_by_role("button", name=" 查询").click()
                 page.wait_for_selector('role=checkbox[name="Toggle Selection of All Rows"]', timeout=10000)
                 checkbox = page.get_by_role("checkbox", name="Toggle Selection of All Rows")
                 if not (checkbox.is_visible() and checkbox.is_enabled()):
-                    log_local(f"无回单或流水数据，跳过导出（项目：{xiangmu}，账号：{account}）")
-                    page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmu}.png"))
+                    log_local(f"无回单或流水数据，跳过导出（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
+                    page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmuid}_{xiangmu}.png"))
                     continue
                 try:
                     if not checkbox.is_checked():
                         checkbox.check()
                     log_local("复选框已选中")
                 except Exception as e:
-                    log_local(f"选中复选框失败（项目：{xiangmu}，账号：{account}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_checkbox_{xiangmu}.png"))
+                    log_local(f"选中复选框失败（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）：{str(e)}")
+                    page.screenshot(path=os.path.join(download_path, f"error_checkbox_{xiangmuid}_{xiangmu}.png"))
                     continue
                 # 导出回单
                 page.get_by_role("button", name="导出 ").click()
@@ -100,14 +104,14 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                             with page.expect_download() as download_info:
                                 item.click()
                             download = download_info.value
-                            filename = f"{xiangmu}_银行回单_{kaishiriqi}_{jieshuriqi}.pdf"
+                            filename = f"{xiangmuid}_{xiangmu}_银行回单_{kaishiriqi}_{jieshuriqi}.pdf"
                             download.save_as(os.path.join(huidan_path, filename))
                             log_local(f"银行回单导出完成：{filename}")
                             found = True
                             break
                     if not found:
-                        log_local(f"未找到‘凭证导出’菜单项（项目：{xiangmu}）")
-                        page.screenshot(path=os.path.join(download_path, f"error_menu_{xiangmu}.png"))
+                        log_local(f"未找到‘凭证导出’菜单项（产品：{xiangmuid}_{xiangmu}）")
+                        page.screenshot(path=os.path.join(download_path, f"error_menu_{xiangmuid}_{xiangmu}.png"))
                 except Exception as e:
                     log_local(f"导出银行回单失败：{str(e)}")
                 # 导出流水
@@ -115,7 +119,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                 with page.expect_download() as download_info:
                     page.get_by_text("对账单导出", exact=True).click()
                 download = download_info.value
-                filename = f"{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
+                filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                 download.save_as(os.path.join(duizhang_path, filename))
                 log_local(f"银行流水导出完成：{filename}")
                 # 打印对账单为PDF
@@ -132,7 +136,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         log_local("成功点击‘对账单打印’按钮")
                     else:
                         log_local("未找到‘对账单打印’按钮")
-                        pyautogui.screenshot(os.path.join(download_path, f"error_duizhangdan_button_{xiangmu}.png"))
+                        pyautogui.screenshot(os.path.join(download_path, f"error_duizhangdan_button_{xiangmuid}_{xiangmu}.png"))
                         continue
                     log_local("等待 Chrome 打印窗口...")
                     time.sleep(2)
@@ -148,7 +152,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                     target_pos = find_and_click_image(target_printer_path, download_path)
                     if not target_pos:
                         log_local("未找到‘目标打印机’文字")
-                        pyautogui.screenshot(os.path.join(download_path, f"error_target_printer_{xiangmu}.png"))
+                        pyautogui.screenshot(os.path.join(download_path, f"error_target_printer_{xiangmuid}_{xiangmu}.png"))
                         continue
                     x_target, y_target = target_pos
                     x_offset = 250
@@ -171,16 +175,16 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                             break
                     if not pdf_clicked:
                         log_local("未找到‘另存为 PDF’按钮")
-                        pyautogui.screenshot(os.path.join(download_path, f"error_save_as_pdf_{xiangmu}.png"))
+                        pyautogui.screenshot(os.path.join(download_path, f"error_save_as_pdf_{xiangmuid}_{xiangmu}.png"))
                         continue
                     if find_and_click_image(save_button_path, download_path):
                         log_local("成功点击‘保存’按钮")
                         time.sleep(1)
                     else:
                         log_local("未找到‘保存’按钮")
-                        pyautogui.screenshot(os.path.join(download_path, f"error_save_button_{xiangmu}.png"))
+                        pyautogui.screenshot(os.path.join(download_path, f"error_save_button_{xiangmuid}_{xiangmu}.png"))
                         continue
-                    pdf_filename = f"{xiangmu}_对账单打印_{kaishiriqi}_{jieshuriqi}.pdf"
+                    pdf_filename = f"{xiangmuid}_{xiangmu}_银行对账单_{kaishiriqi}_{jieshuriqi}.pdf"
                     handle_save_dialog(duizhangdan_path, pdf_filename, download_path)
                     pdf_path = os.path.join(duizhangdan_path, pdf_filename)
                     if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 0:
@@ -188,11 +192,11 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                     else:
                         log_local(f"PDF 文件生成失败或为空：{pdf_path}")
                 except Exception as e:
-                    log_local(f"打印对账单 PDF 失败（项目：{xiangmu}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_print_{xiangmu}.png"))
+                    log_local(f"打印对账单 PDF 失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                    page.screenshot(path=os.path.join(download_path, f"error_print_{xiangmuid}_{xiangmu}.png"))
                 previous_xiangmu = xiangmu
             except Exception as e:
-                log_local(f"导出失败（项目：{xiangmu}）：{str(e)}")
+                log_local(f"导出失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
                 continue
         context.close()
         browser.close()

@@ -135,8 +135,9 @@ def main(page: Page):
 
     data_table = ft.DataTable(
         columns=[
-            ft.DataColumn(ft.Text("项目名称", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
-            ft.DataColumn(ft.Text("银行账号", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
+            ft.DataColumn(ft.Text("产品编号", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
+            ft.DataColumn(ft.Text("产品名称", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
+            ft.DataColumn(ft.Text("托管账户", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
         ],
         rows=[],
         expand=True,
@@ -276,20 +277,22 @@ def main(page: Page):
                 # 读取指定 Sheet
                 df = pd.read_excel(file_path, sheet_name=sheet_name, header=0)
                 # 检查必需列
-                required_columns = ["项目名称", "银行账号"]
+                required_columns = ["产品编号", "产品名称", "托管账户"]
                 if df.empty or not all(col in df.columns for col in required_columns):
                     update_log(f"错误: Excel 文件 '{sheet_name}' 工作表格式错误，至少需要列：{required_columns}")
                     return
                 nonlocal excel_data
                 excel_data.clear()
-                excel_data.extend([(str(project).strip(), str(account).strip()) for project, account in
-                                   zip(df["项目名称"], df["银行账号"]) if
-                                   str(project).strip() and str(account).strip()])
+                excel_data.extend([(str(xiangmuid).strip(), str(xiangmu).strip(), str(account).strip()) for
+                                   xiangmuid, xiangmu, account in
+                                   zip(df["产品编号"], df["产品名称"], df["托管账户"]) if
+                                   str(xiangmuid).strip() and str(xiangmu).strip() and str(account).strip()])
                 data_table.rows = [
                     ft.DataRow(cells=[
-                        ft.DataCell(ft.Text(project, size=14, font_family="FZLanTingHei")),
+                        ft.DataCell(ft.Text(xiangmuid, size=14, font_family="FZLanTingHei")),
+                        ft.DataCell(ft.Text(xiangmu, size=14, font_family="FZLanTingHei")),
                         ft.DataCell(ft.Text(account, size=14, font_family="FZLanTingHei")),
-                    ]) for project, account in excel_data
+                    ]) for xiangmuid, xiangmu, account in excel_data
                 ]
                 update_log(f"成功导入 Excel 文件：{file_path}，工作表：{sheet_name}，包含 {len(excel_data)} 条记录")
                 page.update()
