@@ -24,6 +24,11 @@ def main(page: Page):
     """Flet 桌面应用主函数，带固定 NavigationRail 和美化界面"""
     # 设置窗口和主题
     page.title = "BankSync"
+
+    project_root = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.abspath(os.path.dirname(__file__))
+    icon_path = get_resource_path("S.ico", project_root, subfolder="data")
+    page.window.icon = icon_path
+
     page.window.title_bar_hidden = True
     page.window.title_bar_buttons_hidden = True
     page.padding = 0
@@ -51,7 +56,7 @@ def main(page: Page):
     page.bgcolor = ft.Colors.WHITE
 
     # 加载自定义字体
-    project_root = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.abspath(os.path.dirname(__file__))
+
     font_path = os.path.join(project_root, "data", "方正兰亭准黑_GBK.ttf")
     page.fonts = {"FZLanTingHei": font_path}
     page.update()
@@ -252,7 +257,7 @@ def main(page: Page):
         if selected_index.current == 4 and hasattr(log_area, 'page') and log_area.page is not None:
             log_area.update()
             page.scroll_to(key="log_area", duration=500)
-            log(f"log_area 更新: 日志页面已渲染", project_root)
+            # log(f"log_area 更新: 日志页面已渲染", project_root)
         log(msg, project_root)
 
     # 银行选择事件

@@ -132,7 +132,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         log_local(f"模板图像不存在: {duizhangdan_button_path}")
                         raise FileNotFoundError(f"模板图像不存在: {duizhangdan_button_path}")
                     log_local("定位‘对账单打印’按钮...")
-                    if find_and_click_image(duizhangdan_button_path, download_path, max_attempts=15):
+                    if find_and_click_image(duizhangdan_button_path, project_root, max_attempts=15):
                         log_local("成功点击‘对账单打印’按钮")
                     else:
                         log_local("未找到‘对账单打印’按钮")
@@ -149,7 +149,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         log_local(f"模板图像缺失或大小为0")
                         raise FileNotFoundError("请准备相关模板图像并放入 seek 文件夹")
                     log_local("定位‘目标打印机’位置...")
-                    target_pos = find_and_click_image(target_printer_path, download_path)
+                    target_pos = find_and_click_image(target_printer_path, project_root)
                     if not target_pos:
                         log_local("未找到‘目标打印机’文字")
                         pyautogui.screenshot(os.path.join(download_path, f"error_target_printer_{xiangmuid}_{xiangmu}.png"))
@@ -163,12 +163,12 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                     for attempt in range(3):
                         pyautogui.moveTo(x_target + x_offset, y_target + 20)
                         time.sleep(0.5)
-                        if find_and_click_image(save_as_pdf_default_path, download_path):
+                        if find_and_click_image(save_as_pdf_default_path, project_root):
                             log_local("成功点击默认状态的‘另存为 PDF’按钮")
                             pdf_clicked = True
                             time.sleep(1)
                             break
-                        elif find_and_click_image(save_as_pdf_hover_path, download_path):
+                        elif find_and_click_image(save_as_pdf_hover_path, project_root):
                             log_local("成功点击悬停状态的‘另存为 PDF’按钮")
                             pdf_clicked = True
                             time.sleep(1)
@@ -177,7 +177,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         log_local("未找到‘另存为 PDF’按钮")
                         pyautogui.screenshot(os.path.join(download_path, f"error_save_as_pdf_{xiangmuid}_{xiangmu}.png"))
                         continue
-                    if find_and_click_image(save_button_path, download_path):
+                    if find_and_click_image(save_button_path, project_root):
                         log_local("成功点击‘保存’按钮")
                         time.sleep(1)
                     else:
@@ -185,7 +185,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         pyautogui.screenshot(os.path.join(download_path, f"error_save_button_{xiangmuid}_{xiangmu}.png"))
                         continue
                     pdf_filename = f"{xiangmuid}_{xiangmu}_银行对账单_{kaishiriqi}_{jieshuriqi}.pdf"
-                    handle_save_dialog(duizhangdan_path, pdf_filename, download_path)
+                    handle_save_dialog(duizhangdan_path, pdf_filename, project_root)
                     pdf_path = os.path.join(duizhangdan_path, pdf_filename)
                     if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 0:
                         log_local(f"对账单打印 PDF 完成：{pdf_path}")

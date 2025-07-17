@@ -9,15 +9,17 @@ BankSync/
 │   ├── login/
 │   │   ├── ningbo_bank.png
 │   │   └── other_site.png  # 示例其他网站图标
-│   └── 方正兰亭准黑_GBK.ttf
+│   ├── 方正兰亭准黑_GBK.ttf
+│   └── S.ico
 ├── playwright-browsers/
-├── config.txt
 ├── config.json
 ├── gui.py
 ├── ningbo_bank.py
+├── hangzhou_bank.py
 ├── utils.py
 ├── login_manager.py
 ├── todo_manager.py
+├── AI.py
 
 
 添加新银行

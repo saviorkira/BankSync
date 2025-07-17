@@ -1,0 +1,1 @@
+2025-07-09 14:42:46.745422: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\bak\20250708\playwright-browsers
