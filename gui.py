@@ -172,7 +172,7 @@ def main(page: Page):
         border_radius=8,
         filled=True,
         bgcolor=ft.Colors.WHITE,
-        hint_text="输入消息后点击发送或按 Enter",
+        hint_text="输入消息后点击发送",
         text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         multiline=True,
