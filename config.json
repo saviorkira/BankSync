@@ -16,7 +16,32 @@
   },
   "hangzhou_bank": {
     "username": "800067725",
-    "password": "your_password",
+    "password": "",
     "login_url": "https://custody.hzbank.com.cn/#/login"
+  },
+  "AM": {
+    "username": "",
+    "password": "",
+    "login_url": "http://172.16.10.184/am/ui/tims/#/dashboard"
+  },
+  "TM": {
+    "username": "",
+    "password": "",
+    "login_url": "http://172.16.10.184/tm/ui/kstmcq/#/dashboard"
+  },
+  "TA": {
+    "username": "",
+    "password": "",
+    "login_url": "http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage"
+  },
+  "kuaiji": {
+  "username": "",
+  "password": "",
+  "login_url": "http://172.16.10.181:8403/ks/"
+  },
+  "jianguan": {
+  "username": "",
+  "password": "",
+  "login_url": "http://172.16.10.185:8443/ks/"
   }
 }
