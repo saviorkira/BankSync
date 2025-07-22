@@ -22,10 +22,10 @@ if __name__ == "__main__":
         context = browser.new_context(viewport=None)
         page = context.new_page()
 
-        page.goto("https://custody.hzbank.com.cn/#/login")  # 你可以换成你的银行地址
-        page.get_by_role("textbox", name="请输入客户号").fill("800067725")
-        page.get_by_role("textbox", name="请输入操作员号").fill("2001")
-        page.get_by_role("textbox", name="请输入登录密码").click()
+        page.goto("http://172.16.10.184/#/main/dashboard")  # 你可以换成你的银行地址
+        # page.get_by_role("textbox", name="请输入客户号").fill("800067725")
+        # page.get_by_role("textbox", name="请输入操作员号").fill("2001")
+        # page.get_by_role("textbox", name="请输入登录密码").click()
 
 
         page.pause()  # ✅ 打开 Inspector 并暂停

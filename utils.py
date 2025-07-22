@@ -53,6 +53,33 @@ def get_resource_path(relative_path, project_root, subfolder="data/cv2"):
         return full_path
     raise FileNotFoundError(f"资源文件不存在: {full_path}")
 
+def find_image(template_path, base_path, threshold=0.5, max_attempts=10):
+    """仅查找图像，不执行点击操作"""
+    for attempt in range(max_attempts):
+        screenshot = pyautogui.screenshot()
+        screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
+        if not os.path.exists(template_path):
+            log(f"模板路径不存在: {template_path}", base_path)
+            return None
+        try:
+            template = cv2.imdecode(np.fromfile(template_path, dtype=np.uint8), cv2.IMREAD_COLOR)
+        except Exception as e:
+            log(f"模板加载异常: {template_path}, 错误: {e}", base_path)
+            return None
+        if template is None:
+            log(f"无法加载模板图像: {template_path}", base_path)
+            return None
+        result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
+        min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+        if max_val >= threshold:
+            x, y = max_loc
+            log(f"第{attempt+1}次尝试成功，找到图像位置: ({x}, {y})", base_path)
+            return (x, y)
+        time.sleep(1)
+    log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", base_path)
+    return None
+
+
 def find_and_click_image(template_path, base_path, offset_x=0, offset_y=0, threshold=0.5, max_attempts=10):
     """使用模板匹配找到图像并点击"""
     for attempt in range(max_attempts):
@@ -79,6 +106,8 @@ def find_and_click_image(template_path, base_path, offset_x=0, offset_y=0, thres
         time.sleep(1)
     log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", base_path)
     return None
+
+
 
 def handle_overwrite_dialog(base_path):
     """处理文件覆盖对话框"""

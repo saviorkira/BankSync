@@ -4,7 +4,7 @@ import time
 import pyautogui
 from playwright.sync_api import Playwright
 
-from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog
+from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog, find_image
 
 
 def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
@@ -177,6 +177,27 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         log_local("未找到‘另存为 PDF’按钮")
                         pyautogui.screenshot(os.path.join(download_path, f"error_save_as_pdf_{xiangmuid}_{xiangmu}.png"))
                         continue
+
+
+                    loading_image_path = get_resource_path("ningbo_dayinjiazai.bmp", project_root)
+                    if not os.path.exists(loading_image_path):
+                        log_local(f"加载中图像不存在: {loading_image_path}")
+                        raise FileNotFoundError(f"加载中图像不存在: {loading_image_path}")
+                    log_local("检查‘加载中’图片...")
+                    max_wait_attempts = 10
+                    for attempt in range(max_wait_attempts):
+                        if find_image(loading_image_path, project_root, max_attempts=1):
+                            log_local("检测到‘加载中’图片，等待1秒...")
+                            time.sleep(1)
+                        else:
+                            log_local("未检测到‘加载中’图片，继续执行...")
+                            break
+                    else:
+                        log_local("等待‘加载中’图片消失超时")
+                        # pyautogui.screenshot(os.path.join(download_path, f"error_loading_timeout_{xiangmuid}_{xiangmu}.png"))
+                        continue
+
+
                     if find_and_click_image(save_button_path, project_root):
                         log_local("成功点击‘保存’按钮")
                         time.sleep(1)

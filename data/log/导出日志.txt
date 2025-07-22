@@ -3186,3 +3186,1685 @@ Call log:
 2025-07-21 01:07:59: 页面加载完成，当前 URL: http://172.16.10.184/#/login
 2025-07-21 01:07:59: 请手动输入用户名、密码和可能的验证码...
 2025-07-21 01:07:59: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 14:19:09: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 14:19:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 14:19:09: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 14:19:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 14:19:09: 成功加载 config.json，任务数: 2
+2025-07-21 14:19:09: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 14:19:12: 调用 TA 的登录处理函数
+2025-07-21 14:19:12: 启动 TA 登录流程...
+2025-07-21 14:19:12: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 14:19:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 14:19:12: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 14:19:12: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 14:19:12: 启动浏览器...
+2025-07-21 14:19:13: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 14:19:14: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 14:19:14: 请手动输入用户名、密码和可能的验证码...
+2025-07-21 14:19:14: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 14:19:25: 等待登录超时或错误: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 14:19:42: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 14:19:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 14:19:42: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 14:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 14:19:42: 成功加载 config.json，任务数: 2
+2025-07-21 14:19:42: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 14:19:45: 调用 kuaiji 的登录处理函数
+2025-07-21 14:19:45: 启动 kuaiji 登录流程...
+2025-07-21 14:19:45: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 14:19:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 14:19:45: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for kuaiji
+2025-07-21 14:19:45: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 14:19:45: 启动浏览器...
+2025-07-21 14:19:46: 访问登录页面: http://172.16.10.181:8403/ks/
+2025-07-21 14:19:46: 页面加载完成，当前 URL: http://172.16.10.181:8403/ks/, 状态码: 200
+2025-07-21 14:19:46: 请手动输入用户名、密码和可能的验证码...
+2025-07-21 14:19:46: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 14:20:02: 等待登录超时或错误: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 14:23:30: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 14:23:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 14:23:30: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 14:23:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 14:23:30: 成功加载 config.json，任务数: 2
+2025-07-21 14:23:30: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 14:23:32: 调用 TA 的登录处理函数
+2025-07-21 14:23:32: 启动 TA 登录流程...
+2025-07-21 14:23:32: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 14:23:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 14:23:32: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 14:23:32: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 14:23:32: 启动浏览器...
+2025-07-21 14:23:33: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 14:23:34: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 14:23:34: 请手动输入用户名、密码和可能的验证码...
+2025-07-21 14:23:48: 等待登录或保存 cookies 失败: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 14:23:48: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 15:37:16: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 15:37:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 15:37:17: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 15:37:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 15:37:17: 成功加载 config.json，任务数: 2
+2025-07-21 15:37:17: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 15:37:19: 调用 TA 的登录处理函数
+2025-07-21 15:37:19: 启动 TA 登录流程...
+2025-07-21 15:37:19: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 15:37:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 15:37:19: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 15:37:19: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 15:37:19: 启动浏览器...
+2025-07-21 15:37:21: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 15:37:22: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 15:37:22: 请手动输入用户名、密码和可能的验证码...
+2025-07-21 15:37:34: 等待登录或保存 cookies 失败: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 15:37:34: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 15:39:06: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 15:39:06: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 15:39:06: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 15:39:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 15:39:06: 成功加载 config.json，任务数: 2
+2025-07-21 15:39:06: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:10:54: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:10:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:10:55: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:10:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:10:55: 成功加载 config.json，任务数: 2
+2025-07-21 17:10:55: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:10:57: 调用 TA 的登录处理函数
+2025-07-21 17:10:57: 启动 TA 登录流程...
+2025-07-21 17:10:57: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:10:57: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:10:57: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:10:57: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:10:57: 启动浏览器...
+2025-07-21 17:10:59: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 17:11:00: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:11:00: 输入用户名和密码...
+2025-07-21 17:11:00: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:11:23: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-21 17:11:23: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753693883.765017,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc1NDg1LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJMaVlVYUFaUU42c0U0Um1qX29xM3V3SzFZVG8iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.OFHtO66D7AhslGs2DW5o7sSpvIgy41nMGg3hG27XJhUvLIpmOPCYVMWQwIzzGRNM0NXdkgfe8WOlj-ILoYZYgmU4Wu_X2LSiNexkKDhtsiQZZgFeJPgXHjlxY1MceTy35I8fk12uPz2bCAag0Q8wS9HKRdDNLjc0Wufy2wi_dId0kTUX3PmVoSp9vNgerForRDN4kD_FKXMb7HT034FDJDM9Kl_OxXez27sP-dzDysA3c3JUYFovQkXi-mK67uDeQvZPCJyfgBjN3DC_EhCjC7FxW0nXdSsWfPUvjb4jTvteupQpd58xihl0QlTCrEmwBnYYgpPyR9f4BOSVCTkFvQ",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc1NDg1LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJMaVlVYUFaUU42c0U0Um1qX29xM3V3SzFZVG8iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.OFHtO66D7AhslGs2DW5o7sSpvIgy41nMGg3hG27XJhUvLIpmOPCYVMWQwIzzGRNM0NXdkgfe8WOlj-ILoYZYgmU4Wu_X2LSiNexkKDhtsiQZZgFeJPgXHjlxY1MceTy35I8fk12uPz2bCAag0Q8wS9HKRdDNLjc0Wufy2wi_dId0kTUX3PmVoSp9vNgerForRDN4kD_FKXMb7HT034FDJDM9Kl_OxXez27sP-dzDysA3c3JUYFovQkXi-mK67uDeQvZPCJyfgBjN3DC_EhCjC7FxW0nXdSsWfPUvjb4jTvteupQpd58xihl0QlTCrEmwBnYYgpPyR9f4BOSVCTkFvQ%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:11:26\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:11:26\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc1NDg1LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJMaVlVYUFaUU42c0U0Um1qX29xM3V3SzFZVG8iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.OFHtO66D7AhslGs2DW5o7sSpvIgy41nMGg3hG27XJhUvLIpmOPCYVMWQwIzzGRNM0NXdkgfe8WOlj-ILoYZYgmU4Wu_X2LSiNexkKDhtsiQZZgFeJPgXHjlxY1MceTy35I8fk12uPz2bCAag0Q8wS9HKRdDNLjc0Wufy2wi_dId0kTUX3PmVoSp9vNgerForRDN4kD_FKXMb7HT034FDJDM9Kl_OxXez27sP-dzDysA3c3JUYFovQkXi-mK67uDeQvZPCJyfgBjN3DC_EhCjC7FxW0nXdSsWfPUvjb4jTvteupQpd58xihl0QlTCrEmwBnYYgpPyR9f4BOSVCTkFvQ"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:11:26\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:11:26\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc1NDg1LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJMaVlVYUFaUU42c0U0Um1qX29xM3V3SzFZVG8iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.OFHtO66D7AhslGs2DW5o7sSpvIgy41nMGg3hG27XJhUvLIpmOPCYVMWQwIzzGRNM0NXdkgfe8WOlj-ILoYZYgmU4Wu_X2LSiNexkKDhtsiQZZgFeJPgXHjlxY1MceTy35I8fk12uPz2bCAag0Q8wS9HKRdDNLjc0Wufy2wi_dId0kTUX3PmVoSp9vNgerForRDN4kD_FKXMb7HT034FDJDM9Kl_OxXez27sP-dzDysA3c3JUYFovQkXi-mK67uDeQvZPCJyfgBjN3DC_EhCjC7FxW0nXdSsWfPUvjb4jTvteupQpd58xihl0QlTCrEmwBnYYgpPyR9f4BOSVCTkFvQ"
+  }
+}
+2025-07-21 17:11:23: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-21 17:11:23: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:11:23: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6190 字节
+2025-07-21 17:11:44: 等待登录或保存 cookies 失败: Locator.input_value: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="请输入登录账号")
+
+2025-07-21 17:11:44: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:11:56: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:11:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:11:56: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:11:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:11:56: 成功加载 config.json，任务数: 2
+2025-07-21 17:11:56: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:11:59: 调用 TA 的登录处理函数
+2025-07-21 17:11:59: 启动 TA 登录流程...
+2025-07-21 17:11:59: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:11:59: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:11:59: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:11:59: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:11:59: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:11:59: 加载 cookies 失败: 'BrowserType' object has no attribute 'new_context'
+2025-07-21 17:11:59: 启动浏览器...
+2025-07-21 17:12:00: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 17:12:01: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:12:01: 输入用户名和密码...
+2025-07-21 17:12:01: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:12:05: 等待登录或保存 cookies 失败: Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for navigation to "**/dashboard**" until 'load'
+============================================================
+2025-07-21 17:12:05: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:46:30: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:46:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:46:30: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:46:30: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:46:30: 成功加载 config.json，任务数: 2
+2025-07-21 17:46:30: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:46:33: 调用 TA 的登录处理函数
+2025-07-21 17:46:33: 启动 TA 登录流程...
+2025-07-21 17:46:33: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:46:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:46:33: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:46:33: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:46:33: 启动浏览器...
+2025-07-21 17:46:34: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:46:35: 加载 cookies 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:46:35: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 17:46:36: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:46:36: 输入用户名和密码...
+2025-07-21 17:46:36: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:46:36: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:46:49: 等待登录或保存 cookies 失败: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 17:46:49: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:46:54: 调用 TA 的登录处理函数
+2025-07-21 17:46:54: 启动 TA 登录流程...
+2025-07-21 17:46:54: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:46:54: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:46:54: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:46:54: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:46:54: 启动浏览器...
+2025-07-21 17:46:54: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:46:55: 加载 cookies 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:46:55: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 17:46:56: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:46:56: 输入用户名和密码...
+2025-07-21 17:46:56: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:46:56: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:47:12: 等待登录或保存 cookies 失败: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 17:47:12: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:47:17: 调用 TM 的登录处理函数
+2025-07-21 17:47:17: 启动 TM 登录流程...
+2025-07-21 17:47:17: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:47:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:47:17: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TM
+2025-07-21 17:47:17: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:47:17: 启动浏览器...
+2025-07-21 17:47:19: 访问登录页面: http://172.16.10.184/tm/ui/kstmcq/#/dashboard
+2025-07-21 17:47:20: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:47:20: 输入用户名和密码...
+2025-07-21 17:47:20: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:47:20: 无法获取 TM 的用户名或密码，输入框可能为空
+2025-07-21 17:47:31: 等待登录或保存 cookies 失败: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 17:47:31: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:51:00: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:51:00: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:51:00: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:51:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:51:01: 成功加载 config.json，任务数: 2
+2025-07-21 17:51:01: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:51:04: 调用 TA 的登录处理函数
+2025-07-21 17:51:04: 启动 TA 登录流程...
+2025-07-21 17:51:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:51:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:51:04: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:51:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:51:04: 启动浏览器...
+2025-07-21 17:51:04: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:51:05: 加载 cookies 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:51:05: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 17:51:06: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:51:06: 输入用户名和密码...
+2025-07-21 17:51:06: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:51:06: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:51:34: 等待登录或保存 cookies 失败: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-07-21 17:51:34: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:52:03: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:52:03: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:52:03: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:52:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:52:03: 成功加载 config.json，任务数: 2
+2025-07-21 17:52:03: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:52:05: 调用 TA 的登录处理函数
+2025-07-21 17:52:05: 启动 TA 登录流程...
+2025-07-21 17:52:05: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:52:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:52:05: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:52:05: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:52:05: 启动浏览器...
+2025-07-21 17:52:06: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:52:07: 加载 cookies 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:52:07: 访问登录页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-21 17:52:08: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:52:08: 输入用户名和密码...
+2025-07-21 17:52:08: 用户名和密码已输入，请手动执行后续操作（如验证码或登录按钮）...
+2025-07-21 17:52:08: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:53:08: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-21 17:53:08: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753696361.518506,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc3OTYxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJ2VU5VX1RqUmxTeXVaV3VURThsY1RBOHFJcWciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.DGfY66y0YyyJEP5CwnExa2txd8mPFoiW1nz0vPUPVz_ByHFuav3mtwGXjUY8atg_On8uaZGSASWTo_p--35GpTZimZ4xQg467U-BTp6hhbMvNDogZPM4hiT6scv3fa4xaBSzvcgfq9NzVhLt0PuARDUWX46h1WHZQYFKF5ssj8P68b-p5uqjMErJ017-2O7yEEMfqDoar2Q_6TZ7sorLuR1zgMJg2Mxmw8HQWWSWWzooMyCa90wNBlihBokP9CBA368Vo_22oJYxhF5Xd3i_hJkYClGQnxShJiBDgupKylLd9JkdzN3wDN031rgBymbbCf7UgP1WSEgUWTApoVf_Fg",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc3OTYxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJ2VU5VX1RqUmxTeXVaV3VURThsY1RBOHFJcWciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.DGfY66y0YyyJEP5CwnExa2txd8mPFoiW1nz0vPUPVz_ByHFuav3mtwGXjUY8atg_On8uaZGSASWTo_p--35GpTZimZ4xQg467U-BTp6hhbMvNDogZPM4hiT6scv3fa4xaBSzvcgfq9NzVhLt0PuARDUWX46h1WHZQYFKF5ssj8P68b-p5uqjMErJ017-2O7yEEMfqDoar2Q_6TZ7sorLuR1zgMJg2Mxmw8HQWWSWWzooMyCa90wNBlihBokP9CBA368Vo_22oJYxhF5Xd3i_hJkYClGQnxShJiBDgupKylLd9JkdzN3wDN031rgBymbbCf7UgP1WSEgUWTApoVf_Fg%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:52:42\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:52:42\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc3OTYxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJ2VU5VX1RqUmxTeXVaV3VURThsY1RBOHFJcWciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.DGfY66y0YyyJEP5CwnExa2txd8mPFoiW1nz0vPUPVz_ByHFuav3mtwGXjUY8atg_On8uaZGSASWTo_p--35GpTZimZ4xQg467U-BTp6hhbMvNDogZPM4hiT6scv3fa4xaBSzvcgfq9NzVhLt0PuARDUWX46h1WHZQYFKF5ssj8P68b-p5uqjMErJ017-2O7yEEMfqDoar2Q_6TZ7sorLuR1zgMJg2Mxmw8HQWWSWWzooMyCa90wNBlihBokP9CBA368Vo_22oJYxhF5Xd3i_hJkYClGQnxShJiBDgupKylLd9JkdzN3wDN031rgBymbbCf7UgP1WSEgUWTApoVf_Fg"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:52:42\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:52:42\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc3OTYxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJ2VU5VX1RqUmxTeXVaV3VURThsY1RBOHFJcWciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.DGfY66y0YyyJEP5CwnExa2txd8mPFoiW1nz0vPUPVz_ByHFuav3mtwGXjUY8atg_On8uaZGSASWTo_p--35GpTZimZ4xQg467U-BTp6hhbMvNDogZPM4hiT6scv3fa4xaBSzvcgfq9NzVhLt0PuARDUWX46h1WHZQYFKF5ssj8P68b-p5uqjMErJ017-2O7yEEMfqDoar2Q_6TZ7sorLuR1zgMJg2Mxmw8HQWWSWWzooMyCa90wNBlihBokP9CBA368Vo_22oJYxhF5Xd3i_hJkYClGQnxShJiBDgupKylLd9JkdzN3wDN031rgBymbbCf7UgP1WSEgUWTApoVf_Fg"
+  }
+}
+2025-07-21 17:53:08: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-21 17:53:08: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:53:08: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6190 字节
+2025-07-21 17:53:08: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:56:26: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:56:26: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:56:26: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:56:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:56:26: 成功加载 config.json，任务数: 2
+2025-07-21 17:56:26: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:56:28: 调用 TA 的登录处理函数
+2025-07-21 17:56:28: 启动 TA 登录流程...
+2025-07-21 17:56:28: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:56:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:56:28: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:56:28: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:56:28: 启动浏览器...
+2025-07-21 17:56:29: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:56:30: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:56:30: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-21 17:56:30: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:56:30: Cookies 无效或过期，重新登录
+2025-07-21 17:56:31: 访问登录页面: http://172.16.10.184/#/login
+2025-07-21 17:56:31: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:56:31: 输入用户名和密码...
+2025-07-21 17:56:31: 用户名和密码已输入
+2025-07-21 17:56:31: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:56:35: 已点击登录按钮
+2025-07-21 17:56:41: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-21 17:56:41: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753696601.413522,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjAxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJZcVpJZE0wZEw3ZGtkSzB5a01yZHp2TzYyb28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.XD4GRCWgtTFiFseDqIXf5HDVbRckBkXoUOyMiSeMeFSAcsye2RIuVCQvC3M3OaegGZyNetuBwTsw-njBkjhT_aSJV38htyddVVumynxNnfUV6_CsqSEbLmgvCPbvSZooSlSfhpvPjtsmOk_BckgLfTn6ZOWWCE4xF_1AW44isGCL1X9ZO-fx2yOVQKyluRJxgnHflt3Mn5iGTjwJH3Dx1VqxuG3ZNnrjJOSxRro4cDhjQWacjUnidG813B40pE1y7GG5ImBu9SWn84tYL2rV7rRZT4xLCTIJiw496Cg1u6rES-nOZ1v26zOICPF4g7qqjJOOyWi9YXZRTik_8v6Z8w",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjAxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJZcVpJZE0wZEw3ZGtkSzB5a01yZHp2TzYyb28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.XD4GRCWgtTFiFseDqIXf5HDVbRckBkXoUOyMiSeMeFSAcsye2RIuVCQvC3M3OaegGZyNetuBwTsw-njBkjhT_aSJV38htyddVVumynxNnfUV6_CsqSEbLmgvCPbvSZooSlSfhpvPjtsmOk_BckgLfTn6ZOWWCE4xF_1AW44isGCL1X9ZO-fx2yOVQKyluRJxgnHflt3Mn5iGTjwJH3Dx1VqxuG3ZNnrjJOSxRro4cDhjQWacjUnidG813B40pE1y7GG5ImBu9SWn84tYL2rV7rRZT4xLCTIJiw496Cg1u6rES-nOZ1v26zOICPF4g7qqjJOOyWi9YXZRTik_8v6Z8w%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:56:41\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:56:41\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjAxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJZcVpJZE0wZEw3ZGtkSzB5a01yZHp2TzYyb28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.XD4GRCWgtTFiFseDqIXf5HDVbRckBkXoUOyMiSeMeFSAcsye2RIuVCQvC3M3OaegGZyNetuBwTsw-njBkjhT_aSJV38htyddVVumynxNnfUV6_CsqSEbLmgvCPbvSZooSlSfhpvPjtsmOk_BckgLfTn6ZOWWCE4xF_1AW44isGCL1X9ZO-fx2yOVQKyluRJxgnHflt3Mn5iGTjwJH3Dx1VqxuG3ZNnrjJOSxRro4cDhjQWacjUnidG813B40pE1y7GG5ImBu9SWn84tYL2rV7rRZT4xLCTIJiw496Cg1u6rES-nOZ1v26zOICPF4g7qqjJOOyWi9YXZRTik_8v6Z8w"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:56:41\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:56:41\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjAxLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJZcVpJZE0wZEw3ZGtkSzB5a01yZHp2TzYyb28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.XD4GRCWgtTFiFseDqIXf5HDVbRckBkXoUOyMiSeMeFSAcsye2RIuVCQvC3M3OaegGZyNetuBwTsw-njBkjhT_aSJV38htyddVVumynxNnfUV6_CsqSEbLmgvCPbvSZooSlSfhpvPjtsmOk_BckgLfTn6ZOWWCE4xF_1AW44isGCL1X9ZO-fx2yOVQKyluRJxgnHflt3Mn5iGTjwJH3Dx1VqxuG3ZNnrjJOSxRro4cDhjQWacjUnidG813B40pE1y7GG5ImBu9SWn84tYL2rV7rRZT4xLCTIJiw496Cg1u6rES-nOZ1v26zOICPF4g7qqjJOOyWi9YXZRTik_8v6Z8w"
+  }
+}
+2025-07-21 17:56:41: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-21 17:56:41: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:56:41: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6190 字节
+2025-07-21 17:56:41: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:56:50: 调用 TA 的登录处理函数
+2025-07-21 17:56:50: 启动 TA 登录流程...
+2025-07-21 17:56:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:56:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:56:50: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:56:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:56:50: 启动浏览器...
+2025-07-21 17:56:50: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:56:51: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:56:51: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-21 17:56:51: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:56:51: Cookies 无效或过期，重新登录
+2025-07-21 17:56:51: 访问登录页面: http://172.16.10.184/#/login
+2025-07-21 17:56:52: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:56:52: 输入用户名和密码...
+2025-07-21 17:56:52: 用户名和密码已输入
+2025-07-21 17:56:52: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:57:04: 已点击登录按钮
+2025-07-21 17:57:14: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-21 17:57:14: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753696634.823609,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjM0LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJxTkp0NGd5UUJUbngzOFBNNWtSZ3hFWXdhTDAiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.aM3tFKNFzyOMHSByV3shW2rG0HLSpRlprf3kFMUb0VaWskBswK0Tqbg2a9InqThOgvAVLmF4qwgzMS-Z1Pk_cDdxIGz8W50nFg6BcCdrT46bgoFkoBqVKC-BuJ0rrbJ5g8hxi0xlUF6M_pKXRvimngAc7M3g_PKO3q-oVTt7HN84a7LspY4uXSbbwyfTFM-jJyJ3BkqT9RvfY2PdYvoQzxISGBj-sQ54kf9G7ew512m2VXb2754Wna6pdakepyspTxQ7QvISsOTGQkAxaZVUFsxLIsHVL_Qm6-rgZzrh9YY9etQJezZi65grHxYN8boVj-A-Lk0u2nREsv7RtHLw2A",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjM0LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJxTkp0NGd5UUJUbngzOFBNNWtSZ3hFWXdhTDAiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.aM3tFKNFzyOMHSByV3shW2rG0HLSpRlprf3kFMUb0VaWskBswK0Tqbg2a9InqThOgvAVLmF4qwgzMS-Z1Pk_cDdxIGz8W50nFg6BcCdrT46bgoFkoBqVKC-BuJ0rrbJ5g8hxi0xlUF6M_pKXRvimngAc7M3g_PKO3q-oVTt7HN84a7LspY4uXSbbwyfTFM-jJyJ3BkqT9RvfY2PdYvoQzxISGBj-sQ54kf9G7ew512m2VXb2754Wna6pdakepyspTxQ7QvISsOTGQkAxaZVUFsxLIsHVL_Qm6-rgZzrh9YY9etQJezZi65grHxYN8boVj-A-Lk0u2nREsv7RtHLw2A%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:57:15\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:57:15\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjM0LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJxTkp0NGd5UUJUbngzOFBNNWtSZ3hFWXdhTDAiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.aM3tFKNFzyOMHSByV3shW2rG0HLSpRlprf3kFMUb0VaWskBswK0Tqbg2a9InqThOgvAVLmF4qwgzMS-Z1Pk_cDdxIGz8W50nFg6BcCdrT46bgoFkoBqVKC-BuJ0rrbJ5g8hxi0xlUF6M_pKXRvimngAc7M3g_PKO3q-oVTt7HN84a7LspY4uXSbbwyfTFM-jJyJ3BkqT9RvfY2PdYvoQzxISGBj-sQ54kf9G7ew512m2VXb2754Wna6pdakepyspTxQ7QvISsOTGQkAxaZVUFsxLIsHVL_Qm6-rgZzrh9YY9etQJezZi65grHxYN8boVj-A-Lk0u2nREsv7RtHLw2A"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-21T17:57:15\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-21T17:57:15\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMTc4MjM0LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJxTkp0NGd5UUJUbngzOFBNNWtSZ3hFWXdhTDAiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.aM3tFKNFzyOMHSByV3shW2rG0HLSpRlprf3kFMUb0VaWskBswK0Tqbg2a9InqThOgvAVLmF4qwgzMS-Z1Pk_cDdxIGz8W50nFg6BcCdrT46bgoFkoBqVKC-BuJ0rrbJ5g8hxi0xlUF6M_pKXRvimngAc7M3g_PKO3q-oVTt7HN84a7LspY4uXSbbwyfTFM-jJyJ3BkqT9RvfY2PdYvoQzxISGBj-sQ54kf9G7ew512m2VXb2754Wna6pdakepyspTxQ7QvISsOTGQkAxaZVUFsxLIsHVL_Qm6-rgZzrh9YY9etQJezZi65grHxYN8boVj-A-Lk0u2nREsv7RtHLw2A"
+  }
+}
+2025-07-21 17:57:14: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-21 17:57:14: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:57:14: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6190 字节
+2025-07-21 17:57:14: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-21 17:57:28: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:57:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-21 17:57:28: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-21 17:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-21 17:57:28: 成功加载 config.json，任务数: 2
+2025-07-21 17:57:28: TodoApp 初始化完成，加载任务数: 2
+2025-07-21 17:57:30: 调用 TA 的登录处理函数
+2025-07-21 17:57:30: 启动 TA 登录流程...
+2025-07-21 17:57:30: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-21 17:57:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-21 17:57:30: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-21 17:57:30: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-21 17:57:30: 启动浏览器...
+2025-07-21 17:57:31: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-21 17:57:31: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-21 17:57:31: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-21 17:57:32: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:57:32: Cookies 无效或过期，重新登录
+2025-07-21 17:57:32: 访问登录页面: http://172.16.10.184/#/login
+2025-07-21 17:57:32: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-21 17:57:32: 输入用户名和密码...
+2025-07-21 17:57:32: 用户名和密码已输入
+2025-07-21 17:57:32: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-21 17:57:34: 输入用户名、密码或点击登录按钮失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("button", name="登 录")
+    - locator resolved to <button type="button" id="loginBtn" disabled="disabled" class="ks-button ks-button--primary is-default ks-button--medium is-disabled">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 500ms
+
+2025-07-22 09:12:40: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 09:12:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 09:12:40: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-22 09:12:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-22 09:12:40: 成功加载 config.json，任务数: 2
+2025-07-22 09:12:40: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 09:59:46: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 09:59:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 09:59:47: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-22 09:59:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-22 09:59:47: 成功加载 config.json，任务数: 2
+2025-07-22 09:59:47: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 09:59:49: 调用 TA 的登录处理函数
+2025-07-22 09:59:49: 启动 TA 登录流程...
+2025-07-22 09:59:49: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 09:59:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 09:59:49: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-22 09:59:49: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 09:59:49: 启动浏览器...
+2025-07-22 09:59:51: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 09:59:53: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 09:59:53: 恢复 Admin-Token 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 09:59:53: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-22 09:59:54: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 09:59:54: Cookies 无效或过期，重新登录
+2025-07-22 09:59:54: 访问登录页面: http://172.16.10.184/#/login
+2025-07-22 09:59:55: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 09:59:55: 输入用户名和密码...
+2025-07-22 09:59:55: 用户名和密码已输入
+2025-07-22 09:59:55: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-22 09:59:59: 已点击登录按钮
+2025-07-22 10:00:15: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-22 10:00:15: 保存 Admin-Token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDE3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJSSXdjcElZS24tRjhvNmw0U0ZzMDRxN1lpemsiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.SYfB-jRkrSjSMy9qcNfuFPMkJgxWb3AcB_lk8Odo1NDDdRckCm5L902IKiabiStFm67a6hO_1zlAr90V8HUp7QmpFPSwvwXjtJ5taaHkxWMJ09U2PS37yU__VawFMcM4aBd9qwC07Le2XtMreTswHRadQh9nbT2ojRjgy8-9c2klQlCltK6GXMrKyt4vzsGTVibdDSE8FkutIQVs1D4iDCd0gSZAW4tpxP1d5n8Ltjuf5zSgQRPhHVUXEnf2eqM_vSoiuR8eAIOpK2VnJX38r8c47dmvxR4LGdsOQzzy_kSJVJjw_dqc8SURKMBXjGtuTrhR6ANI3eOJGWiwS39nmA
+2025-07-22 10:00:15: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753754415.224932,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDE3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJSSXdjcElZS24tRjhvNmw0U0ZzMDRxN1lpemsiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.SYfB-jRkrSjSMy9qcNfuFPMkJgxWb3AcB_lk8Odo1NDDdRckCm5L902IKiabiStFm67a6hO_1zlAr90V8HUp7QmpFPSwvwXjtJ5taaHkxWMJ09U2PS37yU__VawFMcM4aBd9qwC07Le2XtMreTswHRadQh9nbT2ojRjgy8-9c2klQlCltK6GXMrKyt4vzsGTVibdDSE8FkutIQVs1D4iDCd0gSZAW4tpxP1d5n8Ltjuf5zSgQRPhHVUXEnf2eqM_vSoiuR8eAIOpK2VnJX38r8c47dmvxR4LGdsOQzzy_kSJVJjw_dqc8SURKMBXjGtuTrhR6ANI3eOJGWiwS39nmA",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDE3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJSSXdjcElZS24tRjhvNmw0U0ZzMDRxN1lpemsiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.SYfB-jRkrSjSMy9qcNfuFPMkJgxWb3AcB_lk8Odo1NDDdRckCm5L902IKiabiStFm67a6hO_1zlAr90V8HUp7QmpFPSwvwXjtJ5taaHkxWMJ09U2PS37yU__VawFMcM4aBd9qwC07Le2XtMreTswHRadQh9nbT2ojRjgy8-9c2klQlCltK6GXMrKyt4vzsGTVibdDSE8FkutIQVs1D4iDCd0gSZAW4tpxP1d5n8Ltjuf5zSgQRPhHVUXEnf2eqM_vSoiuR8eAIOpK2VnJX38r8c47dmvxR4LGdsOQzzy_kSJVJjw_dqc8SURKMBXjGtuTrhR6ANI3eOJGWiwS39nmA%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:00:17\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:00:17\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDE3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJSSXdjcElZS24tRjhvNmw0U0ZzMDRxN1lpemsiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.SYfB-jRkrSjSMy9qcNfuFPMkJgxWb3AcB_lk8Odo1NDDdRckCm5L902IKiabiStFm67a6hO_1zlAr90V8HUp7QmpFPSwvwXjtJ5taaHkxWMJ09U2PS37yU__VawFMcM4aBd9qwC07Le2XtMreTswHRadQh9nbT2ojRjgy8-9c2klQlCltK6GXMrKyt4vzsGTVibdDSE8FkutIQVs1D4iDCd0gSZAW4tpxP1d5n8Ltjuf5zSgQRPhHVUXEnf2eqM_vSoiuR8eAIOpK2VnJX38r8c47dmvxR4LGdsOQzzy_kSJVJjw_dqc8SURKMBXjGtuTrhR6ANI3eOJGWiwS39nmA"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:00:17\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:00:17\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDE3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJSSXdjcElZS24tRjhvNmw0U0ZzMDRxN1lpemsiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.SYfB-jRkrSjSMy9qcNfuFPMkJgxWb3AcB_lk8Odo1NDDdRckCm5L902IKiabiStFm67a6hO_1zlAr90V8HUp7QmpFPSwvwXjtJ5taaHkxWMJ09U2PS37yU__VawFMcM4aBd9qwC07Le2XtMreTswHRadQh9nbT2ojRjgy8-9c2klQlCltK6GXMrKyt4vzsGTVibdDSE8FkutIQVs1D4iDCd0gSZAW4tpxP1d5n8Ltjuf5zSgQRPhHVUXEnf2eqM_vSoiuR8eAIOpK2VnJX38r8c47dmvxR4LGdsOQzzy_kSJVJjw_dqc8SURKMBXjGtuTrhR6ANI3eOJGWiwS39nmA"
+  },
+  "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDE3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJSSXdjcElZS24tRjhvNmw0U0ZzMDRxN1lpemsiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.SYfB-jRkrSjSMy9qcNfuFPMkJgxWb3AcB_lk8Odo1NDDdRckCm5L902IKiabiStFm67a6hO_1zlAr90V8HUp7QmpFPSwvwXjtJ5taaHkxWMJ09U2PS37yU__VawFMcM4aBd9qwC07Le2XtMreTswHRadQh9nbT2ojRjgy8-9c2klQlCltK6GXMrKyt4vzsGTVibdDSE8FkutIQVs1D4iDCd0gSZAW4tpxP1d5n8Ltjuf5zSgQRPhHVUXEnf2eqM_vSoiuR8eAIOpK2VnJX38r8c47dmvxR4LGdsOQzzy_kSJVJjw_dqc8SURKMBXjGtuTrhR6ANI3eOJGWiwS39nmA"
+}
+2025-07-22 10:00:15: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-22 10:00:15: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:00:15: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6976 字节
+2025-07-22 10:00:15: 重定向到目标页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-22 10:00:15: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:00:31: 调用 TA 的登录处理函数
+2025-07-22 10:00:31: 启动 TA 登录流程...
+2025-07-22 10:00:31: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:00:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:00:31: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-22 10:00:31: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:00:31: 启动浏览器...
+2025-07-22 10:00:31: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:00:34: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:00:34: 恢复 Admin-Token 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:00:34: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-22 10:00:35: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:00:35: Cookies 无效或过期，重新登录
+2025-07-22 10:00:35: 访问登录页面: http://172.16.10.184/#/login
+2025-07-22 10:00:36: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:00:36: 输入用户名和密码...
+2025-07-22 10:00:36: 用户名和密码已输入
+2025-07-22 10:00:36: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-22 10:00:48: 已点击登录按钮
+2025-07-22 10:00:56: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-22 10:00:56: 保存 Admin-Token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDU4LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJHWnItZE82MWVRX2VuY1NPX25fYzFWWXJtRjgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.Ox0BLaONyrWNCnlvreirJwxdL2PshYnGlYnyzhNlHONn19uqm_qPoSpmH5v2lV2ywwplHDU469Z7sdJ3d-BxkzQBxHU8VuQzLIWdl7SWvZ6q8DBM7l5Xke5PPTMHdI5JyT1kQx3ysLaafGdFgBijzV0dKy3QqgmBupMt4kJ2rWsp6e5Cp6yu3Y60X77uyvNgpI121PcUNGjBZOfEoFXV-mCouLG_X31BBgeFde5UBthQ2JQq4vixLmXkym6hqf9RF6uRHDHGVEUTVR5YM0P10PDCHuaRxT_PI1sS3ENcDNvWUBUNvOhDO5cmodzhXvTet8B7YsXOXZ8dZ8pg3OFeIA
+2025-07-22 10:00:56: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753754456.221871,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDU4LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJHWnItZE82MWVRX2VuY1NPX25fYzFWWXJtRjgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.Ox0BLaONyrWNCnlvreirJwxdL2PshYnGlYnyzhNlHONn19uqm_qPoSpmH5v2lV2ywwplHDU469Z7sdJ3d-BxkzQBxHU8VuQzLIWdl7SWvZ6q8DBM7l5Xke5PPTMHdI5JyT1kQx3ysLaafGdFgBijzV0dKy3QqgmBupMt4kJ2rWsp6e5Cp6yu3Y60X77uyvNgpI121PcUNGjBZOfEoFXV-mCouLG_X31BBgeFde5UBthQ2JQq4vixLmXkym6hqf9RF6uRHDHGVEUTVR5YM0P10PDCHuaRxT_PI1sS3ENcDNvWUBUNvOhDO5cmodzhXvTet8B7YsXOXZ8dZ8pg3OFeIA",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDU4LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJHWnItZE82MWVRX2VuY1NPX25fYzFWWXJtRjgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.Ox0BLaONyrWNCnlvreirJwxdL2PshYnGlYnyzhNlHONn19uqm_qPoSpmH5v2lV2ywwplHDU469Z7sdJ3d-BxkzQBxHU8VuQzLIWdl7SWvZ6q8DBM7l5Xke5PPTMHdI5JyT1kQx3ysLaafGdFgBijzV0dKy3QqgmBupMt4kJ2rWsp6e5Cp6yu3Y60X77uyvNgpI121PcUNGjBZOfEoFXV-mCouLG_X31BBgeFde5UBthQ2JQq4vixLmXkym6hqf9RF6uRHDHGVEUTVR5YM0P10PDCHuaRxT_PI1sS3ENcDNvWUBUNvOhDO5cmodzhXvTet8B7YsXOXZ8dZ8pg3OFeIA%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:00:58\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:00:58\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDU4LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJHWnItZE82MWVRX2VuY1NPX25fYzFWWXJtRjgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.Ox0BLaONyrWNCnlvreirJwxdL2PshYnGlYnyzhNlHONn19uqm_qPoSpmH5v2lV2ywwplHDU469Z7sdJ3d-BxkzQBxHU8VuQzLIWdl7SWvZ6q8DBM7l5Xke5PPTMHdI5JyT1kQx3ysLaafGdFgBijzV0dKy3QqgmBupMt4kJ2rWsp6e5Cp6yu3Y60X77uyvNgpI121PcUNGjBZOfEoFXV-mCouLG_X31BBgeFde5UBthQ2JQq4vixLmXkym6hqf9RF6uRHDHGVEUTVR5YM0P10PDCHuaRxT_PI1sS3ENcDNvWUBUNvOhDO5cmodzhXvTet8B7YsXOXZ8dZ8pg3OFeIA"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:00:58\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:00:58\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDU4LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJHWnItZE82MWVRX2VuY1NPX25fYzFWWXJtRjgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.Ox0BLaONyrWNCnlvreirJwxdL2PshYnGlYnyzhNlHONn19uqm_qPoSpmH5v2lV2ywwplHDU469Z7sdJ3d-BxkzQBxHU8VuQzLIWdl7SWvZ6q8DBM7l5Xke5PPTMHdI5JyT1kQx3ysLaafGdFgBijzV0dKy3QqgmBupMt4kJ2rWsp6e5Cp6yu3Y60X77uyvNgpI121PcUNGjBZOfEoFXV-mCouLG_X31BBgeFde5UBthQ2JQq4vixLmXkym6hqf9RF6uRHDHGVEUTVR5YM0P10PDCHuaRxT_PI1sS3ENcDNvWUBUNvOhDO5cmodzhXvTet8B7YsXOXZ8dZ8pg3OFeIA"
+  },
+  "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MDU4LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJHWnItZE82MWVRX2VuY1NPX25fYzFWWXJtRjgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.Ox0BLaONyrWNCnlvreirJwxdL2PshYnGlYnyzhNlHONn19uqm_qPoSpmH5v2lV2ywwplHDU469Z7sdJ3d-BxkzQBxHU8VuQzLIWdl7SWvZ6q8DBM7l5Xke5PPTMHdI5JyT1kQx3ysLaafGdFgBijzV0dKy3QqgmBupMt4kJ2rWsp6e5Cp6yu3Y60X77uyvNgpI121PcUNGjBZOfEoFXV-mCouLG_X31BBgeFde5UBthQ2JQq4vixLmXkym6hqf9RF6uRHDHGVEUTVR5YM0P10PDCHuaRxT_PI1sS3ENcDNvWUBUNvOhDO5cmodzhXvTet8B7YsXOXZ8dZ8pg3OFeIA"
+}
+2025-07-22 10:00:56: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-22 10:00:56: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:00:56: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6976 字节
+2025-07-22 10:00:56: 重定向到目标页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-22 10:00:56: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:01:05: 调用 TA 的登录处理函数
+2025-07-22 10:01:05: 启动 TA 登录流程...
+2025-07-22 10:01:05: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:01:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:01:05: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-22 10:01:05: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:01:05: 启动浏览器...
+2025-07-22 10:01:05: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:01:08: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:01:08: 恢复 Admin-Token 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:01:08: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-22 10:01:08: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:01:08: Cookies 无效或过期，重新登录
+2025-07-22 10:01:08: 访问登录页面: http://172.16.10.184/#/login
+2025-07-22 10:01:09: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:01:09: 输入用户名和密码...
+2025-07-22 10:01:09: 用户名和密码已输入
+2025-07-22 10:01:09: 无法获取 TA 的用户名或密码，输入框可能为空
+2025-07-22 10:01:10: 输入用户名、密码或点击登录按钮失败: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("button#loginBtn:not([disabled])") to be visible
+
+2025-07-22 10:01:10: 强制点击登录按钮失败: Page.evaluate: Target page, context or browser has been closed
+2025-07-22 10:01:32: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:01:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:01:33: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-22 10:01:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-22 10:01:33: 成功加载 config.json，任务数: 2
+2025-07-22 10:01:33: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:01:35: 调用 TA 的登录处理函数
+2025-07-22 10:01:35: 启动 TA 登录流程...
+2025-07-22 10:01:35: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:01:35: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:01:35: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-22 10:01:35: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:01:35: 启动浏览器...
+2025-07-22 10:01:35: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:01:38: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:01:38: 恢复 Admin-Token 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:01:38: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-22 10:01:38: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:01:39: Cookies 无效或过期，重新登录
+2025-07-22 10:01:39: 访问登录页面: http://172.16.10.184/#/login
+2025-07-22 10:01:39: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:01:39: 输入用户名和密码...
+2025-07-22 10:01:39: 用户名和密码已输入
+2025-07-22 10:01:39: TA 的用户名和密码已保存至 config.json
+2025-07-22 10:01:39: 已点击登录按钮
+2025-07-22 10:01:40: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-22 10:01:40: 保存 Admin-Token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTAyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJld0FTVUpWel94aHZjS0wxd05iOGE3TXktcHciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.PCXd0RgpSQFXKAWL20yvqZQAxyulqUdb3EsHhKx4rmmUqUCjU5R0Wi35vuKH7KC1QwZC6DS5xZVE7ffzA7XJX-lArRgjRUaH519dN_3vLj67jRc4C1p0m-3ukGjituoGDqZV3CbsDJNmgVCfkFwg0XsHQpJQx_R78oH90SnmjQuArtSu6kBcdHdvgMEbsJcCw7hhc_wiL7FuSM5u0tnHo5sPYn6nzELy4evZkv15bsq0T1kmwNg_DU5dLPvKFA0HQP3TW721c4C6Mj13IOd27opP0sHUg7619bbnVXFVAQLNcTboAI2I4YUxD_MmzuJHsYPD-92SbchpjlNRTWzL5Q
+2025-07-22 10:01:40: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753754500.024037,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTAyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJld0FTVUpWel94aHZjS0wxd05iOGE3TXktcHciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.PCXd0RgpSQFXKAWL20yvqZQAxyulqUdb3EsHhKx4rmmUqUCjU5R0Wi35vuKH7KC1QwZC6DS5xZVE7ffzA7XJX-lArRgjRUaH519dN_3vLj67jRc4C1p0m-3ukGjituoGDqZV3CbsDJNmgVCfkFwg0XsHQpJQx_R78oH90SnmjQuArtSu6kBcdHdvgMEbsJcCw7hhc_wiL7FuSM5u0tnHo5sPYn6nzELy4evZkv15bsq0T1kmwNg_DU5dLPvKFA0HQP3TW721c4C6Mj13IOd27opP0sHUg7619bbnVXFVAQLNcTboAI2I4YUxD_MmzuJHsYPD-92SbchpjlNRTWzL5Q",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTAyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJld0FTVUpWel94aHZjS0wxd05iOGE3TXktcHciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.PCXd0RgpSQFXKAWL20yvqZQAxyulqUdb3EsHhKx4rmmUqUCjU5R0Wi35vuKH7KC1QwZC6DS5xZVE7ffzA7XJX-lArRgjRUaH519dN_3vLj67jRc4C1p0m-3ukGjituoGDqZV3CbsDJNmgVCfkFwg0XsHQpJQx_R78oH90SnmjQuArtSu6kBcdHdvgMEbsJcCw7hhc_wiL7FuSM5u0tnHo5sPYn6nzELy4evZkv15bsq0T1kmwNg_DU5dLPvKFA0HQP3TW721c4C6Mj13IOd27opP0sHUg7619bbnVXFVAQLNcTboAI2I4YUxD_MmzuJHsYPD-92SbchpjlNRTWzL5Q%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:01:42\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:01:42\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTAyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJld0FTVUpWel94aHZjS0wxd05iOGE3TXktcHciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.PCXd0RgpSQFXKAWL20yvqZQAxyulqUdb3EsHhKx4rmmUqUCjU5R0Wi35vuKH7KC1QwZC6DS5xZVE7ffzA7XJX-lArRgjRUaH519dN_3vLj67jRc4C1p0m-3ukGjituoGDqZV3CbsDJNmgVCfkFwg0XsHQpJQx_R78oH90SnmjQuArtSu6kBcdHdvgMEbsJcCw7hhc_wiL7FuSM5u0tnHo5sPYn6nzELy4evZkv15bsq0T1kmwNg_DU5dLPvKFA0HQP3TW721c4C6Mj13IOd27opP0sHUg7619bbnVXFVAQLNcTboAI2I4YUxD_MmzuJHsYPD-92SbchpjlNRTWzL5Q"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:01:42\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:01:42\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTAyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJld0FTVUpWel94aHZjS0wxd05iOGE3TXktcHciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.PCXd0RgpSQFXKAWL20yvqZQAxyulqUdb3EsHhKx4rmmUqUCjU5R0Wi35vuKH7KC1QwZC6DS5xZVE7ffzA7XJX-lArRgjRUaH519dN_3vLj67jRc4C1p0m-3ukGjituoGDqZV3CbsDJNmgVCfkFwg0XsHQpJQx_R78oH90SnmjQuArtSu6kBcdHdvgMEbsJcCw7hhc_wiL7FuSM5u0tnHo5sPYn6nzELy4evZkv15bsq0T1kmwNg_DU5dLPvKFA0HQP3TW721c4C6Mj13IOd27opP0sHUg7619bbnVXFVAQLNcTboAI2I4YUxD_MmzuJHsYPD-92SbchpjlNRTWzL5Q"
+  },
+  "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTAyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJld0FTVUpWel94aHZjS0wxd05iOGE3TXktcHciLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.PCXd0RgpSQFXKAWL20yvqZQAxyulqUdb3EsHhKx4rmmUqUCjU5R0Wi35vuKH7KC1QwZC6DS5xZVE7ffzA7XJX-lArRgjRUaH519dN_3vLj67jRc4C1p0m-3ukGjituoGDqZV3CbsDJNmgVCfkFwg0XsHQpJQx_R78oH90SnmjQuArtSu6kBcdHdvgMEbsJcCw7hhc_wiL7FuSM5u0tnHo5sPYn6nzELy4evZkv15bsq0T1kmwNg_DU5dLPvKFA0HQP3TW721c4C6Mj13IOd27opP0sHUg7619bbnVXFVAQLNcTboAI2I4YUxD_MmzuJHsYPD-92SbchpjlNRTWzL5Q"
+}
+2025-07-22 10:01:40: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-22 10:01:40: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:01:40: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6976 字节
+2025-07-22 10:01:40: 重定向到目标页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-22 10:01:40: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:01:55: 调用 TA 的登录处理函数
+2025-07-22 10:01:55: 启动 TA 登录流程...
+2025-07-22 10:01:55: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:01:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:01:55: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-22 10:01:55: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:01:55: 启动浏览器...
+2025-07-22 10:01:56: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:01:58: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:01:58: 恢复 Admin-Token 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:01:58: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-22 10:01:59: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:01:59: Cookies 无效或过期，重新登录
+2025-07-22 10:01:59: 访问登录页面: http://172.16.10.184/#/login
+2025-07-22 10:01:59: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:01:59: 输入用户名和密码...
+2025-07-22 10:01:59: 用户名和密码已输入
+2025-07-22 10:01:59: TA 的用户名和密码已保存至 config.json
+2025-07-22 10:02:00: 已点击登录按钮
+2025-07-22 10:02:00: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-22 10:02:00: 保存 Admin-Token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTIyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJhMDl3dEJDNVp0QVZ2aVJJSUZUX0lSZ2stRFkiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.C5qLhKzAKktbN_64NLlprh9JMnPIEnqMrtUf0m7vhgLGirVjqKXqWlLGe1jwktgAszGCmKB4URvDxVgMXOYnn8550meVR58-s2GLdmHhIlwzYqjSoZO7WoUPVcxbcAJADS5GRLChxGG9cBcckRXyq9dj4saFLEx3H7PZxGxdh9Oz3VkbEZHcCJxqtu2nWANvWKnyT6ddQGZPhVaO4L9pnpSl85MdwpWY-CFQco_i9cApoesRB3ooQrtrbROEyom22Hb4xAyqv21Njb1wa5snECsdYYblFyKSM4ypYR0Uc68r4Kp1Y-0tr2lkBGpa1wL8OyxWpW1QYYsgErZfhs_iXA
+2025-07-22 10:02:00: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753754520.216388,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTIyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJhMDl3dEJDNVp0QVZ2aVJJSUZUX0lSZ2stRFkiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.C5qLhKzAKktbN_64NLlprh9JMnPIEnqMrtUf0m7vhgLGirVjqKXqWlLGe1jwktgAszGCmKB4URvDxVgMXOYnn8550meVR58-s2GLdmHhIlwzYqjSoZO7WoUPVcxbcAJADS5GRLChxGG9cBcckRXyq9dj4saFLEx3H7PZxGxdh9Oz3VkbEZHcCJxqtu2nWANvWKnyT6ddQGZPhVaO4L9pnpSl85MdwpWY-CFQco_i9cApoesRB3ooQrtrbROEyom22Hb4xAyqv21Njb1wa5snECsdYYblFyKSM4ypYR0Uc68r4Kp1Y-0tr2lkBGpa1wL8OyxWpW1QYYsgErZfhs_iXA",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTIyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJhMDl3dEJDNVp0QVZ2aVJJSUZUX0lSZ2stRFkiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.C5qLhKzAKktbN_64NLlprh9JMnPIEnqMrtUf0m7vhgLGirVjqKXqWlLGe1jwktgAszGCmKB4URvDxVgMXOYnn8550meVR58-s2GLdmHhIlwzYqjSoZO7WoUPVcxbcAJADS5GRLChxGG9cBcckRXyq9dj4saFLEx3H7PZxGxdh9Oz3VkbEZHcCJxqtu2nWANvWKnyT6ddQGZPhVaO4L9pnpSl85MdwpWY-CFQco_i9cApoesRB3ooQrtrbROEyom22Hb4xAyqv21Njb1wa5snECsdYYblFyKSM4ypYR0Uc68r4Kp1Y-0tr2lkBGpa1wL8OyxWpW1QYYsgErZfhs_iXA%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:02:02\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:02:02\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTIyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJhMDl3dEJDNVp0QVZ2aVJJSUZUX0lSZ2stRFkiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.C5qLhKzAKktbN_64NLlprh9JMnPIEnqMrtUf0m7vhgLGirVjqKXqWlLGe1jwktgAszGCmKB4URvDxVgMXOYnn8550meVR58-s2GLdmHhIlwzYqjSoZO7WoUPVcxbcAJADS5GRLChxGG9cBcckRXyq9dj4saFLEx3H7PZxGxdh9Oz3VkbEZHcCJxqtu2nWANvWKnyT6ddQGZPhVaO4L9pnpSl85MdwpWY-CFQco_i9cApoesRB3ooQrtrbROEyom22Hb4xAyqv21Njb1wa5snECsdYYblFyKSM4ypYR0Uc68r4Kp1Y-0tr2lkBGpa1wL8OyxWpW1QYYsgErZfhs_iXA"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:02:02\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:02:02\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTIyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJhMDl3dEJDNVp0QVZ2aVJJSUZUX0lSZ2stRFkiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.C5qLhKzAKktbN_64NLlprh9JMnPIEnqMrtUf0m7vhgLGirVjqKXqWlLGe1jwktgAszGCmKB4URvDxVgMXOYnn8550meVR58-s2GLdmHhIlwzYqjSoZO7WoUPVcxbcAJADS5GRLChxGG9cBcckRXyq9dj4saFLEx3H7PZxGxdh9Oz3VkbEZHcCJxqtu2nWANvWKnyT6ddQGZPhVaO4L9pnpSl85MdwpWY-CFQco_i9cApoesRB3ooQrtrbROEyom22Hb4xAyqv21Njb1wa5snECsdYYblFyKSM4ypYR0Uc68r4Kp1Y-0tr2lkBGpa1wL8OyxWpW1QYYsgErZfhs_iXA"
+  },
+  "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTIyLCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiJhMDl3dEJDNVp0QVZ2aVJJSUZUX0lSZ2stRFkiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.C5qLhKzAKktbN_64NLlprh9JMnPIEnqMrtUf0m7vhgLGirVjqKXqWlLGe1jwktgAszGCmKB4URvDxVgMXOYnn8550meVR58-s2GLdmHhIlwzYqjSoZO7WoUPVcxbcAJADS5GRLChxGG9cBcckRXyq9dj4saFLEx3H7PZxGxdh9Oz3VkbEZHcCJxqtu2nWANvWKnyT6ddQGZPhVaO4L9pnpSl85MdwpWY-CFQco_i9cApoesRB3ooQrtrbROEyom22Hb4xAyqv21Njb1wa5snECsdYYblFyKSM4ypYR0Uc68r4Kp1Y-0tr2lkBGpa1wL8OyxWpW1QYYsgErZfhs_iXA"
+}
+2025-07-22 10:02:00: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-22 10:02:00: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:02:00: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6976 字节
+2025-07-22 10:02:00: 重定向到目标页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-22 10:02:00: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:02:29: 调用 TA 的登录处理函数
+2025-07-22 10:02:29: 启动 TA 登录流程...
+2025-07-22 10:02:29: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:02:29: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:02:29: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for TA
+2025-07-22 10:02:29: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:02:29: 启动浏览器...
+2025-07-22 10:02:29: 找到已保存的 cookies: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:02:32: 恢复 localStorage 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:02:32: 恢复 Admin-Token 失败: Page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-07-22 10:02:32: 访问登录页面以验证 cookies: http://172.16.10.184/#/login
+2025-07-22 10:02:33: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:02:33: Cookies 无效或过期，重新登录
+2025-07-22 10:02:34: 访问登录页面: http://172.16.10.184/#/login
+2025-07-22 10:02:35: 页面加载完成，当前 URL: http://172.16.10.184/#/login, 状态码: 200
+2025-07-22 10:02:35: 输入用户名和密码...
+2025-07-22 10:02:35: 用户名和密码已输入
+2025-07-22 10:02:35: TA 的用户名和密码已保存至 config.json
+2025-07-22 10:02:35: 已点击登录按钮
+2025-07-22 10:02:35: 检测到已登录，当前 URL: http://172.16.10.184/#/main/dashboard
+2025-07-22 10:02:35: 保存 Admin-Token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTU3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiIxWG5aLVRoSjFuTjhaRlFCQlo0NTUtajdyX28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.nW803AnECtv6ax9r5yIIdvCiIqD3dS7OWWfBnmeW8A2L6v5fo6rMZX0V_AIrzpKYCZ4vK_m249sEQt2-AUm9BVIZFUx0EjCUy35s6xhLJziCXFZZ6WN-jTLVyWC5Hi_FEn-zr7ipaxug3oevBk6pBiTa2adRRjJNjKsHBU6iFluL6FEolp4aaG10rmmwJnaFRrrNfGj0Ae1bhkgbyZkbjGq_UCfKC9leFk0mXB1ikV-apkwbGJ0mbtNy9bU7BlJsSJLusoLHAdHBU4sZeeqsBzrWT48pDUDk_qEHA-2xAb8BKYMmJABuE5Bh4ySwmzveRTLGSLSPdZTd9GTCY3yYdw
+2025-07-22 10:02:35: 获取 storage_state: {
+  "cookies": [
+    {
+      "name": "x-kingstar-user-lang",
+      "value": "null",
+      "domain": "172.16.10.184",
+      "path": "/tm/api/ksauth",
+      "expires": 1753754555.742552,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Admin-Token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTU3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiIxWG5aLVRoSjFuTjhaRlFCQlo0NTUtajdyX28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.nW803AnECtv6ax9r5yIIdvCiIqD3dS7OWWfBnmeW8A2L6v5fo6rMZX0V_AIrzpKYCZ4vK_m249sEQt2-AUm9BVIZFUx0EjCUy35s6xhLJziCXFZZ6WN-jTLVyWC5Hi_FEn-zr7ipaxug3oevBk6pBiTa2adRRjJNjKsHBU6iFluL6FEolp4aaG10rmmwJnaFRrrNfGj0Ae1bhkgbyZkbjGq_UCfKC9leFk0mXB1ikV-apkwbGJ0mbtNy9bU7BlJsSJLusoLHAdHBU4sZeeqsBzrWT48pDUDk_qEHA-2xAb8BKYMmJABuE5Bh4ySwmzveRTLGSLSPdZTd9GTCY3yYdw",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "{%22displayName%22:%22%E9%A9%AC%E9%B2%B2%E9%B9%8F%22%2C%22userName%22:%22makunpeng%22%2C%22userID%22:%221836210904354578434%22%2C%22deptId%22:%2250%22%2C%22token%22:%22eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTU3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiIxWG5aLVRoSjFuTjhaRlFCQlo0NTUtajdyX28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.nW803AnECtv6ax9r5yIIdvCiIqD3dS7OWWfBnmeW8A2L6v5fo6rMZX0V_AIrzpKYCZ4vK_m249sEQt2-AUm9BVIZFUx0EjCUy35s6xhLJziCXFZZ6WN-jTLVyWC5Hi_FEn-zr7ipaxug3oevBk6pBiTa2adRRjJNjKsHBU6iFluL6FEolp4aaG10rmmwJnaFRrrNfGj0Ae1bhkgbyZkbjGq_UCfKC9leFk0mXB1ikV-apkwbGJ0mbtNy9bU7BlJsSJLusoLHAdHBU4sZeeqsBzrWT48pDUDk_qEHA-2xAb8BKYMmJABuE5Bh4ySwmzveRTLGSLSPdZTd9GTCY3yYdw%22}",
+      "domain": "172.16.10.184",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://172.16.10.184",
+      "localStorage": [
+        {
+          "name": "ks-web-cdn-cli",
+          "value": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:02:38\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:02:38\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}"
+        },
+        {
+          "name": "Admin-Token",
+          "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTU3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiIxWG5aLVRoSjFuTjhaRlFCQlo0NTUtajdyX28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.nW803AnECtv6ax9r5yIIdvCiIqD3dS7OWWfBnmeW8A2L6v5fo6rMZX0V_AIrzpKYCZ4vK_m249sEQt2-AUm9BVIZFUx0EjCUy35s6xhLJziCXFZZ6WN-jTLVyWC5Hi_FEn-zr7ipaxug3oevBk6pBiTa2adRRjJNjKsHBU6iFluL6FEolp4aaG10rmmwJnaFRrrNfGj0Ae1bhkgbyZkbjGq_UCfKC9leFk0mXB1ikV-apkwbGJ0mbtNy9bU7BlJsSJLusoLHAdHBU4sZeeqsBzrWT48pDUDk_qEHA-2xAb8BKYMmJABuE5Bh4ySwmzveRTLGSLSPdZTd9GTCY3yYdw"
+        }
+      ]
+    }
+  ],
+  "localStorage": {
+    "ks-web-cdn-cli": "{\"userMsg\":{\"needtochapass\":false,\"USE_LANG\":null,\"user_name\":\"makunpeng\",\"access_mac\":null,\"USER_ID\":\"1836210904354578434\",\"remark\":null,\"LAST_LOGIN\":null,\"EMAIL\":null,\"STATUS\":1,\"last_visit_ip\":null,\"last_visit_date\":\"2025-07-22T10:02:38\",\"LABOR\":\"789\",\"REMARK\":null,\"email\":null,\"DEPT_ID\":\"50\",\"last_login\":null,\"LAST_VISIT_DATE\":\"2025-07-22T10:02:38\",\"USER_NAME\":\"makunpeng\",\"display_name\":\"\u9a6c\u9cb2\u9e4f\",\"DISPLAY_NAME\":\"\u9a6c\u9cb2\u9e4f\",\"labor\":\"789\",\"user_id\":\"1836210904354578434\",\"use_lang\":null,\"LAST_VISIT_IP\":null,\"dept_id\":\"50\",\"status\":1,\"ACCESS_MAC\":null,\"needRemindPasswordChange\":false},\"lastRoute_\u9a6c\u9cb2\u9e4f\":{\"name\":\"dashboard\",\"path\":\"/main/dashboard\",\"meta\":{\"name\":\"dashboard\",\"url\":\"dashboard\",\"title\":\"menu.dashboard\",\"originalName\":\"\",\"affix\":true},\"query\":{},\"params\":{\"name\":\"main\"}}}",
+    "Admin-Token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTU3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiIxWG5aLVRoSjFuTjhaRlFCQlo0NTUtajdyX28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.nW803AnECtv6ax9r5yIIdvCiIqD3dS7OWWfBnmeW8A2L6v5fo6rMZX0V_AIrzpKYCZ4vK_m249sEQt2-AUm9BVIZFUx0EjCUy35s6xhLJziCXFZZ6WN-jTLVyWC5Hi_FEn-zr7ipaxug3oevBk6pBiTa2adRRjJNjKsHBU6iFluL6FEolp4aaG10rmmwJnaFRrrNfGj0Ae1bhkgbyZkbjGq_UCfKC9leFk0mXB1ikV-apkwbGJ0mbtNy9bU7BlJsSJLusoLHAdHBU4sZeeqsBzrWT48pDUDk_qEHA-2xAb8BKYMmJABuE5Bh4ySwmzveRTLGSLSPdZTd9GTCY3yYdw"
+  },
+  "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtYWt1bnBlbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNzUzMjM2MTU3LCJrc0RvbWFpblVzZXIiOnsiZGlzcGxheU5hbWUiOiLpqazpsrLpuY8iLCJ1c2VyVHlwZSI6IjAiLCJlbXBsb3llZU5vIjoiNzg5IiwidXNlcklkIjoiMTgzNjIxMDkwNDM1NDU3ODQzNCIsInVzZXJuYW1lIjoibWFrdW5wZW5nIn0sImF1dGhvcml0aWVzIjpbIk5PUk1BTCJdLCJqdGkiOiIxWG5aLVRoSjFuTjhaRlFCQlo0NTUtajdyX28iLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQifQ.nW803AnECtv6ax9r5yIIdvCiIqD3dS7OWWfBnmeW8A2L6v5fo6rMZX0V_AIrzpKYCZ4vK_m249sEQt2-AUm9BVIZFUx0EjCUy35s6xhLJziCXFZZ6WN-jTLVyWC5Hi_FEn-zr7ipaxug3oevBk6pBiTa2adRRjJNjKsHBU6iFluL6FEolp4aaG10rmmwJnaFRrrNfGj0Ae1bhkgbyZkbjGq_UCfKC9leFk0mXB1ikV-apkwbGJ0mbtNy9bU7BlJsSJLusoLHAdHBU4sZeeqsBzrWT48pDUDk_qEHA-2xAb8BKYMmJABuE5Bh4ySwmzveRTLGSLSPdZTd9GTCY3yYdw"
+}
+2025-07-22 10:02:35: 确保 cookies 目录存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies
+2025-07-22 10:02:35: Cookies 已保存至: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json
+2025-07-22 10:02:35: 确认 Cookies 文件存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data\cookies\TA_cookies.json, 大小: 6976 字节
+2025-07-22 10:02:36: 重定向到目标页面: http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage
+2025-07-22 10:02:36: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:03:39: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:03:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:03:40: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\AM.png
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\jianguan.png
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\kuaiji.png
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TA.png
+2025-07-22 10:03:40: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\TM.png
+2025-07-22 10:03:40: 成功加载 config.json，任务数: 2
+2025-07-22 10:03:40: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:03:41: 暂不支持 AM 的登录
+2025-07-22 10:03:45: 启动宁波银行登录流程...
+2025-07-22 10:03:45: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:03:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:03:45: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-07-22 10:03:45: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:03:45: 启动浏览器...
+2025-07-22 10:03:46: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:03:51: 输入用户名和密码...
+2025-07-22 10:03:54: 用户名和密码已输入，请手动执行后续操作...
+2025-07-22 10:03:54: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:04:02: 启动杭州银行登录流程...
+2025-07-22 10:04:02: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:04:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:04:02: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-07-22 10:04:02: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:04:02: 启动浏览器...
+2025-07-22 10:04:03: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-07-22 10:04:07: 输入用户名和密码...
+2025-07-22 10:04:07: 用户名和操作员号已输入，请手动执行后续操作...
+2025-07-22 10:04:07: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-07-22 10:05:07: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:05:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:05:07: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:05:07: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:05:07: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:05:07: 成功加载 config.json，任务数: 2
+2025-07-22 10:05:07: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:05:15: 已选择银行: 宁波银行
+2025-07-22 10:05:16: 已选择银行: 杭州银行
+2025-07-22 10:05:24: 已选择银行: 宁波银行
+2025-07-22 10:05:37: 下载路径设置为：D:\Desktop\Auto\测试\30
+2025-07-22 10:05:41: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：宁波银行，包含 2 条记录
+2025-07-22 10:05:48: 开始运行 宁波银行 导出，包含 2 条记录...
+2025-07-22 10:05:49: 启动宁波银行导出流程...
+2025-07-22 10:05:49: 启动宁波银行导出流程...
+2025-07-22 10:05:49: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:05:49: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:05:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:05:49: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-07-22 10:05:49: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:05:49: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:05:49: 启动浏览器...
+2025-07-22 10:05:49: 启动浏览器...
+2025-07-22 10:05:50: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:05:50: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:05:55: 输入用户名和密码...
+2025-07-22 10:05:55: 输入用户名和密码...
+2025-07-22 10:05:57: 等待账户管理页面加载...
+2025-07-22 10:05:57: 等待账户管理页面加载...
+2025-07-22 10:06:15: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:06:15: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:06:15: 使用托管账户查询：77970122000179566
+2025-07-22 10:06:15: 使用托管账户查询：77970122000179566
+2025-07-22 10:06:17: 复选框已选中
+2025-07-22 10:06:17: 复选框已选中
+2025-07-22 10:06:19: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:19: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:21: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:06:21: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:06:21: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:06:21: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:06:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:06:23: 定位‘对账单打印’按钮...
+2025-07-22 10:06:23: 定位‘对账单打印’按钮...
+2025-07-22 10:06:23: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:06:23: 成功点击‘对账单打印’按钮
+2025-07-22 10:06:23: 成功点击‘对账单打印’按钮
+2025-07-22 10:06:23: 等待 Chrome 打印窗口...
+2025-07-22 10:06:23: 等待 Chrome 打印窗口...
+2025-07-22 10:06:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:06:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:06:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:06:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:06:25: 定位‘目标打印机’位置...
+2025-07-22 10:06:25: 定位‘目标打印机’位置...
+2025-07-22 10:06:26: 第1次尝试成功，点击位置: (734, 170)
+2025-07-22 10:06:26: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:06:26: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:06:29: 第1次尝试成功，点击位置: (959, 228)
+2025-07-22 10:06:29: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:06:29: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:06:30: 第1次尝试成功，点击位置: (992, 693)
+2025-07-22 10:06:30: 成功点击‘保存’按钮
+2025-07-22 10:06:30: 成功点击‘保存’按钮
+2025-07-22 10:06:31: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\30\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:31: 窗口1设置路径成功: D:\Desktop\Auto\测试\30\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:32: 点击保存按钮完成
+2025-07-22 10:06:40: 未检测到覆盖确认窗口或点击失败: timed out
+2025-07-22 10:06:40: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\30\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:40: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\30\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:40: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:06:40: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:06:40: 使用托管账户查询：86031110000310762
+2025-07-22 10:06:40: 使用托管账户查询：86031110000310762
+2025-07-22 10:06:42: 复选框已选中
+2025-07-22 10:06:42: 复选框已选中
+2025-07-22 10:06:44: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:44: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:46: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:06:46: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:06:46: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:06:46: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:06:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:06:48: 定位‘对账单打印’按钮...
+2025-07-22 10:06:48: 定位‘对账单打印’按钮...
+2025-07-22 10:06:48: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:06:48: 成功点击‘对账单打印’按钮
+2025-07-22 10:06:48: 成功点击‘对账单打印’按钮
+2025-07-22 10:06:48: 等待 Chrome 打印窗口...
+2025-07-22 10:06:48: 等待 Chrome 打印窗口...
+2025-07-22 10:06:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:06:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:06:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:06:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:06:50: 定位‘目标打印机’位置...
+2025-07-22 10:06:50: 定位‘目标打印机’位置...
+2025-07-22 10:06:50: 第1次尝试成功，点击位置: (734, 170)
+2025-07-22 10:06:51: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:06:51: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:06:54: 第1次尝试成功，点击位置: (959, 173)
+2025-07-22 10:06:54: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:06:54: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:06:55: 第1次尝试成功，点击位置: (992, 693)
+2025-07-22 10:06:55: 成功点击‘保存’按钮
+2025-07-22 10:06:55: 成功点击‘保存’按钮
+2025-07-22 10:06:56: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\30\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:56: 窗口1设置路径成功: D:\Desktop\Auto\测试\30\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:06:57: 点击保存按钮完成
+2025-07-22 10:07:05: 未检测到覆盖确认窗口或点击失败: timed out
+2025-07-22 10:07:05: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\30\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:05: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\30\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:05: 导出完成。
+2025-07-22 10:07:09: 已选择银行: 杭州银行
+2025-07-22 10:07:15: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：杭州银行，包含 2 条记录
+2025-07-22 10:07:20: 开始运行 杭州银行 导出，包含 2 条记录...
+2025-07-22 10:07:21: 启动杭州银行导出流程...
+2025-07-22 10:07:21: 启动杭州银行导出流程...
+2025-07-22 10:07:21: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:07:21: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:07:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:07:21: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-07-22 10:07:21: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:07:21: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:07:21: 启动浏览器...
+2025-07-22 10:07:21: 启动浏览器...
+2025-07-22 10:07:22: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-07-22 10:07:22: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-07-22 10:07:25: 输入用户名和密码...
+2025-07-22 10:07:25: 输入用户名和密码...
+2025-07-22 10:07:26: 等待账户管理页面加载...
+2025-07-22 10:07:26: 等待账户管理页面加载...
+2025-07-22 10:07:37: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-07-22 10:07:37: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-07-22 10:07:40: 使用托管账户查询：3305041060000048061
+2025-07-22 10:07:40: 使用托管账户查询：3305041060000048061
+2025-07-22 10:07:44: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:07:44: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:07:46: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:46: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:46: 复选框已重新选中
+2025-07-22 10:07:46: 复选框已重新选中
+2025-07-22 10:07:48: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:48: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:48: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-07-22 10:07:48: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-07-22 10:07:51: 使用托管账户查询：3301041060002128464
+2025-07-22 10:07:51: 使用托管账户查询：3301041060002128464
+2025-07-22 10:07:55: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:07:55: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:07:56: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:56: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:57: 复选框已重新选中
+2025-07-22 10:07:57: 复选框已重新选中
+2025-07-22 10:07:59: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:59: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:07:59: 导出完成。
+2025-07-22 10:13:11: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:13:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:13:12: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:13:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:13:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:13:12: 成功加载 config.json，任务数: 2
+2025-07-22 10:13:12: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:13:15: 启动杭州银行登录流程...
+2025-07-22 10:13:15: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:13:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:13:15: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-07-22 10:13:15: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:13:15: 启动浏览器...
+2025-07-22 10:13:16: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-07-22 10:13:16: 杭州银行登录失败：Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
+
+2025-07-22 10:13:18: 已选择银行: 宁波银行
+2025-07-22 10:13:26: 下载路径设置为：D:\Desktop\Auto\测试\31
+2025-07-22 10:13:30: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：宁波银行，包含 2 条记录
+2025-07-22 10:13:35: 开始运行 宁波银行 导出，包含 2 条记录...
+2025-07-22 10:13:36: 启动宁波银行导出流程...
+2025-07-22 10:13:36: 启动宁波银行导出流程...
+2025-07-22 10:13:36: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:13:36: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:13:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:13:36: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-07-22 10:13:36: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:13:36: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:13:36: 启动浏览器...
+2025-07-22 10:13:36: 启动浏览器...
+2025-07-22 10:13:36: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:13:36: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:13:41: 输入用户名和密码...
+2025-07-22 10:13:41: 输入用户名和密码...
+2025-07-22 10:13:44: 等待账户管理页面加载...
+2025-07-22 10:13:44: 等待账户管理页面加载...
+2025-07-22 10:13:53: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:13:53: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:13:53: 使用托管账户查询：77970122000179566
+2025-07-22 10:13:53: 使用托管账户查询：77970122000179566
+2025-07-22 10:13:55: 复选框已选中
+2025-07-22 10:13:55: 复选框已选中
+2025-07-22 10:13:58: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:13:58: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:13:59: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:13:59: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:13:59: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:13:59: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:14:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:14:01: 定位‘对账单打印’按钮...
+2025-07-22 10:14:01: 定位‘对账单打印’按钮...
+2025-07-22 10:14:02: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:14:02: 成功点击‘对账单打印’按钮
+2025-07-22 10:14:02: 成功点击‘对账单打印’按钮
+2025-07-22 10:14:02: 等待 Chrome 打印窗口...
+2025-07-22 10:14:02: 等待 Chrome 打印窗口...
+2025-07-22 10:14:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:14:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:14:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:14:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:14:04: 定位‘目标打印机’位置...
+2025-07-22 10:14:04: 定位‘目标打印机’位置...
+2025-07-22 10:14:14: 第9次尝试成功，点击位置: (734, 170)
+2025-07-22 10:14:14: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:14:14: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:14:28: 第10次尝试成功，点击位置: (272, 181)
+2025-07-22 10:14:28: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:14:28: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:14:35: 第6次尝试成功，点击位置: (992, 693)
+2025-07-22 10:14:35: 成功点击‘保存’按钮
+2025-07-22 10:14:35: 成功点击‘保存’按钮
+2025-07-22 10:14:36: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\31\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:14:36: 快速保存失败，错误: 未找到标题为 '另存为' 的窗口
+2025-07-22 10:14:36: 打印对账单 PDF 失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：未找到标题为 '另存为' 的窗口
+2025-07-22 10:14:36: 打印对账单 PDF 失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：未找到标题为 '另存为' 的窗口
+2025-07-22 10:14:36: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:14:36: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:14:36: 使用托管账户查询：86031110000310762
+2025-07-22 10:14:36: 使用托管账户查询：86031110000310762
+2025-07-22 10:14:40: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:14:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:14:41: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:14:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:14:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:14:41: 成功加载 config.json，任务数: 2
+2025-07-22 10:14:41: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:25:46: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:25:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:25:47: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:25:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:25:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:25:47: 成功加载 config.json，任务数: 2
+2025-07-22 10:25:47: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:25:50: 已选择银行: 宁波银行
+2025-07-22 10:25:59: 下载路径设置为：D:\Desktop\Auto\测试\32
+2025-07-22 10:26:02: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：宁波银行，包含 2 条记录
+2025-07-22 10:26:02: 开始运行 宁波银行 导出，包含 2 条记录...
+2025-07-22 10:26:04: 启动宁波银行导出流程...
+2025-07-22 10:26:04: 启动宁波银行导出流程...
+2025-07-22 10:26:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:26:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:26:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:26:04: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-07-22 10:26:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:26:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:26:04: 启动浏览器...
+2025-07-22 10:26:04: 启动浏览器...
+2025-07-22 10:26:05: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:26:05: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:26:10: 输入用户名和密码...
+2025-07-22 10:26:10: 输入用户名和密码...
+2025-07-22 10:26:13: 等待账户管理页面加载...
+2025-07-22 10:26:13: 等待账户管理页面加载...
+2025-07-22 10:26:23: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:26:23: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:26:23: 使用托管账户查询：77970122000179566
+2025-07-22 10:26:23: 使用托管账户查询：77970122000179566
+2025-07-22 10:26:25: 复选框已选中
+2025-07-22 10:26:25: 复选框已选中
+2025-07-22 10:26:27: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:26:27: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:26:29: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:26:29: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:26:29: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:26:29: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:26:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:26:31: 定位‘对账单打印’按钮...
+2025-07-22 10:26:31: 定位‘对账单打印’按钮...
+2025-07-22 10:26:31: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:26:31: 成功点击‘对账单打印’按钮
+2025-07-22 10:26:31: 成功点击‘对账单打印’按钮
+2025-07-22 10:26:31: 等待 Chrome 打印窗口...
+2025-07-22 10:26:31: 等待 Chrome 打印窗口...
+2025-07-22 10:26:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:26:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:26:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:26:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:26:33: 定位‘目标打印机’位置...
+2025-07-22 10:26:33: 定位‘目标打印机’位置...
+2025-07-22 10:26:34: 第1次尝试成功，点击位置: (734, 170)
+2025-07-22 10:26:34: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:26:34: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:26:37: 第1次尝试成功，点击位置: (959, 228)
+2025-07-22 10:26:37: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:26:37: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:26:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: False
+2025-07-22 10:26:38: 打印对账单 PDF 失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：资源文件不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp
+2025-07-22 10:26:38: 打印对账单 PDF 失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：资源文件不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp
+2025-07-22 10:28:38: 导出失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：Page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+
+2025-07-22 10:28:38: 导出失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：Page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+
+2025-07-22 10:28:38: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:28:38: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:29:45: 导出失败（产品：24211_重庆信托·宁波鄞开集合资金信托计划）：Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="- None")
+
+2025-07-22 10:29:45: 导出失败（产品：24211_重庆信托·宁波鄞开集合资金信托计划）：Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="- None")
+
+2025-07-22 10:29:49: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:29:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:29:49: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:29:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:29:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:29:49: 成功加载 config.json，任务数: 2
+2025-07-22 10:29:49: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:30:02: 已选择银行: 宁波银行
+2025-07-22 10:30:13: 下载路径设置为：D:\Desktop\Auto\测试\33
+2025-07-22 10:30:15: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：宁波银行，包含 2 条记录
+2025-07-22 10:30:16: 开始运行 宁波银行 导出，包含 2 条记录...
+2025-07-22 10:30:18: 启动宁波银行导出流程...
+2025-07-22 10:30:18: 启动宁波银行导出流程...
+2025-07-22 10:30:18: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:30:18: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:30:18: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:30:18: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-07-22 10:30:18: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:30:18: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:30:18: 启动浏览器...
+2025-07-22 10:30:18: 启动浏览器...
+2025-07-22 10:30:19: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:30:19: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:30:25: 输入用户名和密码...
+2025-07-22 10:30:25: 输入用户名和密码...
+2025-07-22 10:30:29: 等待账户管理页面加载...
+2025-07-22 10:30:29: 等待账户管理页面加载...
+2025-07-22 10:30:37: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:30:37: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:30:38: 使用托管账户查询：77970122000179566
+2025-07-22 10:30:38: 使用托管账户查询：77970122000179566
+2025-07-22 10:30:40: 复选框已选中
+2025-07-22 10:30:40: 复选框已选中
+2025-07-22 10:30:42: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:30:42: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:30:44: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:30:44: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:30:44: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:30:44: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:30:46: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:30:46: 定位‘对账单打印’按钮...
+2025-07-22 10:30:46: 定位‘对账单打印’按钮...
+2025-07-22 10:30:46: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:30:46: 成功点击‘对账单打印’按钮
+2025-07-22 10:30:46: 成功点击‘对账单打印’按钮
+2025-07-22 10:30:46: 等待 Chrome 打印窗口...
+2025-07-22 10:30:46: 等待 Chrome 打印窗口...
+2025-07-22 10:30:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:30:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:30:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:30:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:30:48: 定位‘目标打印机’位置...
+2025-07-22 10:30:48: 定位‘目标打印机’位置...
+2025-07-22 10:30:48: 第1次尝试成功，点击位置: (734, 170)
+2025-07-22 10:30:49: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:30:49: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:30:51: 第1次尝试成功，点击位置: (959, 228)
+2025-07-22 10:30:51: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:30:51: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:30:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-07-22 10:30:52: 检查‘加载中’图片...
+2025-07-22 10:30:52: 检查‘加载中’图片...
+2025-07-22 10:30:52: 打印对账单 PDF 失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：find_and_click_image() got an unexpected keyword argument 'click'
+2025-07-22 10:30:52: 打印对账单 PDF 失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：find_and_click_image() got an unexpected keyword argument 'click'
+2025-07-22 10:32:52: 导出失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：Page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+
+2025-07-22 10:32:52: 导出失败（产品：23014_重信·北极22026·华睿精选9号集合资金信托计划）：Page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+
+2025-07-22 10:32:52: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:32:52: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:34:52: 导出失败（产品：24211_重庆信托·宁波鄞开集合资金信托计划）：Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询")
+
+2025-07-22 10:34:52: 导出失败（产品：24211_重庆信托·宁波鄞开集合资金信托计划）：Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询")
+
+2025-07-22 10:34:53: 导出完成。
+2025-07-22 10:42:32: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:42:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-22 10:42:33: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-22 10:42:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-22 10:42:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-22 10:42:33: 成功加载 config.json，任务数: 2
+2025-07-22 10:42:33: TodoApp 初始化完成，加载任务数: 2
+2025-07-22 10:42:37: 已选择银行: 宁波银行
+2025-07-22 10:42:46: 下载路径设置为：D:\Desktop\Auto\测试\34
+2025-07-22 10:42:49: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：宁波银行，包含 2 条记录
+2025-07-22 10:42:50: 开始运行 宁波银行 导出，包含 2 条记录...
+2025-07-22 10:42:51: 启动宁波银行导出流程...
+2025-07-22 10:42:51: 启动宁波银行导出流程...
+2025-07-22 10:42:51: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:42:51: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-22 10:42:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-22 10:42:51: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-07-22 10:42:51: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:42:51: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-22 10:42:51: 启动浏览器...
+2025-07-22 10:42:51: 启动浏览器...
+2025-07-22 10:42:52: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:42:52: 访问登录页面: https://www.e-custody.com/#/login
+2025-07-22 10:42:57: 输入用户名和密码...
+2025-07-22 10:42:57: 输入用户名和密码...
+2025-07-22 10:42:59: 等待账户管理页面加载...
+2025-07-22 10:42:59: 等待账户管理页面加载...
+2025-07-22 10:43:10: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:43:10: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-07-22 10:43:10: 使用托管账户查询：77970122000179566
+2025-07-22 10:43:10: 使用托管账户查询：77970122000179566
+2025-07-22 10:43:12: 复选框已选中
+2025-07-22 10:43:12: 复选框已选中
+2025-07-22 10:43:14: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:14: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:16: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:43:16: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:43:16: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:43:16: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:43:18: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:43:18: 定位‘对账单打印’按钮...
+2025-07-22 10:43:18: 定位‘对账单打印’按钮...
+2025-07-22 10:43:19: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:43:19: 成功点击‘对账单打印’按钮
+2025-07-22 10:43:19: 成功点击‘对账单打印’按钮
+2025-07-22 10:43:19: 等待 Chrome 打印窗口...
+2025-07-22 10:43:19: 等待 Chrome 打印窗口...
+2025-07-22 10:43:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:43:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:43:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:43:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:43:21: 定位‘目标打印机’位置...
+2025-07-22 10:43:21: 定位‘目标打印机’位置...
+2025-07-22 10:43:21: 第1次尝试成功，点击位置: (734, 170)
+2025-07-22 10:43:22: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:43:22: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:43:24: 第1次尝试成功，点击位置: (959, 228)
+2025-07-22 10:43:24: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:43:24: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:43:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-07-22 10:43:25: 检查‘加载中’图片...
+2025-07-22 10:43:25: 检查‘加载中’图片...
+2025-07-22 10:43:27: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-07-22 10:43:27: 未检测到‘加载中’图片，继续执行...
+2025-07-22 10:43:27: 未检测到‘加载中’图片，继续执行...
+2025-07-22 10:43:27: 第1次尝试成功，点击位置: (992, 693)
+2025-07-22 10:43:27: 成功点击‘保存’按钮
+2025-07-22 10:43:27: 成功点击‘保存’按钮
+2025-07-22 10:43:28: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\34\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:29: 窗口1设置路径成功: D:\Desktop\Auto\测试\34\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:29: 点击保存按钮完成
+2025-07-22 10:43:37: 未检测到覆盖确认窗口或点击失败: timed out
+2025-07-22 10:43:37: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\34\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:37: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\34\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:37: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:43:37: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-07-22 10:43:37: 使用托管账户查询：86031110000310762
+2025-07-22 10:43:37: 使用托管账户查询：86031110000310762
+2025-07-22 10:43:39: 复选框已选中
+2025-07-22 10:43:39: 复选框已选中
+2025-07-22 10:43:41: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:41: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:43: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:43:43: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-07-22 10:43:43: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:43:43: 点击打印按钮，等待对账单打印按钮...
+2025-07-22 10:43:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-07-22 10:43:45: 定位‘对账单打印’按钮...
+2025-07-22 10:43:45: 定位‘对账单打印’按钮...
+2025-07-22 10:43:45: 第1次尝试成功，点击位置: (1019, 607)
+2025-07-22 10:43:45: 成功点击‘对账单打印’按钮
+2025-07-22 10:43:45: 成功点击‘对账单打印’按钮
+2025-07-22 10:43:45: 等待 Chrome 打印窗口...
+2025-07-22 10:43:45: 等待 Chrome 打印窗口...
+2025-07-22 10:43:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-07-22 10:43:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-07-22 10:43:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-07-22 10:43:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-07-22 10:43:47: 定位‘目标打印机’位置...
+2025-07-22 10:43:47: 定位‘目标打印机’位置...
+2025-07-22 10:43:48: 第1次尝试成功，点击位置: (734, 170)
+2025-07-22 10:43:48: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:43:48: 模拟点击偏移位置: (984, 170)
+2025-07-22 10:43:51: 第1次尝试成功，点击位置: (959, 173)
+2025-07-22 10:43:51: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:43:51: 成功点击默认状态的‘另存为 PDF’按钮
+2025-07-22 10:43:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-07-22 10:43:52: 检查‘加载中’图片...
+2025-07-22 10:43:52: 检查‘加载中’图片...
+2025-07-22 10:43:53: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-07-22 10:43:53: 未检测到‘加载中’图片，继续执行...
+2025-07-22 10:43:53: 未检测到‘加载中’图片，继续执行...
+2025-07-22 10:43:53: 第1次尝试成功，点击位置: (992, 693)
+2025-07-22 10:43:53: 成功点击‘保存’按钮
+2025-07-22 10:43:53: 成功点击‘保存’按钮
+2025-07-22 10:43:54: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\34\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:55: 窗口1设置路径成功: D:\Desktop\Auto\测试\34\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:43:55: 点击保存按钮完成
+2025-07-22 10:44:04: 未检测到覆盖确认窗口或点击失败: timed out
+2025-07-22 10:44:04: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\34\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:44:04: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\34\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-07-22 10:44:04: 导出完成。

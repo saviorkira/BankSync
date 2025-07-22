@@ -30,18 +30,18 @@
     "login_url": "http://172.16.10.184/tm/ui/kstmcq/#/dashboard"
   },
   "TA": {
-    "username": "",
-    "password": "",
-    "login_url": "http://172.16.10.184/ta/ui/ksta/#/productMess/productManage/productManage"
+    "username": "makunpeng",
+    "password": "malum1ta1!!",
+    "login_url": "http://172.16.10.184/#/login"
   },
   "kuaiji": {
-  "username": "",
-  "password": "",
-  "login_url": "http://172.16.10.181:8403/ks/"
+    "username": "",
+    "password": "",
+    "login_url": "http://172.16.10.181:8403/ks/"
   },
   "jianguan": {
-  "username": "",
-  "password": "",
-  "login_url": "http://172.16.10.185:8443/ks/"
+    "username": "",
+    "password": "",
+    "login_url": "http://172.16.10.185:8443/ks/"
   }
 }
