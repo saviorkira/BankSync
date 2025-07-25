@@ -19,6 +19,29 @@
     "password": "",
     "login_url": "https://custody.hzbank.com.cn/#/login"
   },
+    "pingan_bank": {
+    "username": "LINJIA",
+    "password": "89875338",
+    "login_url": "https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login"
+  },
+    "shanghai_bank": {
+    "username": "80064231302",
+    "password": "aa333222",
+    "login_url": "https://ibank.bosc.cn:6074/eib/?#/login"
+  },
+    "zheshang_bank": {
+    "username": "LINJIA",
+    "password": "89875338",
+    "login_url": "https://corbank.czbank.com/CORPORBANK/logon.jsp"
+  },
+    "zhongxin_bank": {
+    "username": "13983426184",
+    "password": "aa333222",
+    "login_url": "https://ib.citicbank.com/html/#/index"
+  },
+
+
+
   "AM": {
     "username": "",
     "password": "",

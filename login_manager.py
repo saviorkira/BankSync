@@ -9,6 +9,11 @@ from utils import read_bank_config
 SITE_HANDLERS = {
     "ningbo_bank": lambda playwright, project_root, update_log: login_ningbo_bank(playwright, project_root, update_log),
     "hangzhou_bank": lambda playwright, project_root, update_log: login_hangzhou_bank(playwright, project_root, update_log),
+    "pingan_bank": lambda playwright, project_root, update_log: login_hangzhou_bank(playwright, project_root, update_log),
+    "shanghai_bank": lambda playwright, project_root, update_log: login_hangzhou_bank(playwright, project_root, update_log),
+    "zheshang_bank": lambda playwright, project_root, update_log: login_hangzhou_bank(playwright, project_root, update_log),
+    "zhongxin_bank": lambda playwright, project_root, update_log: login_hangzhou_bank(playwright, project_root, update_log),
+
     # 未来添加其他网站，例如：
     # "huaxia_bank": lambda playwright, project_root, update_log: login_huaxia_bank(playwright, project_root, update_log),
     # "other_site": lambda playwright, project_root, update_log: login_other_site(playwright, project_root, update_log),

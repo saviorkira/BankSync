@@ -17,6 +17,11 @@ from login_manager import load_site_icons, login_site
 from todo_manager import TodoApp
 from ningbo_bank import run_ningbo_bank
 from hangzhou_bank import run_hangzhou_bank
+from pingan_bank import run_pingan_bank
+from shanghai_bank import run_shanghai_bank
+from zheshang_bank import run_zheshang_bank
+from zhongxin_bank import run_zhongxin_bank
+
 from utils import log, read_bank_config, get_resource_path
 from AI import update_ai_output, send_ai_message
 
@@ -83,12 +88,21 @@ def main(page: Page):
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
         "hangzhou_bank": run_hangzhou_bank,
+        "pingan_bank": run_pingan_bank,
+        "shanghai_bank": run_shanghai_bank,
+        "zheshang_bank": run_zheshang_bank,
+        "zhongxin_bank": run_zhongxin_bank,
     }
 
     # 银行名称映射，用于显示用户友好的名称
     BANK_NAMES = {
         "ningbo_bank": "宁波银行",
         "hangzhou_bank": "杭州银行",
+        "pingan_bank": "平安银行",
+        "shanghai_bank": "上海银行",
+        "zheshang_bank": "浙商银行",
+        "zhongxin_bank": "中信银行",
+
     }
 
     # UI 组件
@@ -121,12 +135,13 @@ def main(page: Page):
         filled=True,
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM-DD",
+        tooltip="日期范围通常3个月以内",
         text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
     )
 
     end_date = ft.TextField(
-        label="结束日期",
+        label="结束日期（通常3个月以内）",
         value="2025-07-04",
         width=(page.window.width-80)/2,
         border_radius=8,
@@ -134,6 +149,7 @@ def main(page: Page):
         filled=True,
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM-DD",
+        tooltip="日期范围通常3个月以内",
         text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
     )

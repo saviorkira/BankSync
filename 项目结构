@@ -29,3 +29,14 @@ BankSync/
 4.gui import new bank
 4.gui 字典添加 new bank（下拉菜单会自动更新）
 5.编辑new_bank.py代码
+注意表头username, password, login_url, config_path = read_bank_config(project_root, "zhongxin_bank")
+
+
+page.get_by_role("textbox").fill("111") 控制台环境下 页面标注出序号进行选择↓first
+page.get_by_role("textbox").first.fill("19036817777777")
+page.get_by_role("textbox").first.press("Enter")
+page.get_by_text("1903 6817 7777 77").click()
+
+
+page.locator('input[name="startDate"]').evaluate('element => { element.value = "2025-07-25"; element.dispatchEvent(new Event("input", { bubbles: true })); element.dispatchEvent(new Event("change", { bubbles: true })); }')
+page.locator('input[name="startDate"]').evaluate('element => { element.value = "2025-06-01"; element.dispatchEvent(new Event("input", { bubbles: true })); element.dispatchEvent(new Event("change", { bubbles: true })); }')

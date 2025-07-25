@@ -19,10 +19,14 @@ if __name__ == "__main__":
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
-        context = browser.new_context(viewport=None)
+        context = browser.new_context(
+            viewport=None,
+            accept_downloads=True,
+            # downloads_path="D:/Downloads"  # 设置下载路径
+        )
         page = context.new_page()
 
-        page.goto("http://172.16.10.184/#/main/dashboard")  # 你可以换成你的银行地址
+        page.goto("https://ib.citicbank.com/html/#/index")  # 你可以换成你的银行地址
         # page.get_by_role("textbox", name="请输入客户号").fill("800067725")
         # page.get_by_role("textbox", name="请输入操作员号").fill("2001")
         # page.get_by_role("textbox", name="请输入登录密码").click()
@@ -38,6 +42,7 @@ if __name__ == "__main__":
 
         # 启动交互式 shell
         code.interact(local=locals())
+
 
         context.close()
         browser.close()
