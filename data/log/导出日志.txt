@@ -8482,3 +8482,1277 @@ Call log:
 2025-07-25 17:39:51: 查询按钮点击成功
 2025-07-25 17:39:51: 日期设置和查询完成，暂停以便手动检查
 2025-07-25 17:39:51: 日期设置和查询完成，暂停以便手动检查
+2025-07-25 17:47:39: 中信银行导出流程异常: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-07-25 17:47:39: 中信银行导出流程异常: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-07-28 14:05:01: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:05:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 14:05:02: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 14:05:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 14:05:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 14:05:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 14:05:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 14:05:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 14:05:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 14:05:02: 成功加载 config.json，任务数: 2
+2025-07-28 14:05:02: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 14:53:26: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:53:27: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 14:53:27: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 14:53:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 14:53:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 14:53:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 14:53:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 14:53:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 14:53:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 14:53:27: 成功加载 config.json，任务数: 2
+2025-07-28 14:53:27: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 14:53:29: 已选择银行: 中信银行
+2025-07-28 14:53:37: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 14:53:40: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 14:53:41: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 14:53:43: 启动中信银行导出流程...
+2025-07-28 14:53:43: 启动中信银行导出流程...
+2025-07-28 14:53:43: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:53:43: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:53:43: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 14:53:43: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 14:53:43: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 14:53:43: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 14:53:43: 启动浏览器...
+2025-07-28 14:53:43: 启动浏览器...
+2025-07-28 14:53:45: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 14:53:45: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 14:53:57: 输入用户名和密码...
+2025-07-28 14:53:57: 输入用户名和密码...
+2025-07-28 14:53:58: 等待账户管理页面加载...
+2025-07-28 14:53:58: 等待账户管理页面加载...
+2025-07-28 14:54:08: 已进入托管账户明细查询页面
+2025-07-28 14:54:08: 已进入托管账户明细查询页面
+2025-07-28 14:54:08: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 14:54:08: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 14:54:08: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 14:54:08: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 14:54:08: 已选择项目: 凯什1号集合
+2025-07-28 14:54:08: 已选择项目: 凯什1号集合
+2025-07-28 14:54:08: 设置开始日期和结束日期...
+2025-07-28 14:54:08: 设置开始日期和结束日期...
+2025-07-28 14:54:08: 已设置开始日期: 2025-06-01
+2025-07-28 14:54:08: 已设置开始日期: 2025-06-01
+2025-07-28 14:54:08: 已设置结束日期: 2025-07-04
+2025-07-28 14:54:08: 已设置结束日期: 2025-07-04
+2025-07-28 14:54:08: 执行查询...
+2025-07-28 14:54:08: 执行查询...
+2025-07-28 14:54:08: 查询完成，等待页面加载...
+2025-07-28 14:54:08: 查询完成，等待页面加载...
+2025-07-28 14:54:08: 开始导出流水...
+2025-07-28 14:54:08: 开始导出流水...
+2025-07-28 14:54:13: 进入下载中心，准备识图点击...
+2025-07-28 14:54:13: 进入下载中心，准备识图点击...
+2025-07-28 14:54:13: 等待文件下载...
+2025-07-28 14:54:13: 等待文件下载...
+2025-07-28 14:54:13: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 14:54:13: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 14:54:13: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 14:54:13: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 14:54:13: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 14:54:13: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 14:54:13: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 14:54:13: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 14:54:13: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 14:55:09: 已选择项目: 安宁兴甬3号
+2025-07-28 14:55:09: 已选择项目: 安宁兴甬3号
+2025-07-28 14:55:09: 设置开始日期和结束日期...
+2025-07-28 14:55:09: 设置开始日期和结束日期...
+2025-07-28 14:55:09: 已设置开始日期: 2025-06-01
+2025-07-28 14:55:09: 已设置开始日期: 2025-06-01
+2025-07-28 14:55:09: 已设置结束日期: 2025-07-04
+2025-07-28 14:55:09: 已设置结束日期: 2025-07-04
+2025-07-28 14:55:09: 执行查询...
+2025-07-28 14:55:09: 执行查询...
+2025-07-28 14:55:09: 查询完成，等待页面加载...
+2025-07-28 14:55:09: 查询完成，等待页面加载...
+2025-07-28 14:55:09: 开始导出流水...
+2025-07-28 14:55:09: 开始导出流水...
+2025-07-28 14:55:13: 进入下载中心，准备识图点击...
+2025-07-28 14:55:13: 进入下载中心，准备识图点击...
+2025-07-28 14:55:13: 等待文件下载...
+2025-07-28 14:55:13: 等待文件下载...
+2025-07-28 14:55:13: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 14:55:13: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 14:55:13: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 14:55:13: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 14:55:13: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 14:55:13: 浏览器已关闭
+2025-07-28 14:55:13: 浏览器已关闭
+2025-07-28 14:55:13: 导出完成。
+2025-07-28 14:55:39: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:55:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 14:55:39: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 14:55:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 14:55:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 14:55:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 14:55:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 14:55:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 14:55:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 14:55:39: 成功加载 config.json，任务数: 2
+2025-07-28 14:55:39: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 14:55:42: 已选择银行: 中信银行
+2025-07-28 14:55:45: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 14:55:48: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 14:55:49: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 14:55:50: 启动中信银行导出流程...
+2025-07-28 14:55:50: 启动中信银行导出流程...
+2025-07-28 14:55:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:55:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:55:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 14:55:50: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 14:55:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 14:55:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 14:55:50: 启动浏览器...
+2025-07-28 14:55:50: 启动浏览器...
+2025-07-28 14:55:53: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 14:55:53: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 14:55:58: 输入用户名和密码...
+2025-07-28 14:55:58: 输入用户名和密码...
+2025-07-28 14:55:58: 等待账户管理页面加载...
+2025-07-28 14:55:58: 等待账户管理页面加载...
+2025-07-28 14:56:06: 已进入托管账户明细查询页面
+2025-07-28 14:56:06: 已进入托管账户明细查询页面
+2025-07-28 14:56:06: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 14:56:06: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 14:56:06: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 14:56:06: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 14:56:07: 已选择项目: 凯什1号集合
+2025-07-28 14:56:07: 已选择项目: 凯什1号集合
+2025-07-28 14:56:07: 设置开始日期和结束日期...
+2025-07-28 14:56:07: 设置开始日期和结束日期...
+2025-07-28 14:56:07: 已设置开始日期: 2025-06-01
+2025-07-28 14:56:07: 已设置开始日期: 2025-06-01
+2025-07-28 14:56:07: 已设置结束日期: 2025-07-04
+2025-07-28 14:56:07: 已设置结束日期: 2025-07-04
+2025-07-28 14:56:07: 执行查询...
+2025-07-28 14:56:07: 执行查询...
+2025-07-28 14:56:07: 查询完成，等待页面加载...
+2025-07-28 14:56:07: 查询完成，等待页面加载...
+2025-07-28 14:57:58: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:57:59: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 14:57:59: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 14:57:59: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 14:57:59: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 14:57:59: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 14:57:59: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 14:57:59: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 14:57:59: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 14:57:59: 成功加载 config.json，任务数: 2
+2025-07-28 14:57:59: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 14:58:18: 已选择银行: 中信银行
+2025-07-28 14:58:22: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 14:58:25: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 14:58:26: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 14:58:28: 启动中信银行导出流程...
+2025-07-28 14:58:28: 启动中信银行导出流程...
+2025-07-28 14:58:28: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:58:28: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 14:58:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 14:58:28: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 14:58:28: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 14:58:28: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 14:58:28: 启动浏览器...
+2025-07-28 14:58:28: 启动浏览器...
+2025-07-28 14:58:30: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 14:58:30: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 14:58:36: 输入用户名和密码...
+2025-07-28 14:58:36: 输入用户名和密码...
+2025-07-28 14:58:36: 等待账户管理页面加载...
+2025-07-28 14:58:36: 等待账户管理页面加载...
+2025-07-28 14:58:44: 已进入托管账户明细查询页面
+2025-07-28 14:58:44: 已进入托管账户明细查询页面
+2025-07-28 14:58:44: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 14:58:44: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 14:58:44: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 14:58:44: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 14:58:48: 已选择项目: 凯什1号集合
+2025-07-28 14:58:48: 已选择项目: 凯什1号集合
+2025-07-28 14:58:48: 设置开始日期和结束日期...
+2025-07-28 14:58:48: 设置开始日期和结束日期...
+2025-07-28 14:58:48: 已设置开始日期: 2025-06-01
+2025-07-28 14:58:48: 已设置开始日期: 2025-06-01
+2025-07-28 14:58:48: 已设置结束日期: 2025-07-04
+2025-07-28 14:58:48: 已设置结束日期: 2025-07-04
+2025-07-28 14:58:48: 执行查询...
+2025-07-28 14:58:48: 执行查询...
+2025-07-28 14:58:48: 查询完成，等待页面加载...
+2025-07-28 14:58:48: 查询完成，等待页面加载...
+2025-07-28 15:01:39: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:01:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:01:39: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:01:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:01:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:01:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:01:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:01:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:01:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:01:39: 成功加载 config.json，任务数: 2
+2025-07-28 15:01:39: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:01:41: 已选择银行: 中信银行
+2025-07-28 15:01:44: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:01:47: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:01:48: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:01:49: 启动中信银行导出流程...
+2025-07-28 15:01:49: 启动中信银行导出流程...
+2025-07-28 15:01:49: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:01:49: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:01:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:01:49: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:01:49: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:01:49: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:01:49: 启动浏览器...
+2025-07-28 15:01:49: 启动浏览器...
+2025-07-28 15:01:51: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:01:51: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:01:57: 输入用户名和密码...
+2025-07-28 15:01:57: 输入用户名和密码...
+2025-07-28 15:01:58: 等待账户管理页面加载...
+2025-07-28 15:01:58: 等待账户管理页面加载...
+2025-07-28 15:02:14: 已进入托管账户明细查询页面
+2025-07-28 15:02:14: 已进入托管账户明细查询页面
+2025-07-28 15:02:14: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:02:14: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:02:14: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:02:14: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:02:21: 已选择项目: 凯什1号
+2025-07-28 15:02:21: 已选择项目: 凯什1号
+2025-07-28 15:02:21: 设置开始日期和结束日期...
+2025-07-28 15:02:21: 设置开始日期和结束日期...
+2025-07-28 15:02:21: 已设置开始日期: 2025-06-01
+2025-07-28 15:02:21: 已设置开始日期: 2025-06-01
+2025-07-28 15:02:21: 已设置结束日期: 2025-07-04
+2025-07-28 15:02:21: 已设置结束日期: 2025-07-04
+2025-07-28 15:02:21: 执行查询...
+2025-07-28 15:02:21: 执行查询...
+2025-07-28 15:02:21: 查询完成，等待页面加载...
+2025-07-28 15:02:21: 查询完成，等待页面加载...
+2025-07-28 15:03:38: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:03:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:03:39: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:03:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:03:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:03:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:03:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:03:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:03:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:03:39: 成功加载 config.json，任务数: 2
+2025-07-28 15:03:39: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:03:41: 已选择银行: 中信银行
+2025-07-28 15:03:46: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:03:50: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:03:50: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:03:51: 启动中信银行导出流程...
+2025-07-28 15:03:51: 启动中信银行导出流程...
+2025-07-28 15:03:51: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:03:51: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:03:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:03:51: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:03:51: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:03:51: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:03:51: 启动浏览器...
+2025-07-28 15:03:51: 启动浏览器...
+2025-07-28 15:03:54: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:03:54: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:04:00: 输入用户名和密码...
+2025-07-28 15:04:00: 输入用户名和密码...
+2025-07-28 15:04:00: 等待账户管理页面加载...
+2025-07-28 15:04:00: 等待账户管理页面加载...
+2025-07-28 15:04:10: 已进入托管账户明细查询页面
+2025-07-28 15:04:10: 已进入托管账户明细查询页面
+2025-07-28 15:04:10: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:04:10: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:04:10: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:04:10: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:04:16: 已选择项目: 凯什1号
+2025-07-28 15:04:16: 已选择项目: 凯什1号
+2025-07-28 15:04:16: 设置开始日期和结束日期...
+2025-07-28 15:04:16: 设置开始日期和结束日期...
+2025-07-28 15:04:16: 已设置开始日期: 2025-06-01
+2025-07-28 15:04:16: 已设置开始日期: 2025-06-01
+2025-07-28 15:04:16: 已设置结束日期: 2025-07-04
+2025-07-28 15:04:16: 已设置结束日期: 2025-07-04
+2025-07-28 15:04:16: 执行查询...
+2025-07-28 15:04:16: 执行查询...
+2025-07-28 15:04:16: 查询完成，等待页面加载...
+2025-07-28 15:04:16: 查询完成，等待页面加载...
+2025-07-28 15:05:46: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:05:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:05:47: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:05:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:05:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:05:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:05:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:05:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:05:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:05:47: 成功加载 config.json，任务数: 2
+2025-07-28 15:05:47: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:05:49: 已选择银行: 中信银行
+2025-07-28 15:05:51: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:05:54: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:05:55: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:05:56: 启动中信银行导出流程...
+2025-07-28 15:05:56: 启动中信银行导出流程...
+2025-07-28 15:05:56: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:05:56: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:05:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:05:56: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:05:56: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:05:56: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:05:56: 启动浏览器...
+2025-07-28 15:05:56: 启动浏览器...
+2025-07-28 15:05:59: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:05:59: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:06:04: 输入用户名和密码...
+2025-07-28 15:06:04: 输入用户名和密码...
+2025-07-28 15:06:04: 等待账户管理页面加载...
+2025-07-28 15:06:04: 等待账户管理页面加载...
+2025-07-28 15:06:12: 已进入托管账户明细查询页面
+2025-07-28 15:06:12: 已进入托管账户明细查询页面
+2025-07-28 15:06:12: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:06:12: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:06:12: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:06:12: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:06:18: 已选择项目: 凯什1号集合
+2025-07-28 15:06:18: 已选择项目: 凯什1号集合
+2025-07-28 15:06:18: 设置开始日期和结束日期...
+2025-07-28 15:06:18: 设置开始日期和结束日期...
+2025-07-28 15:06:18: 已设置开始日期: 2025-06-01
+2025-07-28 15:06:18: 已设置开始日期: 2025-06-01
+2025-07-28 15:06:18: 已设置结束日期: 2025-07-04
+2025-07-28 15:06:18: 已设置结束日期: 2025-07-04
+2025-07-28 15:06:18: 执行查询...
+2025-07-28 15:06:18: 执行查询...
+2025-07-28 15:06:18: 查询完成，等待页面加载...
+2025-07-28 15:06:18: 查询完成，等待页面加载...
+2025-07-28 15:06:20: 开始导出流水...
+2025-07-28 15:06:20: 开始导出流水...
+2025-07-28 15:06:22: 进入下载中心，准备识图点击...
+2025-07-28 15:06:22: 进入下载中心，准备识图点击...
+2025-07-28 15:06:22: 等待文件下载...
+2025-07-28 15:06:22: 等待文件下载...
+2025-07-28 15:06:22: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:06:22: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:06:22: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:06:22: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:06:22: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:06:22: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:06:22: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:06:22: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:06:22: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:07:07: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#inputPro")
+
+2025-07-28 15:07:07: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#inputPro")
+
+2025-07-28 15:07:08: 浏览器已关闭
+2025-07-28 15:07:08: 浏览器已关闭
+2025-07-28 15:07:08: 导出完成。
+2025-07-28 15:23:38: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:23:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:23:38: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:23:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:23:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:23:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:23:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:23:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:23:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:23:38: 成功加载 config.json，任务数: 2
+2025-07-28 15:23:38: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:23:40: 已选择银行: 中信银行
+2025-07-28 15:23:45: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:23:48: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:23:49: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:23:50: 启动中信银行导出流程...
+2025-07-28 15:23:50: 启动中信银行导出流程...
+2025-07-28 15:23:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:23:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:23:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:23:50: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:23:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:23:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:23:50: 启动浏览器...
+2025-07-28 15:23:50: 启动浏览器...
+2025-07-28 15:23:51: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:23:51: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:24:07: 输入用户名和密码...
+2025-07-28 15:24:07: 输入用户名和密码...
+2025-07-28 15:24:07: 等待账户管理页面加载...
+2025-07-28 15:24:07: 等待账户管理页面加载...
+2025-07-28 15:24:18: 已进入托管账户明细查询页面
+2025-07-28 15:24:18: 已进入托管账户明细查询页面
+2025-07-28 15:24:18: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:24:18: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:24:18: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:24:18: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:24:24: 已选择项目: 凯什1号集合
+2025-07-28 15:24:24: 已选择项目: 凯什1号集合
+2025-07-28 15:24:24: 设置开始日期和结束日期...
+2025-07-28 15:24:24: 设置开始日期和结束日期...
+2025-07-28 15:24:24: 已设置开始日期: 2025-06-01
+2025-07-28 15:24:24: 已设置开始日期: 2025-06-01
+2025-07-28 15:24:24: 已设置结束日期: 2025-07-04
+2025-07-28 15:24:24: 已设置结束日期: 2025-07-04
+2025-07-28 15:24:24: 执行查询...
+2025-07-28 15:24:24: 执行查询...
+2025-07-28 15:24:24: 查询完成，等待页面加载...
+2025-07-28 15:24:24: 查询完成，等待页面加载...
+2025-07-28 15:24:24: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wuliushui.bmp
+2025-07-28 15:24:24: 开始导出流水...
+2025-07-28 15:24:24: 开始导出流水...
+2025-07-28 15:24:26: 进入下载中心，检查文件处理状态...
+2025-07-28 15:24:26: 进入下载中心，检查文件处理状态...
+2025-07-28 15:24:26: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wenjianchulizhong.bmp
+2025-07-28 15:24:26: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:24:26: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:24:26: 等待文件下载...
+2025-07-28 15:24:26: 等待文件下载...
+2025-07-28 15:24:26: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:24:26: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:24:26: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:24:26: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:24:26: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:24:26: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:24:26: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:24:26: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:24:26: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:24:55: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#inputPro")
+
+2025-07-28 15:24:55: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#inputPro")
+
+2025-07-28 15:24:55: 浏览器已关闭
+2025-07-28 15:24:55: 浏览器已关闭
+2025-07-28 15:24:55: 导出完成。
+2025-07-28 15:26:38: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:26:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:26:39: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:26:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:26:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:26:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:26:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:26:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:26:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:26:39: 成功加载 config.json，任务数: 2
+2025-07-28 15:26:39: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:26:41: 已选择银行: 中信银行
+2025-07-28 15:26:44: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:26:48: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:26:48: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:26:50: 启动中信银行导出流程...
+2025-07-28 15:26:50: 启动中信银行导出流程...
+2025-07-28 15:26:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:26:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:26:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:26:50: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:26:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:26:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:26:50: 启动浏览器...
+2025-07-28 15:26:50: 启动浏览器...
+2025-07-28 15:26:51: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:26:51: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:26:55: 输入用户名和密码...
+2025-07-28 15:26:55: 输入用户名和密码...
+2025-07-28 15:26:56: 等待账户管理页面加载...
+2025-07-28 15:26:56: 等待账户管理页面加载...
+2025-07-28 15:27:04: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:27:04: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:27:05: 已进入托管账户明细查询页面
+2025-07-28 15:27:05: 已进入托管账户明细查询页面
+2025-07-28 15:27:05: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:27:05: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:27:11: 已选择项目: 凯什1号集合
+2025-07-28 15:27:11: 已选择项目: 凯什1号集合
+2025-07-28 15:27:11: 设置开始日期和结束日期...
+2025-07-28 15:27:11: 设置开始日期和结束日期...
+2025-07-28 15:27:11: 已设置开始日期: 2025-06-01
+2025-07-28 15:27:11: 已设置开始日期: 2025-06-01
+2025-07-28 15:27:11: 已设置结束日期: 2025-07-04
+2025-07-28 15:27:11: 已设置结束日期: 2025-07-04
+2025-07-28 15:27:11: 执行查询...
+2025-07-28 15:27:11: 执行查询...
+2025-07-28 15:27:11: 查询完成，等待页面加载...
+2025-07-28 15:27:11: 查询完成，等待页面加载...
+2025-07-28 15:27:11: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wuliushui.bmp
+2025-07-28 15:27:11: 开始导出流水...
+2025-07-28 15:27:11: 开始导出流水...
+2025-07-28 15:27:13: 进入下载中心，检查文件处理状态...
+2025-07-28 15:27:13: 进入下载中心，检查文件处理状态...
+2025-07-28 15:27:15: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wenjianchulizhong.bmp
+2025-07-28 15:27:15: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:27:15: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:27:15: 等待文件下载...
+2025-07-28 15:27:15: 等待文件下载...
+2025-07-28 15:27:15: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:27:15: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:27:15: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:27:15: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:27:15: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:27:15: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:27:15: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:27:15: 已进入托管账户明细查询页面
+2025-07-28 15:27:15: 已进入托管账户明细查询页面
+2025-07-28 15:27:15: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:27:15: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:27:21: 已选择项目: 安宁兴甬3号
+2025-07-28 15:27:21: 已选择项目: 安宁兴甬3号
+2025-07-28 15:27:21: 设置开始日期和结束日期...
+2025-07-28 15:27:21: 设置开始日期和结束日期...
+2025-07-28 15:27:21: 已设置开始日期: 2025-06-01
+2025-07-28 15:27:21: 已设置开始日期: 2025-06-01
+2025-07-28 15:27:21: 已设置结束日期: 2025-07-04
+2025-07-28 15:27:21: 已设置结束日期: 2025-07-04
+2025-07-28 15:27:21: 执行查询...
+2025-07-28 15:27:21: 执行查询...
+2025-07-28 15:27:21: 查询完成，等待页面加载...
+2025-07-28 15:27:21: 查询完成，等待页面加载...
+2025-07-28 15:27:22: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wuliushui.bmp
+2025-07-28 15:27:22: 开始导出流水...
+2025-07-28 15:27:22: 开始导出流水...
+2025-07-28 15:27:24: 进入下载中心，检查文件处理状态...
+2025-07-28 15:27:24: 进入下载中心，检查文件处理状态...
+2025-07-28 15:27:26: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wenjianchulizhong.bmp
+2025-07-28 15:27:26: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:27:26: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:27:26: 等待文件下载...
+2025-07-28 15:27:26: 等待文件下载...
+2025-07-28 15:27:26: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:27:26: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:27:26: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:27:26: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:27:26: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:27:26: 浏览器已关闭
+2025-07-28 15:27:26: 浏览器已关闭
+2025-07-28 15:27:26: 导出完成。
+2025-07-28 15:29:43: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:29:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:29:44: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:29:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:29:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:29:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:29:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:29:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:29:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:29:44: 成功加载 config.json，任务数: 2
+2025-07-28 15:29:44: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:29:47: 已选择银行: 中信银行
+2025-07-28 15:29:50: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:29:53: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:29:54: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:29:55: 启动中信银行导出流程...
+2025-07-28 15:29:55: 启动中信银行导出流程...
+2025-07-28 15:29:55: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:29:55: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:29:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:29:55: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:29:55: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:29:55: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:29:55: 启动浏览器...
+2025-07-28 15:29:55: 启动浏览器...
+2025-07-28 15:29:56: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:29:56: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:30:02: 输入用户名和密码...
+2025-07-28 15:30:02: 输入用户名和密码...
+2025-07-28 15:30:02: 等待账户管理页面加载...
+2025-07-28 15:30:02: 等待账户管理页面加载...
+2025-07-28 15:30:09: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:30:09: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-07-28 15:30:17: 已进入托管账户明细查询页面
+2025-07-28 15:30:17: 已进入托管账户明细查询页面
+2025-07-28 15:30:17: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:30:17: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-07-28 15:30:23: 已选择项目: 凯什1号集合
+2025-07-28 15:30:23: 已选择项目: 凯什1号集合
+2025-07-28 15:30:23: 设置开始日期和结束日期...
+2025-07-28 15:30:23: 设置开始日期和结束日期...
+2025-07-28 15:30:23: 已设置开始日期: 2025-06-01
+2025-07-28 15:30:23: 已设置开始日期: 2025-06-01
+2025-07-28 15:30:23: 已设置结束日期: 2025-07-04
+2025-07-28 15:30:23: 已设置结束日期: 2025-07-04
+2025-07-28 15:30:23: 执行查询...
+2025-07-28 15:30:23: 执行查询...
+2025-07-28 15:30:23: 查询完成，等待页面加载...
+2025-07-28 15:30:23: 查询完成，等待页面加载...
+2025-07-28 15:30:23: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wuliushui.bmp
+2025-07-28 15:30:23: 开始导出流水...
+2025-07-28 15:30:23: 开始导出流水...
+2025-07-28 15:30:27: 进入下载中心，检查文件处理状态...
+2025-07-28 15:30:27: 进入下载中心，检查文件处理状态...
+2025-07-28 15:30:29: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wenjianchulizhong.bmp
+2025-07-28 15:30:29: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:30:29: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:30:29: 等待文件下载...
+2025-07-28 15:30:29: 等待文件下载...
+2025-07-28 15:30:29: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:30:29: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:30:29: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:30:29: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:30:29: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:30:29: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:30:29: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-07-28 15:30:29: 已进入托管账户明细查询页面
+2025-07-28 15:30:29: 已进入托管账户明细查询页面
+2025-07-28 15:30:29: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:30:29: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-07-28 15:30:35: 已选择项目: 安宁兴甬3号
+2025-07-28 15:30:35: 已选择项目: 安宁兴甬3号
+2025-07-28 15:30:35: 设置开始日期和结束日期...
+2025-07-28 15:30:35: 设置开始日期和结束日期...
+2025-07-28 15:30:35: 已设置开始日期: 2025-06-01
+2025-07-28 15:30:35: 已设置开始日期: 2025-06-01
+2025-07-28 15:30:35: 已设置结束日期: 2025-07-04
+2025-07-28 15:30:35: 已设置结束日期: 2025-07-04
+2025-07-28 15:30:35: 执行查询...
+2025-07-28 15:30:35: 执行查询...
+2025-07-28 15:30:35: 查询完成，等待页面加载...
+2025-07-28 15:30:35: 查询完成，等待页面加载...
+2025-07-28 15:30:35: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wuliushui.bmp
+2025-07-28 15:30:35: 开始导出流水...
+2025-07-28 15:30:35: 开始导出流水...
+2025-07-28 15:30:39: 进入下载中心，检查文件处理状态...
+2025-07-28 15:30:39: 进入下载中心，检查文件处理状态...
+2025-07-28 15:30:41: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_wenjianchulizhong.bmp
+2025-07-28 15:30:41: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:30:41: 文件处理完成或未检测到处理中状态，继续下载...
+2025-07-28 15:30:41: 等待文件下载...
+2025-07-28 15:30:41: 等待文件下载...
+2025-07-28 15:30:41: 模板路径不存在: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:30:41: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:30:41: 识图失败，未找到下载按钮: D:\OneDrive\Documents\PycharmProjects\BankSync\templates\zhongxin_xiazai.bmp
+2025-07-28 15:30:41: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:30:41: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: 识图失败，未找到下载按钮
+2025-07-28 15:30:42: 浏览器已关闭
+2025-07-28 15:30:42: 浏览器已关闭
+2025-07-28 15:30:42: 导出完成。
+2025-07-28 15:35:56: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:35:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:35:56: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:35:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:35:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:35:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:35:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:35:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:35:56: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:35:56: 成功加载 config.json，任务数: 2
+2025-07-28 15:35:56: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:35:59: 已选择银行: 中信银行
+2025-07-28 15:36:05: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:36:08: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:36:08: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:36:10: 启动中信银行导出流程...
+2025-07-28 15:36:10: 启动中信银行导出流程...
+2025-07-28 15:36:10: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:36:10: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:36:10: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:36:10: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:36:10: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:36:10: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:36:10: 启动浏览器...
+2025-07-28 15:36:10: 启动浏览器...
+2025-07-28 15:36:11: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:36:11: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:36:23: 输入用户名和密码...
+2025-07-28 15:36:23: 输入用户名和密码...
+2025-07-28 15:36:23: 等待账户管理页面加载...
+2025-07-28 15:36:23: 等待账户管理页面加载...
+2025-07-28 15:36:45: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    7 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    6 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-07-28 15:36:45: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    7 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    6 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-07-28 15:36:45: 浏览器已关闭
+2025-07-28 15:36:45: 浏览器已关闭
+2025-07-28 15:36:45: 执行出错：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    7 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    6 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-07-28 15:37:00: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:37:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:37:01: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:37:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:37:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:37:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:37:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:37:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:37:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:37:01: 成功加载 config.json，任务数: 2
+2025-07-28 15:37:01: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:37:03: 已选择银行: 中信银行
+2025-07-28 15:37:07: 下载路径设置为：D:\Desktop\Auto\测试\40
+2025-07-28 15:37:12: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:37:12: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:37:14: 启动中信银行导出流程...
+2025-07-28 15:37:14: 启动中信银行导出流程...
+2025-07-28 15:37:14: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:37:14: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:37:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:37:14: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:37:14: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:37:14: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:37:14: 启动浏览器...
+2025-07-28 15:37:14: 启动浏览器...
+2025-07-28 15:37:15: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:37:15: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:37:30: 输入用户名和密码...
+2025-07-28 15:37:30: 输入用户名和密码...
+2025-07-28 15:37:30: 等待账户管理页面加载...
+2025-07-28 15:37:30: 等待账户管理页面加载...
+2025-07-28 15:37:45: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div></div> from <div class="maskfloatlayer">…</div> subtree intercepts pointer events
+  17 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-07-28 15:37:45: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div></div> from <div class="maskfloatlayer">…</div> subtree intercepts pointer events
+  17 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-07-28 15:37:45: 浏览器已关闭
+2025-07-28 15:37:45: 浏览器已关闭
+2025-07-28 15:37:45: 执行出错：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div></div> from <div class="maskfloatlayer">…</div> subtree intercepts pointer events
+  17 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-07-28 15:58:48: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:58:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 15:58:49: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 15:58:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 15:58:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 15:58:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 15:58:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 15:58:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 15:58:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 15:58:49: 成功加载 config.json，任务数: 2
+2025-07-28 15:58:49: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 15:58:52: 已选择银行: 中信银行
+2025-07-28 15:58:55: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 15:58:59: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 15:59:00: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 15:59:01: 启动中信银行导出流程...
+2025-07-28 15:59:01: 启动中信银行导出流程...
+2025-07-28 15:59:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:59:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 15:59:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 15:59:01: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 15:59:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:59:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 15:59:01: 启动浏览器...
+2025-07-28 15:59:01: 启动浏览器...
+2025-07-28 15:59:02: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:59:02: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 15:59:08: 输入用户名和密码...
+2025-07-28 15:59:08: 输入用户名和密码...
+2025-07-28 15:59:08: 等待账户管理页面加载...
+2025-07-28 15:59:08: 等待账户管理页面加载...
+2025-07-28 15:59:19: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div></div> from <div class="maskfloatlayer">…</div> subtree intercepts pointer events
+  8 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-07-28 15:59:19: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div></div> from <div class="maskfloatlayer">…</div> subtree intercepts pointer events
+  8 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-07-28 15:59:20: 浏览器已关闭
+2025-07-28 15:59:20: 浏览器已关闭
+2025-07-28 15:59:20: 执行出错：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("会员中心")
+    - locator resolved to <div class="user-logo" ng-click="myPlatform()">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="dx_captcha_loading_overlay"></div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div></div> from <div class="maskfloatlayer">…</div> subtree intercepts pointer events
+  8 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <iframe></iframe> from <div id="andy_mask" class="andy_mask">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-07-28 17:24:56: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 17:24:57: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-07-28 17:24:57: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-07-28 17:24:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-07-28 17:24:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-07-28 17:24:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-07-28 17:24:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-07-28 17:24:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-07-28 17:24:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-07-28 17:24:57: 成功加载 config.json，任务数: 2
+2025-07-28 17:24:57: TodoApp 初始化完成，加载任务数: 2
+2025-07-28 17:24:59: 已选择银行: 中信银行
+2025-07-28 17:25:18: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-07-28 17:25:21: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-07-28 17:25:21: 开始运行 中信银行 导出，包含 2 条记录...
+2025-07-28 17:25:23: 启动中信银行导出流程...
+2025-07-28 17:25:23: 启动中信银行导出流程...
+2025-07-28 17:25:23: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 17:25:23: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-07-28 17:25:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-07-28 17:25:23: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-07-28 17:25:23: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 17:25:23: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-07-28 17:25:23: 启动浏览器...
+2025-07-28 17:25:23: 启动浏览器...
+2025-07-28 17:25:24: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 17:25:24: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-07-28 17:25:32: 输入用户名和密码...
+2025-07-28 17:25:32: 输入用户名和密码...
+2025-07-28 17:25:32: 等待账户管理页面加载...
+2025-07-28 17:25:32: 等待账户管理页面加载...
+2025-07-28 17:25:55: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("link", name="托管业务 ")
+
+2025-07-28 17:25:55: 中信银行导出流程异常: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("link", name="托管业务 ")
+
+2025-07-28 17:25:55: 浏览器已关闭
+2025-07-28 17:25:55: 浏览器已关闭
+2025-07-28 17:25:55: 执行出错：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("link", name="托管业务 ")
+
+2025-07-28 17:32:14: AI: 收到发送消息请求
+2025-07-28 17:32:14: AI: 已记录用户消息: 信托
+2025-07-28 17:32:14: AI: ai_output 更新成功: AI页面已渲染
+2025-07-28 17:32:14: AI: ai_input 更新: 输入框已清空
+2025-07-28 17:32:14: AI: 已启动 AI 处理线程
+2025-07-28 17:32:41: AI: 成功接收 AI 回复
+2025-07-28 17:32:41: AI: ai_output 更新成功: AI页面已渲染
+2025-07-28 17:32:41: AI: 回复处理完成
+2025-07-28 17:33:23: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:23: 切换待办标签: 已完成
+2025-07-28 17:33:23: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:23: 切换待办标签: 全部
+2025-07-28 17:33:24: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:24: 切换待办标签: 已完成
+2025-07-28 17:33:24: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:24: 切换待办标签: 未完成
+2025-07-28 17:33:25: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:25: 切换待办标签: 全部
+2025-07-28 17:33:25: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:25: 切换待办标签: 已完成
+2025-07-28 17:33:25: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:25: 切换待办标签: 未完成
+2025-07-28 17:33:26: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:26: 切换待办标签: 已完成
+2025-07-28 17:33:26: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:26: 切换待办标签: 未完成
+2025-07-28 17:33:27: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:27: 切换待办标签: 已完成
+2025-07-28 17:33:27: 成功保存任务到 config.json，任务数: 2
+2025-07-28 17:33:27: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:27: 任务状态变更: 示例任务1, 完成状态: False
+2025-07-28 17:33:28: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:28: 切换待办标签: 未完成
+2025-07-28 17:33:29: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:29: 切换待办标签: 已完成
+2025-07-28 17:33:30: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:30: 切换待办标签: 未完成
+2025-07-28 17:33:30: 成功保存任务到 config.json，任务数: 2
+2025-07-28 17:33:30: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:30: 任务状态变更: 示例任务1, 完成状态: True
+2025-07-28 17:33:31: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:31: 切换待办标签: 已完成
+2025-07-28 17:33:31: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:31: 切换待办标签: 全部
+2025-07-28 17:33:31: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:31: 切换待办标签: 已完成
+2025-07-28 17:33:32: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:32: 切换待办标签: 未完成
+2025-07-28 17:33:33: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:33: 切换待办标签: 全部
+2025-07-28 17:33:33: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:33: 切换待办标签: 已完成
+2025-07-28 17:33:34: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:34: 切换待办标签: 未完成
+2025-07-28 17:33:34: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:34: 切换待办标签: 已完成
+2025-07-28 17:33:34: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:34: 切换待办标签: 全部
+2025-07-28 17:33:35: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:35: 切换待办标签: 未完成
+2025-07-28 17:33:37: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:37: 切换待办标签: 全部
+2025-07-28 17:33:39: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:39: 切换待办标签: 已完成
+2025-07-28 17:33:39: TodoApp 更新: 已添加到页面
+2025-07-28 17:33:39: 切换待办标签: 未完成
