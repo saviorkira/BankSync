@@ -45,11 +45,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
         log_local("等待账户管理页面加载...")
         page.wait_for_selector('text=会员中心', timeout=30000)
         page.get_by_text("会员中心").click()
-        page.get_by_role("link", name="托管业务 ").click()
-        page.get_by_role("link", name="托管账户 ").click()
-        page.get_by_role("link", name="托管账户明细查询").click()
-        page.wait_for_load_state("networkidle", timeout=30000)
-        log_local("已进入托管账户明细查询页面")
+
 
         for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
             log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
@@ -62,6 +58,12 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                 os.makedirs(duizhang_path, exist_ok=True)
                 os.makedirs(huidan_path, exist_ok=True)
                 os.makedirs(duizhangdan_path, exist_ok=True)
+
+                page.get_by_role("link", name="托管业务 ").click()
+                page.get_by_role("link", name="托管账户 ").click()
+                page.get_by_role("link", name="托管账户明细查询").click()
+                page.wait_for_load_state("networkidle", timeout=30000)
+                log_local("已进入托管账户明细查询页面")
 
                 # 设置查询项目
                 log_local(f"设置查询项目: {xiangmu}")
@@ -98,6 +100,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                 page.get_by_text("查询", exact=True).click()
                 page.wait_for_load_state("networkidle", timeout=30000)
                 log_local("查询完成，等待页面加载...")
+                time.sleep(1)
 
                 # 检查是否有流水
                 wuliushui_template = get_resource_path("zhongxin_wuliushui.bmp", project_root)
@@ -115,6 +118,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                 log_local("开始导出流水...")
                 page.get_by_text("导出").click()
                 page.get_by_role("button", name="确认").click()
+                time.sleep(1)
                 page.get_by_role("link", name="下载中心 ").click()
                 page.get_by_role("link", name="异步下载").click()
                 log_local("进入下载中心，检查文件处理状态...")
@@ -143,7 +147,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     position = find_and_click_image(
                         template_path=template_path,
                         base_path=project_root,
-                        offset_y=4,  # 向下偏移4像素
+                        offset_y=8,  # 向下偏移4像素
                         threshold=0.8,  # 提高阈值以确保准确性
                         max_attempts=10
                     )
@@ -155,6 +159,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                 filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                 download.save_as(os.path.join(duizhang_path, filename))
                 log_local(f"银行流水导出完成：{filename}")
+                time.sleep(0.5)
 
             except Exception as e:
                 log_local(f"处理产品 {xiangmuid}_{xiangmu} 失败: {str(e)}")

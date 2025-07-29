@@ -9,6 +9,7 @@ __pycache__/
 # 忽略构建文件夹
 build/
 dist/
+bak/
 *.egg-info/
 
 # 忽略PyCharm配置文件（可选）
