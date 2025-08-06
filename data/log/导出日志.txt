@@ -1445,3 +1445,95 @@ Call log:
 2025-08-06 16:08:24: 浏览器已关闭
 2025-08-06 16:08:24: 浏览器已关闭
 2025-08-06 16:08:24: 导出完成。
+2025-08-06 16:41:16: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:41:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-06 16:41:17: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-06 16:41:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-06 16:41:17: 成功加载 config.json，任务数: 2
+2025-08-06 16:41:17: TodoApp 初始化完成，加载任务数: 2
+2025-08-06 16:41:38: 启动杭州银行登录流程...
+2025-08-06 16:41:38: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:41:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-06 16:41:38: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-06 16:41:38: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-06 16:41:38: 启动浏览器...
+2025-08-06 16:41:40: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-06 16:41:49: 杭州银行登录失败：Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
+
+2025-08-06 16:42:11: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:42:11: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-06 16:42:11: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-06 16:42:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-06 16:42:11: 成功加载 config.json，任务数: 2
+2025-08-06 16:42:11: TodoApp 初始化完成，加载任务数: 2
+2025-08-06 16:42:13: 启动杭州银行登录流程...
+2025-08-06 16:42:13: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:42:13: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-06 16:42:13: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-06 16:42:13: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-06 16:42:13: 启动浏览器...
+2025-08-06 16:42:16: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-06 16:42:19: 杭州银行登录失败：Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
+
+2025-08-06 16:42:56: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:42:57: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-06 16:42:57: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-06 16:42:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-06 16:42:57: 成功加载 config.json，任务数: 2
+2025-08-06 16:42:57: TodoApp 初始化完成，加载任务数: 2
+2025-08-06 16:42:59: 启动杭州银行登录流程...
+2025-08-06 16:42:59: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:42:59: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-06 16:42:59: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-06 16:42:59: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-06 16:42:59: 启动浏览器...
+2025-08-06 16:43:01: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-06 16:43:14: 杭州银行登录失败：Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
+
+2025-08-06 16:45:27: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:45:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-06 16:45:28: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-06 16:45:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-06 16:45:28: 成功加载 config.json，任务数: 2
+2025-08-06 16:45:28: TodoApp 初始化完成，加载任务数: 2
+2025-08-06 16:45:32: 启动杭州银行登录流程...
+2025-08-06 16:45:32: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 16:45:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-06 16:45:32: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-06 16:45:32: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-06 16:45:32: 启动浏览器...
+2025-08-06 16:45:34: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-06 16:45:37: 杭州银行登录失败：Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
+
