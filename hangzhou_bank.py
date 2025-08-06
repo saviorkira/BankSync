@@ -46,10 +46,10 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
             try:
                 # 创建文件夹
                 folder_name = f"{xiangmuid}_{xiangmu}"
-                duizhang_path = os.path.join(download_path, folder_name, "银行流水")
+                liushui_path = os.path.join(download_path, folder_name, "银行流水")
                 huidan_path = os.path.join(download_path, folder_name, "银行回单")
                 duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
-                os.makedirs(duizhang_path, exist_ok=True)
+                os.makedirs(liushui_path, exist_ok=True)
                 os.makedirs(huidan_path, exist_ok=True)
                 os.makedirs(duizhangdan_path, exist_ok=True)
 
@@ -88,7 +88,7 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                         page.get_by_role("button", name="导出Excel").click()
                     download = liushui_download_info.value
                     filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
-                    download.save_as(os.path.join(duizhang_path, filename))
+                    download.save_as(os.path.join(liushui_path, filename))
                     log_local(f"银行流水导出完成：{filename}")
                 except Exception as e:
                     log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")

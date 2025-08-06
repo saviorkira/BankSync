@@ -43,10 +43,10 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
             log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
             try:
                 folder_name = f"{xiangmuid}_{xiangmu}"
-                duizhang_path = os.path.join(download_path, folder_name, "银行流水")
+                liushui_path = os.path.join(download_path, folder_name, "银行流水")
                 huidan_path = os.path.join(download_path, folder_name, "银行回单")
                 duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
-                os.makedirs(duizhang_path, exist_ok=True)
+                os.makedirs(liushui_path, exist_ok=True)
                 os.makedirs(huidan_path, exist_ok=True)
                 os.makedirs(duizhangdan_path, exist_ok=True)
                 if index == 0:
@@ -120,7 +120,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                     page.get_by_text("对账单导出", exact=True).click()
                 download = download_info.value
                 filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
-                download.save_as(os.path.join(duizhang_path, filename))
+                download.save_as(os.path.join(liushui_path, filename))
                 log_local(f"银行流水导出完成：{filename}")
                 # 打印对账单为PDF
                 try:
