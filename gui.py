@@ -29,7 +29,6 @@ def main(page: Page):
     """Flet 桌面应用主函数，带固定 NavigationRail 和美化界面"""
     # 设置窗口和主题
     page.title = "BankSync"
-
     project_root = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.abspath(os.path.dirname(__file__))
     icon_path = get_resource_path("S.ico", project_root, subfolder="data")
     page.window.icon = icon_path
@@ -61,7 +60,6 @@ def main(page: Page):
     page.bgcolor = ft.Colors.WHITE
 
     # 加载自定义字体
-
     font_path = os.path.join(project_root, "data", "方正兰亭准黑_GBK.ttf")
     page.fonts = {"FZLanTingHei": font_path}
     page.update()
@@ -74,6 +72,8 @@ def main(page: Page):
     selected_index.current = 0
     log_messages = []
     is_maximized = [True]
+    statement_folder = [r"D:\Desktop"]  # 流水文件夹路径，列表形式以支持闭包修改
+    export_path = [r"D:\Desktop"]  # 导出路径，列表形式以支持闭包修改
 
     # 页面尺寸配置
     page_sizes = {
@@ -102,7 +102,6 @@ def main(page: Page):
         "shanghai_bank": "上海银行",
         "zheshang_bank": "浙商银行",
         "zhongxin_bank": "中信银行",
-
     }
 
     # UI 组件
@@ -217,7 +216,7 @@ def main(page: Page):
     )
 
     run_button = ft.ElevatedButton(
-        text="运行导出",
+        text="开始下载",
         icon=ft.Icons.PLAY_CIRCLE,
         disabled=False,
         style=ft.ButtonStyle(
@@ -227,7 +226,7 @@ def main(page: Page):
             padding=10,
             text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         ),
-        tooltip="开始导出银行流水和回单",
+        tooltip="开始下载银行流水和回单",
         width=page.window.width-70,
     )
 
@@ -248,7 +247,7 @@ def main(page: Page):
             padding=10,
             text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         ),
-        tooltip="选择保存导出文件的目录",
+        tooltip="选择保存下载文件的目录",
         width=page.window.width-70,
     )
 
@@ -266,14 +265,113 @@ def main(page: Page):
         width=page.window.width-70,
     )
 
+    # 流水页面组件
+    statement_folder_text = ft.Text(
+        f"流水文件夹: {statement_folder[0]}",
+        size=14,
+        color=ft.Colors.GREY_700,
+        font_family="FZLanTingHei",
+    )
+
+    select_statement_folder_button = ft.ElevatedButton(
+        text="选择银行流水文件夹",
+        icon=ft.Icons.FOLDER_OPEN,
+        style=ft.ButtonStyle(
+            color=ft.Colors.WHITE,
+            bgcolor=ft.Colors.BLUE_700,
+            shape=ft.RoundedRectangleBorder(radius=8),
+            padding=10,
+            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        ),
+        tooltip="选择包含银行流水的文件夹",
+        width=page.window.width-70,
+        on_click=lambda _: statement_dir_picker.get_directory_path(),
+    )
+
+    statement_dropdown = ft.Dropdown(
+        label="选择要筛选的银行流水项目",
+        options=[
+            ft.dropdown.Option(key="bank_interest", text="银行利息"),
+        ],
+        value=None,
+        width=page.window.width-70,
+        border_radius=8,
+        filled=True,
+        bgcolor=ft.Colors.WHITE,
+        fill_color=ft.Colors.WHITE,
+        content_padding=10,
+        border_color=ft.Colors.GREY_300,
+        color=ft.Colors.BLACK,
+        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+    )
+
+    def on_statement_dropdown_change(e):
+        if statement_dropdown.value:
+            update_log(f"已选择银行流水项目: {statement_dropdown.value}")
+        else:
+            update_log("银行流水项目已清空")
+
+    statement_dropdown.on_change = on_statement_dropdown_change
+
+    start_date_statement = ft.TextField(
+        label="开始月份",
+        value=datetime.now().strftime('%Y-%m'),
+        width=page.window.width-70,
+        border_radius=8,
+        filled=True,
+        bgcolor=ft.Colors.WHITE,
+        hint_text="格式: YYYY-MM",
+        tooltip="输入银行流水处理月份",
+        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        on_change=lambda e: update_log(f"已设置开始月份: {e.control.value}"),
+    )
+
+    export_path_text = ft.Text(
+        f"导出文件夹: {export_path[0]}",
+        size=14,
+        color=ft.Colors.GREY_700,
+        font_family="FZLanTingHei",
+    )
+
+    export_statement_button = ft.ElevatedButton(
+        text="选择导出文件夹",
+        icon=ft.Icons.FOLDER_OPEN,
+        style=ft.ButtonStyle(
+            color=ft.Colors.WHITE,
+            bgcolor=ft.Colors.BLUE_700,
+            shape=ft.RoundedRectangleBorder(radius=8),
+            padding=10,
+            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        ),
+        tooltip="选择导出路径并导出流水",
+        width=page.window.width-70,
+        on_click=lambda _: export_dir_picker.get_directory_path(),
+    )
+
+    start_export_button = ft.ElevatedButton(
+        text="开始导出",
+        icon=ft.Icons.PLAY_CIRCLE,
+        style=ft.ButtonStyle(
+            color=ft.Colors.WHITE,
+            bgcolor=ft.Colors.BLUE_700,
+            shape=ft.RoundedRectangleBorder(radius=8),
+            padding=10,
+            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        ),
+        tooltip="开始导出银行流水文件",
+        width=page.window.width-70,
+    )
+
     # 日志更新函数
     def update_log(msg):
         log_messages.append(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: {msg}\n")
         log_area.value = "".join(log_messages)
-        if selected_index.current == 4 and hasattr(log_area, 'page') and log_area.page is not None:
+        # 页面索引: 0=登录, 1=导出, 2=流水, 3=AI, 4=工具
+        if selected_index.current == 4 and tools_content.selected_index == 1 and hasattr(log_area, 'page') and log_area.page is not None:
             log_area.update()
             page.scroll_to(key="log_area", duration=500)
-            # log(f"log_area 更新: 日志页面已渲染", project_root)
         log(msg, project_root)
 
     # 银行选择事件
@@ -332,6 +430,26 @@ def main(page: Page):
             base_path_text.value = f"下载路径: {base_path}"
             update_log(f"下载路径设置为：{base_path}")
             page.update()
+
+    # 选择流水文件夹
+    def select_statement_folder(e:FilePickerResultEvent):
+        if e.path and os.path.exists(e.path):
+            statement_folder[0] = e.path
+            statement_folder_text.value = f"流水文件夹: {statement_folder[0]}"
+            update_log(f"流水文件夹设置为：{statement_folder[0]}")
+            page.update()
+
+    # 选择导出路径
+    def select_export_path(e: ft.FilePickerResultEvent):
+        if e.path and os.path.exists(e.path):
+            export_path[0] = e.path
+            export_path_text.value = f"导出文件夹: {export_path[0]}"
+            update_log(f"导出路径设置为：{export_path[0]}")
+            # 这里可以添加导出逻辑，例如处理流水文件夹中的文件
+            update_log(f"开始导出流水到：{export_path[0]}")
+            page.update()
+        else:
+            update_log("错误: 请选择有效的文件夹路径")
 
     # 运行导出任务
     def run_export(e):
@@ -393,7 +511,7 @@ def main(page: Page):
             finally:
                 is_running[0] = False
                 run_button.disabled = False
-                run_button.text = "运行导出"
+                run_button.text = "开始下载"
                 run_button.icon = ft.Icons.PLAY_CIRCLE
                 run_button.update()
 
@@ -406,7 +524,10 @@ def main(page: Page):
     # 文件选择器
     file_picker = ft.FilePicker(on_result=import_excel)
     dir_picker = ft.FilePicker(on_result=select_base_path)
-    page.overlay.extend([file_picker, dir_picker])
+    statement_dir_picker = ft.FilePicker(on_result=select_statement_folder)
+    export_dir_picker = ft.FilePicker(on_result=select_export_path)
+    page.overlay.extend([file_picker, dir_picker, statement_dir_picker, export_dir_picker])
+    page.update()  # 确保 FilePicker 控件初始化
 
     # 切换窗口大小按钮
     toggle_size_button = ft.IconButton(
@@ -465,15 +586,19 @@ def main(page: Page):
         bank_export_content.controls[5].width = page.window.width - 70
         ai_content.controls[0].width = page.window.width - 70
         ai_content.controls[1].width = page.window.width - 70
-        todo_content.controls[0].width = page.window.width - 70
-        settings_content.controls[0].width = page.window.width - 70
+        tools_content.width = page.window.width - 70
+        statement_content.controls[0].width = page.window.width - 70  # statement_dropdown
+        statement_content.controls[1].width = page.window.width - 70  # start_date_statement
+        statement_content.controls[2].width = page.window.width - 70  # select_statement_folder_button
+        statement_content.controls[4].width = page.window.width - 70  # export_statement_button
+        statement_content.controls[5].width = page.window.width - 70  # start_export_button
         main_content.width = page.window.width - 70
         page.update()
 
         is_maximized[0] = not is_maximized[0]
         toggle_size_button.update()
 
-    # 登录页面
+    # 页面内容
     home_content = ft.Column(
         [
             # ft.Text("网站图标区域", size=14, font_family="FZLanTingHei"),
@@ -571,6 +696,24 @@ def main(page: Page):
         alignment=ft.MainAxisAlignment.START,
     )
 
+    new_page_content = ft.Column(
+        [
+            ft.Container(
+                content=ai_output,
+                padding=5,
+                border_radius=8,
+                bgcolor=ft.Colors.WHITE,
+                shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
+                width=page.window.width-70,
+                height=page.window.height-70,
+                alignment=ft.alignment.top_left,
+            ),
+        ],
+        spacing=10,
+        scroll=ft.ScrollMode.AUTO,
+        alignment=ft.MainAxisAlignment.START,
+    )
+
     settings_content = ft.Column(
         [
             ft.Container(
@@ -590,11 +733,61 @@ def main(page: Page):
         alignment=ft.MainAxisAlignment.START,
     )
 
+    statement_content = ft.Column(
+        [
+            statement_dropdown,
+            start_date_statement,
+            select_statement_folder_button,
+            statement_folder_text,
+            export_statement_button,
+            export_path_text,
+            start_export_button,
+        ],
+        spacing=10,
+        scroll=ft.ScrollMode.AUTO,
+        alignment=ft.MainAxisAlignment.START,
+        width=page.window.width-70,
+    )
+
+    tools_content = ft.Tabs(
+        selected_index=0,
+        # animation_duration=0,
+        tabs=[
+            ft.Tab(
+                text="待办",
+                content=todo_content,
+                icon=ft.Icons.TASK_OUTLINED,
+            ),
+            ft.Tab(
+                text="日志",
+                content=settings_content,
+                icon=ft.Icons.SETTINGS_OUTLINED,
+            ),
+            ft.Tab(
+                text="新页面",
+                content=new_page_content,
+                icon=ft.Icons.NEW_RELEASES_OUTLINED,
+            ),
+        ],
+        expand=True,
+        tab_alignment=ft.TabAlignment.CENTER,
+        indicator_color=ft.Colors.BLUE_700,
+        label_color=ft.Colors.BLUE_700,
+        unselected_label_color=ft.Colors.GREY_700,
+        width=page.window.width-70,
+        on_change=lambda e: [
+            setattr(drag_area_title, "value", ["待办", "日志", "新页面"][e.control.selected_index]),
+            drag_area_title.update(),
+            page.update(),
+        ],
+    )
+
     pages = [
         {"icon": ft.Icons.HOME_OUTLINED, "selected_icon": ft.Icons.HOME, "label": "登录", "content": home_content},
-        {"icon": ft.Icons.DOWNLOAD_OUTLINED, "selected_icon": ft.Icons.DOWNLOAD, "label": "导出", "content": bank_export_content},
+        {"icon": ft.Icons.DOWNLOAD_OUTLINED, "selected_icon": ft.Icons.DOWNLOAD, "label": "下载", "content": bank_export_content},
+        {"icon": ft.Icons.DATA_USAGE_OUTLINED, "selected_icon": ft.Icons.DATA_USAGE, "label": "数据", "content": statement_content},
         {"icon": ft.Icons.CHAT_OUTLINED, "selected_icon": ft.Icons.CHAT, "label": "AI", "content": ai_content},
-        {"icon": ft.Icons.TASK_OUTLINED, "selected_icon": ft.Icons.TASK_ROUNDED, "label": "待办", "content": todo_content},
+        {"icon": ft.Icons.APPS_OUTLINED, "selected_icon": ft.Icons.APPS, "label": "工具", "content": tools_content},
     ]
 
     destinations = [
@@ -605,14 +798,6 @@ def main(page: Page):
             label_content=ft.Text(page["label"], font_family="FZLanTingHei", size=14),
         ) for page in pages
     ]
-    destinations.append(
-        ft.NavigationRailDestination(
-            icon=ft.Icons.SETTINGS_OUTLINED,
-            selected_icon=ft.Icons.SETTINGS,
-            label="日志",
-            label_content=ft.Text("日志", font_family="FZLanTingHei", size=14),
-        )
-    )
 
     drag_area_title = ft.Text(pages[0]["label"], size=16, weight=ft.FontWeight.BOLD, font_family="FZLanTingHei")
     drag_area = ft.WindowDragArea(
@@ -637,7 +822,7 @@ def main(page: Page):
         on_change=lambda e: [
             setattr(selected_index, "current", e.control.selected_index),
             setattr(content_ref.current, "content", get_content()),
-            setattr(drag_area_title, "value", "日志" if e.control.selected_index == 4 else pages[e.control.selected_index]["label"]),
+            setattr(drag_area_title, "value", pages[e.control.selected_index]["label"]),
             drag_area_title.update(),
             page.update(),
         ],
@@ -654,6 +839,7 @@ def main(page: Page):
                             close_button,
                         ],
                         spacing=5,
+                        alignment=ft.MainAxisAlignment.END,
                     ),
                     alignment=ft.alignment.bottom_left,
                     padding=10,
@@ -672,10 +858,7 @@ def main(page: Page):
 
     content_ref = ft.Ref[ft.AnimatedSwitcher]()
     def get_content():
-        if selected_index.current < len(pages):
-            return pages[selected_index.current]["content"]
-        else:
-            return settings_content
+        return pages[selected_index.current]["content"]
 
     main_content = ft.Container(
         content=ft.AnimatedSwitcher(

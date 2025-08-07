@@ -1537,3 +1537,818 @@ Call log:
 Call log:
   - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
 
+2025-08-06 17:07:03: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-06 17:07:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-06 17:07:04: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-06 17:07:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-06 17:07:04: 成功加载 config.json，任务数: 2
+2025-08-06 17:07:04: TodoApp 初始化完成，加载任务数: 2
+2025-08-06 17:07:10: AI: 收到发送消息请求
+2025-08-06 17:07:10: AI: 已记录用户消息: 454454
+2025-08-06 17:07:10: AI: ai_output 更新成功: AI页面已渲染
+2025-08-06 17:07:10: AI: ai_input 更新: 输入框已清空
+2025-08-06 17:07:10: AI: 已启动 AI 处理线程
+2025-08-06 17:07:20: AI: 成功接收 AI 回复
+2025-08-06 17:07:20: AI: ai_output 更新成功: AI页面已渲染
+2025-08-06 17:07:20: AI: 回复处理完成
+2025-08-07 10:41:08: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:41:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:41:09: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:41:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:41:09: 成功加载 config.json，任务数: 2
+2025-08-07 10:41:09: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 10:42:22: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:42:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:42:23: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:42:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:42:23: 成功加载 config.json，任务数: 2
+2025-08-07 10:42:23: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 10:43:17: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:43:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:43:17: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:43:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:43:17: 成功加载 config.json，任务数: 2
+2025-08-07 10:43:17: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 10:43:36: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:43:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:43:36: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:43:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:43:36: 成功加载 config.json，任务数: 2
+2025-08-07 10:43:36: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 10:45:41: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:45:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:45:41: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:45:41: 成功加载 config.json，任务数: 2
+2025-08-07 10:45:41: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 10:52:52: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:52:53: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:52:53: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:52:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:52:53: 成功加载 config.json，任务数: 2
+2025-08-07 10:52:53: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 10:57:28: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 10:57:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 10:57:28: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 10:57:28: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 10:57:28: 成功加载 config.json，任务数: 2
+2025-08-07 10:57:28: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 11:01:36: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 11:01:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 11:01:36: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 11:01:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 11:01:36: 成功加载 config.json，任务数: 2
+2025-08-07 11:01:36: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 11:02:22: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 11:02:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 11:02:23: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 11:02:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 11:02:23: 成功加载 config.json，任务数: 2
+2025-08-07 11:02:23: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:06:38: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:06:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:06:38: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:06:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:06:38: 成功加载 config.json，任务数: 2
+2025-08-07 14:06:38: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:09:29: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:09:29: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:09:29: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:09:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:09:29: 成功加载 config.json，任务数: 2
+2025-08-07 14:09:29: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:09:38: TodoApp 更新: 已添加到页面
+2025-08-07 14:09:38: 切换待办标签: 已完成
+2025-08-07 14:09:38: TodoApp 更新: 已添加到页面
+2025-08-07 14:09:38: 切换待办标签: 全部
+2025-08-07 14:09:38: TodoApp 更新: 已添加到页面
+2025-08-07 14:09:38: 切换待办标签: 已完成
+2025-08-07 14:09:38: TodoApp 更新: 已添加到页面
+2025-08-07 14:09:38: 切换待办标签: 未完成
+2025-08-07 14:11:00: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:11:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:11:01: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:11:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:11:01: 成功加载 config.json，任务数: 2
+2025-08-07 14:11:01: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:22:18: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:22:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:22:19: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:22:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:22:19: 成功加载 config.json，任务数: 2
+2025-08-07 14:22:19: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:29:02: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:29:03: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:29:03: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:29:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:29:03: 成功加载 config.json，任务数: 2
+2025-08-07 14:29:03: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:31:46: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:31:46: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:31:46: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:31:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:31:46: 成功加载 config.json，任务数: 2
+2025-08-07 14:31:46: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:42:09: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 14:42:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 14:42:09: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 14:42:09: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 14:42:09: 成功加载 config.json，任务数: 2
+2025-08-07 14:42:09: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 14:42:18: 流水文件夹设置为：D:\Desktop\Auto\测试\3
+2025-08-07 14:42:20: 已选择流水操作: bank_interest
+2025-08-07 14:42:31: 已选择银行: 杭州银行
+2025-08-07 14:42:33: 下载路径设置为：D:\Desktop\Auto\测试\3\25148_重庆信托·凯什1号集合资金信托计划
+2025-08-07 14:42:38: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：杭州银行，包含 2 条记录
+2025-08-07 14:42:51: 下载路径设置为：D:\Desktop\Auto\测试\1
+2025-08-07 15:04:18: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:04:18: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:04:18: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:04:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:04:18: 成功加载 config.json，任务数: 2
+2025-08-07 15:04:18: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:04:22: 打开月份选择对话框
+2025-08-07 15:04:26: 错误: 请选择有效的文件夹路径
+2025-08-07 15:05:40: 打开月份选择对话框
+2025-08-07 15:05:41: 打开月份选择对话框
+2025-08-07 15:05:42: 打开月份选择对话框
+2025-08-07 15:05:43: 打开月份选择对话框
+2025-08-07 15:07:15: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:07:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:07:15: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:07:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:07:15: 成功加载 config.json，任务数: 2
+2025-08-07 15:07:15: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:08:25: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:08:26: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:08:26: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:08:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:08:26: 成功加载 config.json，任务数: 2
+2025-08-07 15:08:26: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:09:55: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:09:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:09:55: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:09:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:09:55: 成功加载 config.json，任务数: 2
+2025-08-07 15:09:55: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:21:48: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:21:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:21:48: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:21:48: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:21:48: 成功加载 config.json，任务数: 2
+2025-08-07 15:21:48: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:55:43: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:55:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:55:44: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:55:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:55:44: 成功加载 config.json，任务数: 2
+2025-08-07 15:55:44: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:56:55: 错误: 请选择有效的文件夹路径
+2025-08-07 15:57:13: 错误: 请选择有效的文件夹路径
+2025-08-07 15:58:51: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 15:58:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 15:58:52: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 15:58:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 15:58:52: 成功加载 config.json，任务数: 2
+2025-08-07 15:58:52: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 15:59:00: 已选择流水操作: bank_interest
+2025-08-07 16:00:50: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:00:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:00:50: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:00:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:00:50: 成功加载 config.json，任务数: 2
+2025-08-07 16:00:50: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:00:54: 已选择银行流水项目: bank_interest
+2025-08-07 16:01:08: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:01:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:01:08: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:01:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:01:08: 成功加载 config.json，任务数: 2
+2025-08-07 16:01:08: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:01:13: 已选择银行流水项目: bank_interest
+2025-08-07 16:03:13: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:03:13: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:03:13: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:03:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:03:13: 成功加载 config.json，任务数: 2
+2025-08-07 16:03:13: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:03:24: 已选择银行流水项目: bank_interest
+2025-08-07 16:03:25: 已选择银行流水项目: bank_interest
+2025-08-07 16:04:11: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:04:11: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:04:11: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:04:11: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:04:11: 成功加载 config.json，任务数: 2
+2025-08-07 16:04:11: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:04:22: 错误: 请选择有效的文件夹路径
+2025-08-07 16:04:25: 已选择银行流水项目: bank_interest
+2025-08-07 16:04:27: 已选择银行: 杭州银行
+2025-08-07 16:04:29: 已选择银行: 上海银行
+2025-08-07 16:04:30: 已选择银行: 宁波银行
+2025-08-07 16:04:32: 已选择银行: 平安银行
+2025-08-07 16:04:36: 已选择银行流水项目: bank_interest
+2025-08-07 16:10:31: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:10:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:10:31: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:10:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:10:31: 成功加载 config.json，任务数: 2
+2025-08-07 16:10:31: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:10:48: 错误: 请选择有效的文件夹路径
+2025-08-07 16:11:03: 错误: 请选择有效的文件夹路径
+2025-08-07 16:33:29: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:33:29: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:33:29: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:33:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:33:29: 成功加载 config.json，任务数: 2
+2025-08-07 16:33:29: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:34:59: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:35:00: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:35:00: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:35:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:35:00: 成功加载 config.json，任务数: 2
+2025-08-07 16:35:00: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:35:02: 启动杭州银行登录流程...
+2025-08-07 16:35:02: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:35:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-07 16:35:02: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-07 16:35:02: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:35:02: 启动浏览器...
+2025-08-07 16:35:05: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-07 16:35:06: 杭州银行登录失败：Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://custody.hzbank.com.cn/#/login", waiting until "load"
+
+2025-08-07 16:35:09: 已选择银行: 宁波银行
+2025-08-07 16:35:32: 下载路径设置为：D:\Desktop\Auto\测试\ningbo
+2025-08-07 16:35:36: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：宁波银行，包含 2 条记录
+2025-08-07 16:35:37: 开始运行 宁波银行 导出，包含 2 条记录...
+2025-08-07 16:35:38: 启动宁波银行导出流程...
+2025-08-07 16:35:38: 启动宁波银行导出流程...
+2025-08-07 16:35:38: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:35:38: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:35:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-07 16:35:38: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-08-07 16:35:38: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:35:38: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:35:38: 启动浏览器...
+2025-08-07 16:35:38: 启动浏览器...
+2025-08-07 16:35:40: 访问登录页面: https://www.e-custody.com/#/login
+2025-08-07 16:35:40: 访问登录页面: https://www.e-custody.com/#/login
+2025-08-07 16:35:45: 输入用户名和密码...
+2025-08-07 16:35:45: 输入用户名和密码...
+2025-08-07 16:35:48: 等待账户管理页面加载...
+2025-08-07 16:35:48: 等待账户管理页面加载...
+2025-08-07 16:35:59: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-08-07 16:35:59: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-08-07 16:35:59: 使用托管账户查询：77970122000179566
+2025-08-07 16:35:59: 使用托管账户查询：77970122000179566
+2025-08-07 16:36:01: 复选框已选中
+2025-08-07 16:36:01: 复选框已选中
+2025-08-07 16:36:03: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:03: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:05: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:36:05: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:36:05: 点击打印按钮，等待对账单打印按钮...
+2025-08-07 16:36:05: 点击打印按钮，等待对账单打印按钮...
+2025-08-07 16:36:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-08-07 16:36:07: 定位‘对账单打印’按钮...
+2025-08-07 16:36:07: 定位‘对账单打印’按钮...
+2025-08-07 16:36:07: 第1次尝试成功，点击位置: (1019, 607)
+2025-08-07 16:36:07: 成功点击‘对账单打印’按钮
+2025-08-07 16:36:07: 成功点击‘对账单打印’按钮
+2025-08-07 16:36:07: 等待 Chrome 打印窗口...
+2025-08-07 16:36:07: 等待 Chrome 打印窗口...
+2025-08-07 16:36:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-08-07 16:36:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-08-07 16:36:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-08-07 16:36:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-08-07 16:36:09: 定位‘目标打印机’位置...
+2025-08-07 16:36:09: 定位‘目标打印机’位置...
+2025-08-07 16:36:10: 第1次尝试成功，点击位置: (734, 170)
+2025-08-07 16:36:10: 模拟点击偏移位置: (984, 170)
+2025-08-07 16:36:10: 模拟点击偏移位置: (984, 170)
+2025-08-07 16:36:13: 第1次尝试成功，点击位置: (959, 228)
+2025-08-07 16:36:13: 成功点击默认状态的‘另存为 PDF’按钮
+2025-08-07 16:36:13: 成功点击默认状态的‘另存为 PDF’按钮
+2025-08-07 16:36:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-08-07 16:36:14: 检查‘加载中’图片...
+2025-08-07 16:36:14: 检查‘加载中’图片...
+2025-08-07 16:36:15: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-08-07 16:36:15: 未检测到‘加载中’图片，继续执行...
+2025-08-07 16:36:15: 未检测到‘加载中’图片，继续执行...
+2025-08-07 16:36:15: 第1次尝试成功，点击位置: (992, 693)
+2025-08-07 16:36:15: 成功点击‘保存’按钮
+2025-08-07 16:36:15: 成功点击‘保存’按钮
+2025-08-07 16:36:16: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\ningbo\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:17: 窗口1设置路径成功: D:\Desktop\Auto\测试\ningbo\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:18: 点击保存按钮完成
+2025-08-07 16:36:26: 未检测到覆盖确认窗口或点击失败: timed out
+2025-08-07 16:36:26: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\ningbo\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:26: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\ningbo\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:26: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-08-07 16:36:26: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-08-07 16:36:26: 使用托管账户查询：86031110000310762
+2025-08-07 16:36:26: 使用托管账户查询：86031110000310762
+2025-08-07 16:36:27: 复选框已选中
+2025-08-07 16:36:27: 复选框已选中
+2025-08-07 16:36:30: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:30: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:31: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:36:31: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:36:32: 点击打印按钮，等待对账单打印按钮...
+2025-08-07 16:36:32: 点击打印按钮，等待对账单打印按钮...
+2025-08-07 16:36:34: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-08-07 16:36:34: 定位‘对账单打印’按钮...
+2025-08-07 16:36:34: 定位‘对账单打印’按钮...
+2025-08-07 16:36:34: 第1次尝试成功，点击位置: (1019, 607)
+2025-08-07 16:36:34: 成功点击‘对账单打印’按钮
+2025-08-07 16:36:34: 成功点击‘对账单打印’按钮
+2025-08-07 16:36:34: 等待 Chrome 打印窗口...
+2025-08-07 16:36:34: 等待 Chrome 打印窗口...
+2025-08-07 16:36:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-08-07 16:36:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-08-07 16:36:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-08-07 16:36:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-08-07 16:36:36: 定位‘目标打印机’位置...
+2025-08-07 16:36:36: 定位‘目标打印机’位置...
+2025-08-07 16:36:36: 第1次尝试成功，点击位置: (734, 170)
+2025-08-07 16:36:36: 模拟点击偏移位置: (984, 170)
+2025-08-07 16:36:36: 模拟点击偏移位置: (984, 170)
+2025-08-07 16:36:39: 第1次尝试成功，点击位置: (959, 173)
+2025-08-07 16:36:39: 成功点击默认状态的‘另存为 PDF’按钮
+2025-08-07 16:36:39: 成功点击默认状态的‘另存为 PDF’按钮
+2025-08-07 16:36:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-08-07 16:36:40: 检查‘加载中’图片...
+2025-08-07 16:36:40: 检查‘加载中’图片...
+2025-08-07 16:36:42: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-08-07 16:36:42: 未检测到‘加载中’图片，继续执行...
+2025-08-07 16:36:42: 未检测到‘加载中’图片，继续执行...
+2025-08-07 16:36:42: 第1次尝试成功，点击位置: (992, 693)
+2025-08-07 16:36:42: 成功点击‘保存’按钮
+2025-08-07 16:36:42: 成功点击‘保存’按钮
+2025-08-07 16:36:43: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\测试\ningbo\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:43: 窗口1设置路径成功: D:\Desktop\Auto\测试\ningbo\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:44: 点击保存按钮完成
+2025-08-07 16:36:52: 未检测到覆盖确认窗口或点击失败: timed out
+2025-08-07 16:36:52: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\ningbo\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:52: 对账单打印 PDF 完成：D:\Desktop\Auto\测试\ningbo\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:36:53: 导出完成。
+2025-08-07 16:36:56: 已选择银行: 杭州银行
+2025-08-07 16:37:12: 下载路径设置为：D:\Desktop\Auto\测试\hangzhou
+2025-08-07 16:37:16: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：杭州银行，包含 2 条记录
+2025-08-07 16:37:16: 开始运行 杭州银行 导出，包含 2 条记录...
+2025-08-07 16:37:18: 启动杭州银行导出流程...
+2025-08-07 16:37:18: 启动杭州银行导出流程...
+2025-08-07 16:37:18: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:37:18: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:37:18: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-07 16:37:18: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-07 16:37:18: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:37:18: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:37:18: 启动浏览器...
+2025-08-07 16:37:18: 启动浏览器...
+2025-08-07 16:37:19: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-07 16:37:19: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-07 16:37:24: 输入用户名和密码...
+2025-08-07 16:37:24: 输入用户名和密码...
+2025-08-07 16:37:24: 等待账户管理页面加载...
+2025-08-07 16:37:24: 等待账户管理页面加载...
+2025-08-07 16:37:55: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-08-07 16:37:55: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-08-07 16:38:03: 使用托管账户查询：3305041060000048061
+2025-08-07 16:38:03: 使用托管账户查询：3305041060000048061
+2025-08-07 16:38:06: 无回单或流水数据，跳过导出（产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061）
+2025-08-07 16:38:06: 无回单或流水数据，跳过导出（产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061）
+2025-08-07 16:38:06: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-08-07 16:38:06: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-08-07 16:38:09: 使用托管账户查询：3301041060002128464
+2025-08-07 16:38:09: 使用托管账户查询：3301041060002128464
+2025-08-07 16:38:13: 无回单或流水数据，跳过导出（产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464）
+2025-08-07 16:38:13: 无回单或流水数据，跳过导出（产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464）
+2025-08-07 16:38:13: 导出完成。
+2025-08-07 16:38:37: 已选择银行: 中信银行
+2025-08-07 16:38:48: 下载路径设置为：D:\Desktop\Auto\测试\zhongxin
+2025-08-07 16:38:50: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：中信银行，包含 2 条记录
+2025-08-07 16:38:51: 开始运行 中信银行 导出，包含 2 条记录...
+2025-08-07 16:38:52: 启动中信银行导出流程...
+2025-08-07 16:38:52: 启动中信银行导出流程...
+2025-08-07 16:38:52: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:38:52: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:38:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-07 16:38:52: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-08-07 16:38:52: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:38:52: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:38:52: 启动浏览器...
+2025-08-07 16:38:52: 启动浏览器...
+2025-08-07 16:38:54: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-08-07 16:38:54: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-08-07 16:38:58: 输入用户名和密码...
+2025-08-07 16:38:58: 输入用户名和密码...
+2025-08-07 16:38:58: 等待账户管理页面加载...
+2025-08-07 16:38:58: 等待账户管理页面加载...
+2025-08-07 16:39:11: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-08-07 16:39:11: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-08-07 16:39:12: 已进入托管账户明细查询页面
+2025-08-07 16:39:12: 已进入托管账户明细查询页面
+2025-08-07 16:39:12: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-08-07 16:39:12: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-08-07 16:39:16: 已选择项目: 凯什1号集合
+2025-08-07 16:39:16: 已选择项目: 凯什1号集合
+2025-08-07 16:39:16: 设置开始日期和结束日期...
+2025-08-07 16:39:16: 设置开始日期和结束日期...
+2025-08-07 16:39:16: 已设置开始日期: 2025-06-01
+2025-08-07 16:39:16: 已设置开始日期: 2025-06-01
+2025-08-07 16:39:16: 已设置结束日期: 2025-07-04
+2025-08-07 16:39:16: 已设置结束日期: 2025-07-04
+2025-08-07 16:39:16: 执行查询...
+2025-08-07 16:39:16: 执行查询...
+2025-08-07 16:39:16: 查询完成，等待页面加载...
+2025-08-07 16:39:16: 查询完成，等待页面加载...
+2025-08-07 16:39:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-08-07 16:39:19: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-08-07 16:39:19: 开始导出流水...
+2025-08-07 16:39:19: 开始导出流水...
+2025-08-07 16:39:22: 进入下载中心，检查文件处理状态...
+2025-08-07 16:39:22: 进入下载中心，检查文件处理状态...
+2025-08-07 16:39:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-08-07 16:39:24: 第2次尝试成功，找到图像位置: (944, 399)
+2025-08-07 16:39:24: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:39:24: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:39:32: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 5
+2025-08-07 16:39:32: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:39:32: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:39:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-08-07 16:39:32: 等待文件下载...
+2025-08-07 16:39:32: 等待文件下载...
+2025-08-07 16:39:32: 第1次尝试成功，点击位置: (1126, 408)
+2025-08-07 16:39:33: 银行流水导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:39:33: 银行流水导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:39:35: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-08-07 16:39:35: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-08-07 16:39:39: 已选择项目: 凯什1号集合
+2025-08-07 16:39:39: 已选择项目: 凯什1号集合
+2025-08-07 16:39:40: 设置开始日期和结束日期...
+2025-08-07 16:39:40: 设置开始日期和结束日期...
+2025-08-07 16:39:40: 已设置开始日期: 2025-06-01
+2025-08-07 16:39:40: 已设置开始日期: 2025-06-01
+2025-08-07 16:39:40: 已设置结束日期: 2025-07-04
+2025-08-07 16:39:40: 已设置结束日期: 2025-07-04
+2025-08-07 16:39:41: 开始导出回单...
+2025-08-07 16:39:41: 开始导出回单...
+2025-08-07 16:39:43: 进入下载中心，检查文件处理状态...
+2025-08-07 16:39:43: 进入下载中心，检查文件处理状态...
+2025-08-07 16:39:43: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-08-07 16:39:47: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-08-07 16:39:47: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:39:47: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:39:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-08-07 16:39:47: 等待文件下载...
+2025-08-07 16:39:47: 等待文件下载...
+2025-08-07 16:39:48: 第1次尝试成功，点击位置: (1126, 408)
+2025-08-07 16:39:49: 银行回单导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行回单_2025-06-01_2025-07-04.zip
+2025-08-07 16:39:49: 银行回单导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行回单_2025-06-01_2025-07-04.zip
+2025-08-07 16:39:49: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-08-07 16:39:49: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-08-07 16:39:50: 已进入托管账户明细查询页面
+2025-08-07 16:39:50: 已进入托管账户明细查询页面
+2025-08-07 16:39:50: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-08-07 16:39:50: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-08-07 16:39:54: 已选择项目: 安宁兴甬3号
+2025-08-07 16:39:54: 已选择项目: 安宁兴甬3号
+2025-08-07 16:39:54: 设置开始日期和结束日期...
+2025-08-07 16:39:54: 设置开始日期和结束日期...
+2025-08-07 16:39:54: 已设置开始日期: 2025-06-01
+2025-08-07 16:39:54: 已设置开始日期: 2025-06-01
+2025-08-07 16:39:54: 已设置结束日期: 2025-07-04
+2025-08-07 16:39:54: 已设置结束日期: 2025-07-04
+2025-08-07 16:39:54: 执行查询...
+2025-08-07 16:39:54: 执行查询...
+2025-08-07 16:39:54: 查询完成，等待页面加载...
+2025-08-07 16:39:54: 查询完成，等待页面加载...
+2025-08-07 16:39:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-08-07 16:39:57: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-08-07 16:39:57: 开始导出流水...
+2025-08-07 16:39:57: 开始导出流水...
+2025-08-07 16:40:00: 进入下载中心，检查文件处理状态...
+2025-08-07 16:40:00: 进入下载中心，检查文件处理状态...
+2025-08-07 16:40:00: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-08-07 16:40:02: 第2次尝试成功，找到图像位置: (944, 399)
+2025-08-07 16:40:02: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:02: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:04: 第1次尝试成功，找到图像位置: (944, 399)
+2025-08-07 16:40:04: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:04: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:12: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 5
+2025-08-07 16:40:12: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:40:12: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:40:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-08-07 16:40:12: 等待文件下载...
+2025-08-07 16:40:12: 等待文件下载...
+2025-08-07 16:40:12: 第1次尝试成功，点击位置: (1126, 408)
+2025-08-07 16:40:14: 银行流水导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:40:14: 银行流水导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:40:15: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-08-07 16:40:15: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-08-07 16:40:19: 已选择项目: 安宁兴甬3号
+2025-08-07 16:40:19: 已选择项目: 安宁兴甬3号
+2025-08-07 16:40:20: 设置开始日期和结束日期...
+2025-08-07 16:40:20: 设置开始日期和结束日期...
+2025-08-07 16:40:20: 已设置开始日期: 2025-06-01
+2025-08-07 16:40:20: 已设置开始日期: 2025-06-01
+2025-08-07 16:40:20: 已设置结束日期: 2025-07-04
+2025-08-07 16:40:20: 已设置结束日期: 2025-07-04
+2025-08-07 16:40:21: 开始导出回单...
+2025-08-07 16:40:21: 开始导出回单...
+2025-08-07 16:40:24: 进入下载中心，检查文件处理状态...
+2025-08-07 16:40:24: 进入下载中心，检查文件处理状态...
+2025-08-07 16:40:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-08-07 16:40:25: 第2次尝试成功，找到图像位置: (944, 399)
+2025-08-07 16:40:25: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:25: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:26: 第1次尝试成功，找到图像位置: (944, 399)
+2025-08-07 16:40:26: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:26: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:28: 第1次尝试成功，找到图像位置: (944, 399)
+2025-08-07 16:40:28: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:28: 检测到文件处理中，点击查询按钮...
+2025-08-07 16:40:32: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-08-07 16:40:32: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:40:32: 文件处理完成或未检测到处理中状态，继续下载...
+2025-08-07 16:40:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-08-07 16:40:32: 等待文件下载...
+2025-08-07 16:40:32: 等待文件下载...
+2025-08-07 16:40:33: 第1次尝试成功，点击位置: (1126, 408)
+2025-08-07 16:40:34: 银行回单导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行回单_2025-06-01_2025-07-04.zip
+2025-08-07 16:40:34: 银行回单导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行回单_2025-06-01_2025-07-04.zip
+2025-08-07 16:40:35: 浏览器已关闭
+2025-08-07 16:40:35: 浏览器已关闭
+2025-08-07 16:40:35: 导出完成。
+2025-08-07 16:41:46: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:41:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:41:47: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:41:47: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:41:47: 成功加载 config.json，任务数: 2
+2025-08-07 16:41:47: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:49:34: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:49:34: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:49:34: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:49:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:49:34: 成功加载 config.json，任务数: 2
+2025-08-07 16:49:34: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:49:38: 已选择银行: 杭州银行
+2025-08-07 16:49:43: 下载路径设置为：D:\Desktop\Auto\测试\hangzhou
+2025-08-07 16:49:46: 成功导入 Excel 文件：D:\Desktop\Auto\测试\导入数据.xlsx，工作表：杭州银行，包含 2 条记录
+2025-08-07 16:49:46: 开始运行 杭州银行 导出，包含 2 条记录...
+2025-08-07 16:49:47: 启动杭州银行导出流程...
+2025-08-07 16:49:47: 启动杭州银行导出流程...
+2025-08-07 16:49:47: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:49:47: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:49:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-07 16:49:47: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-07 16:49:47: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:49:47: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-07 16:49:47: 启动浏览器...
+2025-08-07 16:49:47: 启动浏览器...
+2025-08-07 16:49:49: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-07 16:49:49: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-08-07 16:49:54: 输入用户名和密码...
+2025-08-07 16:49:54: 输入用户名和密码...
+2025-08-07 16:49:54: 等待账户管理页面加载...
+2025-08-07 16:49:54: 等待账户管理页面加载...
+2025-08-07 16:50:03: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-08-07 16:50:03: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-08-07 16:50:06: 使用托管账户查询：3305041060000048061
+2025-08-07 16:50:06: 使用托管账户查询：3305041060000048061
+2025-08-07 16:50:10: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:50:10: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:50:11: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:11: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:12: 复选框已重新选中
+2025-08-07 16:50:12: 复选框已重新选中
+2025-08-07 16:50:13: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:13: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:13: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-08-07 16:50:13: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-08-07 16:50:16: 使用托管账户查询：3301041060002128464
+2025-08-07 16:50:16: 使用托管账户查询：3301041060002128464
+2025-08-07 16:50:20: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:50:20: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-07 16:50:22: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:22: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:22: 复选框已重新选中
+2025-08-07 16:50:22: 复选框已重新选中
+2025-08-07 16:50:24: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:24: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-06-01_2025-07-04.pdf
+2025-08-07 16:50:24: 导出完成。
+2025-08-07 16:55:28: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-07 16:55:29: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-07 16:55:29: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-07 16:55:29: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-07 16:55:29: 成功加载 config.json，任务数: 2
+2025-08-07 16:55:29: TodoApp 初始化完成，加载任务数: 2
+2025-08-07 16:55:39: 已选择银行流水项目: bank_interest
+2025-08-07 16:55:41: 已选择银行流水项目: bank_interest

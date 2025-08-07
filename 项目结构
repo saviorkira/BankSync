@@ -41,3 +41,10 @@ page.get_by_text("1903 6817 7777 77").click()
 
 page.locator('input[name="startDate"]').evaluate('element => { element.value = "2025-07-25"; element.dispatchEvent(new Event("input", { bubbles: true })); element.dispatchEvent(new Event("change", { bubbles: true })); }')
 page.locator('input[name="startDate"]').evaluate('element => { element.value = "2025-06-01"; element.dispatchEvent(new Event("input", { bubbles: true })); element.dispatchEvent(new Event("change", { bubbles: true })); }')
+
+
+添加新页面
+1.添加pages字典  pages = [ {"icon": ft.Icons.TASK_OUTLINED, "selected_icon": ft.Icons.TASK_ROUNDED, "label": "新页面",
+         "content": new_page_content}, ] # 新页面
+2.编写new_page_content = ft.Column(
+3.窗口尺寸字典
