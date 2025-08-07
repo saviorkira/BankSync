@@ -84,7 +84,7 @@ def main(page: Page):
         4: {"min_width": 380, "min_height": 520, "max_width": 580, "max_height": 520},
     }
 
-    # 银行处理函数映射，仅用于导出
+    # 银行处理函数映射，仅用于下载
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
         "hangzhou_bank": run_hangzhou_bank,
@@ -94,7 +94,7 @@ def main(page: Page):
         "zhongxin_bank": run_zhongxin_bank,
     }
 
-    # 银行名称映射，用于显示用户友好的名称
+    # 银行名称映射
     BANK_NAMES = {
         "ningbo_bank": "宁波银行",
         "hangzhou_bank": "杭州银行",
@@ -265,7 +265,7 @@ def main(page: Page):
         width=page.window.width-70,
     )
 
-    # 流水页面组件
+    # 数据页面组件
     statement_folder_text = ft.Text(
         f"流水文件夹: {statement_folder[0]}",
         size=14,
@@ -368,7 +368,6 @@ def main(page: Page):
     def update_log(msg):
         log_messages.append(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: {msg}\n")
         log_area.value = "".join(log_messages)
-        # 页面索引: 0=登录, 1=导出, 2=流水, 3=AI, 4=工具
         if selected_index.current == 4 and tools_content.selected_index == 1 and hasattr(log_area, 'page') and log_area.page is not None:
             log_area.update()
             page.scroll_to(key="log_area", duration=500)
@@ -451,11 +450,11 @@ def main(page: Page):
         else:
             update_log("错误: 请选择有效的文件夹路径")
 
-    # 运行导出任务
+    # 开始下载任务
     def run_export(e):
         nonlocal is_running
         if is_running[0]:
-            update_log("提示: 导出进程正在运行，请等待")
+            update_log("提示: 下载进程正在运行，请等待")
             return
         if not bank_dropdown.value:
             update_log("错误: 请先选择银行")
@@ -482,11 +481,11 @@ def main(page: Page):
             return
         is_running[0] = True
         run_button.disabled = True
-        run_button.text = "运行中..."
+        run_button.text = "下载中..."
         run_button.icon = ft.Icons.HOURGLASS_TOP
         run_button.update()
         update_log(
-            f"开始运行 {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)} 导出，包含 {len(excel_data)} 条记录...")
+            f"开始运行 {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)} 下载，包含 {len(excel_data)} 条记录...")
 
         def worker():
             try:
@@ -505,7 +504,7 @@ def main(page: Page):
                 with sync_playwright() as playwright:
                     BANK_HANDLERS[bank_dropdown.value](playwright, project_root, base_path, excel_data, kaishi, jieshu,
                                                        log_callback=update_log)
-                update_log("导出完成。")
+                update_log("下载完成。")
             except Exception as ex:
                 update_log(f"执行出错：{str(ex)}")
             finally:
@@ -587,11 +586,12 @@ def main(page: Page):
         ai_content.controls[0].width = page.window.width - 70
         ai_content.controls[1].width = page.window.width - 70
         tools_content.width = page.window.width - 70
-        statement_content.controls[0].width = page.window.width - 70  # statement_dropdown
-        statement_content.controls[1].width = page.window.width - 70  # start_date_statement
-        statement_content.controls[2].width = page.window.width - 70  # select_statement_folder_button
-        statement_content.controls[4].width = page.window.width - 70  # export_statement_button
-        statement_content.controls[5].width = page.window.width - 70  # start_export_button
+        statement_content.controls[0].width = page.window.width - 70
+        statement_content.controls[1].width = page.window.width - 70
+        statement_content.controls[2].width = page.window.width - 70
+        statement_content.controls[4].width = page.window.width - 70
+        statement_content.controls[5].width = page.window.width - 70
+        home_content.controls[0].width = page.window.width - 70
         main_content.width = page.window.width - 70
         page.update()
 
@@ -605,13 +605,15 @@ def main(page: Page):
             ft.Row(
                 controls=load_site_icons(project_root, update_log, lambda name: login_site(name, project_root, update_log, last_click_time=[0])),
                 wrap=True,
-                spacing=10,
-                run_spacing=10,
-                alignment=ft.MainAxisAlignment.CENTER,
+                spacing=5,
+                run_spacing=5,
+                alignment=ft.MainAxisAlignment.SPACE_EVENLY,
+                width=page.window.width-70,
+                scroll=ft.ScrollMode.AUTO,
             ),
         ],
         spacing=10,
-        scroll=ft.ScrollMode.AUTO,
+        # padding=0,
         alignment=ft.MainAxisAlignment.START,
     )
 
@@ -870,7 +872,7 @@ def main(page: Page):
             switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
             switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
         ),
-        padding=ft.padding.symmetric(vertical=10, horizontal=10),
+        padding=ft.padding.only(left=10, right=10, top=10, bottom=10),
         bgcolor=ft.Colors.WHITE,
         alignment=ft.alignment.top_left,
         width=page.window.width-70,
