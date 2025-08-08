@@ -36,21 +36,15 @@ bank_rules = {
 }
 
 def get_quarterly_settlement_date(target_month):
-    """将 YYYY-MM 转换为对应的季度结息日 YYYYMMDD"""
+    """将 YYYY-MM 转换为对应的季度结息日 YYYYMMDD，仅支持 3、6、9、12 月"""
     try:
         year, month = map(int, target_month.split('-'))
         # 季度结息日映射
         quarter_months = {3: '03', 6: '06', 9: '09', 12: '12'}
-        # 找到最近的季度结息月
-        for q_month in sorted(quarter_months.keys(), reverse=True):
-            if month <= q_month:
-                settlement_month = q_month
-                break
-        else:
-            # 如果月份 > 12 或 < 3，使用上一年的 12 月 21 日
-            year -= 1
-            settlement_month = 12
-        return f"{year}{quarter_months[settlement_month]}21"
+        # 检查月份是否为结息月
+        if month not in quarter_months:
+            return None  # 非结息月（1、2、4、5、7、8、10、11）返回 None
+        return f"{year}{quarter_months[month]}21"
     except ValueError:
         return None
 
@@ -100,7 +94,7 @@ def extract_interest_data(file_path, bank_type, target_month):
         # 计算季度结息日
         settlement_date = get_quarterly_settlement_date(target_month)
         if not settlement_date:
-            return None, f"无效的月份格式: {target_month}"
+            return None, f"无效的月份: {target_month}，仅支持 3、6、9、12 月"
 
         # 提取数据
         data = []

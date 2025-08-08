@@ -75,6 +75,7 @@ def main(page: Page):
     is_maximized = [True]
     statement_folder = [r"D:\Desktop"]  # 流水文件夹路径，列表形式以支持闭包修改
     export_path = [r"D:\Desktop"]  # 导出路径，列表形式以支持闭包修改
+    excel_file_path = [None]  # 新增：存储 Excel 文件路径
 
     # 页面尺寸配置
     page_sizes = {
@@ -377,10 +378,50 @@ def main(page: Page):
 
     # 银行选择事件
     def on_bank_select(e):
+        nonlocal excel_data  # 移动到函数开头
         if bank_dropdown.value:
             update_log(f"已选择银行: {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)}")
+            # 如果已导入 Excel 文件，重新加载对应银行的 Sheet 数据
+            if excel_file_path[0] and os.path.exists(excel_file_path[0]):
+                try:
+                    sheet_name = BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)
+                    df = pd.read_excel(excel_file_path[0], sheet_name=sheet_name, header=0)
+                    required_columns = ["产品编号", "产品名称", "托管账户"]
+                    if df.empty or not all(col in df.columns for col in required_columns):
+                        update_log(f"错误: Excel 文件 '{sheet_name}' 工作表格式错误，至少需要列：{required_columns}")
+                        excel_data.clear()
+                        data_table.rows = []
+                        page.update()
+                        return
+                    excel_data.clear()
+                    excel_data.extend([(str(xiangmuid).strip(), str(xiangmu).strip(), str(account).strip()) for
+                                       xiangmuid, xiangmu, account in
+                                       zip(df["产品编号"], df["产品名称"], df["托管账户"]) if
+                                       str(xiangmuid).strip() and str(xiangmu).strip() and str(account).strip()])
+                    data_table.rows = [
+                        ft.DataRow(cells=[
+                            ft.DataCell(ft.Text(xiangmuid, size=14, font_family="FZLanTingHei")),
+                            ft.DataCell(ft.Text(xiangmu, size=14, font_family="FZLanTingHei")),
+                            ft.DataCell(ft.Text(account, size=14, font_family="FZLanTingHei")),
+                        ]) for xiangmuid, xiangmu, account in excel_data
+                    ]
+                    update_log(f"已更新数据表：{sheet_name}，包含 {len(excel_data)} 条记录")
+                    page.update()
+                except ValueError as ve:
+                    update_log(f"错误: 未找到 '{sheet_name}' 工作表：{str(ve)}")
+                    excel_data.clear()
+                    data_table.rows = []
+                    page.update()
+                except Exception as ex:
+                    update_log(f"更新数据表失败：{str(ex)}")
+                    excel_data.clear()
+                    data_table.rows = []
+                    page.update()
         else:
             update_log("银行选择已清空")
+            excel_data.clear()
+            data_table.rows = []
+            page.update()
 
     bank_dropdown.on_change = on_bank_select
 
@@ -391,6 +432,7 @@ def main(page: Page):
             return
         if e.files and any(f.name.endswith(('.xlsx', '.xls')) for f in e.files):
             file_path = e.files[0].path
+            excel_file_path[0] = file_path  # 保存 Excel 文件路径
             try:
                 # 获取 Sheet 名称
                 sheet_name = BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)
@@ -418,8 +460,14 @@ def main(page: Page):
                 page.update()
             except ValueError as ve:
                 update_log(f"错误: 未找到 '{sheet_name}' 工作表：{str(ve)}")
+                excel_data.clear()
+                data_table.rows = []
+                page.update()
             except Exception as ex:
                 update_log(f"导入 Excel 失败：{str(ex)}")
+                excel_data.clear()
+                data_table.rows = []
+                page.update()
         else:
             update_log("错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)")
 
