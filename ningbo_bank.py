@@ -119,7 +119,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                 with page.expect_download() as download_info:
                     page.get_by_text("对账单导出", exact=True).click()
                 download = download_info.value
-                filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
+                filename = f"{xiangmuid}_{xiangmu}_宁波银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                 download.save_as(os.path.join(liushui_path, filename))
                 log_local(f"银行流水导出完成：{filename}")
                 # 打印对账单为PDF

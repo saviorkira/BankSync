@@ -15,6 +15,7 @@ from flet import (
 )
 from login_manager import load_site_icons, login_site
 from todo_manager import TodoApp
+from statement_processor import process_bank_statements
 from ningbo_bank import run_ningbo_bank
 from hangzhou_bank import run_hangzhou_bank
 from pingan_bank import run_pingan_bank
@@ -215,7 +216,7 @@ def main(page: Page):
         text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
     )
 
-    run_button = ft.ElevatedButton(
+    run_bankdownloader_button = ft.ElevatedButton(
         text="开始下载",
         icon=ft.Icons.PLAY_CIRCLE,
         disabled=False,
@@ -292,6 +293,7 @@ def main(page: Page):
         label="选择要筛选的银行流水项目",
         options=[
             ft.dropdown.Option(key="bank_interest", text="银行利息"),
+            # 可扩展其他选项
         ],
         value=None,
         width=page.window.width-70,
@@ -421,7 +423,7 @@ def main(page: Page):
         else:
             update_log("错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)")
 
-    # 选择下载路径
+    # 选择下载路径##e: FilePickerResultEvent是对的不要改
     def select_base_path(e: FilePickerResultEvent):
         if e.path:
             nonlocal base_path
@@ -451,7 +453,7 @@ def main(page: Page):
             update_log("错误: 请选择有效的文件夹路径")
 
     # 开始下载任务
-    def run_export(e):
+    def run_bankdownloader(e):
         nonlocal is_running
         if is_running[0]:
             update_log("提示: 下载进程正在运行，请等待")
@@ -480,10 +482,10 @@ def main(page: Page):
             update_log("错误: 日期格式不正确，应为 YYYY-MM-DD")
             return
         is_running[0] = True
-        run_button.disabled = True
-        run_button.text = "下载中..."
-        run_button.icon = ft.Icons.HOURGLASS_TOP
-        run_button.update()
+        run_bankdownloader_button.disabled = True
+        run_bankdownloader_button.text = "下载中..."
+        run_bankdownloader_button.icon = ft.Icons.HOURGLASS_TOP
+        run_bankdownloader_button.update()
         update_log(
             f"开始运行 {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)} 下载，包含 {len(excel_data)} 条记录...")
 
@@ -509,14 +511,61 @@ def main(page: Page):
                 update_log(f"执行出错：{str(ex)}")
             finally:
                 is_running[0] = False
-                run_button.disabled = False
-                run_button.text = "开始下载"
-                run_button.icon = ft.Icons.PLAY_CIRCLE
-                run_button.update()
+                run_bankdownloader_button.disabled = False
+                run_bankdownloader_button.text = "开始下载"
+                run_bankdownloader_button.icon = ft.Icons.PLAY_CIRCLE
+                run_bankdownloader_button.update()
 
         threading.Thread(target=worker, daemon=True).start()
 
-    run_button.on_click = run_export
+    # 开始导出任务
+    def start_export(e):
+        nonlocal is_running
+        if is_running[0]:
+            update_log("提示: 导出进程正在运行，请等待")
+            return
+        if not statement_folder[0] or not os.path.exists(statement_folder[0]):
+            update_log("错误: 请先选择有效的银行流水文件夹")
+            return
+        if not export_path[0] or not os.path.exists(export_path[0]):
+            update_log("错误: 请先选择有效的导出文件夹")
+            return
+        if not start_date_statement.value:
+            update_log("错误: 请填写开始月份")
+            return
+        if not statement_dropdown.value:
+            update_log("错误: 请先选择银行流水项目")
+            return
+        is_running[0] = True
+        start_export_button.disabled = True
+        start_export_button.text = "导出中..."
+        start_export_button.icon = ft.Icons.HOURGLASS_TOP
+        start_export_button.update()
+        update_log(f"开始导出银行流水，月份: {start_date_statement.value}...")
+
+        def worker():
+            try:
+                if statement_dropdown.value == "bank_interest":
+                    success = process_bank_statements(statement_folder[0], start_date_statement.value, export_path[0], update_log, dropdown_value=statement_dropdown.value or "全部")
+                    if success:
+                        update_log(f"流水导出完成到：{export_path[0]}")
+                    else:
+                        update_log("流水导出失败：未找到符合条件的利息数据")
+                else:
+                    update_log(f"不支持的银行流水项目: {statement_dropdown.value}")
+            except Exception as ex:
+                update_log(f"导出失败：{str(ex)}")
+            finally:
+                is_running[0] = False
+                start_export_button.disabled = False
+                start_export_button.text = "开始导出"
+                start_export_button.icon = ft.Icons.PLAY_CIRCLE
+                start_export_button.update()
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    run_bankdownloader_button.on_click = run_bankdownloader
+    start_export_button.on_click = start_export
     import_excel_button.on_click = lambda _: file_picker.pick_files(allow_multiple=False, allowed_extensions=["xlsx", "xls"])
     select_path_button.on_click = lambda _: dir_picker.get_directory_path()
 
@@ -578,7 +627,7 @@ def main(page: Page):
         bank_dropdown.width = page.window.width - 70
         start_date.width = (page.window.width - 80) / 2
         end_date.width = (page.window.width - 80) / 2
-        run_button.width = page.window.width - 70
+        run_bankdownloader_button.width = page.window.width - 70
         select_path_button.width = page.window.width - 70
         import_excel_button.width = page.window.width - 70
         bank_export_content.controls[1].width = page.window.width - 70
@@ -645,7 +694,7 @@ def main(page: Page):
                 width=page.window.width-70,
                 height=173,
             ),
-            run_button,
+            run_bankdownloader_button,
         ],
         spacing=10,
         scroll=ft.ScrollMode.AUTO,

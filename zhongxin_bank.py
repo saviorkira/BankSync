@@ -160,7 +160,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     pyautogui.moveTo(50, 50)
                     time.sleep(1)  # 确保点击后下载触发
                 download = liushui_download_info.value
-                filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
+                filename = f"{xiangmuid}_{xiangmu}_中信银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                 download.save_as(os.path.join(liushui_path, filename))
                 log_local(f"银行流水导出完成：{filename}")
                 time.sleep(0.5)

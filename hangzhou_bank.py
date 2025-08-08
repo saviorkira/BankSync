@@ -88,7 +88,7 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                     with page.expect_download() as liushui_download_info:
                         page.get_by_role("button", name="导出Excel").click()
                     download = liushui_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
+                    filename = f"{xiangmuid}_{xiangmu}_杭州银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                     download.save_as(os.path.join(liushui_path, filename))
                     log_local(f"银行流水导出完成：{filename}")
                 except Exception as e:
