@@ -6,7 +6,8 @@ import cv2
 import pyautogui
 from pywinauto import Desktop, Application
 from datetime import datetime
-
+import ntplib
+import sys
 
 def log(message, project_root, log_callback=None):
     """记录日志到文件和回调函数"""
@@ -79,7 +80,6 @@ def find_image(template_path, base_path, threshold=0.5, max_attempts=10):
     log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", base_path)
     return None
 
-
 def find_and_click_image(template_path, base_path, offset_x=0, offset_y=0, threshold=0.5, max_attempts=10):
     """使用模板匹配找到图像并点击"""
     for attempt in range(max_attempts):
@@ -106,8 +106,6 @@ def find_and_click_image(template_path, base_path, offset_x=0, offset_y=0, thres
         time.sleep(1)
     log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", base_path)
     return None
-
-
 
 def handle_overwrite_dialog(base_path):
     """处理文件覆盖对话框"""
@@ -157,3 +155,27 @@ def handle_save_dialog(save_path, pdf_filename, base_path):
     except Exception as e:
         log(f"快速保存失败，错误: {e}", base_path)
         raise
+
+def check_expiration_with_ntp(project_root, ntp_servers=["ntp.ntsc.ac.cn", "cn.pool.ntp.org", "time.edu.cn", "ntp.aliyun.com"], expire_date_str="2026-06-01"):
+    """检查程序是否过期，使用 NTP 服务器获取时间"""
+    ntp_time = None
+    for server in ntp_servers:
+        try:
+            client = ntplib.NTPClient()
+            response = client.request(server, timeout=2)
+            ntp_time = datetime.fromtimestamp(response.tx_time)
+            # log(f"从 {server} 获取时间成功: {ntp_time}", project_root)
+            break
+        except Exception as e:
+            log(f"无法连接到 {server}: {str(e)}", project_root)
+
+    # if ntp_time is None:
+        # log("所有 NTP 服务器均不可用，回退到本地时间", project_root)
+        # ntp_time = datetime.now()
+
+    expire_date = datetime.strptime(expire_date_str, "%Y-%m-%d")
+    if ntp_time > expire_date:
+        # log(f"程序已过期！当前时间: {ntp_time}，过期时间: {expire_date}", project_root)
+        sys.exit(1)
+    # else:
+        # log(f"程序未过期，当前时间: {ntp_time}，过期时间: {expire_date}", project_root)

@@ -22,8 +22,7 @@ from pingan_bank import run_pingan_bank
 from shanghai_bank import run_shanghai_bank
 from zheshang_bank import run_zheshang_bank
 from zhongxin_bank import run_zhongxin_bank
-
-from utils import log, read_bank_config, get_resource_path
+from utils import log, read_bank_config, get_resource_path, check_expiration_with_ntp
 from AI import update_ai_output, send_ai_message
 
 def main(page: Page):
@@ -995,18 +994,11 @@ def main(page: Page):
     )
 
 if __name__ == "__main__":
-    force_check_expiration_local = lambda project_root, expire_date_str="2026-06-01": (
-        sys.exit(1) if datetime.now() > datetime.strptime(expire_date_str, "%Y-%m-%d")
-        else None
-    )
-    force_check_expiration_local(os.path.abspath(os.path.dirname(__file__)))
-    if getattr(sys, 'frozen', False):
-        base_path = os.path.dirname(sys.executable)
-    else:
-        base_path = os.path.abspath(os.path.dirname(__file__))
-    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(base_path, "playwright-browsers")
-    log(f"设置 PLAYWRIGHT_BROWSERS_PATH: {os.environ['PLAYWRIGHT_BROWSERS_PATH']}", base_path)
+    project_root = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.abspath(os.path.dirname(__file__))
+    check_expiration_with_ntp(project_root)
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(project_root, "playwright-browsers")
+    log(f"设置 PLAYWRIGHT_BROWSERS_PATH: {os.environ['PLAYWRIGHT_BROWSERS_PATH']}", project_root)
     try:
         ft.app(target=main)
     except Exception as e:
-        log(f"应用启动失败：{str(e)}", base_path)
+        log(f"应用启动失败：{str(e)}", project_root)
