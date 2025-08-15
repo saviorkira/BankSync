@@ -66,7 +66,7 @@ def main(page: Page):
 
     # UI 状态变量
     excel_data = []
-    base_path = r"D:\Desktop"
+    download_path = r"D:\Desktop"
     is_running = [False]
     selected_index = ft.Ref()
     selected_index.current = 0
@@ -141,7 +141,7 @@ def main(page: Page):
     )
 
     end_date = ft.TextField(
-        label="结束日期（通常3个月以内）",
+        label="结束日期（<3个月）",
         value="2025-07-04",
         width=(page.window.width-80)/2,
         border_radius=8,
@@ -231,8 +231,8 @@ def main(page: Page):
         width=page.window.width-70,
     )
 
-    base_path_text = ft.Text(
-        f"下载路径: {base_path}",
+    download_path_text = ft.Text(
+        f"下载路径: {download_path}",
         size=14,
         color=ft.Colors.GREY_700,
         font_family="FZLanTingHei",
@@ -471,12 +471,12 @@ def main(page: Page):
             update_log("错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)")
 
     # 选择下载路径##e: FilePickerResultEvent是对的不要改
-    def select_base_path(e: FilePickerResultEvent):
+    def select_download_path(e: FilePickerResultEvent):
         if e.path:
-            nonlocal base_path
-            base_path = e.path
-            base_path_text.value = f"下载路径: {base_path}"
-            update_log(f"下载路径设置为：{base_path}")
+            nonlocal download_path
+            download_path = e.path
+            download_path_text.value = f"下载路径: {download_path}"
+            update_log(f"下载路径设置为：{download_path}")
             page.update()
 
     # 选择流水文件夹
@@ -516,7 +516,7 @@ def main(page: Page):
             return
         kaishi = start_date.value.strip()
         jieshu = end_date.value.strip()
-        if not (kaishi and jieshu and base_path):
+        if not (kaishi and jieshu and download_path):
             update_log("提示: 请填写完整日期和下载路径")
             return
         try:
@@ -547,11 +547,11 @@ def main(page: Page):
                 if not os.path.exists(os.path.join(project_root, "data", "cv2")):
                     update_log("错误: data/cv2 文件夹不存在")
                     return
-                if not os.path.exists(base_path) or not os.access(base_path, os.W_OK):
-                    update_log(f"错误: 下载路径不可访问或不可写: {base_path}")
+                if not os.path.exists(download_path) or not os.access(download_path, os.W_OK):
+                    update_log(f"错误: 下载路径不可访问或不可写: {download_path}")
                     return
                 with sync_playwright() as playwright:
-                    BANK_HANDLERS[bank_dropdown.value](playwright, project_root, base_path, excel_data, kaishi, jieshu,
+                    BANK_HANDLERS[bank_dropdown.value](playwright, project_root, download_path, excel_data, kaishi, jieshu,
                                                        log_callback=update_log)
                 update_log("下载完成。")
             except Exception as ex:
@@ -618,7 +618,7 @@ def main(page: Page):
 
     # 文件选择器
     file_picker = ft.FilePicker(on_result=import_excel)
-    dir_picker = ft.FilePicker(on_result=select_base_path)
+    dir_picker = ft.FilePicker(on_result=select_download_path)
     statement_dir_picker = ft.FilePicker(on_result=select_statement_folder)
     export_dir_picker = ft.FilePicker(on_result=select_export_path)
     page.overlay.extend([file_picker, dir_picker, statement_dir_picker, export_dir_picker])
@@ -727,7 +727,7 @@ def main(page: Page):
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
             ),
             select_path_button,
-            base_path_text,
+            download_path_text,
             import_excel_button,
             ft.Container(
                 content=ft.ListView(
@@ -885,7 +885,7 @@ def main(page: Page):
         {"icon": ft.Icons.DOWNLOAD_OUTLINED, "selected_icon": ft.Icons.DOWNLOAD, "label": "下载", "content": bank_export_content},
         {"icon": ft.Icons.DATA_USAGE_OUTLINED, "selected_icon": ft.Icons.DATA_USAGE, "label": "数据", "content": statement_content},
         {"icon": ft.Icons.CHAT_OUTLINED, "selected_icon": ft.Icons.CHAT, "label": "AI", "content": ai_content},
-        {"icon": ft.Icons.APPS_OUTLINED, "selected_icon": ft.Icons.APPS, "label": "工具", "content": tools_content},
+        {"icon": ft.Icons.APPS_OUTLINED, "selected_icon": ft.Icons.APPS, "label": "其他", "content": tools_content},
     ]
 
     destinations = [

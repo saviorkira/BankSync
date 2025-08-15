@@ -54,60 +54,97 @@ def get_resource_path(relative_path, project_root, subfolder="data/cv2"):
         return full_path
     raise FileNotFoundError(f"资源文件不存在: {full_path}")
 
-def find_image(template_path, base_path, threshold=0.5, max_attempts=10):
+def find_image(template_path, project_root, threshold=0.5, max_attempts=10):
     """仅查找图像，不执行点击操作"""
     for attempt in range(max_attempts):
         screenshot = pyautogui.screenshot()
         screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
         if not os.path.exists(template_path):
-            log(f"模板路径不存在: {template_path}", base_path)
+            log(f"模板路径不存在: {template_path}", project_root)
             return None
         try:
             template = cv2.imdecode(np.fromfile(template_path, dtype=np.uint8), cv2.IMREAD_COLOR)
         except Exception as e:
-            log(f"模板加载异常: {template_path}, 错误: {e}", base_path)
+            log(f"模板加载异常: {template_path}, 错误: {e}", project_root)
             return None
         if template is None:
-            log(f"无法加载模板图像: {template_path}", base_path)
+            log(f"无法加载模板图像: {template_path}", project_root)
             return None
         result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
         min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
         if max_val >= threshold:
             x, y = max_loc
-            log(f"第{attempt+1}次尝试成功，找到图像位置: ({x}, {y})", base_path)
+            log(f"第{attempt+1}次尝试成功，找到图像位置: ({x}, {y})", project_root)
             return (x, y)
         time.sleep(1)
-    log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", base_path)
+    log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", project_root)
     return None
 
-def find_and_click_image(template_path, base_path, offset_x=0, offset_y=0, threshold=0.5, max_attempts=10):
+def find_and_click_image(template_path, project_root, offset_x=0, offset_y=0, threshold=0.5, max_attempts=10):
     """使用模板匹配找到图像并点击"""
     for attempt in range(max_attempts):
         screenshot = pyautogui.screenshot()
         screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
         if not os.path.exists(template_path):
-            log(f"模板路径不存在: {template_path}", base_path)
+            log(f"模板路径不存在: {template_path}", project_root)
             return None
         try:
             template = cv2.imdecode(np.fromfile(template_path, dtype=np.uint8), cv2.IMREAD_COLOR)
         except Exception as e:
-            log(f"模板加载异常: {template_path}, 错误: {e}", base_path)
+            log(f"模板加载异常: {template_path}, 错误: {e}", project_root)
             return None
         if template is None:
-            log(f"无法加载模板图像: {template_path}", base_path)
+            log(f"无法加载模板图像: {template_path}", project_root)
             return None
         result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
         min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
         if max_val >= threshold:
             x, y = max_loc
             pyautogui.click(x + offset_x + template.shape[1] // 2, y + offset_y + template.shape[0] // 2)
-            log(f"第{attempt+1}次尝试成功，点击位置: ({x + offset_x}, {y + offset_y})", base_path)
+            log(f"第{attempt+1}次尝试成功，点击位置: ({x + offset_x}, {y + offset_y})", project_root)
             return (x, y)
         time.sleep(1)
-    log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", base_path)
+    log(f"未找到模板: {template_path}，尝试次数: {max_attempts}", project_root)
     return None
 
-def handle_overwrite_dialog(base_path):
+def find_all_images(template_path, project_root, threshold=0.8, max_attempts=5):
+    """找到所有匹配图像的位置，按 y 坐标从上到下排序"""
+    template = cv2.imdecode(np.fromfile(template_path, dtype=np.uint8), cv2.IMREAD_COLOR)
+    if template is None:
+        log(f"无法加载模板图像: {template_path}", project_root)
+        return [], 0, 0
+
+    w, h = template.shape[1], template.shape[0]
+    locations = []
+
+    for _ in range(max_attempts):
+        screenshot = pyautogui.screenshot()
+        screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
+        result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
+        yloc, xloc = np.where(result >= threshold)
+
+        points = []
+        for (x, y) in zip(xloc, yloc):
+            points.append((x, y))
+
+        # 过滤重复点（距离 < 10 像素视为同一）
+        unique_points = []
+        for pt in points:
+            if not unique_points or all(abs(pt[0] - up[0]) > 10 or abs(pt[1] - up[1]) > 10 for up in unique_points):
+                unique_points.append(pt)
+
+        if unique_points:
+            # 按 y 排序（从上到下）
+            unique_points.sort(key=lambda p: p[1])
+            log(f"找到 {len(unique_points)} 个匹配位置: {template_path}", project_root)
+            return unique_points, w, h
+
+        time.sleep(1)
+
+    log(f"未找到任何匹配模板: {template_path}，尝试次数: {max_attempts}", project_root)
+    return [], 0, 0
+
+def handle_overwrite_dialog(project_root):
     """处理文件覆盖对话框"""
     try:
         app = Desktop(backend="win32")
@@ -119,12 +156,12 @@ def handle_overwrite_dialog(base_path):
         replace_btn.click()
         time.sleep(1)
     except Exception as e:
-        log(f"未检测到覆盖确认窗口或点击失败: {e}", base_path)
+        log(f"未检测到覆盖确认窗口或点击失败: {e}", project_root)
 
-def handle_save_dialog(save_path, pdf_filename, base_path):
+def handle_save_dialog(save_path, pdf_filename, project_root):
     """处理保存对话框"""
     full_path = os.path.join(save_path, pdf_filename)
-    log(f"尝试捕捉‘另存为’窗口，目标路径: {full_path}", base_path)
+    log(f"尝试捕捉‘另存为’窗口，目标路径: {full_path}", project_root)
     try:
         desktop = Desktop(backend="win32")
         dialogs = desktop.windows(title_re="^另存为$")
@@ -140,20 +177,20 @@ def handle_save_dialog(save_path, pdf_filename, base_path):
                 edit = dlg.child_window(class_name="Edit")
                 edit.set_focus()
                 edit.set_edit_text(full_path)
-                log(f"窗口{i + 1}设置路径成功: {full_path}", base_path)
+                log(f"窗口{i + 1}设置路径成功: {full_path}", project_root)
                 time.sleep(0.5)
                 save_btn = dlg.child_window(class_name="Button", title_re="保存|Save")
                 save_btn.click()
-                log(f"点击保存按钮完成", base_path)
+                log(f"点击保存按钮完成", project_root)
                 time.sleep(3)
-                handle_overwrite_dialog(base_path)
+                handle_overwrite_dialog(project_root)
                 return
             except Exception as inner_e:
-                log(f"窗口{i + 1}处理失败: {inner_e}", base_path)
+                log(f"窗口{i + 1}处理失败: {inner_e}", project_root)
                 continue
         raise Exception("未找到可用的‘另存为’窗口")
     except Exception as e:
-        log(f"快速保存失败，错误: {e}", base_path)
+        log(f"快速保存失败，错误: {e}", project_root)
         raise
 
 def check_expiration_with_ntp(project_root, ntp_servers=["ntp.ntsc.ac.cn", "cn.pool.ntp.org", "time.edu.cn", "ntp.aliyun.com"], expire_date_str="2026-06-01"):

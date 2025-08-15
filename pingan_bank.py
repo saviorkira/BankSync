@@ -1,8 +1,26 @@
 from playwright.sync_api import Playwright
-from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog, find_image
+from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog, find_image, find_all_images
 import os
 import time
 import pyautogui
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+import re
+
+def generate_months(start_str, end_str):
+    """生成从开始月份到有效结束月份的列表（有效结束 = min(结束, 当前月份-1)）"""
+    current_date = datetime.now()
+    start = datetime.strptime(start_str, '%Y-%m')
+    end = datetime.strptime(end_str, '%Y-%m')
+    available_end = current_date - relativedelta(months=1)
+    effective_end = min(end, available_end)
+
+    months = []
+    current_month = start
+    while current_month <= effective_end:
+        months.append(current_month.strftime('%Y-%m'))
+        current_month += relativedelta(months=1)
+    return months
 
 def run_pingan_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
     """执行平安银行流水、回单导出及对账单打印"""
@@ -33,8 +51,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
         page.get_by_role("textbox", name="企业网银/数字财资/企业用户名").fill(username)
 
         log_local("等待账户管理页面加载...")
-
-        page.wait_for_selector('text=查询中心', timeout=30000)
+        page.wait_for_selector('text=查询中心', timeout=60000)
 
         for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
             log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
@@ -68,14 +85,14 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                 formatted_account = f"{account[:4]} {account[4:8]} {account[8:12]} {account[12:]}"
                 page.get_by_text(formatted_account).click()
                 page.get_by_role("button", name="查 询").click()
-                time.sleep(2)
+                time.sleep(1)
 
                 # 检查是否存在 pingan_zanwushuju.bmp
                 zanwushuju_template = get_resource_path("pingan_zanwushuju.bmp", project_root, subfolder="data/cv2")
                 if find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=2):
                     log_local(f"产品 {xiangmuid}_{xiangmu} 无数据，跳过...")
                     continue  # 跳到下一个项目
-                time.sleep(1)
+
                 page.get_by_role("button", name="下 载 ").click()
                 time.sleep(1)
 
@@ -86,14 +103,14 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                         # 使用 cv2 识别 pingan_xiazaiexcelmingxi.bmp 并点击
                         xiazaiexcel_template = get_resource_path("pingan_xiazaiexcelmingxi.bmp", project_root,
                                                                  subfolder="data/cv2")
-                        if not find_and_click_image(xiazaiexcel_template, project_root, threshold=0.8, max_attempts=5):
+                        if not find_and_click_image(xiazaiexcel_template, project_root, threshold=0.8, max_attempts=2):
                             log_local(f"未找到下载 Excel 明细按钮，产品：{xiangmuid}_{xiangmu}")
                             page.screenshot(
                                 path=os.path.join(download_path, f"error_xiazaiexcel_{xiangmuid}_{xiangmu}.png"))
                             continue
                         # page.get_by_role("button", name="导出Excel").click()
                     download = liushui_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
+                    filename = f"{xiangmuid}_{xiangmu}_平安银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
                     download.save_as(os.path.join(duizhang_path, filename))
                     log_local(f"银行流水导出完成：{filename}")
                 except Exception as e:
@@ -101,7 +118,101 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
                     continue
 
-                #
+                #导出回单
+                page.get_by_text("首页").first.click()
+                page.get_by_text("查询中心").first.click()
+                page.get_by_text("电子账单").click()
+                # page.get_by_text("电子回单(新)").first.click()
+                # 账号选择
+                page.locator("text=/请输入账号[0-9]{14}/").click()
+                page.get_by_role("combobox").filter(has=page.locator("text=/请输入账号[0-9]{14}/")).get_by_role("textbox").fill(account)
+                time.sleep(1)
+                page.get_by_text("重庆国际信托股份有限公司").click()
+
+
+                page.get_by_text("~").first.click()
+
+                page.get_by_role("textbox", name="开始日期").nth(1).fill(kaishiriqi)
+                page.get_by_text("~").first.click()
+                page.get_by_role("textbox", name="结束日期").nth(1).fill(jieshuriqi)
+
+                page.get_by_role("button", name="查 询").click()
+                time.sleep(2)
+
+                # 检查无数据
+                zanwushuju_template = get_resource_path("pingan_zanwushuju.bmp", project_root, subfolder="data/cv2")
+                if find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=2):
+                    log_local(f"产品 {xiangmuid}_{xiangmu} 回单无数据，跳过...")
+                    continue
+
+                page.get_by_role("combobox").filter(has_text="条/页").click()
+                page.get_by_role("option", name="50 条/页").click()
+                page.get_by_role("row", name="交易类型 付款方账号/户名 收款方账号/户名 交易币种 交易金额 交易日期 交易用途 操作").get_by_label("").check()
+                page.get_by_role("button", name="导出").click()
+
+                with page.expect_download() as download_info:
+                    page.get_by_role("menuitem", name="一页(A4)三张电子回单").click()
+                download = download_info.value
+                filename = f"{xiangmuid}_{xiangmu}_平安银行回单_{kaishiriqi}_{jieshuriqi}.pdf"
+                download.save_as(os.path.join(huidan_path, filename))
+                log_local(f"银行回单导出完成：{filename}")
+                time.sleep(2)
+
+                # 导出对账单
+                # page.get_by_text("首页").first.click()
+                # page.get_by_text("查询中心").click()
+                # page.get_by_text("电子账单").click()
+                page.get_by_text("电子月结单下载(新)").click()
+                page.get_by_placeholder("请输入账号").click()
+                page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).fill(formatted_account)
+                time.sleep(1)
+                page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).press("Enter")
+                page.get_by_text("重庆国际信托股份有限公司").click()
+
+                def format_date(date_str):
+                    return date_str[:7]  # 截取 "2025-xx"
+
+                formatted_kaishiriqi = format_date(kaishiriqi)
+                formatted_jieshuriqi = format_date(jieshuriqi)
+
+                # 账号选择
+
+                page.get_by_role("textbox", name="开始月份").fill(formatted_kaishiriqi)
+                page.get_by_role("textbox", name="结束月份").fill(formatted_jieshuriqi)
+
+                page.get_by_role("button", name="查 询").click()
+                time.sleep(2)
+
+                # 生成月份列表
+                months = generate_months(formatted_kaishiriqi, formatted_jieshuriqi)
+                if not months:
+                    log_local(f"产品 {xiangmuid}_{xiangmu} 无可用对账单月份，跳过...")
+                    continue
+
+                # 使用 CV2 找到所有 "下载PDF" 按钮
+                pdf_template = get_resource_path("pingan_xiazaipdf.bmp", project_root, subfolder="data/cv2")
+                points, w, h = find_all_images(pdf_template, project_root, threshold=0.8, max_attempts=3)
+
+                if len(points) != len(months):
+                    log_local(f"警告: 找到 {len(points)} 个按钮，但预期 {len(months)} 个月份，可能数据不全")
+
+                for i, pt in enumerate(points):
+                    if i >= len(months):
+                        log_local(f"警告: 按钮数量多于月份数，跳过多余按钮: {i+1}")
+                        break
+                    month = months[i]
+                    try:
+                        with page.expect_download() as download_info:
+                            pyautogui.click(pt[0] + w // 2, pt[1] + h // 2)
+                            time.sleep(1)
+                        download = download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_平安银行对账单_{month}.pdf"
+                        download.save_as(os.path.join(duizhangdan_path, filename))
+                        log_local(f"银行对账单导出完成：{filename}")
+                        time.sleep(2)
+                    except Exception as e:
+                        log_local(f"导出对账单 {month} 失败：{str(e)}")
+                        continue
 
             except Exception as e:
                 log_local(f"处理产品 {xiangmuid}_{xiangmu} 失败：{str(e)}")

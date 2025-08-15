@@ -1,34 +1,69 @@
-import sys
-import ntplib
-from datetime import datetime
+page.goto("https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login")
+page.get_by_text("查询中心").click()
+page.get_by_text("电子账单").click()
+page.get_by_text("电子账单").click()
+page.get_by_text("19014530048798").click()
+page.get_by_text("请输入账号").click()
+page.get_by_role("combobox").filter(has_text="请输入账号 ").get_by_role("textbox").fill("77717")
+page.get_by_text("重庆国际信托股份有限公司").click()
+page.get_by_role("textbox", name="开始日期").click()
+page.get_by_role("textbox", name="开始日期").nth(1).click()
+page.get_by_role("textbox", name="开始日期").nth(1).fill("2025-06-01")
+page.get_by_role("textbox", name="结束日期").click()
+page.get_by_title("年8月5日").locator("div").click()
+page.get_by_title("年6月1日").locator("div").click()
+page.get_by_role("button", name="查 询").click()
+page.get_by_role("combobox").filter(has_text="条/页").click()
+page.get_by_role("option", name="50 条/页").click()
+page.get_by_role("row",
+                 name="交易类型 付款方账号/户名 收款方账号/户名 交易币种 交易金额 交易日期 交易用途 操作").get_by_label(
+    "").check()
+page.get_by_role("button", name="导出").click()
+with page.expect_download() as download_info:
+    page.get_by_role("menuitem", name="一页(A4)三张电子回单").click()
+download = download_info.value
+page.get_by_text("电子月结单下载", exact=True).click()
+page.get_by_text("电子月结单下载(新)").click()
+page.get_by_role("textbox", name="请输入账号或账户名称").click()
+page.get_by_role("textbox", name="4530 0487 98").fill("7")
+page.get_by_role("textbox", name="4530 0487 98").press("PageDown")
+page.get_by_role("textbox", name="4530 0487 98").fill("777717")
+page.get_by_text("5057 7777 17").click()
+page.get_by_role("textbox", name="开始月份").click()
+page.get_by_role("textbox", name="开始月份").click()
+page.get_by_role("textbox", name="开始月份").press("ArrowRight")
+page.get_by_role("textbox", name="开始月份").press("ArrowRight")
+page.get_by_role("textbox", name="开始月份").press("ArrowRight")
+page.get_by_role("textbox", name="开始月份").press("ArrowRight")
+page.get_by_role("textbox", name="开始月份").fill("2025-06")
+page.get_by_role("textbox", name="结束月份").click()
+page.get_by_role("textbox", name="结束月份").press("ArrowRight")
+page.get_by_role("textbox", name="结束月份").press("ArrowRight")
+page.get_by_role("textbox", name="结束月份").press("ArrowRight")
+page.get_by_role("textbox", name="结束月份").press("ArrowRight")
+page.get_by_role("button", name="查 询").click()
+with page.expect_download() as download1_info:
+    page.locator("a").filter(has_text="下载PDF").nth(2).click()
+download1 = download1_info.value
+page.get_by_text("电子回单(新)").click()
+page.get_by_text("请输入账号19014530048798 ").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").get_by_role("textbox").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").get_by_role("textbox").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").locator("svg").click()
+page.get_by_text("请输入账号19014530048798 ").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").locator("svg").click()
+page.locator(".ele-content").click()
+page.get_by_text("账号：", exact=True).click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").get_by_role("textbox").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").click()
+page.get_by_role("combobox").filter(has_text="请输入账号19014530048798 ").click()
+page.get_by_text("等分化电子票据 等分化电子票据(新版)").click()
 
+# ---------------------
+context.close()
+browser.close()
 
-def check_expiration_with_ntp(
-        ntp_servers=["ntp.ntsc.ac.cn", "cn.pool.ntp.org", "time.edu.cn", "ntp.aliyun.com"],
-        expire_date_str="2026-06-01"
-):
-    ntp_time = None
-    for server in ntp_servers:
-        try:
-            client = ntplib.NTPClient()
-            response = client.request(server, timeout=2)  # 设置 2 秒超时
-            ntp_time = datetime.fromtimestamp(response.tx_time)
-            print(f"Time retrieved from {server}: {ntp_time}")
-            break
-        except Exception as e:
-            print(f"Failed to connect to {server}: {e}")
-
-    if ntp_time is None:
-        print("All NTP servers are unreachable, falling back to local time.")
-        ntp_time = datetime.now()  # 回退到本地时间
-
-    expire_date = datetime.strptime(expire_date_str, "%Y-%m-%d")
-    if ntp_time > expire_date:
-        print(f"Program has expired! Current time: {ntp_time}")
-        sys.exit(1)
-    else:
-        print(f"Program is valid. Current time: {ntp_time}")
-
-
-if __name__ == "__main__":
-    check_expiration_with_ntp()
+page.get_by_role("textbox", name="开始日期").nth(1).click()
+page.once("dialog", lambda dialog: dialog.dismiss())
+page.get_by_role("textbox", name="结束日期").nth(1).click()
