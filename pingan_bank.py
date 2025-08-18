@@ -38,6 +38,8 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
     if not os.path.exists(browser_path):
         log_local(f"Playwright 浏览器路径不存在: {browser_path}")
         raise FileNotFoundError(f"Playwright 浏览器路径不存在: {browser_path}")
+    # 添加标志变量，记录是否已处理通知提示
+    notification_handled = [False]  # 使用列表以支持闭包修改
     try:
         log_local("启动浏览器...")
         browser = playwright.chromium.launch(headless=False, timeout=30000)
@@ -77,6 +79,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
 
 
 ###################
+                time.sleep(1)
                 page.get_by_role("textbox", name="请选择").first.click()
                 page.get_by_role("textbox").first.fill(account)
                 page.get_by_role("textbox").first.press("Enter")
@@ -85,13 +88,25 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                 formatted_account = f"{account[:4]} {account[4:8]} {account[8:12]} {account[12:]}"
                 page.get_by_text(formatted_account).click()
                 page.get_by_role("button", name="查 询").click()
-                time.sleep(1)
+                time.sleep(2)
 
                 # 检查是否存在 pingan_zanwushuju.bmp
                 zanwushuju_template = get_resource_path("pingan_zanwushuju.bmp", project_root, subfolder="data/cv2")
-                if find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=2):
-                    log_local(f"产品 {xiangmuid}_{xiangmu} 无数据，跳过...")
-                    continue  # 跳到下一个项目
+                first_attempt = find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=1)
+                time.sleep(1)
+                second_attempt = find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=1)
+                if first_attempt is not None and second_attempt is not None:
+                    log_local(
+                        f"产品 {xiangmuid}_{xiangmu} 无数据（两次检测均成功，位置：{first_attempt}, {second_attempt}），跳过...")
+                    continue
+                else:
+                    log_local(
+                        f"产品 {xiangmuid}_{xiangmu} 图像检测结果：第一次={'成功' if first_attempt else '失败'}, 第二次={'成功' if second_attempt else '失败'}，继续处理...")
+
+
+                # if find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=2):
+                #     log_local(f"产品 {xiangmuid}_{xiangmu} 无数据，跳过...")
+                #     continue  # 跳到下一个项目
 
                 page.get_by_role("button", name="下 载 ").click()
                 time.sleep(1)
@@ -163,10 +178,14 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                 # page.get_by_text("查询中心").click()
                 # page.get_by_text("电子账单").click()
                 page.get_by_text("电子月结单下载(新)").click()
+                time.sleep(1)
                 page.get_by_placeholder("请输入账号").click()
-                page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).fill(formatted_account)
+                page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).wait_for(state="visible", timeout=30000)
+                time.sleep(1)
+                page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).fill(account)
                 time.sleep(1)
                 page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).press("Enter")
+                time.sleep(1)
                 page.get_by_text("重庆国际信托股份有限公司").click()
 
                 def format_date(date_str):
@@ -209,7 +228,20 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                         filename = f"{xiangmuid}_{xiangmu}_平安银行对账单_{month}.pdf"
                         download.save_as(os.path.join(duizhangdan_path, filename))
                         log_local(f"银行对账单导出完成：{filename}")
+                        pyautogui.moveTo(500, 500)
+                        pyautogui.click()
                         time.sleep(2)
+                        # 从第三个项目开始检查禁用通知提示
+                        # if index >= 1 and not notification_handled[0]:
+                        #     chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
+                        #     if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
+                        #         log_local("检测到并点击‘禁用通知’提示")
+                        #         pyautogui.moveTo(495, 495)
+                        #         pyautogui.click()
+                        #         time.sleep(1)
+                        #         notification_handled[0] = True
+                        #     else:
+                        #         log_local("未检测到‘禁用通知’提示")
                     except Exception as e:
                         log_local(f"导出对账单 {month} 失败：{str(e)}")
                         continue

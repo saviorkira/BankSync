@@ -201,14 +201,14 @@ def check_expiration_with_ntp(project_root, ntp_servers=["ntp.ntsc.ac.cn", "cn.p
             client = ntplib.NTPClient()
             response = client.request(server, timeout=2)
             ntp_time = datetime.fromtimestamp(response.tx_time)
-            # log(f"从 {server} 获取时间成功: {ntp_time}", project_root)
+            log(f"从 {server} 获取时间成功: {ntp_time}", project_root)
             break
         except Exception as e:
             log(f"无法连接到 {server}: {str(e)}", project_root)
 
-    # if ntp_time is None:
-        # log("所有 NTP 服务器均不可用，回退到本地时间", project_root)
-        # ntp_time = datetime.now()
+    if ntp_time is None:
+        log("所有 NTP 服务器均不可用，回退到本地时间", project_root)
+        ntp_time = datetime.now()
 
     expire_date = datetime.strptime(expire_date_str, "%Y-%m-%d")
     if ntp_time > expire_date:

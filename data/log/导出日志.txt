@@ -7312,3 +7312,1142 @@ Call log:
 2025-08-15 15:44:22: 浏览器已关闭
 2025-08-15 15:44:22: 浏览器已关闭
 2025-08-15 15:44:22: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-15 16:09:24: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:09:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:09:24: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:09:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:09:24: 成功加载 config.json，任务数: 2
+2025-08-15 16:09:24: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:10:05: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:10:06: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:10:06: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:10:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:10:06: 成功加载 config.json，任务数: 2
+2025-08-15 16:10:06: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:37:40: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2025-08-15 16:37:40: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:37:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:37:41: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:37:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:37:41: 成功加载 config.json，任务数: 2
+2025-08-15 16:37:41: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:37:49: 下载路径设置为：D:\Desktop\Auto\BankSync测试\5
+2025-08-15 16:38:09: 下载路径已更新为：D:\Desktop\Auto\BankSync测试\5
+2025-08-15 16:38:24: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:38:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:38:24: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:38:24: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:38:24: 成功加载 config.json，任务数: 2
+2025-08-15 16:38:24: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:39:03: 下载路径设置为：D:\Desktop\Auto\BankSync测试\2
+2025-08-15 16:39:16: 下载路径已更新为：D:\Desktop\Auto\BankSync测试\
+2025-08-15 16:39:17: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:18: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:21: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:22: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:22: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:22: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:27: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:39:27: 警告: 输入的路径无效或不可写：D:\Desktop\Auto\BankSync测试\9
+2025-08-15 16:40:27: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:40:27: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:40:27: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:40:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:40:27: 成功加载 config.json，任务数: 2
+2025-08-15 16:40:27: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:41:33: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:41:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:41:33: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:41:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:41:33: 成功加载 config.json，任务数: 2
+2025-08-15 16:41:33: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:41:59: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:42:00: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:42:00: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:42:00: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:42:00: 成功加载 config.json，任务数: 2
+2025-08-15 16:42:00: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:43:02: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:43:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:43:02: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:43:02: 成功加载 config.json，任务数: 2
+2025-08-15 16:43:02: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:43:33: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:43:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:43:33: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:43:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:43:33: 成功加载 config.json，任务数: 2
+2025-08-15 16:43:33: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:44:12: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:44:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:44:12: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:44:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:44:12: 成功加载 config.json，任务数: 2
+2025-08-15 16:44:12: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:47:50: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:47:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:47:50: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:47:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:47:50: 成功加载 config.json，任务数: 2
+2025-08-15 16:47:50: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:48:04: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:48:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:48:04: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:48:04: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:48:04: 成功加载 config.json，任务数: 2
+2025-08-15 16:48:04: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:50:33: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:50:34: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:50:34: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:50:34: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:50:34: 成功加载 config.json，任务数: 2
+2025-08-15 16:50:34: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:55:12: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:55:13: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:55:13: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:55:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:55:13: 成功加载 config.json，任务数: 2
+2025-08-15 16:55:13: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:56:17: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:56:18: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:56:18: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:56:18: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:56:18: 成功加载 config.json，任务数: 2
+2025-08-15 16:56:18: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:56:32: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:56:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:56:32: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:56:32: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:56:32: 成功加载 config.json，任务数: 2
+2025-08-15 16:56:32: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:57:36: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:57:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:57:36: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:57:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:57:36: 成功加载 config.json，任务数: 2
+2025-08-15 16:57:36: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:57:49: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:57:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:57:49: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:57:49: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:57:49: 成功加载 config.json，任务数: 2
+2025-08-15 16:57:49: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:58:44: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:58:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:58:44: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:58:44: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:58:44: 成功加载 config.json，任务数: 2
+2025-08-15 16:58:44: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 16:58:55: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 16:58:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 16:58:55: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 16:58:55: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 16:58:55: 成功加载 config.json，任务数: 2
+2025-08-15 16:58:55: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 17:03:22: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 17:03:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 17:03:23: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 17:03:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 17:03:23: 成功加载 config.json，任务数: 2
+2025-08-15 17:03:23: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 17:05:54: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 17:05:54: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 17:05:54: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 17:05:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 17:05:54: 成功加载 config.json，任务数: 2
+2025-08-15 17:05:54: TodoApp 初始化完成，加载任务数: 2
+2025-08-15 17:06:06: 已选择银行流水项目: bank_interest
+2025-08-15 17:20:42: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-15 17:20:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-15 17:20:42: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-15 17:20:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-15 17:20:42: 成功加载 config.json，任务数: 2
+2025-08-15 17:20:42: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 15:43:22: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:43:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 15:43:23: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 15:43:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 15:43:23: 成功加载 config.json，任务数: 2
+2025-08-18 15:43:23: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 15:44:22: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2025-08-18 15:44:24: 无法连接到 cn.pool.ntp.org: No response received from cn.pool.ntp.org.
+2025-08-18 15:44:25: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:44:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 15:44:25: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 15:44:25: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 15:44:25: 成功加载 config.json，任务数: 2
+2025-08-18 15:44:25: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 15:45:57: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2025-08-18 15:45:57: 从 cn.pool.ntp.org 获取时间成功: 2025-08-18 15:46:00.764855
+2025-08-18 15:45:57: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:45:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 15:45:58: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 15:45:58: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 15:45:58: 成功加载 config.json，任务数: 2
+2025-08-18 15:45:58: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 15:46:24: 已选择银行: 平安银行
+2025-08-18 15:46:33: 下载路径设置为：D:\Desktop\Auto\BankSync测试\6
+2025-08-18 15:46:38: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：平安银行，包含 2 条记录
+2025-08-18 15:46:39: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 15:46:40: 启动平安银行导出流程...
+2025-08-18 15:46:40: 启动平安银行导出流程...
+2025-08-18 15:46:40: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:46:40: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:46:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 15:46:40: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 15:46:40: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:46:40: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:46:40: 启动浏览器...
+2025-08-18 15:46:40: 启动浏览器...
+2025-08-18 15:46:45: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:46:45: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:46:58: 输入用户名和密码...
+2025-08-18 15:46:58: 输入用户名和密码...
+2025-08-18 15:46:58: 等待账户管理页面加载...
+2025-08-18 15:46:58: 等待账户管理页面加载...
+2025-08-18 15:47:31: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 15:47:31: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 15:47:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 15:47:37: 第1次尝试成功，找到图像位置: (780, 571)
+2025-08-18 15:47:37: 产品 24066_重庆信托·开福长盛集合资金信托计划 无数据，跳过...
+2025-08-18 15:47:37: 产品 24066_重庆信托·开福长盛集合资金信托计划 无数据，跳过...
+2025-08-18 15:47:37: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 15:47:37: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 15:47:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 15:47:41: 第1次尝试成功，找到图像位置: (780, 571)
+2025-08-18 15:47:41: 产品 24343_重庆信托·淄博城运集合资金信托计划 无数据，跳过...
+2025-08-18 15:47:41: 产品 24343_重庆信托·淄博城运集合资金信托计划 无数据，跳过...
+2025-08-18 15:47:41: 浏览器已关闭
+2025-08-18 15:47:41: 浏览器已关闭
+2025-08-18 15:47:41: 下载完成。
+2025-08-18 15:47:49: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 15:47:50: 启动平安银行导出流程...
+2025-08-18 15:47:50: 启动平安银行导出流程...
+2025-08-18 15:47:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:47:50: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:47:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 15:47:50: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 15:47:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:47:50: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:47:50: 启动浏览器...
+2025-08-18 15:47:50: 启动浏览器...
+2025-08-18 15:47:52: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:47:52: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:48:03: 输入用户名和密码...
+2025-08-18 15:48:03: 输入用户名和密码...
+2025-08-18 15:48:03: 等待账户管理页面加载...
+2025-08-18 15:48:03: 等待账户管理页面加载...
+2025-08-18 15:48:23: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 15:48:23: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 15:48:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 15:48:31: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 15:48:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 15:48:32: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 15:48:33: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 15:48:33: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 15:48:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 15:48:41: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 15:48:45: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 15:48:45: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 15:49:11: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}"))
+
+2025-08-18 15:49:11: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}"))
+
+2025-08-18 15:49:11: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 15:49:11: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 15:49:11: 浏览器已关闭
+2025-08-18 15:49:11: 浏览器已关闭
+2025-08-18 15:49:11: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 15:56:36: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 15:56:39.139051
+2025-08-18 15:56:36: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:56:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 15:56:36: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 15:56:36: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 15:56:36: 成功加载 config.json，任务数: 2
+2025-08-18 15:56:36: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 15:56:38: 已选择银行: 中信银行
+2025-08-18 15:56:40: 已选择银行: 平安银行
+2025-08-18 15:56:47: 下载路径设置为：D:\Desktop\Auto\BankSync测试\6
+2025-08-18 15:56:51: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：平安银行，包含 2 条记录
+2025-08-18 15:56:51: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 15:56:54: 启动平安银行导出流程...
+2025-08-18 15:56:54: 启动平安银行导出流程...
+2025-08-18 15:56:54: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:56:54: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:56:54: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 15:56:54: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 15:56:54: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:56:54: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:56:54: 启动浏览器...
+2025-08-18 15:56:54: 启动浏览器...
+2025-08-18 15:56:56: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:56:56: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:57:04: 输入用户名和密码...
+2025-08-18 15:57:04: 输入用户名和密码...
+2025-08-18 15:57:04: 等待账户管理页面加载...
+2025-08-18 15:57:04: 等待账户管理页面加载...
+2025-08-18 15:57:21: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 15:57:21: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 15:57:26: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 15:57:29: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 15:57:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 15:57:30: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 15:57:31: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 15:57:31: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 15:57:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 15:57:39: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 15:57:41: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 15:57:41: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 15:57:55: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 15:57:55: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 15:57:55: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 15:57:55: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 15:57:58: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("1985 3888 8898 58")
+
+2025-08-18 15:57:58: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("1985 3888 8898 58")
+
+2025-08-18 15:57:58: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 15:57:58: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 15:57:58: 浏览器已关闭
+2025-08-18 15:57:58: 浏览器已关闭
+2025-08-18 15:57:58: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 15:59:21: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 15:59:24.910265
+2025-08-18 15:59:21: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:59:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 15:59:22: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 15:59:22: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 15:59:22: 成功加载 config.json，任务数: 2
+2025-08-18 15:59:22: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 15:59:27: 已选择银行: 平安银行
+2025-08-18 15:59:32: 下载路径设置为：D:\Desktop\Auto\BankSync测试\6
+2025-08-18 15:59:35: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：平安银行，包含 2 条记录
+2025-08-18 15:59:36: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 15:59:37: 启动平安银行导出流程...
+2025-08-18 15:59:37: 启动平安银行导出流程...
+2025-08-18 15:59:37: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:59:37: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 15:59:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 15:59:37: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 15:59:37: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:59:37: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 15:59:37: 启动浏览器...
+2025-08-18 15:59:37: 启动浏览器...
+2025-08-18 15:59:41: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:59:41: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 15:59:49: 输入用户名和密码...
+2025-08-18 15:59:49: 输入用户名和密码...
+2025-08-18 15:59:49: 等待账户管理页面加载...
+2025-08-18 15:59:49: 等待账户管理页面加载...
+2025-08-18 16:00:11: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:00:11: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:00:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:00:19: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:00:20: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:00:20: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:00:21: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:00:21: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:00:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:00:30: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:00:33: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:00:33: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:00:38: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 16:00:38: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 16:00:38: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:00:38: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:00:41: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("tab", name="历史明细查询")
+
+2025-08-18 16:00:41: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("tab", name="历史明细查询")
+
+2025-08-18 16:00:41: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:00:41: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:00:41: 浏览器已关闭
+2025-08-18 16:00:41: 浏览器已关闭
+2025-08-18 16:00:41: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:02:05: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 16:02:08.740020
+2025-08-18 16:02:05: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:02:06: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 16:02:06: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 16:02:06: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 16:02:06: 成功加载 config.json，任务数: 2
+2025-08-18 16:02:06: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 16:02:10: 已选择银行: 平安银行
+2025-08-18 16:02:17: 下载路径设置为：D:\Desktop\Auto\BankSync测试\6
+2025-08-18 16:02:20: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：平安银行，包含 2 条记录
+2025-08-18 16:02:20: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 16:02:23: 启动平安银行导出流程...
+2025-08-18 16:02:23: 启动平安银行导出流程...
+2025-08-18 16:02:23: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:02:23: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:02:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:02:23: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:02:23: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:02:23: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:02:23: 启动浏览器...
+2025-08-18 16:02:23: 启动浏览器...
+2025-08-18 16:02:25: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:02:25: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:02:31: 输入用户名和密码...
+2025-08-18 16:02:31: 输入用户名和密码...
+2025-08-18 16:02:31: 等待账户管理页面加载...
+2025-08-18 16:02:31: 等待账户管理页面加载...
+2025-08-18 16:02:34: 平安银行导出流程异常：Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("text=查询中心") to be visible
+
+2025-08-18 16:02:34: 平安银行导出流程异常：Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("text=查询中心") to be visible
+
+2025-08-18 16:02:35: 浏览器已关闭
+2025-08-18 16:02:35: 浏览器已关闭
+2025-08-18 16:02:35: 执行出错：Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("text=查询中心") to be visible
+
+2025-08-18 16:15:27: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 16:15:30.357410
+2025-08-18 16:15:27: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:15:27: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 16:15:27: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 16:15:27: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 16:15:27: 成功加载 config.json，任务数: 2
+2025-08-18 16:15:27: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 16:15:31: 已选择银行: 平安银行
+2025-08-18 16:15:36: 下载路径设置为：D:\Desktop\Auto\BankSync测试\6
+2025-08-18 16:15:39: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：平安银行，包含 2 条记录
+2025-08-18 16:15:40: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 16:15:41: 启动平安银行导出流程...
+2025-08-18 16:15:41: 启动平安银行导出流程...
+2025-08-18 16:15:41: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:15:41: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:15:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:15:41: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:15:41: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:15:41: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:15:41: 启动浏览器...
+2025-08-18 16:15:41: 启动浏览器...
+2025-08-18 16:15:45: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:15:45: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:15:56: 输入用户名和密码...
+2025-08-18 16:15:56: 输入用户名和密码...
+2025-08-18 16:15:56: 等待账户管理页面加载...
+2025-08-18 16:15:56: 等待账户管理页面加载...
+2025-08-18 16:16:16: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:16:16: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:16:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:16:24: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:16:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:16:25: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:16:26: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:16:26: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:16:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:16:34: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:16:36: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:16:36: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:16:42: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 16:16:42: 处理产品 24066_重庆信托·开福长盛集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 16:16:42: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:16:42: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:16:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:16:49: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:16:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:16:51: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:16:51: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:16:51: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:16:57: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:17:00: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:17:05: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:17:05: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:17:11: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 16:17:11: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Error: strict mode violation: get_by_text("重庆国际信托股份有限公司") resolved to 10 elements:
+    1) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="6788 8888 18 重庆国际信托股份有限公司").locator("div").nth(2)
+    2) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0487 98 重庆国际信托股份有限公司").locator("div").nth(2)
+    3) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8110 6666 66 重庆国际信托股份有限公司").locator("div").nth(2)
+    4) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="0000 0190 97 重庆国际信托股份有限公司").locator("div").nth(2)
+    5) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="4530 0386 10 重庆国际信托股份有限公司").locator("div").nth(2)
+    6) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="9000 0000 80 重庆国际信托股份有限公司").locator("div").nth(2)
+    7) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="8418 8888 40 重庆国际信托股份有限公司").locator("div").nth(2)
+    8) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="2025 0701 60 重庆国际信托股份有限公司").locator("div").nth(2)
+    9) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1111 1111 19 重庆国际信托股份有限公司").locator("div").nth(2)
+    10) <div class="one-col" data-v-a72c233a="">↵          重庆国际信托股份有限公司↵        </div> aka get_by_role("listitem").filter(has_text="1586 6666 80 重庆国际信托股份有限公司").locator("div").nth(2)
+
+Call log:
+  - waiting for get_by_text("重庆国际信托股份有限公司")
+
+2025-08-18 16:17:11: 浏览器已关闭
+2025-08-18 16:17:11: 浏览器已关闭
+2025-08-18 16:17:11: 下载完成。
+2025-08-18 16:21:01: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 16:21:04.610949
+2025-08-18 16:21:01: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:21:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 16:21:01: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 16:21:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 16:21:01: 成功加载 config.json，任务数: 2
+2025-08-18 16:21:01: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 16:21:04: 已选择银行: 平安银行
+2025-08-18 16:21:11: 下载路径设置为：D:\Desktop\Auto\BankSync测试\6
+2025-08-18 16:21:14: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：平安银行，包含 2 条记录
+2025-08-18 16:21:14: 开始运行 平安银行 下载，包含 2 条记录...
+2025-08-18 16:21:15: 启动平安银行导出流程...
+2025-08-18 16:21:15: 启动平安银行导出流程...
+2025-08-18 16:21:15: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:21:15: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:21:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:21:15: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:21:15: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:21:15: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:21:15: 启动浏览器...
+2025-08-18 16:21:15: 启动浏览器...
+2025-08-18 16:21:19: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:21:19: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:21:34: 输入用户名和密码...
+2025-08-18 16:21:34: 输入用户名和密码...
+2025-08-18 16:21:34: 等待账户管理页面加载...
+2025-08-18 16:21:34: 等待账户管理页面加载...
+2025-08-18 16:21:45: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:21:45: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:21:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:21:54: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:21:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:21:55: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:21:56: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:21:56: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:22:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:22:04: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:22:07: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:22:07: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:22:16: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:22:16: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:22:17: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:22:17: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:22:20: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:22:20: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:22:22: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:22:22: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:22:26: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:22:29: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:22:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:22:30: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:22:31: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:22:31: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:22:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:22:39: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:22:43: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:22:43: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:22:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:22:52: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:22:53: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:22:53: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:22:56: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:22:56: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:22:59: 浏览器已关闭
+2025-08-18 16:22:59: 浏览器已关闭
+2025-08-18 16:22:59: 下载完成。
+2025-08-18 16:26:20: 下载路径设置为：D:\Desktop\Auto\BankSync测试\7
+2025-08-18 16:26:26: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：平安银行，包含 5 条记录
+2025-08-18 16:26:35: 开始运行 平安银行 下载，包含 5 条记录...
+2025-08-18 16:26:37: 启动平安银行导出流程...
+2025-08-18 16:26:37: 启动平安银行导出流程...
+2025-08-18 16:26:37: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:26:37: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:26:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:26:37: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:26:37: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:26:37: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:26:37: 启动浏览器...
+2025-08-18 16:26:37: 启动浏览器...
+2025-08-18 16:26:39: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:26:39: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:26:50: 输入用户名和密码...
+2025-08-18 16:26:50: 输入用户名和密码...
+2025-08-18 16:26:50: 等待账户管理页面加载...
+2025-08-18 16:26:50: 等待账户管理页面加载...
+2025-08-18 16:27:07: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:27:07: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:27:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:27:13: 第1次尝试成功，找到图像位置: (780, 571)
+2025-08-18 16:27:13: 产品 24066_重庆信托·开福长盛集合资金信托计划 无数据，跳过...
+2025-08-18 16:27:13: 产品 24066_重庆信托·开福长盛集合资金信托计划 无数据，跳过...
+2025-08-18 16:27:13: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:27:13: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:27:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:27:19: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:27:20: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:27:21: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:27:21: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:27:21: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:27:22: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("电子账单")
+    - locator resolved to <label title="" data-last="5" data-tiid="DZZD" data-v-b83ac800="" data-v-1c9f6a9b="" data-otitle="电子账单" data-parentid="CXZX" data-parentname="查询中心" class="new-tip cursorpt">…</label>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+
+2025-08-18 16:27:22: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_text("电子账单")
+    - locator resolved to <label title="" data-last="5" data-tiid="DZZD" data-v-b83ac800="" data-v-1c9f6a9b="" data-otitle="电子账单" data-parentid="CXZX" data-parentname="查询中心" class="new-tip cursorpt">…</label>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+
+2025-08-18 16:27:22: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:27:22: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:27:22: 浏览器已关闭
+2025-08-18 16:27:22: 浏览器已关闭
+2025-08-18 16:27:22: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:30:19: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 16:30:22.130794
+2025-08-18 16:30:19: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:30:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 16:30:19: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 16:30:19: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 16:30:19: 成功加载 config.json，任务数: 2
+2025-08-18 16:30:19: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 16:30:21: 已选择银行: 平安银行
+2025-08-18 16:30:26: 下载路径设置为：D:\Desktop\Auto\BankSync测试\7
+2025-08-18 16:30:30: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：平安银行，包含 5 条记录
+2025-08-18 16:30:31: 开始运行 平安银行 下载，包含 5 条记录...
+2025-08-18 16:30:32: 启动平安银行导出流程...
+2025-08-18 16:30:32: 启动平安银行导出流程...
+2025-08-18 16:30:32: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:30:32: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:30:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:30:32: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:30:32: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:30:32: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:30:32: 启动浏览器...
+2025-08-18 16:30:32: 启动浏览器...
+2025-08-18 16:30:36: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:30:36: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:30:46: 输入用户名和密码...
+2025-08-18 16:30:46: 输入用户名和密码...
+2025-08-18 16:30:46: 等待账户管理页面加载...
+2025-08-18 16:30:46: 等待账户管理页面加载...
+2025-08-18 16:31:31: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:31:31: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:31:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:31:41: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:31:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:31:42: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:31:42: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:31:42: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:31:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:31:51: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:31:53: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:31:53: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:32:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:32:02: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:32:04: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:32:04: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:32:07: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:32:07: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:32:09: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:32:09: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:32:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:32:16: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:32:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:32:18: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:32:18: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:32:18: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:32:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:32:27: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:32:30: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:32:30: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:32:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:32:39: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:32:41: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:32:41: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:32:49: 导出对账单 2025-07 失败：Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2025-08-18 16:32:49: 导出对账单 2025-07 失败：Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2025-08-18 16:32:49: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-08-18 16:32:49: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-08-18 16:32:49: 处理产品 25127_重庆信托·南浔交投2号集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+2025-08-18 16:32:49: 处理产品 25127_重庆信托·南浔交投2号集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+2025-08-18 16:32:49: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:32:49: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:32:52: 浏览器已关闭
+2025-08-18 16:32:52: 浏览器已关闭
+2025-08-18 16:32:52: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:39:46: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 16:39:49.199752
+2025-08-18 16:39:46: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:39:46: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 16:39:46: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 16:39:46: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 16:39:46: 成功加载 config.json，任务数: 2
+2025-08-18 16:39:46: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 16:39:49: 已选择银行: 平安银行
+2025-08-18 16:39:55: 下载路径设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-18 16:39:58: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：平安银行，包含 5 条记录
+2025-08-18 16:39:59: 开始运行 平安银行 下载，包含 5 条记录...
+2025-08-18 16:40:01: 启动平安银行导出流程...
+2025-08-18 16:40:01: 启动平安银行导出流程...
+2025-08-18 16:40:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:40:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:40:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:40:01: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:40:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:40:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:40:01: 启动浏览器...
+2025-08-18 16:40:01: 启动浏览器...
+2025-08-18 16:40:04: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:40:04: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:40:12: 输入用户名和密码...
+2025-08-18 16:40:12: 输入用户名和密码...
+2025-08-18 16:40:12: 等待账户管理页面加载...
+2025-08-18 16:40:12: 等待账户管理页面加载...
+2025-08-18 16:40:29: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:40:29: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:40:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:40:39: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:40:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:40:40: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:40:41: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:40:41: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:40:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:40:50: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:40:53: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:40:53: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:41:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:41:03: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:41:04: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:41:04: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:42:20: 导出对账单 2025-07 失败：Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2025-08-18 16:42:20: 导出对账单 2025-07 失败：Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2025-08-18 16:42:20: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:42:20: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:42:20: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+2025-08-18 16:42:20: 处理产品 24343_重庆信托·淄博城运集合资金信托计划 失败：Locator.click: Target page, context or browser has been closed
+2025-08-18 16:42:20: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:42:20: 平安银行导出流程异常：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:42:20: 浏览器已关闭
+2025-08-18 16:42:20: 浏览器已关闭
+2025-08-18 16:42:20: 执行出错：Page.screenshot: Target page, context or browser has been closed
+2025-08-18 16:52:39: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 16:52:42.623388
+2025-08-18 16:52:39: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:52:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 16:52:39: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 16:52:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 16:52:39: 成功加载 config.json，任务数: 2
+2025-08-18 16:52:39: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 16:52:44: 已选择银行: 平安银行
+2025-08-18 16:52:56: 下载路径设置为：D:\Desktop\Auto\BankSync测试\8
+2025-08-18 16:52:59: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：平安银行，包含 5 条记录
+2025-08-18 16:52:59: 开始运行 平安银行 下载，包含 5 条记录...
+2025-08-18 16:53:01: 启动平安银行导出流程...
+2025-08-18 16:53:01: 启动平安银行导出流程...
+2025-08-18 16:53:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:53:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 16:53:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 16:53:01: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 16:53:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:53:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 16:53:01: 启动浏览器...
+2025-08-18 16:53:01: 启动浏览器...
+2025-08-18 16:53:03: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:53:03: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 16:53:09: 输入用户名和密码...
+2025-08-18 16:53:09: 输入用户名和密码...
+2025-08-18 16:53:09: 等待账户管理页面加载...
+2025-08-18 16:53:09: 等待账户管理页面加载...
+2025-08-18 16:53:25: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:53:25: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-08-18 16:53:34: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:53:34: 第1次尝试成功，找到图像位置: (780, 571)
+2025-08-18 16:53:34: 产品 24066_重庆信托·开福长盛集合资金信托计划 无数据，跳过...
+2025-08-18 16:53:34: 产品 24066_重庆信托·开福长盛集合资金信托计划 无数据，跳过...
+2025-08-18 16:53:34: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:53:34: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:53:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:53:42: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:53:43: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:53:43: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:53:44: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:53:44: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:53:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:53:52: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:53:59: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:53:59: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:54:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:54:08: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:54:09: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:54:09: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:54:12: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:54:12: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:54:14: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-08-18 16:54:14: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-08-18 16:54:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:54:21: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:54:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:54:23: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:54:24: 银行流水导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:54:24: 银行流水导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:54:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:54:32: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:54:35: 银行回单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:54:35: 银行回单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:54:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:54:44: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:54:46: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:54:46: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-08-18 16:54:49: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:54:49: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-08-18 16:54:51: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:54:51: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-08-18 16:54:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:54:57: 第1次尝试成功，找到图像位置: (780, 571)
+2025-08-18 16:54:57: 产品 24343_重庆信托·淄博城运集合资金信托计划 无数据，跳过...
+2025-08-18 16:54:57: 产品 24343_重庆信托·淄博城运集合资金信托计划 无数据，跳过...
+2025-08-18 16:54:57: 处理产品：25228_重庆信托·营发投资单一资金信托，托管账户：19091586666680
+2025-08-18 16:54:57: 处理产品：25228_重庆信托·营发投资单一资金信托，托管账户：19091586666680
+2025-08-18 16:55:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:55:04: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:55:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-08-18 16:55:05: 第1次尝试成功，点击位置: (424, 484)
+2025-08-18 16:55:05: 银行流水导出完成：25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:55:05: 银行流水导出完成：25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 16:55:11: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-08-18 16:55:13: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-08-18 16:55:15: 银行回单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:55:15: 银行回单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行回单_2025-06-01_2025-07-31.pdf
+2025-08-18 16:55:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-08-18 16:55:24: 找到 1 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-08-18 16:55:24: 警告: 找到 1 个按钮，但预期 2 个月份，可能数据不全
+2025-08-18 16:55:24: 警告: 找到 1 个按钮，但预期 2 个月份，可能数据不全
+2025-08-18 16:55:26: 银行对账单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行对账单_2025-06.pdf
+2025-08-18 16:55:26: 银行对账单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行对账单_2025-06.pdf
+2025-08-18 16:55:29: 浏览器已关闭
+2025-08-18 16:55:29: 浏览器已关闭
+2025-08-18 16:55:29: 下载完成。

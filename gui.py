@@ -4,7 +4,8 @@ import threading
 import time
 import json
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 from playwright.sync_api import sync_playwright, Playwright
 import flet as ft
 from flet import (
@@ -105,6 +106,12 @@ def main(page: Page):
         "zhongxin_bank": "中信银行",
     }
 
+    # 计算上个月的默认日期
+    current_date = datetime.now()
+    last_month = current_date - relativedelta(months=1)
+    start_date_value = last_month.replace(day=1).strftime("%Y-%m-%d")
+    last_day_of_last_month = (current_date.replace(day=1) - timedelta(days=1)).strftime("%Y-%m-%d")
+
     # UI 组件
     bank_dropdown = ft.Dropdown(
         label="选择银行",
@@ -128,7 +135,7 @@ def main(page: Page):
 
     start_date = ft.TextField(
         label="开始日期",
-        value="2025-06-01",
+        value=start_date_value,  # 上个月第一天
         width=(page.window.width-80)/2,
         border_radius=8,
         expand=True,
@@ -142,7 +149,7 @@ def main(page: Page):
 
     end_date = ft.TextField(
         label="结束日期（<3个月）",
-        value="2025-07-04",
+        value=last_day_of_last_month,  # 上个月最后一天
         width=(page.window.width-80)/2,
         border_radius=8,
         expand=True,
