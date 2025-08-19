@@ -16,7 +16,7 @@ from flet import (
 )
 from login_manager import load_site_icons, login_site
 from todo_manager import TodoApp
-from statement_processor import process_bank_statements
+from statement_processor import process_bank_statements, update_with_match_data
 from ningbo_bank import run_ningbo_bank
 from hangzhou_bank import run_hangzhou_bank
 from pingan_bank import run_pingan_bank
@@ -373,6 +373,20 @@ def main(page: Page):
         width=page.window.width-70,
     )
 
+    select_match_excel_button = ft.ElevatedButton(
+        text="选择匹配Excel并导出",
+        icon=ft.Icons.UPLOAD_FILE,
+        style=ft.ButtonStyle(
+            color=ft.Colors.WHITE,
+            bgcolor=ft.Colors.GREEN_700,  # 区分颜色
+            shape=ft.RoundedRectangleBorder(radius=8),
+            padding=10,
+            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        ),
+        tooltip="选择匹配的 Excel 文件，并执行导出后匹配托管账户和入息账套",
+        width=page.window.width-70,
+    )
+
     # 日志更新函数
     def update_log(msg):
         log_messages.append(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: {msg}\n")
@@ -600,9 +614,9 @@ def main(page: Page):
         def worker():
             try:
                 if statement_dropdown.value == "bank_interest":
-                    success = process_bank_statements(statement_folder[0], start_date_statement.value, export_path[0], update_log, dropdown_value=statement_dropdown.value or "全部")
+                    success, output_file = process_bank_statements(statement_folder[0], start_date_statement.value, export_path[0], update_log, dropdown_value=statement_dropdown.value or "全部")
                     if success:
-                        update_log(f"流水导出完成到：{export_path[0]}")
+                        update_log(f"流水导出完成到：{output_file}")
                     else:
                         update_log("流水导出失败：未找到符合条件的利息数据")
                 else:
@@ -618,17 +632,81 @@ def main(page: Page):
 
         threading.Thread(target=worker, daemon=True).start()
 
+    # 新函数: select_match_excel (作为 FilePicker 的 on_result)
+    def select_match_excel(e: ft.FilePickerResultEvent):
+        if not e.files or not any(f.name.endswith(('.xlsx', '.xls')) for f in e.files):
+            update_log("错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)")
+            return
+
+        match_file_path = e.files[0].path
+        update_log(f"已选择匹配 Excel 文件: {match_file_path}")
+
+        # 先检查必要条件（类似于 start_export）
+        if not statement_folder[0] or not os.path.exists(statement_folder[0]):
+            update_log("错误: 请先选择有效的银行流水文件夹")
+            return
+        if not export_path[0] or not os.path.exists(export_path[0]):
+            update_log("错误: 请先选择有效的导出文件夹")
+            return
+        if not start_date_statement.value:
+            update_log("错误: 请填写开始月份")
+            return
+        if not statement_dropdown.value:
+            update_log("错误: 请先选择银行流水项目")
+            return
+
+        # 标记运行中
+        nonlocal is_running
+        if is_running[0]:
+            update_log("提示: 导出进程正在运行，请等待")
+            return
+        is_running[0] = True
+        select_match_excel_button.disabled = True
+        select_match_excel_button.text = "处理中..."
+        select_match_excel_button.icon = ft.Icons.HOURGLASS_TOP
+        select_match_excel_button.update()
+        update_log(f"开始导出并匹配银行流水，月份: {start_date_statement.value}...")
+
+        def worker():
+            try:
+                if statement_dropdown.value == "bank_interest":
+                    success, output_file = process_bank_statements(statement_folder[0], start_date_statement.value, export_path[0], update_log, dropdown_value=statement_dropdown.value or "全部")
+                    if success:
+                        update_log(f"流水导出完成到：{output_file}")
+                        # 调用 statement_processor.py 的新函数进行匹配
+                        success = update_with_match_data(output_file, match_file_path, update_log)
+                        if success:
+                            update_log(f"匹配完成，已更新 {output_file} 添加托管账户和入息账套列")
+                        else:
+                            update_log("匹配失败：请检查日志")
+                    else:
+                        update_log("流水导出失败：未找到符合条件的利息数据")
+                else:
+                    update_log(f"不支持的银行流水项目: {statement_dropdown.value}")
+            except Exception as ex:
+                update_log(f"导出并匹配失败：{str(ex)}")
+            finally:
+                is_running[0] = False
+                select_match_excel_button.disabled = False
+                select_match_excel_button.text = "选择匹配Excel并导出"
+                select_match_excel_button.icon = ft.Icons.UPLOAD_FILE
+                select_match_excel_button.update()
+
+        threading.Thread(target=worker, daemon=True).start()
+
     run_bankdownloader_button.on_click = run_bankdownloader
     start_export_button.on_click = start_export
     import_excel_button.on_click = lambda _: file_picker.pick_files(allow_multiple=False, allowed_extensions=["xlsx", "xls"])
     select_path_button.on_click = lambda _: dir_picker.get_directory_path()
+    select_match_excel_button.on_click = lambda _: match_file_picker.pick_files(allow_multiple=False, allowed_extensions=["xlsx", "xls"])
 
     # 文件选择器
     file_picker = ft.FilePicker(on_result=import_excel)
     dir_picker = ft.FilePicker(on_result=select_download_path)
     statement_dir_picker = ft.FilePicker(on_result=select_statement_folder)
     export_dir_picker = ft.FilePicker(on_result=select_export_path)
-    page.overlay.extend([file_picker, dir_picker, statement_dir_picker, export_dir_picker])
+    match_file_picker = ft.FilePicker(on_result=select_match_excel)
+    page.overlay.extend([file_picker, dir_picker, statement_dir_picker, export_dir_picker, match_file_picker])
     page.update()  # 确保 FilePicker 控件初始化
 
     # 切换窗口大小按钮
@@ -847,6 +925,7 @@ def main(page: Page):
             export_statement_button,
             export_path_text,
             start_export_button,
+            select_match_excel_button,
         ],
         spacing=10,
         scroll=ft.ScrollMode.AUTO,

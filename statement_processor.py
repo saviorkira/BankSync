@@ -32,6 +32,14 @@ bank_rules = {
         "description_column": "L",  # 内容列
         "keyword": "批量结息",
         "bank_name": "中信银行"
+    },
+    "pingan_bank": {
+        "start_row": 0,  # 第 1 行
+        "amount_column": "D",  # 利息金额列
+        "balance_column": "G",  # 余额列
+        "description_column": "J",  # 内容列
+        "keyword": "结息",
+        "bank_name": "平安银行"
     }
 }
 
@@ -124,7 +132,7 @@ def process_bank_statements(root_dir, target_month, export_path, update_log, dro
         target_year_month = target_date.strftime("%Y-%m")
     except ValueError:
         update_log("错误: 月份格式不正确，应为 YYYY-MM")
-        return False
+        return False, None
 
     # 使用正则表达式匹配日期范围
     date_pattern = re.compile(r'(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})\.xlsx$')
@@ -142,6 +150,8 @@ def process_bank_statements(root_dir, target_month, export_path, update_log, dro
                     bank_type = "ningbo_bank"
                 elif "中信银行" in filename:
                     bank_type = "zhongxin_bank"
+                elif "平安银行" in filename:
+                    bank_type = "pingan_bank"
                 else:
                     update_log(f"跳过文件 {file_path}: 无法识别银行类型")
                     continue
@@ -200,7 +210,88 @@ def process_bank_statements(root_dir, target_month, export_path, update_log, dro
         # 保存到 Excel，从第 1 行开始
         df_result.to_excel(output_file, index=False, startrow=0)
         update_log(f"数据已保存到 {output_file}")
-        return True
+        return True, output_file
     else:
         update_log("未找到任何利息数据")
+        return False, None
+
+def update_with_match_data(output_file, match_file_path, update_log):
+    """将生成的 Excel 文件与匹配的 Excel 文件进行合并，添加托管账户和入息账套列，按银行 sheet 匹配"""
+    try:
+        # 读取生成的 Excel
+        df_generated = pd.read_excel(output_file)
+
+        # 初始化新列
+        df_generated['托管账户'] = None
+        df_generated['入息账套'] = None
+
+        # 获取独特银行列表
+        unique_banks = df_generated['银行'].unique()
+
+        for bank in unique_banks:
+            if pd.isna(bank):
+                update_log(f"警告: 跳过银行为空的行")
+                continue
+
+            # 读取匹配 Excel 的对应 sheet，将托管账户和产品编号强制为字符串
+            try:
+                df_match = pd.read_excel(
+                    match_file_path,
+                    sheet_name=bank,
+                    header=0,
+                    dtype={"产品编号": str, "托管账户": str, "入息账套": str}  # 强制为字符串，避免数值精度丢失
+                )
+            except ValueError as ve:
+                update_log(f"错误: 未找到 '{bank}' 工作表：{str(ve)}")
+                continue
+            except Exception as ex:
+                update_log(f"读取 '{bank}' 工作表失败：{str(ex)}")
+                continue
+
+            # 清理列名中的空格
+            df_match.columns = df_match.columns.str.strip()
+
+            # 检查匹配 sheet 的列（假设 A:产品编号, C:托管账户, D:入息账套，使用列名）
+            required_cols = ["产品编号", "托管账户", "入息账套"]
+            if not all(col in df_match.columns for col in required_cols):
+                update_log(f"错误: '{bank}' sheet 缺少必要列（产品编号、托管账户、入息账套）")
+                continue
+
+            # 确保产品编号和托管账户为字符串并去除空格
+            df_match['产品编号'] = df_match['产品编号'].astype(str).str.strip()
+            df_match['托管账户'] = df_match['托管账户'].astype(str).str.strip()
+            df_generated['产品编号'] = df_generated['产品编号'].astype(str).str.strip()
+
+            # 过滤生成的 df 中该银行的行
+            df_bank = df_generated[df_generated['银行'] == bank]
+
+            # 匹配
+            df_merged = df_bank.merge(
+                df_match[["产品编号", "托管账户", "入息账套"]],
+                left_on="产品编号",  # 生成的 B列: 产品编号
+                right_on="产品编号",
+                how="left",
+                suffixes=('', '_new')
+            )
+
+            # 更新原 df_generated 的对应行
+            for idx in df_merged.index:
+                original_idx = df_bank.index[df_bank['产品编号'] == df_merged.at[idx, '产品编号']].tolist()[0]  # 假设产品编号唯一
+                df_generated.at[original_idx, '托管账户'] = df_merged.at[idx, '托管账户_new'] if '托管账户_new' in df_merged.columns else df_merged.at[idx, '托管账户']
+                df_generated.at[original_idx, '入息账套'] = df_merged.at[idx, '入息账套_new'] if '入息账套_new' in df_merged.columns else df_merged.at[idx, '入息账套']
+
+        # 重新排序列
+        # 假设原列: A:日期, B:产品编号, C:产品名称, D:利息金额, E:余额, F:银行
+        # 新: G:托管账户, H:入息账套
+        df_generated = df_generated[[
+            "日期", "产品编号", "产品名称", "利息金额", "余额", "银行",
+            "托管账户", "入息账套"
+        ]]
+
+        # 保存回原文件（覆盖），使用 openpyxl 引擎，确保字符串格式
+        df_generated.to_excel(output_file, index=False, startrow=0, engine='openpyxl')
+        update_log(f"匹配完成，已更新 {output_file} 添加托管账户和入息账套列")
+        return True
+    except Exception as ex:
+        update_log(f"匹配失败：{str(ex)}")
         return False

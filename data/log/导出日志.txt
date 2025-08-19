@@ -8451,3 +8451,694 @@ waiting for event "download"
 2025-08-18 16:55:29: 浏览器已关闭
 2025-08-18 16:55:29: 浏览器已关闭
 2025-08-18 16:55:29: 下载完成。
+2025-08-18 17:35:22: 已选择银行流水项目: bank_interest
+2025-08-18 17:35:25: 已设置开始月份: 2025-0
+2025-08-18 17:35:25: 已设置开始月份: 2025-06
+2025-08-18 17:35:30: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-18 17:35:36: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:35:36: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:35:37: 开始导出银行流水，月份: 2025-06...
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 跳过文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 无法识别银行类型
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:35:37: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:35:37: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250818_173537.xlsx
+2025-08-18 17:35:37: 流水导出完成到：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:46:53: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 17:46:56.571042
+2025-08-18 17:46:53: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:46:53: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 17:46:53: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 17:46:53: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 17:46:53: 成功加载 config.json，任务数: 2
+2025-08-18 17:46:53: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 17:46:56: 已选择银行流水项目: bank_interest
+2025-08-18 17:46:57: 已设置开始月份: 2025-0
+2025-08-18 17:46:57: 已设置开始月份: 2025-06
+2025-08-18 17:47:00: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-18 17:47:03: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:47:03: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:47:03: 开始导出银行流水，月份: 2025-06...
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 跳过文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 无法识别银行类型
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 跳过文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 无法识别银行类型
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 跳过文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 无法识别银行类型
+2025-08-18 17:47:03: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:47:03: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:47:03: 跳过文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 无法识别银行类型
+2025-08-18 17:47:03: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250818_174703.xlsx
+2025-08-18 17:47:03: 流水导出完成到：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:49:03: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 17:49:06.326765
+2025-08-18 17:49:03: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:49:03: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 17:49:03: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 17:49:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 17:49:03: 成功加载 config.json，任务数: 2
+2025-08-18 17:49:03: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 17:49:06: 已选择银行流水项目: bank_interest
+2025-08-18 17:49:07: 已设置开始月份: 2025-0
+2025-08-18 17:49:07: 已设置开始月份: 2025-06
+2025-08-18 17:49:10: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-18 17:49:12: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:49:12: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:49:13: 开始导出银行流水，月份: 2025-06...
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 17:49:13: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-18 17:49:13: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-18 17:49:13: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-18 17:49:13: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-18 17:49:13: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250818_174913.xlsx
+2025-08-18 17:49:13: 流水导出完成到：D:\Desktop\Auto\BankSync测试
+2025-08-18 17:53:14: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 17:53:17.756596
+2025-08-18 17:53:14: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:53:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 17:53:14: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 17:53:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 17:53:14: 成功加载 config.json，任务数: 2
+2025-08-18 17:53:14: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 17:55:07: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 17:55:11.162729
+2025-08-18 17:55:07: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:55:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 17:55:08: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 17:55:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 17:55:08: 成功加载 config.json，任务数: 2
+2025-08-18 17:55:08: TodoApp 初始化完成，加载任务数: 2
+2025-08-18 17:55:10: 启动平安银行登录流程...
+2025-08-18 17:55:10: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:55:10: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 17:55:10: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-08-18 17:55:10: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 17:55:10: 启动浏览器...
+2025-08-18 17:55:13: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-08-18 17:55:18: 输入用户名和密码...
+2025-08-18 17:55:28: 平安银行登录失败：Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#new_header").get_by_text("登录")
+
+2025-08-18 17:55:36: 启动杭州银行登录流程...
+2025-08-18 17:55:36: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:55:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 17:55:36: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-08-18 17:55:36: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 17:55:36: 启动浏览器...
+2025-08-18 17:55:37: 启动宁波银行登录流程...
+2025-08-18 17:55:37: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:55:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-08-18 17:55:37: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-08-18 17:55:37: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-08-18 17:55:37: 启动浏览器...
+2025-08-18 17:55:39: 杭州银行登录失败：BrowserContext.new_page: Target page, context or browser has been closed
+2025-08-18 17:55:40: 宁波银行登录失败：BrowserContext.new_page: Target page, context or browser has been closed
+2025-08-18 17:56:13: 已选择银行流水项目: bank_interest
+2025-08-18 17:56:14: 已选择银行流水项目: bank_interest
+2025-08-18 17:57:16: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-18 17:57:19.676889
+2025-08-18 17:57:16: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-18 17:57:16: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-18 17:57:16: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-18 17:57:16: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-18 17:57:16: 成功加载 config.json，任务数: 2
+2025-08-18 17:57:16: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:07:17: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:07:18.859261
+2025-08-19 15:07:17: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:07:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:07:17: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:07:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:07:17: 成功加载 config.json，任务数: 2
+2025-08-19 15:07:17: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:15:36: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:15:38.605191
+2025-08-19 15:15:36: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:15:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:15:37: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:15:37: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:15:37: 成功加载 config.json，任务数: 2
+2025-08-19 15:15:37: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:19:41: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:19:43.305491
+2025-08-19 15:19:41: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:19:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:19:42: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:19:42: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:19:42: 成功加载 config.json，任务数: 2
+2025-08-19 15:19:42: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:20:38: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:20:40.585243
+2025-08-19 15:20:38: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:20:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:20:39: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:20:39: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:20:39: 成功加载 config.json，任务数: 2
+2025-08-19 15:20:39: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:21:15: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:21:17.177325
+2025-08-19 15:21:15: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:21:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:21:15: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:21:15: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:21:15: 成功加载 config.json，任务数: 2
+2025-08-19 15:21:15: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:23:08: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:23:10.147976
+2025-08-19 15:23:08: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:23:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:23:08: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:23:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:23:08: 成功加载 config.json，任务数: 2
+2025-08-19 15:23:08: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:30:12: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 15:30:14.647665
+2025-08-19 15:30:12: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 15:30:13: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 15:30:13: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 15:30:13: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 15:30:13: 成功加载 config.json，任务数: 2
+2025-08-19 15:30:13: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 15:46:16: 已选择银行流水项目: bank_interest
+2025-08-19 16:43:04: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 16:43:06.874769
+2025-08-19 16:43:04: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 16:43:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 16:43:05: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 16:43:05: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 16:43:05: 成功加载 config.json，任务数: 2
+2025-08-19 16:43:05: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 16:45:20: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 16:45:22.171238
+2025-08-19 16:45:20: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 16:45:20: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 16:45:20: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 16:45:20: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 16:45:20: 成功加载 config.json，任务数: 2
+2025-08-19 16:45:20: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 16:45:41: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 16:45:43.319710
+2025-08-19 16:45:41: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 16:45:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 16:45:41: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 16:45:41: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 16:45:41: 成功加载 config.json，任务数: 2
+2025-08-19 16:45:41: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 16:45:50: 已选择银行流水项目: bank_interest
+2025-08-19 16:45:51: 已设置开始月份: 2025-0
+2025-08-19 16:45:51: 已设置开始月份: 2025-06
+2025-08-19 16:45:54: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-19 16:45:56: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-19 16:45:56: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-19 16:45:58: 开始导出银行流水，月份: 2025-06...
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:45:58: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:45:58: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:45:58: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:45:58: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-19 16:45:58: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_164558.xlsx
+2025-08-19 16:45:58: 流水导出完成到：D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_164558.xlsx
+2025-08-19 16:48:51: 错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)
+2025-08-19 16:52:27: 已选择匹配 Excel 文件: D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx
+2025-08-19 16:52:27: 开始导出并匹配银行流水，月份: 2025-06...
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:52:27: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 16:52:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 16:52:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 16:52:27: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-19 16:52:27: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_165227.xlsx
+2025-08-19 16:52:27: 流水导出完成到：D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_165227.xlsx
+2025-08-19 16:52:27: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_165227.xlsx 添加托管账户和入息账套列
+2025-08-19 16:52:27: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_165227.xlsx 添加托管账户和入息账套列
+2025-08-19 16:54:19: 错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)
+2025-08-19 17:05:56: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 17:05:58.921313
+2025-08-19 17:05:56: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 17:05:57: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 17:05:57: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 17:05:57: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 17:05:57: 成功加载 config.json，任务数: 2
+2025-08-19 17:05:57: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 17:06:00: 已选择银行流水项目: bank_interest
+2025-08-19 17:06:03: 已设置开始月份: 2025-086
+2025-08-19 17:06:03: 已设置开始月份: 2025-08
+2025-08-19 17:06:03: 已设置开始月份: 2025-086
+2025-08-19 17:06:04: 已设置开始月份: 2025-08
+2025-08-19 17:06:04: 已设置开始月份: 2025-0
+2025-08-19 17:06:05: 已设置开始月份: 2025-06
+2025-08-19 17:06:09: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-19 17:06:12: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:06:12: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:06:15: 已选择匹配 Excel 文件: D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx
+2025-08-19 17:06:15: 开始导出并匹配银行流水，月份: 2025-06...
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:06:15: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:06:15: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:06:15: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:06:15: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-19 17:06:15: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_170615.xlsx
+2025-08-19 17:06:15: 流水导出完成到：D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_170615.xlsx
+2025-08-19 17:06:16: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_170615.xlsx 添加托管账户和入息账套列
+2025-08-19 17:06:16: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_170615.xlsx 添加托管账户和入息账套列
+2025-08-19 17:41:51: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 17:41:51.582842
+2025-08-19 17:41:51: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 17:41:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 17:41:52: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 17:41:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 17:41:52: 成功加载 config.json，任务数: 2
+2025-08-19 17:41:52: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 17:41:54: 已选择银行流水项目: bank_interest
+2025-08-19 17:41:56: 已设置开始月份: 2025-0
+2025-08-19 17:41:56: 已设置开始月份: 2025-06
+2025-08-19 17:42:01: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-19 17:42:04: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:42:04: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:42:10: 已选择匹配 Excel 文件: D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx
+2025-08-19 17:42:10: 开始导出并匹配银行流水，月份: 2025-06...
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:42:10: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:10: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:10: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:42:11: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:42:11: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:42:11: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-19 17:42:11: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174211.xlsx
+2025-08-19 17:42:11: 流水导出完成到：D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174211.xlsx
+2025-08-19 17:42:11: 找到的银行列表: ['宁波银行', '中信银行', '杭州银行', '平安银行']
+2025-08-19 17:42:11: 成功读取 '宁波银行' sheet，行数: 4
+2025-08-19 17:42:11: '宁波银行' sheet 前5行数据 (产品编号, 托管账户):
+2025-08-19 17:42:11:   产品编号: 23014, 托管账户: 77970122000179566
+2025-08-19 17:42:11:   产品编号: 24211, 托管账户: 86031110000310762
+2025-08-19 17:42:11:   产品编号: 24561, 托管账户: 86031110001301125
+2025-08-19 17:42:11:   产品编号: 24314, 托管账户: 86031110000511021
+2025-08-19 17:42:11: 银行 '宁波银行' 匹配结果，匹配行数: 4
+2025-08-19 17:42:11: 匹配失败：'托管账户'
+2025-08-19 17:42:11: 匹配失败：请检查日志
+2025-08-19 17:43:14: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 17:43:14.171881
+2025-08-19 17:43:14: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 17:43:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 17:43:14: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 17:43:14: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 17:43:14: 成功加载 config.json，任务数: 2
+2025-08-19 17:43:14: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 17:43:17: 已选择银行流水项目: bank_interest
+2025-08-19 17:43:18: 已设置开始月份: 2025-0
+2025-08-19 17:43:18: 已设置开始月份: 2025-09
+2025-08-19 17:43:19: 已设置开始月份: 2025-0
+2025-08-19 17:43:19: 已设置开始月份: 2025-06
+2025-08-19 17:43:22: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-19 17:43:25: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:43:25: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:43:27: 已选择匹配 Excel 文件: D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx
+2025-08-19 17:43:27: 开始导出并匹配银行流水，月份: 2025-06...
+2025-08-19 17:43:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:43:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:43:27: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-19 17:43:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:27: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-19 17:43:27: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:27: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:43:28: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:43:28: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:43:28: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-19 17:43:28: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174328.xlsx
+2025-08-19 17:43:28: 流水导出完成到：D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174328.xlsx
+2025-08-19 17:43:28: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174328.xlsx 添加托管账户和入息账套列
+2025-08-19 17:43:28: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174328.xlsx 添加托管账户和入息账套列
+2025-08-19 17:48:30: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-08-19 17:48:30.979531
+2025-08-19 17:48:30: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-08-19 17:48:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-08-19 17:48:31: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\sheshang_bank.png
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-08-19 17:48:31: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-08-19 17:48:31: 成功加载 config.json，任务数: 2
+2025-08-19 17:48:31: TodoApp 初始化完成，加载任务数: 2
+2025-08-19 17:48:33: 已选择银行流水项目: bank_interest
+2025-08-19 17:48:35: 已设置开始月份: 2025-0
+2025-08-19 17:48:35: 已设置开始月份: 2025-06
+2025-08-19 17:48:38: 流水文件夹设置为：D:\Desktop\Auto\BankSync测试\1
+2025-08-19 17:48:40: 导出路径设置为：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:48:40: 开始导出流水到：D:\Desktop\Auto\BankSync测试
+2025-08-19 17:48:43: 已选择匹配 Excel 文件: D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx
+2025-08-19 17:48:43: 开始导出并匹配银行流水，月份: 2025-06...
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行流水\23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\23138_重信·信安永和3号集合资金信托计划\银行流水\23138_重信·信安永和3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\23148_重信·渝安1号集合资金信托计划\银行流水\23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:48:43: 文件 D:\Desktop\Auto\BankSync测试\1\24066_重庆信托·开福长盛集合资金信托计划\银行流水\24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 6, 描述列内容: ['跨行转账', '托管划款', '托管费'])
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 文件 D:\Desktop\Auto\BankSync测试\1\24119_重庆信托·中心城集合资金信托计划\银行流水\24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 6, 描述列内容: ['绍兴市柯桥区交通发展有限公司', '资金清算来账', '重庆国际信托股份有限公司', '手续费收入', '绍兴市柯桥区中心城建设投资开发有限公司'])
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24174_重庆信托·上虞城建集合资金信托计划\银行流水\24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 文件 D:\Desktop\Auto\BankSync测试\1\24196_重庆信托·余杭发展集合资金信托计划\银行流水\24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx 未找到包含 '应付利息' 的数据 (行数: 11, 描述列内容: ['中证鹏元资信评估股份有限公司', '北京炜衡（上海）律师事务所', '弘康人寿投资连结保险弘云1号投资账户', '民生人寿保险股份有限公司-万能金彩1号', '弘康人寿投资连结保险稳赢5号'])
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24211_重庆信托·宁波鄞开集合资金信托计划\银行流水\24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24311_重庆信托·绿水青山集合资金信托计划\银行流水\24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24314_重庆信托·海尔金盈集合资金信托计划\银行流水\24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24343_重庆信托·淄博城运集合资金信托计划\银行流水\24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24432_重庆信托·安宁兴甬3号集合资金信托计划\银行流水\24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\24561_重庆信托·宁波经开集合资金信托计划\银行流水\24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\25127_重庆信托·南浔交投2号集合资金信托计划\银行流水\25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx: 日期范围 2025-06-01 至 2025-07-04
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\25148_重庆信托·凯什1号集合资金信托计划\银行流水\25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-07-04.xlsx
+2025-08-19 17:48:43: 解析文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx: 日期范围 2025-06-01 至 2025-07-31
+2025-08-19 17:48:43: 处理文件: D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx
+2025-08-19 17:48:44: 文件 D:\Desktop\Auto\BankSync测试\1\25228_重庆信托·营发投资单一资金信托\银行流水\25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-07-31.xlsx 未找到包含 '结息' 的数据 (行数: 2, 描述列内容: ['跨行转账', '托管划款'])
+2025-08-19 17:48:44: 数据已保存到 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174844.xlsx
+2025-08-19 17:48:44: 流水导出完成到：D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174844.xlsx
+2025-08-19 17:48:44: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174844.xlsx 添加托管账户和入息账套列
+2025-08-19 17:48:44: 匹配完成，已更新 D:\Desktop\Auto\BankSync测试\2025-06_bank_interest_20250819_174844.xlsx 添加托管账户和入息账套列
