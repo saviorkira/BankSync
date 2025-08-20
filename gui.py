@@ -56,13 +56,20 @@ def main(page: Page):
             background=ft.Colors.WHITE,
         ),
         visual_density=ft.VisualDensity.COMPACT,
-        font_family="FZLanTingHei",
+        font_family="sansr",
     )
     page.bgcolor = ft.Colors.WHITE
 
     # 加载自定义字体
-    font_path = os.path.join(project_root, "data", "方正兰亭准黑_GBK.ttf")
-    page.fonts = {"FZLanTingHei": font_path}
+    # 加载自定义字体
+    font_path_SourceHanSansRegular = os.path.join(project_root, "data", "font", "SourceHanSansSC-Regular.otf")
+    font_path_SourceHanSansMedium = os.path.join(project_root, "data", "font", "SourceHanSansSC-Medium.otf")
+
+    page.fonts = {
+        "sansr": font_path_SourceHanSansRegular,
+        "sansm": font_path_SourceHanSansMedium,
+    }
+
     page.update()
 
     # UI 状态变量
@@ -129,8 +136,8 @@ def main(page: Page):
         content_padding=10,
         border_color=ft.Colors.GREY_300,
         color=ft.Colors.BLACK,
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
         tooltip="请选择要操作的银行",
     )
 
@@ -144,8 +151,8 @@ def main(page: Page):
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM-DD",
         tooltip="日期范围通常3个月以内",
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
     end_date = ft.TextField(
@@ -158,15 +165,15 @@ def main(page: Page):
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM-DD",
         tooltip="日期范围通常3个月以内",
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
     data_table = ft.DataTable(
         columns=[
-            ft.DataColumn(ft.Text("产品编号", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
-            ft.DataColumn(ft.Text("产品名称", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
-            ft.DataColumn(ft.Text("托管账户", weight=ft.FontWeight.BOLD, size=14, font_family="FZLanTingHei")),
+            ft.DataColumn(ft.Text("产品编号", weight=ft.FontWeight.BOLD, size=14, font_family="sansr")),
+            ft.DataColumn(ft.Text("产品名称", weight=ft.FontWeight.BOLD, size=14, font_family="sansr")),
+            ft.DataColumn(ft.Text("托管账户", weight=ft.FontWeight.BOLD, size=14, font_family="sansr")),
         ],
         rows=[],
         expand=True,
@@ -187,7 +194,7 @@ def main(page: Page):
         border_radius=8,
         filled=True,
         bgcolor=ft.Colors.WHITE,
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
     ai_input = ft.TextField(
@@ -197,8 +204,8 @@ def main(page: Page):
         filled=True,
         bgcolor=ft.Colors.WHITE,
         hint_text="输入消息后点击发送",
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
         multiline=True,
         min_lines=2,
         max_lines=2,
@@ -221,7 +228,7 @@ def main(page: Page):
         border_radius=8,
         filled=True,
         bgcolor=ft.Colors.WHITE,
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
     run_bankdownloader_button = ft.ElevatedButton(
@@ -233,9 +240,9 @@ def main(page: Page):
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
-        tooltip="开始下载银行流水和回单",
+        tooltip="开始下载银行流水、回单、对账单",
         width=page.window.width-70,
     )
 
@@ -243,7 +250,7 @@ def main(page: Page):
         f"下载路径: {download_path}",
         size=14,
         color=ft.Colors.GREY_700,
-        font_family="FZLanTingHei",
+        font_family="sansr",
     )
 
     select_path_button = ft.ElevatedButton(
@@ -254,7 +261,7 @@ def main(page: Page):
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
         tooltip="选择保存下载文件的目录",
         width=page.window.width-70,
@@ -268,9 +275,9 @@ def main(page: Page):
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
-        tooltip="选择包含项目名称和银行账号的 Excel 文件",
+        tooltip="选择包含项目信息的Excel 文件，参照模板",
         width=page.window.width-70,
     )
 
@@ -279,7 +286,7 @@ def main(page: Page):
         f"流水文件夹: {statement_folder[0]}",
         size=14,
         color=ft.Colors.GREY_700,
-        font_family="FZLanTingHei",
+        font_family="sansr",
     )
 
     select_statement_folder_button = ft.ElevatedButton(
@@ -290,7 +297,7 @@ def main(page: Page):
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
         tooltip="选择包含银行流水的文件夹",
         width=page.window.width-70,
@@ -312,8 +319,8 @@ def main(page: Page):
         content_padding=10,
         border_color=ft.Colors.GREY_300,
         color=ft.Colors.BLACK,
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
     def on_statement_dropdown_change(e):
@@ -333,8 +340,8 @@ def main(page: Page):
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM",
         tooltip="输入银行流水处理月份",
-        text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-        label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
         on_change=lambda e: update_log(f"已设置开始月份: {e.control.value}"),
     )
 
@@ -342,7 +349,7 @@ def main(page: Page):
         f"导出文件夹: {export_path[0]}",
         size=14,
         color=ft.Colors.GREY_700,
-        font_family="FZLanTingHei",
+        font_family="sansr",
     )
 
     export_statement_button = ft.ElevatedButton(
@@ -353,7 +360,7 @@ def main(page: Page):
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
         tooltip="选择导出路径并导出流水",
         width=page.window.width-70,
@@ -361,30 +368,30 @@ def main(page: Page):
     )
 
     start_export_button = ft.ElevatedButton(
-        text="开始导出",
+        text="导出筛选",
         icon=ft.Icons.PLAY_CIRCLE,
         style=ft.ButtonStyle(
             color=ft.Colors.WHITE,
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
-        tooltip="开始导出银行流水文件",
+        tooltip="开始筛选的银行流水",
         width=page.window.width - 70,
     )
 
     select_match_excel_button = ft.ElevatedButton(
-        text="选择匹配Excel并导出",
-        icon=ft.Icons.UPLOAD_FILE,
+        text="导出筛选并生成上传模板",
+        icon=ft.Icons.PLAY_CIRCLE,
         style=ft.ButtonStyle(
             color=ft.Colors.WHITE,
-            bgcolor=ft.Colors.GREEN_700,  # 区分颜色
+            bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
             padding=10,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
-        tooltip="选择匹配的 Excel 文件，并执行导出后匹配托管账户和入息账套",
+        tooltip="选择包含项目信息的 Excel 文件，参照模板",
         width=page.window.width - 70,
     )
 
@@ -421,9 +428,9 @@ def main(page: Page):
                                        str(xiangmuid).strip() and str(xiangmu).strip() and str(account).strip()])
                     data_table.rows = [
                         ft.DataRow(cells=[
-                            ft.DataCell(ft.Text(xiangmuid, size=14, font_family="FZLanTingHei")),
-                            ft.DataCell(ft.Text(xiangmu, size=14, font_family="FZLanTingHei")),
-                            ft.DataCell(ft.Text(account, size=14, font_family="FZLanTingHei")),
+                            ft.DataCell(ft.Text(xiangmuid, size=14, font_family="sansr")),
+                            ft.DataCell(ft.Text(xiangmu, size=14, font_family="sansr")),
+                            ft.DataCell(ft.Text(account, size=14, font_family="sansr")),
                         ]) for xiangmuid, xiangmu, account in excel_data
                     ]
                     update_log(f"已更新数据表：{sheet_name}，包含 {len(excel_data)} 条记录")
@@ -472,9 +479,9 @@ def main(page: Page):
                                    str(xiangmuid).strip() and str(xiangmu).strip() and str(account).strip()])
                 data_table.rows = [
                     ft.DataRow(cells=[
-                        ft.DataCell(ft.Text(xiangmuid, size=14, font_family="FZLanTingHei")),
-                        ft.DataCell(ft.Text(xiangmu, size=14, font_family="FZLanTingHei")),
-                        ft.DataCell(ft.Text(account, size=14, font_family="FZLanTingHei")),
+                        ft.DataCell(ft.Text(xiangmuid, size=14, font_family="sansr")),
+                        ft.DataCell(ft.Text(xiangmu, size=14, font_family="sansr")),
+                        ft.DataCell(ft.Text(account, size=14, font_family="sansr")),
                     ]) for xiangmuid, xiangmu, account in excel_data
                 ]
                 update_log(f"成功导入 Excel 文件：{file_path}，工作表：{sheet_name}，包含 {len(excel_data)} 条记录")
@@ -792,7 +799,7 @@ def main(page: Page):
     # 页面内容
     home_content = ft.Column(
         [
-            # ft.Text("网站图标区域", size=14, font_family="FZLanTingHei"),
+            # ft.Text("网站图标区域", size=14, font_family="sansr"),
             ft.Row(
                 controls=load_site_icons(project_root, update_log, lambda name: login_site(name, project_root, update_log, last_click_time=[0])),
                 wrap=True,
@@ -982,7 +989,7 @@ def main(page: Page):
     pages = [
         {"icon": ft.Icons.HOME_OUTLINED, "selected_icon": ft.Icons.HOME, "label": "登录", "content": home_content},
         {"icon": ft.Icons.DOWNLOAD_OUTLINED, "selected_icon": ft.Icons.DOWNLOAD, "label": "下载", "content": bank_export_content},
-        {"icon": ft.Icons.DATA_USAGE_OUTLINED, "selected_icon": ft.Icons.DATA_USAGE, "label": "数据", "content": statement_content},
+        {"icon": ft.Icons.DATA_USAGE_OUTLINED, "selected_icon": ft.Icons.DATA_USAGE, "label": "流水", "content": statement_content},
         {"icon": ft.Icons.CHAT_OUTLINED, "selected_icon": ft.Icons.CHAT, "label": "AI", "content": ai_content},
         {"icon": ft.Icons.APPS_OUTLINED, "selected_icon": ft.Icons.APPS, "label": "其他", "content": tools_content},
     ]
@@ -992,11 +999,11 @@ def main(page: Page):
             icon=page["icon"],
             selected_icon=page["selected_icon"],
             label=page["label"],
-            label_content=ft.Text(page["label"], font_family="FZLanTingHei", size=14),
+            label_content=ft.Text(page["label"], font_family="sansm", size=14),
         ) for page in pages
     ]
 
-    drag_area_title = ft.Text(pages[0]["label"], size=16, weight=ft.FontWeight.BOLD, font_family="FZLanTingHei")
+    drag_area_title = ft.Text(pages[0]["label"], size=16, weight=ft.FontWeight.BOLD, font_family="sansr")
     drag_area = ft.WindowDragArea(
         content=ft.Container(
             content=drag_area_title,

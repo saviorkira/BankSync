@@ -185,7 +185,7 @@ def login_zhongxin_bank(playwright, project_root, update_log):
             browser.close()
 
 def login_pingan_bank(playwright, project_root, update_log):
-    """中信银行登录逻辑"""
+    """平安银行登录逻辑"""
     try:
         update_log("启动平安银行登录流程...")
         update_log(f"Playwright内核路径: {os.environ.get('PLAYWRIGHT_BROWSERS_PATH')}")

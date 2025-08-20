@@ -15,11 +15,11 @@ class Task(ft.Column):
             value=self.completed,
             label=self.task_name,
             on_change=self.status_changed,
-            label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            label_style=ft.TextStyle(font_family="sansr", size=14),
         )
         self.edit_name = ft.TextField(
             expand=1,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
         )
 
         self.display_view = ft.Row(
@@ -96,8 +96,8 @@ class TodoApp(ft.Column):
             hint_text="需要做什么？",
             on_submit=self.add_clicked,
             expand=True,
-            text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
-            label_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
+            text_style=ft.TextStyle(font_family="sansr", size=14),
+            label_style=ft.TextStyle(font_family="sansr", size=14),
         )
         self.tasks = ft.Column()
         self.filter = ft.Tabs(
@@ -106,7 +106,7 @@ class TodoApp(ft.Column):
             on_change=self.tabs_changed,
             tabs=[ ft.Tab(text="未完成"), ft.Tab(text="已完成"),ft.Tab(text="全部")],
         )
-        self.items_left = ft.Text("0 项未完成", style=ft.TextStyle(font_family="FZLanTingHei", size=14))
+        self.items_left = ft.Text("0 项未完成", style=ft.TextStyle(font_family="sansr", size=14))
         self.controls = [
             ft.Row(
                 controls=[
@@ -133,7 +133,7 @@ class TodoApp(ft.Column):
                                 text="清除已完成",
                                 on_click=self.clear_clicked,
                                 style=ft.ButtonStyle(
-                                    text_style=ft.TextStyle(font_family="FZLanTingHei", size=14)
+                                    text_style=ft.TextStyle(font_family="sansr", size=14)
                                 ),
                             ),
                         ],
