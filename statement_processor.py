@@ -208,7 +208,7 @@ def process_bank_statements(root_dir, target_month, export_path, update_log, dro
         output_file = os.path.join(export_path, output_filename)
 
         # 保存到 Excel，从第 1 行开始
-        df_result.to_excel(output_file, index=False, startrow=0)
+        df_result.to_excel(output_file, index=False, startrow=0, engine='openpyxl')
         update_log(f"数据已保存到 {output_file}")
         return True, output_file
     else:
@@ -227,6 +227,7 @@ def update_with_match_data(output_file, match_file_path, update_log):
 
         # 获取独特银行列表
         unique_banks = df_generated['银行'].unique()
+        update_log(f"找到的银行列表: {unique_banks.tolist()}")
 
         for bank in unique_banks:
             if pd.isna(bank):
@@ -241,6 +242,7 @@ def update_with_match_data(output_file, match_file_path, update_log):
                     header=0,
                     dtype={"产品编号": str, "托管账户": str, "入息账套": str}  # 强制为字符串，避免数值精度丢失
                 )
+                update_log(f"成功读取 '{bank}' sheet，行数: {len(df_match)}")
             except ValueError as ve:
                 update_log(f"错误: 未找到 '{bank}' 工作表：{str(ve)}")
                 continue
@@ -254,7 +256,7 @@ def update_with_match_data(output_file, match_file_path, update_log):
             # 检查匹配 sheet 的列（假设 A:产品编号, C:托管账户, D:入息账套，使用列名）
             required_cols = ["产品编号", "托管账户", "入息账套"]
             if not all(col in df_match.columns for col in required_cols):
-                update_log(f"错误: '{bank}' sheet 缺少必要列（产品编号、托管账户、入息账套）")
+                update_log(f"错误: '{bank}' sheet 缺少必要列（产品编号、托管账户、入息账套），实际列: {df_match.columns.tolist()}")
                 continue
 
             # 确保产品编号和托管账户为字符串并去除空格
@@ -262,8 +264,16 @@ def update_with_match_data(output_file, match_file_path, update_log):
             df_match['托管账户'] = df_match['托管账户'].astype(str).str.strip()
             df_generated['产品编号'] = df_generated['产品编号'].astype(str).str.strip()
 
+            # 调试：记录匹配 sheet 的产品编号和托管账户的前几行
+            update_log(f"'{bank}' sheet 前5行数据 (产品编号, 托管账户, 入息账套):")
+            for i, row in df_match.head(5)[['产品编号', '托管账户', '入息账套']].iterrows():
+                update_log(f"  产品编号: {row['产品编号']}, 托管账户: {row['托管账户']}, 入息账套: {row['入息账套']}")
+
             # 过滤生成的 df 中该银行的行
             df_bank = df_generated[df_generated['银行'] == bank]
+            if df_bank.empty:
+                update_log(f"警告: 在生成的 Excel 中未找到银行 '{bank}' 的数据")
+                continue
 
             # 匹配
             df_merged = df_bank.merge(
@@ -273,6 +283,14 @@ def update_with_match_data(output_file, match_file_path, update_log):
                 how="left",
                 suffixes=('', '_new')
             )
+
+            # 调试：记录 df_merged 的列名
+            update_log(f"银行 '{bank}' df_merged columns: {df_merged.columns.tolist()}")
+
+            # 调试：记录匹配结果
+            update_log(f"银行 '{bank}' 匹配结果，匹配行数: {len(df_merged)}")
+            for idx, row in df_merged.head(5).iterrows():
+                update_log(f"  产品编号: {row['产品编号']}, 托管账户: {row.get('托管账户', 'N/A')}, 入息账套: {row.get('入息账套', 'N/A')}")
 
             # 更新原 df_generated 的对应行
             for idx in df_merged.index:
@@ -287,10 +305,62 @@ def update_with_match_data(output_file, match_file_path, update_log):
             "日期", "产品编号", "产品名称", "利息金额", "余额", "银行",
             "托管账户", "入息账套"
         ]]
-
         # 保存回原文件（覆盖），使用 openpyxl 引擎，确保字符串格式
         df_generated.to_excel(output_file, index=False, startrow=0, engine='openpyxl')
         update_log(f"匹配完成，已更新 {output_file} 添加托管账户和入息账套列")
+
+        # 第二步：基于匹配完成的 df_generated 生成“其他交易导入模板” sheet
+        template_data = []
+        for _, row in df_generated.iterrows():
+            # 第一条记录
+            template_data.append({
+                "业务日期": row["日期"],
+                "记账日期": row["日期"],
+                "账套号": row["入息账套"],
+                "摘要": f"收到银行利息收入（{row['产品编号']}-{row['产品名称']}）",
+                "科目代码": "1002",
+                "借贷方向（0借，1贷）": "0",
+                "金额": row["利息金额"],
+                "银行/资金账号": row["托管账户"],
+                "受益凭证号": None,
+                "证券代码": None,
+                "凭证号": None,
+                "分录号": "1",
+                "备注": row["产品名称"],
+                "是否支付日（0是，1否）": "0",
+                "是否全额冲销（0全部，1部分）": "0"
+            })
+            # 第二条记录
+            template_data.append({
+                "业务日期": row["日期"],
+                "记账日期": row["日期"],
+                "账套号": row["入息账套"],
+                "摘要": f"收到银行利息收入（{row['产品编号']}-{row['产品名称']}）",
+                "科目代码": "601101",
+                "借贷方向（0借，1贷）": "1",
+                "金额": row["利息金额"],
+                "银行/资金账号": row["托管账户"],
+                "受益凭证号": None,
+                "证券代码": None,
+                "凭证号": None,
+                "分录号": "2",
+                "备注": row["产品名称"],
+                "是否支付日（0是，1否）": "0",
+                "是否全额冲销（0全部，1部分）": "0"
+            })
+
+        # 创建 DataFrame
+        df_template = pd.DataFrame(template_data)
+        update_log(f"生成‘其他交易导入模板’ sheet，包含 {len(df_template)} 条记录（{len(df_generated)} 条原始记录，每条生成 2 条）")
+
+        # 保存到 Excel，指定 sheet 顺序
+        with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
+            # 先写入“其他交易导入模板” sheet
+            df_template.to_excel(writer, sheet_name="其他交易导入模板", index=False, startrow=0)
+            # 再写入“Sheet1”
+            df_generated.to_excel(writer, sheet_name="Sheet1", index=False, startrow=0)
+
+        update_log(f"匹配完成，已更新 {output_file}，包含 sheet：其他交易导入模板（第一）、Sheet1（第二）")
         return True
     except Exception as ex:
         update_log(f"匹配失败：{str(ex)}")
