@@ -40,7 +40,7 @@ def main(page: Page):
     page.window.maximizable = False
     page.window.left = 100
     page.window.top = 100
-    page.window.width = 580
+    page.window.width = 380
     page.window.height = 520
     page.window_resizable = True
     page.window.min_width = 380
@@ -72,7 +72,8 @@ def main(page: Page):
     selected_index = ft.Ref()
     selected_index.current = 0
     log_messages = []
-    is_maximized = [True]
+    is_maximized = [False]
+    is_minimized = [True]
     statement_folder = [r"D:\Desktop"]  # 流水文件夹路径，列表形式以支持闭包修改
     export_path = [r"D:\Desktop"]  # 导出路径，列表形式以支持闭包修改
     excel_file_path = [None]  # 新增：存储 Excel 文件路径
@@ -91,8 +92,8 @@ def main(page: Page):
         "ningbo_bank": run_ningbo_bank,
         "hangzhou_bank": run_hangzhou_bank,
         "pingan_bank": run_pingan_bank,
-        "shanghai_bank": run_shanghai_bank,
-        "zheshang_bank": run_zheshang_bank,
+        # "shanghai_bank": run_shanghai_bank,
+        # "zheshang_bank": run_zheshang_bank,
         "zhongxin_bank": run_zhongxin_bank,
     }
 
@@ -370,7 +371,7 @@ def main(page: Page):
             text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         ),
         tooltip="开始导出银行流水文件",
-        width=page.window.width-70,
+        width=page.window.width - 70,
     )
 
     select_match_excel_button = ft.ElevatedButton(
@@ -384,7 +385,7 @@ def main(page: Page):
             text_style=ft.TextStyle(font_family="FZLanTingHei", size=14),
         ),
         tooltip="选择匹配的 Excel 文件，并执行导出后匹配托管账户和入息账套",
-        width=page.window.width-70,
+        width=page.window.width - 70,
     )
 
     # 日志更新函数
@@ -734,20 +735,20 @@ def main(page: Page):
 
     # 切换窗口大小函数
     def toggle_window_size():
-        nonlocal is_maximized
+        nonlocal is_minimized
         current_page = selected_index.current
         sizes = page_sizes.get(current_page, page_sizes[0])
         steps = 15
         duration = 0.0133
         start_width = page.window.width
         start_height = page.window.height
-        if is_maximized[0]:
-            target_width = sizes["min_width"]
-            target_height = sizes["min_height"]
-            toggle_size_button.icon = ft.Icons.FULLSCREEN
-        else:
+        if is_minimized[0]:
             target_width = sizes["max_width"]
             target_height = sizes["max_height"]
+            toggle_size_button.icon = ft.Icons.FULLSCREEN
+        else:
+            target_width = sizes["min_width"]
+            target_height = sizes["min_height"]
             toggle_size_button.icon = ft.Icons.FULLSCREEN_EXIT
 
         for i in range(steps + 1):
@@ -756,27 +757,36 @@ def main(page: Page):
             page.window.height = start_height + (target_height - start_height) * t
             time.sleep(duration)
 
-        bank_dropdown.width = page.window.width - 70
+        # 统一按钮宽度
+        button_width = page.window.width - 70
+        bank_dropdown.width = button_width
         start_date.width = (page.window.width - 80) / 2
         end_date.width = (page.window.width - 80) / 2
-        run_bankdownloader_button.width = page.window.width - 70
-        select_path_button.width = page.window.width - 70
-        import_excel_button.width = page.window.width - 70
-        bank_export_content.controls[1].width = page.window.width - 70
-        bank_export_content.controls[5].width = page.window.width - 70
-        ai_content.controls[0].width = page.window.width - 70
-        ai_content.controls[1].width = page.window.width - 70
-        tools_content.width = page.window.width - 70
-        statement_content.controls[0].width = page.window.width - 70
-        statement_content.controls[1].width = page.window.width - 70
-        statement_content.controls[2].width = page.window.width - 70
-        statement_content.controls[4].width = page.window.width - 70
-        statement_content.controls[5].width = page.window.width - 70
-        home_content.controls[0].width = page.window.width - 70
-        main_content.width = page.window.width - 70
+        run_bankdownloader_button.width = button_width
+        select_path_button.width = button_width
+        import_excel_button.width = button_width
+        bank_export_content.controls[1].width = button_width
+        bank_export_content.controls[5].width = button_width
+        ai_content.controls[0].width = button_width
+        ai_content.controls[1].width = button_width
+        tools_content.width = button_width
+        statement_content.width = button_width
+        statement_content.controls[0].width = button_width
+        statement_content.controls[1].width = button_width
+        statement_content.controls[2].width = button_width
+        statement_content.controls[4].width = button_width
+        statement_content.controls[5].width = button_width
+        statement_content.controls[6].width = button_width
+        statement_content.controls[7].width = button_width
+        # 更新 tools_content 内部的子控件宽度
+        todo_content.controls[0].width = button_width
+        settings_content.controls[0].width = button_width
+        new_page_content.controls[0].width = button_width
+        home_content.controls[0].width = button_width
+        main_content.width = button_width
         page.update()
 
-        is_maximized[0] = not is_maximized[0]
+        is_minimized[0] = not is_minimized[0]
         toggle_size_button.update()
 
     # 页面内容
@@ -872,6 +882,7 @@ def main(page: Page):
                 width=page.window.width-70,
                 height=page.window.height-70,
                 alignment=ft.alignment.top_left,
+                expand=True,  # 确保容器填充可用空间
             ),
         ],
         spacing=10,
@@ -890,6 +901,7 @@ def main(page: Page):
                 width=page.window.width-70,
                 height=page.window.height-70,
                 alignment=ft.alignment.top_left,
+                expand=True,  # 确保容器填充可用空间
             ),
         ],
         spacing=10,
@@ -909,6 +921,7 @@ def main(page: Page):
                 height=page.window.height-70,
                 key="log_area",
                 alignment=ft.alignment.top_left,
+                expand=True,  # 确保容器填充可用空间
             ),
         ],
         spacing=10,
@@ -930,7 +943,7 @@ def main(page: Page):
         spacing=10,
         scroll=ft.ScrollMode.AUTO,
         alignment=ft.MainAxisAlignment.START,
-        width=page.window.width-70,
+        # width=page.window.width-70,
     )
 
     tools_content = ft.Tabs(
