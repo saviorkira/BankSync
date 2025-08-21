@@ -171,9 +171,9 @@ def main(page: Page):
 
     data_table = ft.DataTable(
         columns=[
-            ft.DataColumn(ft.Text("产品编号", weight=ft.FontWeight.BOLD, size=14, font_family="sansr")),
-            ft.DataColumn(ft.Text("产品名称", weight=ft.FontWeight.BOLD, size=14, font_family="sansr")),
-            ft.DataColumn(ft.Text("托管账户", weight=ft.FontWeight.BOLD, size=14, font_family="sansr")),
+            ft.DataColumn(ft.Text("产品编号", weight=ft.FontWeight.BOLD, size=13, font_family="sansr")),
+            ft.DataColumn(ft.Text("产品名称", weight=ft.FontWeight.BOLD, size=13, font_family="sansr")),
+            ft.DataColumn(ft.Text("托管账户", weight=ft.FontWeight.BOLD, size=13, font_family="sansr")),
         ],
         rows=[],
         expand=True,
@@ -183,6 +183,7 @@ def main(page: Page):
         heading_row_height=30,
         data_row_min_height=30,
         data_row_max_height=30,
+        column_spacing=10,  # 调整列间距
     )
 
     log_area = ft.TextField(
@@ -428,9 +429,9 @@ def main(page: Page):
                                        str(xiangmuid).strip() and str(xiangmu).strip() and str(account).strip()])
                     data_table.rows = [
                         ft.DataRow(cells=[
-                            ft.DataCell(ft.Text(xiangmuid, size=14, font_family="sansr")),
-                            ft.DataCell(ft.Text(xiangmu, size=14, font_family="sansr")),
-                            ft.DataCell(ft.Text(account, size=14, font_family="sansr")),
+                            ft.DataCell(ft.Text(xiangmuid, size=12, font_family="sansr")),
+                            ft.DataCell(ft.Text(xiangmu, size=12, font_family="sansr")),
+                            ft.DataCell(ft.Text(account, size=12, font_family="sansr")),
                         ]) for xiangmuid, xiangmu, account in excel_data
                     ]
                     update_log(f"已更新数据表：{sheet_name}，包含 {len(excel_data)} 条记录")
@@ -479,9 +480,9 @@ def main(page: Page):
                                    str(xiangmuid).strip() and str(xiangmu).strip() and str(account).strip()])
                 data_table.rows = [
                     ft.DataRow(cells=[
-                        ft.DataCell(ft.Text(xiangmuid, size=14, font_family="sansr")),
-                        ft.DataCell(ft.Text(xiangmu, size=14, font_family="sansr")),
-                        ft.DataCell(ft.Text(account, size=14, font_family="sansr")),
+                        ft.DataCell(ft.Text(xiangmuid, size=12, font_family="sansr")),
+                        ft.DataCell(ft.Text(xiangmu, size=12, font_family="sansr")),
+                        ft.DataCell(ft.Text(account, size=12, font_family="sansr")),
                     ]) for xiangmuid, xiangmu, account in excel_data
                 ]
                 update_log(f"成功导入 Excel 文件：{file_path}，工作表：{sheet_name}，包含 {len(excel_data)} 条记录")
@@ -847,8 +848,9 @@ def main(page: Page):
                 border_radius=8,
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
-                width=page.window.width-70,
+                # width=page.window.width-70,
                 height=173,
+                expand=True,
             ),
             run_bankdownloader_button,
         ],
