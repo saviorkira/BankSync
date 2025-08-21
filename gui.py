@@ -14,6 +14,8 @@ from flet import (
     NavigationRail, NavigationRailDestination, Ref, AnimatedSwitcher, Checkbox, IconButton,
     FloatingActionButton, Tabs, Tab, OutlinedButton, Image
 )
+from pywinauto.win32structures import HARDWAREINPUT
+
 from login_manager import load_site_icons, login_site
 from todo_manager import TodoApp
 from statement_processor import process_bank_statements, update_with_match_data
@@ -843,12 +845,15 @@ def main(page: Page):
                 content=ft.ListView(
                     controls=[data_table],
                     auto_scroll=False,
+                    # clip_behavior=ft.ClipBehavior.HARD_EDGE,
+                    # horizontal=True,
                 ),
-                padding=5,
+                # padding=5,
                 border_radius=8,
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 # width=page.window.width-70,
+                # clip_behavior=ft.ClipBehavior.HARD_EDGE,
                 height=173,
                 expand=True,
             ),
