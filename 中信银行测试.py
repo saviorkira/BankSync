@@ -1,31 +1,35 @@
-page.get_by_role("link", name="托管业务 ").click()
-    page.get_by_role("link", name="托管账户 ").click()
-    page.get_by_role("link", name="托管账户回单查询").click()
-    page.locator("#inputPro").click()
-    page.locator("#inputPro").fill("简州空港")
-    page.locator("#inputPro").press("Enter")
-    page.locator("#ulPro").click()
+import os
+from playwright.sync_api import sync_playwright
 
+def log_local(msg):
+    print("[调试]", msg)
 
-    # page.get_by_role("listitem").filter(has_text="账户信息： 8111201012500701674").locator("span").click()
-    # page.get_by_role("checkbox", name="8111201012500701674").check()
-    # page.get_by_role("listitem").filter(has_text="账户信息： 8111201012500701674").locator("span").click()
+if __name__ == "__main__":
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(
+        os.path.abspath(os.path.dirname(__file__)), "playwright-browsers"
+    )
+    print("设置 PLAYWRIGHT_BROWSERS_PATH:", os.environ["PLAYWRIGHT_BROWSERS_PATH"])
 
-page.get_by_role("listitem").filter(has_text=f"账户信息： {account}").locator("span").click()
-page.get_by_role("checkbox", name=account).check()
-page.get_by_role("listitem").filter(has_text=f"账户信息： {account}").locator("span").click()
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
 
+        # 伪装成 IE11 的 UA
+        ua_ie11 = "Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko"
 
+        context = browser.new_context(
+            viewport=None,
+            accept_downloads=True,
+            user_agent=ua_ie11,
+        )
 
-    page.locator("input[name=\"hisDay\"]").check()
+        page = context.new_page()
+        log_local(f"当前 User-Agent: {ua_ie11}")
 
-page.locator('input[name="startDate"]').evaluate(
-    f'element => {{ element.value = "{kaishiriqi}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
-)
+        # 民生银行测试
+        page.goto("https://ent.cmbc.com.cn/trust-bank/#/login?_k=ur38w6")
 
-page.locator('input[name="endDate"]').evaluate(
-    f'element => {{ element.value = "{jieshuriqi}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
-)
+        # 暂停手动操作
+        page.pause()
 
-    page.get_by_role("button", name="批量下载").click()
-    page.get_by_role("button", name="确认").click()
+        context.close()
+        browser.close()

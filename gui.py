@@ -45,7 +45,7 @@ def main(page: Page):
     page.window_resizable = True
     page.window.min_width = 380
     page.window.min_height = 520
-    page.window.max_width = 580
+    page.window.max_width = 380
     page.window.max_height = 520
 
     page.theme = Theme(
@@ -368,7 +368,7 @@ def main(page: Page):
     )
 
     start_export_button = ft.ElevatedButton(
-        text="导出筛选",
+        text="导出",
         icon=ft.Icons.PLAY_CIRCLE,
         style=ft.ButtonStyle(
             color=ft.Colors.WHITE,
@@ -377,12 +377,12 @@ def main(page: Page):
             padding=10,
             text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
-        tooltip="开始筛选的银行流水",
+        tooltip="开始导出所筛选的银行流水",
         width=page.window.width - 70,
     )
 
     select_match_excel_button = ft.ElevatedButton(
-        text="导出筛选并生成上传模板",
+        text="导出并生成上传模板",
         icon=ft.Icons.PLAY_CIRCLE,
         style=ft.ButtonStyle(
             color=ft.Colors.WHITE,
@@ -753,10 +753,17 @@ def main(page: Page):
             target_width = sizes["max_width"]
             target_height = sizes["max_height"]
             toggle_size_button.icon = ft.Icons.FULLSCREEN
+            page.window.max_width = 580  # 放宽限制
+            page.window.max_height = 520
         else:
             target_width = sizes["min_width"]
             target_height = sizes["min_height"]
             toggle_size_button.icon = ft.Icons.FULLSCREEN_EXIT
+            page.window.max_width = 380  # 恢复限制
+            page.window.max_height = 520
+
+        # 在调整大小前更新最大尺寸
+        page.update()
 
         for i in range(steps + 1):
             t = i / steps
