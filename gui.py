@@ -100,10 +100,11 @@ def main(page: Page):
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
         "hangzhou_bank": run_hangzhou_bank,
-        "pingan_bank": run_pingan_bank,
+
         # "shanghai_bank": run_shanghai_bank,
         # "zheshang_bank": run_zheshang_bank,
         "zhongxin_bank": run_zhongxin_bank,
+        "pingan_bank": run_pingan_bank,
     }
 
     # 银行名称映射

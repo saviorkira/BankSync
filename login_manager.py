@@ -9,10 +9,13 @@ from utils import read_bank_config
 SITE_HANDLERS = {
     "ningbo_bank": lambda playwright, project_root, update_log: login_ningbo_bank(playwright, project_root, update_log),
     "hangzhou_bank": lambda playwright, project_root, update_log: login_hangzhou_bank(playwright, project_root, update_log),
+    "zhongxin_bank": lambda playwright, project_root, update_log: login_zhongxin_bank(playwright, project_root,                                                                                     update_log),
     "pingan_bank": lambda playwright, project_root, update_log: login_pingan_bank(playwright, project_root, update_log),
+
     "shanghai_bank": lambda playwright, project_root, update_log: login_shanghai_bank(playwright, project_root, update_log),
     "zheshang_bank": lambda playwright, project_root, update_log: login_zheshang_bank(playwright, project_root, update_log),
-    "zhongxin_bank": lambda playwright, project_root, update_log: login_zhongxin_bank(playwright, project_root, update_log),
+    "xingye_bank": lambda playwright, project_root, update_log: login_xingye_bank(playwright, project_root, update_log),
+    "zhaoshang_bank": lambda playwright, project_root, update_log: login_zhaoshang_bank(playwright, project_root, update_log),
 
     # 未来添加其他网站，例如：
     # "huaxia_bank": lambda playwright, project_root, update_log: login_huaxia_bank(playwright, project_root, update_log),
@@ -25,26 +28,31 @@ def load_site_icons(project_root: str, update_log, login_callback):
     update_log(f"扫描图标目录: {login_dir}")
     icons = []
     if os.path.exists(login_dir):
-        for file in os.listdir(login_dir):
-            if file.lower().endswith(('.png', '.jpg', '.jpeg')):
-                icon_path = os.path.join(login_dir, file)
-                site_name = os.path.splitext(file)[0]
-                update_log(f"找到图标: {icon_path}")
-                icon = ft.Image(
-                    src=icon_path,
-                    width=100,
-                    height=100,
-                    fit=ft.ImageFit.CONTAIN,
-                    tooltip=f"登录 {site_name.replace('_', ' ')}",
-                )
-                icon_container = ft.Container(
-                    content=icon,
-                    on_click=lambda e, name=site_name: login_callback(name),
-                    padding=5,
-                    border_radius=8,
-                    ink=True,
-                )
-                icons.append(icon_container)
+        # 按照 SITE_HANDLERS 的键顺序加载图标
+        for site_name in SITE_HANDLERS.keys():
+            # 检查对应图标文件是否存在
+            for ext in ('.png', '.jpg', '.jpeg'):
+                icon_path = os.path.join(login_dir, f"{site_name}{ext}")
+                if os.path.exists(icon_path):
+                    update_log(f"找到图标: {icon_path}")
+                    icon = ft.Image(
+                        src=icon_path,
+                        width=100,
+                        height=100,
+                        fit=ft.ImageFit.CONTAIN,
+                        tooltip=f"登录 {site_name.replace('_', ' ')}",
+                    )
+                    icon_container = ft.Container(
+                        content=icon,
+                        on_click=lambda e, name=site_name: login_callback(name),
+                        padding=5,
+                        border_radius=8,
+                        ink=True,
+                    )
+                    icons.append(icon_container)
+                    break  # 找到一个匹配的扩展名后跳出内层循环
+            else:
+                update_log(f"未找到 {site_name} 的图标文件")
     else:
         update_log(f"图标目录不存在: {login_dir}")
     if not icons:
@@ -108,7 +116,7 @@ def login_hangzhou_bank(playwright, project_root, update_log):
         browser_path = os.environ.get('PLAYWRIGHT_BROWSERS_PATH')
         if not os.path.exists(browser_path):
             update_log(f"Playwright 浏览器路径不存在: {browser_path}")
-            return  # 修正缩进，确保与 if 块同级
+            return
         update_log("启动浏览器...")
         browser = playwright.chromium.launch(headless=False, timeout=30000)
         context = browser.new_context(viewport=None)
@@ -152,7 +160,7 @@ def login_zhongxin_bank(playwright, project_root, update_log):
         browser_path = os.environ.get('PLAYWRIGHT_BROWSERS_PATH')
         if not os.path.exists(browser_path):
             update_log(f"Playwright 浏览器路径不存在: {browser_path}")
-            return  # 修正缩进，确保与 if 块同级
+            return
         update_log("启动浏览器...")
         browser = playwright.chromium.launch(headless=False, timeout=30000)
         context = browser.new_context(viewport=None)
@@ -163,8 +171,7 @@ def login_zhongxin_bank(playwright, project_root, update_log):
         update_log("输入用户名和密码...")
 
         page.locator("#new_header").get_by_text("登录").click()
-
-        log_local("输入用户名和密码...")
+        update_log("输入用户名和密码...")
         page.get_by_role("textbox", name="手机号").click()
         page.get_by_role("textbox", name="手机号").fill(username)
         update_log("用户名和操作员号已输入，请手动执行后续操作...")
@@ -198,7 +205,7 @@ def login_pingan_bank(playwright, project_root, update_log):
         browser_path = os.environ.get('PLAYWRIGHT_BROWSERS_PATH')
         if not os.path.exists(browser_path):
             update_log(f"Playwright 浏览器路径不存在: {browser_path}")
-            return  # 修正缩进，确保与 if 块同级
+            return
         update_log("启动浏览器...")
         browser = playwright.chromium.launch(headless=False, timeout=30000)
         context = browser.new_context(viewport=None)
@@ -207,7 +214,6 @@ def login_pingan_bank(playwright, project_root, update_log):
         update_log(f"访问登录页面: {login_url}")
         page.goto(login_url)
         update_log("输入用户名和密码...")
-
         page.locator("#new_header").get_by_text("登录").click()
 
         log_local("输入用户名和密码...")
