@@ -19,7 +19,8 @@ ai_messages = []
 def update_ai_output(ai_output, selected_index, project_root):
     try:
         ai_output.value = "".join(ai_messages)
-        if selected_index.current == 2 and hasattr(ai_output, 'page') and ai_output.page is not None:
+        # if selected_index.current == 2 and hasattr(ai_output, 'page') and ai_output.page is not None:
+        if hasattr(ai_output, 'page') and ai_output.page is not None:
             ai_output.update()
             ai_output.page.scroll_to(key="ai_output", duration=500)
             log("AI: ai_output 更新成功: AI页面已渲染", project_root)
