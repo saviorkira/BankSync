@@ -1,5 +1,5 @@
 from playwright.sync_api import Playwright
-from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog
+from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog, split_date_ranges
 import os
 import time
 import pyautogui
@@ -20,6 +20,15 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
     if not os.path.exists(browser_path):
         log_local(f"Playwright 浏览器路径不存在: {browser_path}")
         raise FileNotFoundError(f"Playwright 浏览器路径不存在: {browser_path}")
+
+    # 拆分日期范围
+    try:
+        date_ranges = split_date_ranges(kaishiriqi, jieshuriqi, max_months=3)
+        log_local(f"日期范围已拆分为 {len(date_ranges)} 个子范围: {date_ranges}")
+    except Exception as e:
+        log_local(f"日期拆分失败: {str(e)}")
+        raise
+
     try:
         log_local("启动浏览器...")
         browser = playwright.chromium.launch(headless=False, timeout=30000)
@@ -37,100 +46,117 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
         page.get_by_role("paragraph").filter(has_text="流水查询").locator("span").click()
         # page.get_by_text("账户", exact=True).click()
         # page.get_by_role("menuitem", name="流水查询").click()
-        page.get_by_role("combobox", name="开始日期").fill(kaishiriqi)
-        page.get_by_role("combobox", name="结束日期").fill(jieshuriqi)
-        # page.get_by_role("combobox", name="开始日期").press("Enter")
-        # page.get_by_role("combobox", name="结束日期").press("Enter")
 
-        for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
-            log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
-            try:
-                # 创建文件夹
-                folder_name = f"{xiangmuid}_{xiangmu}"
-                liushui_path = os.path.join(download_path, folder_name, "银行流水")
-                huidan_path = os.path.join(download_path, folder_name, "银行回单")
-                duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
-                os.makedirs(liushui_path, exist_ok=True)
-                os.makedirs(huidan_path, exist_ok=True)
-                os.makedirs(duizhangdan_path, exist_ok=True)
-
-                # 查询账号
-                page.get_by_role("textbox", name="账号/户名").click()
-                page.wait_for_timeout(2000)  # 替换 time.sleep(2)
-                if index > 0:
-                    page.get_by_role("textbox", name="账号/户名").press("ControlOrMeta+a")
-                    page.get_by_role("textbox", name="账号/户名").fill(account)
-                else:
-                    page.get_by_role("textbox", name="账号/户名").fill(account)
-                page.wait_for_timeout(800)
-                page.get_by_role("option", name="-重庆国际信托股份有限公司").click()
-                log_local(f"使用托管账户查询：{account}")
-                page.get_by_role("button", name="查询").click()
-                page.wait_for_timeout(3000)  # 替换 time.sleep(3)
-
-                # 等待复选框加载
-                checkbox = page.get_by_role("row", name="交易时间 交易流水号 收入金额 支出金额 余额 对方 对方开户行 用途 操作").locator("span").nth(1)
+        # 外层循环：遍历日期范围
+        for range_index, (start_date, end_date) in enumerate(date_ranges):
+            log_local(f"处理日期范围: {start_date} 至 {end_date}")
+            # 从第二次日期范围循环开始，执行“全部关闭”和重新导航
+            if range_index > 0:
                 try:
-                    checkbox.wait_for(state="visible", timeout=10000)
-                except Exception:
-                    log_local(f"数据加载超时或无数据（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
-                    page.screenshot(path=os.path.join(download_path, f"error_data_load_{xiangmuid}_{xiangmu}.png"))
-                    continue
-
-                # 检查复选框是否可交互
-                if not checkbox.is_enabled():
-                    log_local(f"无回单或流水数据，跳过导出（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
-                    page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmuid}_{xiangmu}.png"))
-                    continue
-
-                # 导出流水
-                try:
-                    with page.expect_download() as liushui_download_info:
-                        page.get_by_role("button", name="导出Excel").click()
-                    download = liushui_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_杭州银行流水_{kaishiriqi}_{jieshuriqi}.xlsx"
-                    download.save_as(os.path.join(liushui_path, filename))
-                    log_local(f"银行流水导出完成：{filename}")
+                    page.get_by_text("全部关闭").click()
+                    page.locator("span").filter(has_text="流水查询").click()
                 except Exception as e:
-                    log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
-                    continue
+                    log_local(f"重置页面失败: {str(e)}")
 
-                # 导出对账单
+                log_local("重新导航到‘流水查询’页面")
+
+            # 设置日期范围
+            page.get_by_role("combobox", name="开始日期").fill(start_date)
+            page.get_by_role("combobox", name="结束日期").fill(end_date)
+            # page.get_by_role("combobox", name="开始日期").press("Enter")
+            # page.get_by_role("combobox", name="结束日期").press("Enter")
+
+            for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
+                log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
                 try:
-                    with page.expect_download() as duizhangdan_download_info:
-                        page.get_by_role("button", name="流水打印", exact=True).click()
-                    download = duizhangdan_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_银行对账单_{kaishiriqi}_{jieshuriqi}.pdf"
-                    download.save_as(os.path.join(duizhangdan_path, filename))
-                    log_local(f"银行对账单导出完成：{filename}")
+                    # 创建文件夹
+                    folder_name = f"{xiangmuid}_{xiangmu}"
+                    liushui_path = os.path.join(download_path, folder_name, "银行流水")
+                    huidan_path = os.path.join(download_path, folder_name, "银行回单")
+                    duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
+                    os.makedirs(liushui_path, exist_ok=True)
+                    os.makedirs(huidan_path, exist_ok=True)
+                    os.makedirs(duizhangdan_path, exist_ok=True)
+
+                    # 查询账号
+                    page.get_by_role("textbox", name="账号/户名").click()
+                    page.wait_for_timeout(2000)  # 替换 time.sleep(2)
+                    if index > 0:
+                        page.get_by_role("textbox", name="账号/户名").press("ControlOrMeta+a")
+                        page.get_by_role("textbox", name="账号/户名").fill(account)
+                    else:
+                        page.get_by_role("textbox", name="账号/户名").fill(account)
+                    page.wait_for_timeout(800)
+                    page.get_by_role("option", name="-重庆国际信托股份有限公司").click()
+                    log_local(f"使用托管账户查询：{account}")
+                    page.get_by_role("button", name="查询").click()
+                    page.wait_for_timeout(3000)  # 替换 time.sleep(3)
+
+                    # 等待复选框加载
+                    checkbox = page.get_by_role("row", name="交易时间 交易流水号 收入金额 支出金额 余额 对方 对方开户行 用途 操作").locator("span").nth(1)
+                    try:
+                        checkbox.wait_for(state="visible", timeout=10000)
+                    except Exception:
+                        log_local(f"数据加载超时或无数据（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
+                        page.screenshot(path=os.path.join(download_path, f"error_data_load_{xiangmuid}_{xiangmu}.png"))
+                        continue
+
+                    # 检查复选框是否可交互
+                    if not checkbox.is_enabled():
+                        log_local(f"无回单或流水数据，跳过导出（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
+                        page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmuid}_{xiangmu}.png"))
+                        continue
+
+                    # 导出流水
+                    try:
+                        with page.expect_download() as liushui_download_info:
+                            page.get_by_role("button", name="导出Excel").click()
+                        download = liushui_download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_杭州银行流水_{start_date}_{end_date}.xlsx"
+                        download.save_as(os.path.join(liushui_path, filename))
+                        log_local(f"银行流水导出完成：{filename}")
+                    except Exception as e:
+                        log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                        page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
+                        continue
+
+                    # 导出对账单
+                    try:
+                        with page.expect_download() as duizhangdan_download_info:
+                            page.get_by_role("button", name="流水打印", exact=True).click()
+                        download = duizhangdan_download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_银行对账单_{start_date}_{end_date}.pdf"
+                        download.save_as(os.path.join(duizhangdan_path, filename))
+                        log_local(f"银行对账单导出完成：{filename}")
+                    except Exception as e:
+                        log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                        page.screenshot(path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}.png"))
+                        continue
+
+                    # 导出回单
+                    try:
+                        page.locator("#app").get_by_text("条/页").click()
+                        page.wait_for_selector('role=option[name="100条/页"]', state="visible", timeout=5000)
+                        page.get_by_role("option", name="100条/页").click()
+                        checkbox.click()  # 重新选中复选框
+                        log_local("复选框已重新选中")
+                        with page.expect_download() as huidan_download_info:
+                            page.get_by_role("button", name="回单打印", exact=True).click()
+                        download = huidan_download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.pdf"
+                        download.save_as(os.path.join(huidan_path, filename))
+                        log_local(f"银行回单导出完成：{filename}")
+                    except Exception as e:
+                        log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                        page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}.png"))
+                        continue
+
                 except Exception as e:
-                    log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}.png"))
+                    log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                    page.screenshot(path=os.path.join(download_path, f"error_project_{xiangmuid}_{xiangmu}.png"))
                     continue
 
-                # 导出回单
-                try:
-                    page.locator("#app").get_by_text("条/页").click()
-                    page.wait_for_selector('role=option[name="100条/页"]', state="visible", timeout=5000)
-                    page.get_by_role("option", name="100条/页").click()
-                    checkbox.click()  # 重新选中复选框
-                    log_local("复选框已重新选中")
-                    with page.expect_download() as huidan_download_info:
-                        page.get_by_role("button", name="回单打印", exact=True).click()
-                    download = huidan_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_银行回单_{kaishiriqi}_{jieshuriqi}.pdf"
-                    download.save_as(os.path.join(huidan_path, filename))
-                    log_local(f"银行回单导出完成：{filename}")
-                except Exception as e:
-                    log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}.png"))
-                    continue
-
-            except Exception as e:
-                log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                page.screenshot(path=os.path.join(download_path, f"error_project_{xiangmuid}_{xiangmu}.png"))
-                continue
+            log_local(f"完成日期范围 {start_date} 至 {end_date} 的下载")
 
         context.close()
         browser.close()

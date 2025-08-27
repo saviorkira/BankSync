@@ -26,10 +26,11 @@ if __name__ == "__main__":
             # downloads_path="D:/Downloads"  # 设置下载路径
         )
         page = context.new_page()
-        page.goto("https://www.e-custody.com/#/")
+        # page.goto("https://www.e-custody.com/#/")
         # page.goto("https://ent.cmbc.com.cn/trust-bank/#/login?_k=ur38w6")  # 你可以换成你的银行地址 民生
         # page.goto("https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login")  # 你可以换成你的银行地址 中信
         # page.goto("https://ib.citicbank.com/html/#/index")  # 你可以换成你的银行地址 中信
+        page.goto("https://custody.hzbank.com.cn/#/login")  # 你可以换成你的银行地址 中信
         # page.get_by_role("textbox", name="请输入客户号").fill("800067725")
         # page.get_by_role("textbox", name="请输入操作员号").fill("2001")
         # page.get_by_role("textbox", name="请输入登录密码").click()
