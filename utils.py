@@ -7,6 +7,7 @@ import pyautogui
 from pywinauto import Desktop, Application
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
+import ntplib
 
 def log(message, project_root, log_callback=None):
     """记录日志到文件和回调函数"""

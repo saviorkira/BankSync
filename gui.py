@@ -59,6 +59,10 @@ def main(page: Page):
         ),
         visual_density=ft.VisualDensity.COMPACT,
         font_family="sansr",
+        use_material3=True,
+        # hover_color=ft.Colors.TRANSPARENT,
+        # focus_color=ft.Colors.BLUE_500,
+        # highlight_color=ft.Colors.TRANSPARENT,
     )
     page.bgcolor = ft.Colors.WHITE
 
@@ -196,8 +200,8 @@ def main(page: Page):
         read_only=True,
         expand=True,
         border_radius=8,
-        filled=True,
-        bgcolor=ft.Colors.WHITE,
+        # filled=True,
+        # bgcolor=ft.Colors.WHITE,
         text_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
@@ -205,8 +209,8 @@ def main(page: Page):
         label="输入消息",
         expand=True,
         border_radius=8,
-        filled=True,
-        bgcolor=ft.Colors.WHITE,
+        # filled=True,
+        # bgcolor=ft.Colors.WHITE,
         hint_text="输入消息后点击发送",
         text_style=ft.TextStyle(font_family="sansr", size=14),
         label_style=ft.TextStyle(font_family="sansr", size=14),
@@ -230,8 +234,8 @@ def main(page: Page):
         read_only=True,
         expand=True,
         border_radius=8,
-        filled=True,
-        bgcolor=ft.Colors.WHITE,
+        # filled=True,
+        # bgcolor=ft.Colors.WHITE,
         text_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
@@ -255,6 +259,8 @@ def main(page: Page):
         size=14,
         color=ft.Colors.GREY_700,
         font_family="sansr",
+        no_wrap=True,
+        overflow=ft.TextOverflow.ELLIPSIS,
     )
 
     select_path_button = ft.ElevatedButton(
@@ -291,6 +297,8 @@ def main(page: Page):
         size=14,
         color=ft.Colors.GREY_700,
         font_family="sansr",
+        no_wrap=True,
+        overflow=ft.TextOverflow.ELLIPSIS,
     )
 
     select_statement_folder_button = ft.ElevatedButton(
@@ -354,6 +362,8 @@ def main(page: Page):
         size=14,
         color=ft.Colors.GREY_700,
         font_family="sansr",
+        no_wrap=True,
+        overflow=ft.TextOverflow.ELLIPSIS,
     )
 
     export_statement_button = ft.ElevatedButton(
@@ -798,7 +808,7 @@ def main(page: Page):
         statement_content.controls[7].width = button_width
         # 更新 tools_content 内部的子控件宽度
         todo_content.controls[0].width = button_width
-        settings_content.controls[0].width = button_width
+        log_content.controls[0].width = button_width
         new_page_content.controls[0].width = button_width
         home_content.controls[0].width = button_width
         main_content.width = button_width
@@ -931,7 +941,7 @@ def main(page: Page):
         alignment=ft.MainAxisAlignment.START,
     )
 
-    settings_content = ft.Column(
+    log_content = ft.Column(
         [
             ft.Container(
                 content=log_area,
@@ -947,7 +957,7 @@ def main(page: Page):
             ),
         ],
         spacing=10,
-        scroll=ft.ScrollMode.AUTO,
+        # scroll=ft.ScrollMode.AUTO,
         alignment=ft.MainAxisAlignment.START,
     )
 
@@ -979,7 +989,7 @@ def main(page: Page):
             ),
             ft.Tab(
                 text="日志",
-                content=settings_content,
+                content=log_content,
                 icon=ft.Icons.SETTINGS_OUTLINED,
             ),
             # ft.Tab(
@@ -1079,20 +1089,30 @@ def main(page: Page):
     def get_content():
         return pages[selected_index.current]["content"]
 
+    # main_content = ft.Container(
+    #     content=ft.AnimatedSwitcher(
+    #         content=get_content(),
+    #         ref=content_ref,
+    #         transition=ft.AnimatedSwitcherTransition.FADE,
+    #         duration=0,
+    #         reverse_duration=0,
+    #         switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
+    #         switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
+    #     ),
+    #     padding=ft.padding.only(left=10, right=10, top=10, bottom=10),
+    #     bgcolor=ft.Colors.WHITE,
+    #     alignment=ft.alignment.top_left,
+    #     width=page.window.width-70,
+    #     expand=True,
+    # )
+
     main_content = ft.Container(
-        content=ft.AnimatedSwitcher(
-            content=get_content(),
-            ref=content_ref,
-            transition=ft.AnimatedSwitcherTransition.FADE,
-            duration=0,
-            reverse_duration=0,
-            switch_in_curve=ft.AnimationCurve.EASE_IN_OUT,
-            switch_out_curve=ft.AnimationCurve.EASE_IN_OUT,
-        ),
+        content=get_content(),
+        ref=content_ref,
         padding=ft.padding.only(left=10, right=10, top=10, bottom=10),
-        bgcolor=ft.Colors.WHITE,
+        # bgcolor=ft.Colors.WHITE,
         alignment=ft.alignment.top_left,
-        width=page.window.width-70,
+        width=page.window.width - 70,
         expand=True,
     )
 
