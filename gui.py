@@ -157,13 +157,13 @@ def main(page: Page):
         filled=True,
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM-DD",
-        tooltip="日期范围通常3个月以内",
+        tooltip="区间可以大于3个月",
         text_style=ft.TextStyle(font_family="sansr", size=14),
         label_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
     end_date = ft.TextField(
-        label="结束日期（<3个月）",
+        label="结束日期",
         value=last_day_of_last_month,  # 上个月最后一天
         width=(page.window.width-80)/2,
         border_radius=8,
@@ -171,7 +171,7 @@ def main(page: Page):
         filled=True,
         bgcolor=ft.Colors.WHITE,
         hint_text="格式: YYYY-MM-DD",
-        tooltip="日期范围通常3个月以内",
+        tooltip="区间可以大于3个月",
         text_style=ft.TextStyle(font_family="sansr", size=14),
         label_style=ft.TextStyle(font_family="sansr", size=14),
     )
