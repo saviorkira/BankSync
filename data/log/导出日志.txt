@@ -18185,3 +18185,1711 @@ Call log:
 2025-09-01 17:13:12: 切换待办标签: 已完成
 2025-09-01 17:13:13: TodoApp 更新: 已添加到页面
 2025-09-01 17:13:13: 切换待办标签: 未完成
+2025-09-01 17:14:37: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-01 17:14:43.068033
+2025-09-01 17:14:37: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-01 17:14:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-01 17:14:38: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-01 17:14:38: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-01 17:14:38: 成功加载 config.json，任务数: 2
+2025-09-01 17:14:38: TodoApp 初始化完成，加载任务数: 2
+2025-09-01 17:15:55: 已选择银行: 杭州银行
+2025-09-01 17:16:01: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据.xlsx，工作表：杭州银行，包含 2 条记录
+2025-09-01 17:16:03: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：杭州银行，包含 4 条记录
+2025-09-01 17:16:17: 已选择银行流水项目: bank_interest
+2025-09-01 17:16:34: AI: 收到发送消息请求
+2025-09-01 17:16:34: AI: 已记录用户消息: 信托
+2025-09-01 17:16:34: AI: ai_output 更新成功: AI页面已渲染
+2025-09-01 17:16:34: AI: ai_input 更新: 输入框已清空
+2025-09-01 17:16:34: AI: 已启动 AI 处理线程
+2025-09-01 17:17:03: AI: 成功接收 AI 回复
+2025-09-01 17:17:03: AI: ai_output 更新成功: AI页面已渲染
+2025-09-01 17:17:03: AI: 回复处理完成
+2025-09-01 17:36:14: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-01 17:36:19.879871
+2025-09-01 17:37:01: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-01 17:37:01.938057
+2025-09-01 17:37:01: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-01 17:37:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-01 17:37:02: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-01 17:37:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-01 17:37:02: 成功加载 config.json，任务数: 2
+2025-09-01 17:37:02: TodoApp 初始化完成，加载任务数: 2
+2025-09-01 17:37:26: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-01 17:37:26.008598
+2025-09-01 17:37:26: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-01 17:37:26: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-01 17:37:26: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-01 17:37:26: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-01 17:37:26: 成功加载 config.json，任务数: 2
+2025-09-01 17:37:26: TodoApp 初始化完成，加载任务数: 2
+2025-09-03 11:08:49: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-03 11:08:53.413718
+2025-09-03 11:08:49: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-03 11:08:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-03 11:08:50: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-03 11:08:50: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-03 11:08:50: 成功加载 config.json，任务数: 2
+2025-09-03 11:08:50: TodoApp 初始化完成，加载任务数: 2
+2025-09-03 11:09:01: 启动杭州银行登录流程...
+2025-09-03 11:09:01: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-03 11:09:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-03 11:09:01: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-09-03 11:09:01: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-03 11:09:01: 启动浏览器...
+2025-09-03 11:09:14: 启动杭州银行登录流程...
+2025-09-03 11:09:14: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-03 11:09:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-03 11:09:14: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-09-03 11:09:14: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-03 11:09:14: 启动浏览器...
+2025-09-03 11:09:16: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-09-03 11:09:18: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-09-03 11:09:21: 输入用户名和密码...
+2025-09-03 11:09:21: 用户名和操作员号已输入，请手动执行后续操作...
+2025-09-03 11:09:21: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-09-03 11:09:22: 输入用户名和密码...
+2025-09-03 11:09:23: 用户名和操作员号已输入，请手动执行后续操作...
+2025-09-03 11:09:23: 浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...
+2025-09-03 16:23:01: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-03 16:23:05.545902
+2025-09-03 16:23:01: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-03 16:23:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-03 16:23:01: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-03 16:23:01: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-03 16:23:01: 成功加载 config.json，任务数: 2
+2025-09-03 16:23:01: TodoApp 初始化完成，加载任务数: 2
+2025-09-03 16:23:05: 已选择银行: 平安银行
+2025-09-03 16:23:32: 下载路径设置为：D:\Desktop\Auto\BankSync测试\0903\平安银行
+2025-09-03 16:23:38: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：平安银行，包含 4 条记录
+2025-09-03 16:23:58: 开始运行 平安银行 下载，包含 4 条记录...
+2025-09-03 16:24:00: 启动平安银行导出流程...
+2025-09-03 16:24:00: 启动平安银行导出流程...
+2025-09-03 16:24:00: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-03 16:24:00: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-03 16:24:00: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-03 16:24:00: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for pingan_bank
+2025-09-03 16:24:00: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-03 16:24:00: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-03 16:24:00: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-03 16:24:00: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-03 16:24:00: 启动浏览器...
+2025-09-03 16:24:00: 启动浏览器...
+2025-09-03 16:24:03: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-09-03 16:24:03: 访问登录页面: https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login
+2025-09-03 16:24:09: 输入用户名和密码...
+2025-09-03 16:24:09: 输入用户名和密码...
+2025-09-03 16:24:09: 等待账户管理页面加载...
+2025-09-03 16:24:09: 等待账户管理页面加载...
+2025-09-03 16:24:35: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-03 16:24:35: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-03 16:24:35: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-09-03 16:24:35: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-09-03 16:24:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:24:43: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:24:45: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:24:45: 产品 24066_重庆信托·开福长盛集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:24:45: 产品 24066_重庆信托·开福长盛集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:24:46: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:24:47: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:24:47: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-03 16:24:47: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-03 16:24:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:25:00: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:25:06: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-03-01_2025-05-31.pdf
+2025-09-03 16:25:06: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-03-01_2025-05-31.pdf
+2025-09-03 16:25:16: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:25:16: 找到 3 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:25:17: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-03.pdf
+2025-09-03 16:25:17: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-03.pdf
+2025-09-03 16:25:22: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-04.pdf
+2025-09-03 16:25:22: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-04.pdf
+2025-09-03 16:25:25: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-05.pdf
+2025-09-03 16:25:25: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-05.pdf
+2025-09-03 16:25:27: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-09-03 16:25:27: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-09-03 16:25:34: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:25:36: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:25:38: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:25:38: 产品 24343_重庆信托·淄博城运集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:25:38: 产品 24343_重庆信托·淄博城运集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:25:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:25:39: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:25:40: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-03 16:25:40: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-03 16:25:48: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:25:51: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:25:56: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-03-01_2025-05-31.pdf
+2025-09-03 16:25:56: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-03-01_2025-05-31.pdf
+2025-09-03 16:26:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:26:06: 找到 3 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:26:07: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-03.pdf
+2025-09-03 16:26:07: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-03.pdf
+2025-09-03 16:26:10: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-04.pdf
+2025-09-03 16:26:10: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-04.pdf
+2025-09-03 16:26:14: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-05.pdf
+2025-09-03 16:26:14: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-05.pdf
+2025-09-03 16:26:16: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-09-03 16:26:16: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-09-03 16:26:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:26:25: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:26:27: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:26:27: 产品 25127_重庆信托·南浔交投2号集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:26:27: 产品 25127_重庆信托·南浔交投2号集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:26:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:26:28: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:26:29: 银行流水导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-03 16:26:29: 银行流水导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-03 16:26:39: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:26:41: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:26:46: 银行回单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行回单_2025-03-01_2025-05-31.pdf
+2025-09-03 16:26:46: 银行回单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行回单_2025-03-01_2025-05-31.pdf
+2025-09-03 16:26:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:26:56: 找到 3 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:26:57: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-03.pdf
+2025-09-03 16:26:57: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-03.pdf
+2025-09-03 16:27:00: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-04.pdf
+2025-09-03 16:27:00: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-04.pdf
+2025-09-03 16:27:04: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-05.pdf
+2025-09-03 16:27:04: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-05.pdf
+2025-09-03 16:27:06: 处理产品：25228_重庆信托·营发投资单一资金信托，托管账户：19091586666680
+2025-09-03 16:27:06: 处理产品：25228_重庆信托·营发投资单一资金信托，托管账户：19091586666680
+2025-09-03 16:27:13: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:27:13: 第1次尝试成功，找到图像位置: (780, 571)
+2025-09-03 16:27:14: 第1次尝试成功，找到图像位置: (780, 571)
+2025-09-03 16:27:14: 产品 25228_重庆信托·营发投资单一资金信托 无数据（两次检测均成功，位置：(780, 571), (780, 571)），跳过...
+2025-09-03 16:27:14: 产品 25228_重庆信托·营发投资单一资金信托 无数据（两次检测均成功，位置：(780, 571), (780, 571)），跳过...
+2025-09-03 16:27:15: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-03 16:27:15: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-03 16:27:15: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-03 16:27:15: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-03 16:27:15: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-09-03 16:27:15: 处理产品：24066_重庆信托·开福长盛集合资金信托计划，托管账户：19036817777777
+2025-09-03 16:27:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:27:24: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:27:27: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:27:27: 产品 24066_重庆信托·开福长盛集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:27:27: 产品 24066_重庆信托·开福长盛集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:27:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:27:28: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:27:28: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:27:28: 银行流水导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:27:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:27:41: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:27:45: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:27:45: 银行回单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:27:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:27:55: 找到 3 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:27:57: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-09-03 16:27:57: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-09-03 16:28:00: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-09-03 16:28:00: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-09-03 16:28:03: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-08.pdf
+2025-09-03 16:28:03: 银行对账单导出完成：24066_重庆信托·开福长盛集合资金信托计划_平安银行对账单_2025-08.pdf
+2025-09-03 16:28:06: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-09-03 16:28:06: 处理产品：24343_重庆信托·淄博城运集合资金信托计划，托管账户：19853888889858
+2025-09-03 16:28:13: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:28:14: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:28:16: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:28:16: 产品 24343_重庆信托·淄博城运集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:28:16: 产品 24343_重庆信托·淄博城运集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:28:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:28:18: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:28:18: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:28:18: 银行流水导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:28:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:28:30: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:28:36: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:28:36: 银行回单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:28:46: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:28:46: 找到 3 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:28:48: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-09-03 16:28:48: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-09-03 16:28:52: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-09-03 16:28:52: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-09-03 16:28:55: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-08.pdf
+2025-09-03 16:28:55: 银行对账单导出完成：24343_重庆信托·淄博城运集合资金信托计划_平安银行对账单_2025-08.pdf
+2025-09-03 16:28:57: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-09-03 16:28:57: 处理产品：25127_重庆信托·南浔交投2号集合资金信托计划，托管账户：19633505666605
+2025-09-03 16:29:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:29:06: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:29:08: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:29:08: 产品 25127_重庆信托·南浔交投2号集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:29:08: 产品 25127_重庆信托·南浔交投2号集合资金信托计划 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:29:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:29:09: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:29:09: 银行流水导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:29:09: 银行流水导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:29:18: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:29:20: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:29:26: 银行回单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:29:26: 银行回单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:29:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:29:36: 找到 3 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:29:37: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-09-03 16:29:37: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-06.pdf
+2025-09-03 16:29:41: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-09-03 16:29:41: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-07.pdf
+2025-09-03 16:29:44: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-08.pdf
+2025-09-03 16:29:44: 银行对账单导出完成：25127_重庆信托·南浔交投2号集合资金信托计划_平安银行对账单_2025-08.pdf
+2025-09-03 16:29:46: 处理产品：25228_重庆信托·营发投资单一资金信托，托管账户：19091586666680
+2025-09-03 16:29:46: 处理产品：25228_重庆信托·营发投资单一资金信托，托管账户：19091586666680
+2025-09-03 16:29:54: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:29:55: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:29:58: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 1
+2025-09-03 16:29:58: 产品 25228_重庆信托·营发投资单一资金信托 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:29:58: 产品 25228_重庆信托·营发投资单一资金信托 图像检测结果：第一次=失败, 第二次=失败，继续处理...
+2025-09-03 16:29:59: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaiexcelmingxi.bmp, 存在: True
+2025-09-03 16:29:59: 第1次尝试成功，点击位置: (424, 484)
+2025-09-03 16:29:59: 银行流水导出完成：25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:29:59: 银行流水导出完成：25228_重庆信托·营发投资单一资金信托_平安银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-03 16:30:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp, 存在: True
+2025-09-03 16:30:11: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_zanwushuju.bmp，尝试次数: 2
+2025-09-03 16:30:16: 银行回单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:30:16: 银行回单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行回单_2025-06-01_2025-08-31.pdf
+2025-09-03 16:30:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp, 存在: True
+2025-09-03 16:30:28: 找到 2 个匹配位置: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\pingan_xiazaipdf.bmp
+2025-09-03 16:30:28: 警告: 找到 2 个按钮，但预期 3 个月份，可能数据不全
+2025-09-03 16:30:28: 警告: 找到 2 个按钮，但预期 3 个月份，可能数据不全
+2025-09-03 16:30:29: 银行对账单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行对账单_2025-07.pdf
+2025-09-03 16:30:29: 银行对账单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行对账单_2025-07.pdf
+2025-09-03 16:30:32: 银行对账单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行对账单_2025-08.pdf
+2025-09-03 16:30:32: 银行对账单导出完成：25228_重庆信托·营发投资单一资金信托_平安银行对账单_2025-08.pdf
+2025-09-03 16:30:35: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-03 16:30:35: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-03 16:30:37: 浏览器已关闭
+2025-09-03 16:30:37: 浏览器已关闭
+2025-09-03 16:30:37: 下载完成。
+2025-09-04 11:17:11: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-04 11:17:14.365003
+2025-09-04 11:17:11: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 11:17:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-04 11:17:12: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-04 11:17:12: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-04 11:17:12: 成功加载 config.json，任务数: 2
+2025-09-04 11:17:12: TodoApp 初始化完成，加载任务数: 2
+2025-09-04 15:48:55: 已选择银行: 平安银行
+2025-09-04 15:49:11: 下载路径设置为：D:\Desktop\Auto\BankSync测试\0903\宁波银行
+2025-09-04 15:49:18: 已选择银行: 平安银行
+2025-09-04 15:49:21: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：平安银行，包含 4 条记录
+2025-09-04 15:49:21: 已更新数据表：平安银行，包含 4 条记录
+2025-09-04 15:49:23: 错误: 请选择有效的 Excel 文件 (.xlsx 或 .xls)
+2025-09-04 15:50:09: 已选择银行: 宁波银行
+2025-09-04 15:50:09: 已更新数据表：宁波银行，包含 4 条记录
+2025-09-04 15:50:11: 开始运行 宁波银行 下载，包含 4 条记录...
+2025-09-04 15:50:12: 启动宁波银行导出流程...
+2025-09-04 15:50:12: 启动宁波银行导出流程...
+2025-09-04 15:50:12: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 15:50:12: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 15:50:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-04 15:50:12: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-09-04 15:50:12: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 15:50:12: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 15:50:12: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 15:50:12: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 15:50:12: 启动浏览器...
+2025-09-04 15:50:12: 启动浏览器...
+2025-09-04 15:50:16: 访问登录页面: https://www.e-custody.com/#/login
+2025-09-04 15:50:16: 访问登录页面: https://www.e-custody.com/#/login
+2025-09-04 15:50:20: 输入用户名和密码...
+2025-09-04 15:50:20: 输入用户名和密码...
+2025-09-04 15:50:23: 等待账户管理页面加载...
+2025-09-04 15:50:23: 等待账户管理页面加载...
+2025-09-04 15:50:41: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 15:50:41: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 15:50:41: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-09-04 15:50:41: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-09-04 15:50:42: 使用托管账户查询：77970122000179566
+2025-09-04 15:50:42: 使用托管账户查询：77970122000179566
+2025-09-04 15:50:44: 复选框已选中
+2025-09-04 15:50:44: 复选框已选中
+2025-09-04 15:50:46: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:50:46: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:50:48: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:50:48: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:50:48: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:50:48: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:50:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 15:50:49: 定位‘对账单打印’按钮...
+2025-09-04 15:50:49: 定位‘对账单打印’按钮...
+2025-09-04 15:50:49: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 15:50:49: 成功点击‘对账单打印’按钮
+2025-09-04 15:50:49: 成功点击‘对账单打印’按钮
+2025-09-04 15:50:49: 等待 Chrome 打印窗口...
+2025-09-04 15:50:49: 等待 Chrome 打印窗口...
+2025-09-04 15:50:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 15:50:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 15:50:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 15:50:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 15:50:51: 定位‘目标打印机’位置...
+2025-09-04 15:50:51: 定位‘目标打印机’位置...
+2025-09-04 15:50:52: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 15:50:52: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:50:52: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:50:55: 第1次尝试成功，点击位置: (959, 228)
+2025-09-04 15:50:55: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:50:55: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:50:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 15:50:56: 检查‘加载中’图片...
+2025-09-04 15:50:56: 检查‘加载中’图片...
+2025-09-04 15:50:57: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 15:50:57: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:50:57: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:50:57: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 15:50:57: 成功点击‘保存’按钮
+2025-09-04 15:50:57: 成功点击‘保存’按钮
+2025-09-04 15:50:58: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:50:59: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:50:59: 点击保存按钮完成
+2025-09-04 15:51:09: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 15:51:09: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:09: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:09: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-09-04 15:51:09: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-09-04 15:51:09: 使用托管账户查询：86031110000310762
+2025-09-04 15:51:09: 使用托管账户查询：86031110000310762
+2025-09-04 15:51:11: 复选框已选中
+2025-09-04 15:51:11: 复选框已选中
+2025-09-04 15:51:14: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:14: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:16: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:51:16: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:51:16: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:51:16: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:51:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 15:51:17: 定位‘对账单打印’按钮...
+2025-09-04 15:51:17: 定位‘对账单打印’按钮...
+2025-09-04 15:51:17: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 15:51:17: 成功点击‘对账单打印’按钮
+2025-09-04 15:51:17: 成功点击‘对账单打印’按钮
+2025-09-04 15:51:17: 等待 Chrome 打印窗口...
+2025-09-04 15:51:17: 等待 Chrome 打印窗口...
+2025-09-04 15:51:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 15:51:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 15:51:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 15:51:19: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 15:51:19: 定位‘目标打印机’位置...
+2025-09-04 15:51:19: 定位‘目标打印机’位置...
+2025-09-04 15:51:19: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 15:51:19: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:51:19: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:51:21: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 15:51:21: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:51:21: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:51:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 15:51:22: 检查‘加载中’图片...
+2025-09-04 15:51:22: 检查‘加载中’图片...
+2025-09-04 15:51:25: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 15:51:25: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:51:25: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:51:26: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 15:51:26: 成功点击‘保存’按钮
+2025-09-04 15:51:26: 成功点击‘保存’按钮
+2025-09-04 15:51:27: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:27: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:28: 点击保存按钮完成
+2025-09-04 15:51:36: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 15:51:36: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:36: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:36: 处理产品：24561_重庆信托·宁波经开集合资金信托计划，托管账户：86031110001301125
+2025-09-04 15:51:36: 处理产品：24561_重庆信托·宁波经开集合资金信托计划，托管账户：86031110001301125
+2025-09-04 15:51:36: 使用托管账户查询：86031110001301125
+2025-09-04 15:51:36: 使用托管账户查询：86031110001301125
+2025-09-04 15:51:39: 复选框已选中
+2025-09-04 15:51:39: 复选框已选中
+2025-09-04 15:51:42: 银行回单导出完成：24561_重庆信托·宁波经开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:42: 银行回单导出完成：24561_重庆信托·宁波经开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\chrome_jinyongtongzhi.bmp, 存在: True
+2025-09-04 15:51:43: 第2次尝试成功，点击位置: (943, 530)
+2025-09-04 15:51:43: 检测到并点击‘禁用通知’提示
+2025-09-04 15:51:43: 检测到并点击‘禁用通知’提示
+2025-09-04 15:51:46: 银行流水导出完成：24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:51:46: 银行流水导出完成：24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:51:46: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:51:46: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:51:47: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 15:51:47: 定位‘对账单打印’按钮...
+2025-09-04 15:51:47: 定位‘对账单打印’按钮...
+2025-09-04 15:51:48: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 15:51:48: 成功点击‘对账单打印’按钮
+2025-09-04 15:51:48: 成功点击‘对账单打印’按钮
+2025-09-04 15:51:48: 等待 Chrome 打印窗口...
+2025-09-04 15:51:48: 等待 Chrome 打印窗口...
+2025-09-04 15:51:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 15:51:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 15:51:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 15:51:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 15:51:50: 定位‘目标打印机’位置...
+2025-09-04 15:51:50: 定位‘目标打印机’位置...
+2025-09-04 15:51:50: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 15:51:50: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:51:50: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:51:52: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 15:51:52: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:51:52: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:51:53: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 15:51:53: 检查‘加载中’图片...
+2025-09-04 15:51:53: 检查‘加载中’图片...
+2025-09-04 15:51:55: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 15:51:55: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:51:55: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:51:56: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 15:51:56: 成功点击‘保存’按钮
+2025-09-04 15:51:56: 成功点击‘保存’按钮
+2025-09-04 15:51:57: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:57: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:51:58: 点击保存按钮完成
+2025-09-04 15:52:06: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 15:52:06: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:52:06: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:52:06: 处理产品：24314_重庆信托·海尔金盈集合资金信托计划，托管账户：86031110000511021
+2025-09-04 15:52:06: 处理产品：24314_重庆信托·海尔金盈集合资金信托计划，托管账户：86031110000511021
+2025-09-04 15:52:06: 使用托管账户查询：86031110000511021
+2025-09-04 15:52:06: 使用托管账户查询：86031110000511021
+2025-09-04 15:52:10: 复选框已选中
+2025-09-04 15:52:10: 复选框已选中
+2025-09-04 15:52:12: 银行回单导出完成：24314_重庆信托·海尔金盈集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:52:12: 银行回单导出完成：24314_重庆信托·海尔金盈集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:52:14: 银行流水导出完成：24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:52:14: 银行流水导出完成：24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 15:52:14: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:52:14: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 15:52:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 15:52:15: 定位‘对账单打印’按钮...
+2025-09-04 15:52:15: 定位‘对账单打印’按钮...
+2025-09-04 15:52:15: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 15:52:15: 成功点击‘对账单打印’按钮
+2025-09-04 15:52:15: 成功点击‘对账单打印’按钮
+2025-09-04 15:52:15: 等待 Chrome 打印窗口...
+2025-09-04 15:52:15: 等待 Chrome 打印窗口...
+2025-09-04 15:52:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 15:52:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 15:52:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 15:52:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 15:52:17: 定位‘目标打印机’位置...
+2025-09-04 15:52:17: 定位‘目标打印机’位置...
+2025-09-04 15:52:17: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 15:52:18: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:52:18: 模拟点击偏移位置: (984, 170)
+2025-09-04 15:52:20: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 15:52:20: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:52:20: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 15:52:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 15:52:21: 检查‘加载中’图片...
+2025-09-04 15:52:21: 检查‘加载中’图片...
+2025-09-04 15:52:22: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 15:52:22: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:52:22: 未检测到‘加载中’图片，继续执行...
+2025-09-04 15:52:22: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 15:52:22: 成功点击‘保存’按钮
+2025-09-04 15:52:22: 成功点击‘保存’按钮
+2025-09-04 15:52:23: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 15:52:24: 快速保存失败，错误: 未找到标题为 '另存为' 的窗口
+2025-09-04 15:52:24: 打印对账单 PDF 失败（产品：24314_重庆信托·海尔金盈集合资金信托计划）：未找到标题为 '另存为' 的窗口
+2025-09-04 15:52:24: 打印对账单 PDF 失败（产品：24314_重庆信托·海尔金盈集合资金信托计划）：未找到标题为 '另存为' 的窗口
+2025-09-04 15:54:24: 导出失败（产品：24314_重庆信托·海尔金盈集合资金信托计划）：Page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+
+2025-09-04 15:54:24: 导出失败（产品：24314_重庆信托·海尔金盈集合资金信托计划）：Page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+
+2025-09-04 15:54:24: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 15:54:24: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 15:54:24: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 15:54:24: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 15:56:24: 点击‘全部关闭’按钮失败: Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="全部关闭")
+
+2025-09-04 15:56:24: 点击‘全部关闭’按钮失败: Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="全部关闭")
+
+2025-09-04 15:58:24: 初始化失败：Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("link", name="账户明细")
+
+2025-09-04 15:58:24: 初始化失败：Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("link", name="账户明细")
+
+2025-09-04 15:58:25: 执行出错：Locator.click: Timeout 120000ms exceeded.
+Call log:
+  - waiting for get_by_role("link", name="账户明细")
+
+2025-09-04 16:01:44: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-04 16:01:47.998650
+2025-09-04 16:01:44: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 16:01:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-04 16:01:45: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-04 16:01:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-04 16:01:45: 成功加载 config.json，任务数: 2
+2025-09-04 16:01:45: TodoApp 初始化完成，加载任务数: 2
+2025-09-04 16:01:50: 已选择银行: 宁波银行
+2025-09-04 16:01:57: 下载路径设置为：D:\Desktop\Auto\BankSync测试\0903\宁波银行
+2025-09-04 16:02:02: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：宁波银行，包含 4 条记录
+2025-09-04 16:02:03: 开始运行 宁波银行 下载，包含 4 条记录...
+2025-09-04 16:02:04: 启动宁波银行导出流程...
+2025-09-04 16:02:04: 启动宁波银行导出流程...
+2025-09-04 16:02:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 16:02:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 16:02:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-04 16:02:04: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-09-04 16:02:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 16:02:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 16:02:04: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 16:02:04: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 16:02:04: 启动浏览器...
+2025-09-04 16:02:04: 启动浏览器...
+2025-09-04 16:02:07: 访问登录页面: https://www.e-custody.com/#/login
+2025-09-04 16:02:07: 访问登录页面: https://www.e-custody.com/#/login
+2025-09-04 16:02:12: 输入用户名和密码...
+2025-09-04 16:02:12: 输入用户名和密码...
+2025-09-04 16:02:15: 等待账户管理页面加载...
+2025-09-04 16:02:15: 等待账户管理页面加载...
+2025-09-04 16:02:35: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 16:02:35: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 16:02:35: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-09-04 16:02:35: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-09-04 16:02:36: 使用托管账户查询：77970122000179566
+2025-09-04 16:02:36: 使用托管账户查询：77970122000179566
+2025-09-04 16:02:37: 复选框已选中
+2025-09-04 16:02:37: 复选框已选中
+2025-09-04 16:02:39: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:02:39: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:02:41: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:02:41: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:02:41: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:02:41: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:02:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:02:42: 定位‘对账单打印’按钮...
+2025-09-04 16:02:42: 定位‘对账单打印’按钮...
+2025-09-04 16:02:42: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:02:42: 成功点击‘对账单打印’按钮
+2025-09-04 16:02:42: 成功点击‘对账单打印’按钮
+2025-09-04 16:02:42: 等待 Chrome 打印窗口...
+2025-09-04 16:02:42: 等待 Chrome 打印窗口...
+2025-09-04 16:02:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:02:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:02:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:02:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:02:44: 定位‘目标打印机’位置...
+2025-09-04 16:02:44: 定位‘目标打印机’位置...
+2025-09-04 16:02:45: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:02:45: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:02:45: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:02:48: 第1次尝试成功，点击位置: (959, 228)
+2025-09-04 16:02:48: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:02:48: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:02:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:02:49: 检查‘加载中’图片...
+2025-09-04 16:02:49: 检查‘加载中’图片...
+2025-09-04 16:02:50: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:02:50: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:02:50: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:02:50: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:02:50: 成功点击‘保存’按钮
+2025-09-04 16:02:50: 成功点击‘保存’按钮
+2025-09-04 16:02:51: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:02:52: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:02:52: 点击保存按钮完成
+2025-09-04 16:03:02: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:03:02: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:02: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:02: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-09-04 16:03:02: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-09-04 16:03:02: 使用托管账户查询：86031110000310762
+2025-09-04 16:03:02: 使用托管账户查询：86031110000310762
+2025-09-04 16:03:05: 复选框已选中
+2025-09-04 16:03:05: 复选框已选中
+2025-09-04 16:03:07: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:07: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:08: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:03:08: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:03:08: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:03:08: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:03:09: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:03:10: 定位‘对账单打印’按钮...
+2025-09-04 16:03:10: 定位‘对账单打印’按钮...
+2025-09-04 16:03:10: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:03:10: 成功点击‘对账单打印’按钮
+2025-09-04 16:03:10: 成功点击‘对账单打印’按钮
+2025-09-04 16:03:10: 等待 Chrome 打印窗口...
+2025-09-04 16:03:10: 等待 Chrome 打印窗口...
+2025-09-04 16:03:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:03:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:03:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:03:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:03:12: 定位‘目标打印机’位置...
+2025-09-04 16:03:12: 定位‘目标打印机’位置...
+2025-09-04 16:03:12: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:03:12: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:03:12: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:03:14: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:03:14: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:03:14: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:03:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:03:15: 检查‘加载中’图片...
+2025-09-04 16:03:15: 检查‘加载中’图片...
+2025-09-04 16:03:16: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:03:16: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:03:16: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:03:18: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:03:18: 成功点击‘保存’按钮
+2025-09-04 16:03:18: 成功点击‘保存’按钮
+2025-09-04 16:03:19: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:19: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:20: 点击保存按钮完成
+2025-09-04 16:03:28: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:03:28: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:28: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:28: 处理产品：24561_重庆信托·宁波经开集合资金信托计划，托管账户：86031110001301125
+2025-09-04 16:03:28: 处理产品：24561_重庆信托·宁波经开集合资金信托计划，托管账户：86031110001301125
+2025-09-04 16:03:28: 使用托管账户查询：86031110001301125
+2025-09-04 16:03:28: 使用托管账户查询：86031110001301125
+2025-09-04 16:03:30: 复选框已选中
+2025-09-04 16:03:30: 复选框已选中
+2025-09-04 16:03:33: 银行回单导出完成：24561_重庆信托·宁波经开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:33: 银行回单导出完成：24561_重庆信托·宁波经开集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\chrome_jinyongtongzhi.bmp, 存在: True
+2025-09-04 16:03:34: 第2次尝试成功，点击位置: (943, 570)
+2025-09-04 16:03:34: 检测到并点击‘禁用通知’提示
+2025-09-04 16:03:34: 检测到并点击‘禁用通知’提示
+2025-09-04 16:03:37: 银行流水导出完成：24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:03:37: 银行流水导出完成：24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:03:37: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:03:37: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:03:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:03:38: 定位‘对账单打印’按钮...
+2025-09-04 16:03:38: 定位‘对账单打印’按钮...
+2025-09-04 16:03:38: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:03:38: 成功点击‘对账单打印’按钮
+2025-09-04 16:03:38: 成功点击‘对账单打印’按钮
+2025-09-04 16:03:38: 等待 Chrome 打印窗口...
+2025-09-04 16:03:38: 等待 Chrome 打印窗口...
+2025-09-04 16:03:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:03:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:03:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:03:40: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:03:40: 定位‘目标打印机’位置...
+2025-09-04 16:03:40: 定位‘目标打印机’位置...
+2025-09-04 16:03:41: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:03:41: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:03:41: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:03:43: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:03:43: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:03:43: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:03:44: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:03:44: 检查‘加载中’图片...
+2025-09-04 16:03:44: 检查‘加载中’图片...
+2025-09-04 16:03:45: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:03:45: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:03:45: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:03:45: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:03:45: 成功点击‘保存’按钮
+2025-09-04 16:03:45: 成功点击‘保存’按钮
+2025-09-04 16:03:46: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:48: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:49: 点击保存按钮完成
+2025-09-04 16:03:57: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:03:57: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:57: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:03:57: 处理产品：24314_重庆信托·海尔金盈集合资金信托计划，托管账户：86031110000511021
+2025-09-04 16:03:57: 处理产品：24314_重庆信托·海尔金盈集合资金信托计划，托管账户：86031110000511021
+2025-09-04 16:03:57: 使用托管账户查询：86031110000511021
+2025-09-04 16:03:57: 使用托管账户查询：86031110000511021
+2025-09-04 16:03:59: 复选框已选中
+2025-09-04 16:03:59: 复选框已选中
+2025-09-04 16:04:02: 银行回单导出完成：24314_重庆信托·海尔金盈集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:04:02: 银行回单导出完成：24314_重庆信托·海尔金盈集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:04:04: 银行流水导出完成：24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:04:04: 银行流水导出完成：24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:04:04: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:04:04: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:04:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:04:05: 定位‘对账单打印’按钮...
+2025-09-04 16:04:05: 定位‘对账单打印’按钮...
+2025-09-04 16:04:05: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:04:05: 成功点击‘对账单打印’按钮
+2025-09-04 16:04:05: 成功点击‘对账单打印’按钮
+2025-09-04 16:04:05: 等待 Chrome 打印窗口...
+2025-09-04 16:04:05: 等待 Chrome 打印窗口...
+2025-09-04 16:04:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:04:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:04:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:04:07: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:04:07: 定位‘目标打印机’位置...
+2025-09-04 16:04:07: 定位‘目标打印机’位置...
+2025-09-04 16:04:08: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:04:08: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:04:08: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:04:10: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:04:10: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:04:10: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:04:11: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:04:11: 检查‘加载中’图片...
+2025-09-04 16:04:11: 检查‘加载中’图片...
+2025-09-04 16:04:12: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:04:12: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:04:12: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:04:12: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:04:12: 成功点击‘保存’按钮
+2025-09-04 16:04:12: 成功点击‘保存’按钮
+2025-09-04 16:04:13: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:04:14: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:04:14: 点击保存按钮完成
+2025-09-04 16:04:23: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:04:23: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:04:23: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:04:23: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 16:04:23: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 16:04:23: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 16:04:23: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 16:04:23: 点击‘全部关闭’按钮
+2025-09-04 16:04:23: 点击‘全部关闭’按钮
+2025-09-04 16:04:23: 重新导航到‘账户明细’页面
+2025-09-04 16:04:23: 重新导航到‘账户明细’页面
+2025-09-04 16:04:23: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-09-04 16:04:23: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-09-04 16:04:24: 使用托管账户查询：77970122000179566
+2025-09-04 16:04:24: 使用托管账户查询：77970122000179566
+2025-09-04 16:04:26: 复选框已选中
+2025-09-04 16:04:26: 复选框已选中
+2025-09-04 16:04:28: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:28: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:29: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:04:29: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:04:29: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:04:29: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:04:30: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:04:30: 定位‘对账单打印’按钮...
+2025-09-04 16:04:30: 定位‘对账单打印’按钮...
+2025-09-04 16:04:30: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:04:30: 成功点击‘对账单打印’按钮
+2025-09-04 16:04:30: 成功点击‘对账单打印’按钮
+2025-09-04 16:04:31: 等待 Chrome 打印窗口...
+2025-09-04 16:04:31: 等待 Chrome 打印窗口...
+2025-09-04 16:04:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:04:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:04:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:04:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:04:33: 定位‘目标打印机’位置...
+2025-09-04 16:04:33: 定位‘目标打印机’位置...
+2025-09-04 16:04:34: 第2次尝试成功，点击位置: (734, 170)
+2025-09-04 16:04:34: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:04:34: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:04:36: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:04:36: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:04:36: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:04:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:04:37: 检查‘加载中’图片...
+2025-09-04 16:04:37: 检查‘加载中’图片...
+2025-09-04 16:04:38: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:04:38: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:04:38: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:04:39: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:04:39: 成功点击‘保存’按钮
+2025-09-04 16:04:39: 成功点击‘保存’按钮
+2025-09-04 16:04:40: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:40: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:41: 点击保存按钮完成
+2025-09-04 16:04:49: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:04:49: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:49: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\23014_重信·北极22026·华睿精选9号集合资金信托计划\银行对账单\23014_重信·北极22026·华睿精选9号集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:49: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-09-04 16:04:49: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-09-04 16:04:49: 使用托管账户查询：86031110000310762
+2025-09-04 16:04:49: 使用托管账户查询：86031110000310762
+2025-09-04 16:04:51: 复选框已选中
+2025-09-04 16:04:51: 复选框已选中
+2025-09-04 16:04:53: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:53: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:04:54: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:04:54: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:04:54: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:04:54: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:04:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:04:55: 定位‘对账单打印’按钮...
+2025-09-04 16:04:55: 定位‘对账单打印’按钮...
+2025-09-04 16:04:56: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:04:56: 成功点击‘对账单打印’按钮
+2025-09-04 16:04:56: 成功点击‘对账单打印’按钮
+2025-09-04 16:04:56: 等待 Chrome 打印窗口...
+2025-09-04 16:04:56: 等待 Chrome 打印窗口...
+2025-09-04 16:04:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:04:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:04:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:04:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:04:58: 定位‘目标打印机’位置...
+2025-09-04 16:04:58: 定位‘目标打印机’位置...
+2025-09-04 16:04:58: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:04:58: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:04:58: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:05:00: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:05:00: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:05:00: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:05:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:05:02: 检查‘加载中’图片...
+2025-09-04 16:05:02: 检查‘加载中’图片...
+2025-09-04 16:05:03: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:05:03: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:05:03: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:05:04: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:05:04: 成功点击‘保存’按钮
+2025-09-04 16:05:04: 成功点击‘保存’按钮
+2025-09-04 16:05:05: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:05: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:06: 点击保存按钮完成
+2025-09-04 16:05:14: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:05:14: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:14: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24211_重庆信托·宁波鄞开集合资金信托计划\银行对账单\24211_重庆信托·宁波鄞开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:14: 处理产品：24561_重庆信托·宁波经开集合资金信托计划，托管账户：86031110001301125
+2025-09-04 16:05:14: 处理产品：24561_重庆信托·宁波经开集合资金信托计划，托管账户：86031110001301125
+2025-09-04 16:05:14: 使用托管账户查询：86031110001301125
+2025-09-04 16:05:14: 使用托管账户查询：86031110001301125
+2025-09-04 16:05:17: 复选框已选中
+2025-09-04 16:05:17: 复选框已选中
+2025-09-04 16:05:20: 银行回单导出完成：24561_重庆信托·宁波经开集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:20: 银行回单导出完成：24561_重庆信托·宁波经开集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:21: 银行流水导出完成：24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:05:21: 银行流水导出完成：24561_重庆信托·宁波经开集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:05:21: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:05:21: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:05:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:05:22: 定位‘对账单打印’按钮...
+2025-09-04 16:05:22: 定位‘对账单打印’按钮...
+2025-09-04 16:05:23: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:05:23: 成功点击‘对账单打印’按钮
+2025-09-04 16:05:23: 成功点击‘对账单打印’按钮
+2025-09-04 16:05:23: 等待 Chrome 打印窗口...
+2025-09-04 16:05:23: 等待 Chrome 打印窗口...
+2025-09-04 16:05:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:05:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:05:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:05:25: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:05:25: 定位‘目标打印机’位置...
+2025-09-04 16:05:25: 定位‘目标打印机’位置...
+2025-09-04 16:05:25: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:05:25: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:05:25: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:05:27: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:05:27: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:05:27: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:05:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:05:28: 检查‘加载中’图片...
+2025-09-04 16:05:28: 检查‘加载中’图片...
+2025-09-04 16:05:29: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:05:29: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:05:29: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:05:29: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:05:29: 成功点击‘保存’按钮
+2025-09-04 16:05:29: 成功点击‘保存’按钮
+2025-09-04 16:05:30: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:33: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:33: 点击保存按钮完成
+2025-09-04 16:05:41: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:05:41: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:41: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24561_重庆信托·宁波经开集合资金信托计划\银行对账单\24561_重庆信托·宁波经开集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:41: 处理产品：24314_重庆信托·海尔金盈集合资金信托计划，托管账户：86031110000511021
+2025-09-04 16:05:41: 处理产品：24314_重庆信托·海尔金盈集合资金信托计划，托管账户：86031110000511021
+2025-09-04 16:05:42: 使用托管账户查询：86031110000511021
+2025-09-04 16:05:42: 使用托管账户查询：86031110000511021
+2025-09-04 16:05:43: 复选框已选中
+2025-09-04 16:05:43: 复选框已选中
+2025-09-04 16:05:47: 银行回单导出完成：24314_重庆信托·海尔金盈集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:47: 银行回单导出完成：24314_重庆信托·海尔金盈集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:49: 银行流水导出完成：24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:05:49: 银行流水导出完成：24314_重庆信托·海尔金盈集合资金信托计划_宁波银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:05:49: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:05:49: 点击打印按钮，等待对账单打印按钮...
+2025-09-04 16:05:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_duizhangdandayin.bmp, 存在: True
+2025-09-04 16:05:50: 定位‘对账单打印’按钮...
+2025-09-04 16:05:50: 定位‘对账单打印’按钮...
+2025-09-04 16:05:50: 第1次尝试成功，点击位置: (1019, 607)
+2025-09-04 16:05:50: 成功点击‘对账单打印’按钮
+2025-09-04 16:05:50: 成功点击‘对账单打印’按钮
+2025-09-04 16:05:50: 等待 Chrome 打印窗口...
+2025-09-04 16:05:50: 等待 Chrome 打印窗口...
+2025-09-04 16:05:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\target_printer.bmp, 存在: True
+2025-09-04 16:05:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_default.bmp, 存在: True
+2025-09-04 16:05:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_as_pdf_hover.bmp, 存在: True
+2025-09-04 16:05:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\save_button.bmp, 存在: True
+2025-09-04 16:05:52: 定位‘目标打印机’位置...
+2025-09-04 16:05:52: 定位‘目标打印机’位置...
+2025-09-04 16:05:53: 第1次尝试成功，点击位置: (734, 170)
+2025-09-04 16:05:53: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:05:53: 模拟点击偏移位置: (984, 170)
+2025-09-04 16:05:55: 第1次尝试成功，点击位置: (959, 173)
+2025-09-04 16:05:55: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:05:55: 成功点击默认状态的‘另存为 PDF’按钮
+2025-09-04 16:05:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp, 存在: True
+2025-09-04 16:05:56: 检查‘加载中’图片...
+2025-09-04 16:05:56: 检查‘加载中’图片...
+2025-09-04 16:05:57: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\ningbo_dayinjiazai.bmp，尝试次数: 1
+2025-09-04 16:05:57: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:05:57: 未检测到‘加载中’图片，继续执行...
+2025-09-04 16:05:57: 第1次尝试成功，点击位置: (992, 693)
+2025-09-04 16:05:57: 成功点击‘保存’按钮
+2025-09-04 16:05:57: 成功点击‘保存’按钮
+2025-09-04 16:05:58: 尝试捕捉‘另存为’窗口，目标路径: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:59: 窗口1设置路径成功: D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:05:59: 点击保存按钮完成
+2025-09-04 16:06:07: 未检测到覆盖确认窗口或点击失败: timed out
+2025-09-04 16:06:07: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:06:07: 对账单打印 PDF 完成：D:\Desktop\Auto\BankSync测试\0903\宁波银行\24314_重庆信托·海尔金盈集合资金信托计划\银行对账单\24314_重庆信托·海尔金盈集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:06:07: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 16:06:07: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 16:06:08: 下载完成。
+2025-09-04 16:54:38: 已选择银行: 杭州银行
+2025-09-04 16:54:38: 已更新数据表：杭州银行，包含 4 条记录
+2025-09-04 16:54:56: 下载路径设置为：D:\Desktop\Auto\BankSync测试\0903\杭州银行
+2025-09-04 16:56:03: 开始运行 杭州银行 下载，包含 4 条记录...
+2025-09-04 16:56:04: 启动杭州银行导出流程...
+2025-09-04 16:56:04: 启动杭州银行导出流程...
+2025-09-04 16:56:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 16:56:04: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 16:56:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-04 16:56:04: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2025-09-04 16:56:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 16:56:04: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 16:56:04: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 16:56:04: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 16:56:04: 启动浏览器...
+2025-09-04 16:56:04: 启动浏览器...
+2025-09-04 16:56:08: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-09-04 16:56:08: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2025-09-04 16:56:13: 输入用户名和密码...
+2025-09-04 16:56:13: 输入用户名和密码...
+2025-09-04 16:56:13: 等待账户管理页面加载...
+2025-09-04 16:56:13: 等待账户管理页面加载...
+2025-09-04 16:56:24: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 16:56:24: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 16:56:25: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-09-04 16:56:25: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-09-04 16:56:28: 使用托管账户查询：3305041060000048061
+2025-09-04 16:56:28: 使用托管账户查询：3305041060000048061
+2025-09-04 16:56:31: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:56:31: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:56:34: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:34: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:35: 复选框已重新选中
+2025-09-04 16:56:35: 复选框已重新选中
+2025-09-04 16:56:37: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:37: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:37: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-09-04 16:56:37: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-09-04 16:56:40: 使用托管账户查询：3301041060002128464
+2025-09-04 16:56:40: 使用托管账户查询：3301041060002128464
+2025-09-04 16:56:43: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:56:43: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:56:45: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:45: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:45: 复选框已重新选中
+2025-09-04 16:56:45: 复选框已重新选中
+2025-09-04 16:56:47: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:47: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:47: 处理产品：24174_重庆信托·上虞城建集合资金信托计划，托管账户：3306041060000035496
+2025-09-04 16:56:47: 处理产品：24174_重庆信托·上虞城建集合资金信托计划，托管账户：3306041060000035496
+2025-09-04 16:56:50: 使用托管账户查询：3306041060000035496
+2025-09-04 16:56:50: 使用托管账户查询：3306041060000035496
+2025-09-04 16:56:53: 银行流水导出完成：24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:56:53: 银行流水导出完成：24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:56:55: 银行对账单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:55: 银行对账单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:55: 复选框已重新选中
+2025-09-04 16:56:55: 复选框已重新选中
+2025-09-04 16:56:56: 银行回单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:56: 银行回单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:56:56: 处理产品：24119_重庆信托·中心城集合资金信托计划，托管账户：3306041060000025034
+2025-09-04 16:56:56: 处理产品：24119_重庆信托·中心城集合资金信托计划，托管账户：3306041060000025034
+2025-09-04 16:56:59: 使用托管账户查询：3306041060000025034
+2025-09-04 16:56:59: 使用托管账户查询：3306041060000025034
+2025-09-04 16:57:04: 银行流水导出完成：24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:57:04: 银行流水导出完成：24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 16:57:05: 银行对账单导出完成：24119_重庆信托·中心城集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:57:05: 银行对账单导出完成：24119_重庆信托·中心城集合资金信托计划_银行对账单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:57:06: 复选框已重新选中
+2025-09-04 16:57:06: 复选框已重新选中
+2025-09-04 16:57:07: 银行回单导出完成：24119_重庆信托·中心城集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:57:07: 银行回单导出完成：24119_重庆信托·中心城集合资金信托计划_银行回单_2025-03-01_2025-05-31.pdf
+2025-09-04 16:57:07: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 16:57:07: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 16:57:07: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 16:57:07: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 16:57:08: 重新导航到‘流水查询’页面
+2025-09-04 16:57:08: 重新导航到‘流水查询’页面
+2025-09-04 16:57:09: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-09-04 16:57:09: 处理产品：24311_重庆信托·绿水青山集合资金信托计划，托管账户：3305041060000048061
+2025-09-04 16:57:12: 使用托管账户查询：3305041060000048061
+2025-09-04 16:57:12: 使用托管账户查询：3305041060000048061
+2025-09-04 16:57:15: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:15: 银行流水导出完成：24311_重庆信托·绿水青山集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:17: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:17: 银行对账单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:17: 复选框已重新选中
+2025-09-04 16:57:17: 复选框已重新选中
+2025-09-04 16:57:20: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:20: 银行回单导出完成：24311_重庆信托·绿水青山集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:20: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-09-04 16:57:20: 处理产品：24196_重庆信托·余杭发展集合资金信托计划，托管账户：3301041060002128464
+2025-09-04 16:57:23: 使用托管账户查询：3301041060002128464
+2025-09-04 16:57:23: 使用托管账户查询：3301041060002128464
+2025-09-04 16:57:26: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:26: 银行流水导出完成：24196_重庆信托·余杭发展集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:29: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:29: 银行对账单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:30: 复选框已重新选中
+2025-09-04 16:57:30: 复选框已重新选中
+2025-09-04 16:57:31: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:31: 银行回单导出完成：24196_重庆信托·余杭发展集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:31: 处理产品：24174_重庆信托·上虞城建集合资金信托计划，托管账户：3306041060000035496
+2025-09-04 16:57:31: 处理产品：24174_重庆信托·上虞城建集合资金信托计划，托管账户：3306041060000035496
+2025-09-04 16:57:34: 使用托管账户查询：3306041060000035496
+2025-09-04 16:57:34: 使用托管账户查询：3306041060000035496
+2025-09-04 16:57:38: 银行流水导出完成：24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:38: 银行流水导出完成：24174_重庆信托·上虞城建集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:39: 银行对账单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:39: 银行对账单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:40: 复选框已重新选中
+2025-09-04 16:57:40: 复选框已重新选中
+2025-09-04 16:57:41: 银行回单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:41: 银行回单导出完成：24174_重庆信托·上虞城建集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:41: 处理产品：24119_重庆信托·中心城集合资金信托计划，托管账户：3306041060000025034
+2025-09-04 16:57:41: 处理产品：24119_重庆信托·中心城集合资金信托计划，托管账户：3306041060000025034
+2025-09-04 16:57:44: 使用托管账户查询：3306041060000025034
+2025-09-04 16:57:44: 使用托管账户查询：3306041060000025034
+2025-09-04 16:57:49: 银行流水导出完成：24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:49: 银行流水导出完成：24119_重庆信托·中心城集合资金信托计划_杭州银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 16:57:51: 银行对账单导出完成：24119_重庆信托·中心城集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:51: 银行对账单导出完成：24119_重庆信托·中心城集合资金信托计划_银行对账单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:51: 复选框已重新选中
+2025-09-04 16:57:51: 复选框已重新选中
+2025-09-04 16:57:52: 银行回单导出完成：24119_重庆信托·中心城集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:52: 银行回单导出完成：24119_重庆信托·中心城集合资金信托计划_银行回单_2025-06-01_2025-08-31.pdf
+2025-09-04 16:57:52: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 16:57:52: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 16:57:53: 下载完成。
+2025-09-04 17:24:15: 已选择银行: 中信银行
+2025-09-04 17:24:15: 已更新数据表：中信银行，包含 4 条记录
+2025-09-04 17:24:24: 下载路径设置为：D:\Desktop\Auto\BankSync测试\0903\中信银行
+2025-09-04 17:24:26: 开始运行 中信银行 下载，包含 4 条记录...
+2025-09-04 17:24:27: 启动中信银行导出流程...
+2025-09-04 17:24:27: 启动中信银行导出流程...
+2025-09-04 17:24:27: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 17:24:27: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 17:24:27: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-04 17:24:27: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-09-04 17:24:27: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 17:24:27: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 17:24:27: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 17:24:27: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 17:24:27: 启动浏览器...
+2025-09-04 17:24:27: 启动浏览器...
+2025-09-04 17:24:30: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-09-04 17:24:30: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-09-04 17:24:37: 输入用户名和密码...
+2025-09-04 17:24:37: 输入用户名和密码...
+2025-09-04 17:24:37: 等待账户管理页面加载...
+2025-09-04 17:24:37: 等待账户管理页面加载...
+2025-09-04 17:24:45: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 17:24:45: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 17:24:45: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:24:45: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:25:00: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("link", name="托管账户明细查询")
+
+2025-09-04 17:25:00: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("link", name="托管账户明细查询")
+
+2025-09-04 17:25:00: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:25:00: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:25:00: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:25:00: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:25:00: 处理产品 23148_重信·渝安1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 23148_重信·渝安1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:25:00: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:25:00: 处理产品 25321_重庆信托·马鞍山振新单一资金信托 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 25321_重庆信托·马鞍山振新单一资金信托 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 17:25:00: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 17:25:00: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 17:25:00: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 17:25:00: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:25:00: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:25:00: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 25148_重庆信托·凯什1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:25:00: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:25:00: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 24432_重庆信托·安宁兴甬3号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:25:00: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:25:00: 处理产品 23148_重信·渝安1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 23148_重信·渝安1号集合资金信托计划 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:25:00: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:25:00: 处理产品 25321_重庆信托·马鞍山振新单一资金信托 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 处理产品 25321_重庆信托·马鞍山振新单一资金信托 失败: Locator.click: Target page, context or browser has been closed
+2025-09-04 17:25:00: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 17:25:00: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 17:25:00: 浏览器已关闭
+2025-09-04 17:25:00: 浏览器已关闭
+2025-09-04 17:25:44: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-09-04 17:25:48.009593
+2025-09-04 17:25:44: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 17:25:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-09-04 17:25:45: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-09-04 17:25:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-09-04 17:25:45: 成功加载 config.json，任务数: 2
+2025-09-04 17:25:45: TodoApp 初始化完成，加载任务数: 2
+2025-09-04 17:25:47: 已选择银行: 中信银行
+2025-09-04 17:25:51: 下载路径设置为：D:\Desktop\Auto\BankSync测试\0903\中信银行
+2025-09-04 17:25:56: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync测试\导入数据4行版本.xlsx，工作表：中信银行，包含 4 条记录
+2025-09-04 17:25:57: 开始运行 中信银行 下载，包含 4 条记录...
+2025-09-04 17:25:59: 启动中信银行导出流程...
+2025-09-04 17:25:59: 启动中信银行导出流程...
+2025-09-04 17:25:59: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 17:25:59: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-09-04 17:25:59: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-09-04 17:25:59: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for zhongxin_bank
+2025-09-04 17:25:59: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 17:25:59: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-09-04 17:25:59: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 17:25:59: 日期范围已拆分为 2 个子范围: [('2025-03-01', '2025-05-31'), ('2025-06-01', '2025-08-31')]
+2025-09-04 17:25:59: 启动浏览器...
+2025-09-04 17:25:59: 启动浏览器...
+2025-09-04 17:26:01: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-09-04 17:26:01: 访问登录页面: https://ib.citicbank.com/html/#/index
+2025-09-04 17:26:06: 输入用户名和密码...
+2025-09-04 17:26:06: 输入用户名和密码...
+2025-09-04 17:26:07: 等待账户管理页面加载...
+2025-09-04 17:26:07: 等待账户管理页面加载...
+2025-09-04 17:26:16: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 17:26:16: 处理日期范围: 2025-03-01 至 2025-05-31
+2025-09-04 17:26:16: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:26:16: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:26:17: 已进入托管账户明细查询页面
+2025-09-04 17:26:17: 已进入托管账户明细查询页面
+2025-09-04 17:26:17: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:26:17: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:26:21: 已选择项目: 凯什1号集合
+2025-09-04 17:26:21: 已选择项目: 凯什1号集合
+2025-09-04 17:26:21: 设置开始日期和结束日期...
+2025-09-04 17:26:21: 设置开始日期和结束日期...
+2025-09-04 17:26:21: 已设置开始日期: 2025-03-01
+2025-09-04 17:26:21: 已设置开始日期: 2025-03-01
+2025-09-04 17:26:21: 已设置结束日期: 2025-05-31
+2025-09-04 17:26:21: 已设置结束日期: 2025-05-31
+2025-09-04 17:26:21: 执行查询...
+2025-09-04 17:26:21: 执行查询...
+2025-09-04 17:26:21: 查询完成，等待页面加载...
+2025-09-04 17:26:21: 查询完成，等待页面加载...
+2025-09-04 17:26:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:26:24: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:26:24: 开始导出流水...
+2025-09-04 17:26:24: 开始导出流水...
+2025-09-04 17:26:27: 进入下载中心，检查文件处理状态...
+2025-09-04 17:26:27: 进入下载中心，检查文件处理状态...
+2025-09-04 17:26:27: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:26:31: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:26:31: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:26:31: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:26:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:26:31: 等待文件下载...
+2025-09-04 17:26:31: 等待文件下载...
+2025-09-04 17:26:31: 第1次尝试成功，点击位置: (1126, 408)
+2025-09-04 17:26:32: 银行流水导出完成：25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 17:26:32: 银行流水导出完成：25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 17:26:33: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:26:33: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:26:38: 已选择项目: 凯什1号集合
+2025-09-04 17:26:38: 已选择项目: 凯什1号集合
+2025-09-04 17:26:39: 设置开始日期和结束日期...
+2025-09-04 17:26:39: 设置开始日期和结束日期...
+2025-09-04 17:26:39: 已设置开始日期: 2025-03-01
+2025-09-04 17:26:39: 已设置开始日期: 2025-03-01
+2025-09-04 17:26:39: 已设置结束日期: 2025-05-31
+2025-09-04 17:26:39: 已设置结束日期: 2025-05-31
+2025-09-04 17:26:40: 开始导出回单...
+2025-09-04 17:26:40: 开始导出回单...
+2025-09-04 17:26:42: 进入下载中心，检查文件处理状态...
+2025-09-04 17:26:42: 进入下载中心，检查文件处理状态...
+2025-09-04 17:26:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:26:44: 第2次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:26:44: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:26:44: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:26:49: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:26:49: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:26:49: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:26:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:26:49: 等待文件下载...
+2025-09-04 17:26:49: 等待文件下载...
+2025-09-04 17:26:49: 第1次尝试成功，点击位置: (1126, 408)
+2025-09-04 17:26:50: 银行回单导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行回单_2025-03-01_2025-05-31.zip
+2025-09-04 17:26:50: 银行回单导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行回单_2025-03-01_2025-05-31.zip
+2025-09-04 17:26:51: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:26:51: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:26:51: 已进入托管账户明细查询页面
+2025-09-04 17:26:51: 已进入托管账户明细查询页面
+2025-09-04 17:26:51: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:26:51: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:26:55: 已选择项目: 安宁兴甬3号
+2025-09-04 17:26:55: 已选择项目: 安宁兴甬3号
+2025-09-04 17:26:55: 设置开始日期和结束日期...
+2025-09-04 17:26:55: 设置开始日期和结束日期...
+2025-09-04 17:26:55: 已设置开始日期: 2025-03-01
+2025-09-04 17:26:55: 已设置开始日期: 2025-03-01
+2025-09-04 17:26:55: 已设置结束日期: 2025-05-31
+2025-09-04 17:26:55: 已设置结束日期: 2025-05-31
+2025-09-04 17:26:55: 执行查询...
+2025-09-04 17:26:55: 执行查询...
+2025-09-04 17:26:55: 查询完成，等待页面加载...
+2025-09-04 17:26:55: 查询完成，等待页面加载...
+2025-09-04 17:26:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:26:59: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:26:59: 开始导出流水...
+2025-09-04 17:26:59: 开始导出流水...
+2025-09-04 17:27:01: 进入下载中心，检查文件处理状态...
+2025-09-04 17:27:01: 进入下载中心，检查文件处理状态...
+2025-09-04 17:27:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:27:05: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:27:05: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:27:05: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:27:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:27:05: 等待文件下载...
+2025-09-04 17:27:05: 等待文件下载...
+2025-09-04 17:27:05: 第1次尝试成功，点击位置: (1126, 408)
+2025-09-04 17:27:06: 银行流水导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 17:27:06: 银行流水导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 17:27:07: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:27:07: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:27:12: 已选择项目: 安宁兴甬3号
+2025-09-04 17:27:12: 已选择项目: 安宁兴甬3号
+2025-09-04 17:27:13: 设置开始日期和结束日期...
+2025-09-04 17:27:13: 设置开始日期和结束日期...
+2025-09-04 17:27:13: 已设置开始日期: 2025-03-01
+2025-09-04 17:27:13: 已设置开始日期: 2025-03-01
+2025-09-04 17:27:13: 已设置结束日期: 2025-05-31
+2025-09-04 17:27:13: 已设置结束日期: 2025-05-31
+2025-09-04 17:27:14: 开始导出回单...
+2025-09-04 17:27:14: 开始导出回单...
+2025-09-04 17:27:17: 进入下载中心，检查文件处理状态...
+2025-09-04 17:27:17: 进入下载中心，检查文件处理状态...
+2025-09-04 17:27:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:27:18: 第2次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:18: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:18: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:20: 第1次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:20: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:20: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:21: 第1次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:21: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:21: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:22: 第1次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:22: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:22: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:23: 第1次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:23: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:23: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:24: 第1次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:24: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:24: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:26: 第1次尝试成功，找到图像位置: (944, 399)
+2025-09-04 17:27:26: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:26: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:31: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:27:31: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:27:31: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:27:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:27:31: 等待文件下载...
+2025-09-04 17:27:31: 等待文件下载...
+2025-09-04 17:27:31: 第1次尝试成功，点击位置: (1126, 408)
+2025-09-04 17:27:32: 银行回单导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行回单_2025-03-01_2025-05-31.zip
+2025-09-04 17:27:32: 银行回单导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行回单_2025-03-01_2025-05-31.zip
+2025-09-04 17:27:32: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:27:32: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:27:33: 已进入托管账户明细查询页面
+2025-09-04 17:27:33: 已进入托管账户明细查询页面
+2025-09-04 17:27:33: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:27:33: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:27:37: 已选择项目: 渝安1号集合
+2025-09-04 17:27:37: 已选择项目: 渝安1号集合
+2025-09-04 17:27:37: 设置开始日期和结束日期...
+2025-09-04 17:27:37: 设置开始日期和结束日期...
+2025-09-04 17:27:37: 已设置开始日期: 2025-03-01
+2025-09-04 17:27:37: 已设置开始日期: 2025-03-01
+2025-09-04 17:27:37: 已设置结束日期: 2025-05-31
+2025-09-04 17:27:37: 已设置结束日期: 2025-05-31
+2025-09-04 17:27:37: 执行查询...
+2025-09-04 17:27:37: 执行查询...
+2025-09-04 17:27:37: 查询完成，等待页面加载...
+2025-09-04 17:27:37: 查询完成，等待页面加载...
+2025-09-04 17:27:38: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:27:41: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:27:41: 开始导出流水...
+2025-09-04 17:27:41: 开始导出流水...
+2025-09-04 17:27:42: 进入下载中心，检查文件处理状态...
+2025-09-04 17:27:42: 进入下载中心，检查文件处理状态...
+2025-09-04 17:27:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:27:44: 第2次尝试成功，找到图像位置: (929, 399)
+2025-09-04 17:27:44: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:44: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:27:49: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:27:49: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:27:49: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:27:49: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:27:49: 等待文件下载...
+2025-09-04 17:27:49: 等待文件下载...
+2025-09-04 17:27:50: 第1次尝试成功，点击位置: (1111, 408)
+2025-09-04 17:27:51: 银行流水导出完成：23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 17:27:51: 银行流水导出完成：23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-03-01_2025-05-31.xlsx
+2025-09-04 17:27:52: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:27:52: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:27:56: 已选择项目: 渝安1号集合
+2025-09-04 17:27:56: 已选择项目: 渝安1号集合
+2025-09-04 17:27:57: 设置开始日期和结束日期...
+2025-09-04 17:27:57: 设置开始日期和结束日期...
+2025-09-04 17:27:57: 已设置开始日期: 2025-03-01
+2025-09-04 17:27:57: 已设置开始日期: 2025-03-01
+2025-09-04 17:27:57: 已设置结束日期: 2025-05-31
+2025-09-04 17:27:57: 已设置结束日期: 2025-05-31
+2025-09-04 17:27:58: 开始导出回单...
+2025-09-04 17:27:58: 开始导出回单...
+2025-09-04 17:28:01: 进入下载中心，检查文件处理状态...
+2025-09-04 17:28:01: 进入下载中心，检查文件处理状态...
+2025-09-04 17:28:01: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:28:05: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:28:05: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:28:05: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:28:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:28:05: 等待文件下载...
+2025-09-04 17:28:05: 等待文件下载...
+2025-09-04 17:28:05: 第1次尝试成功，点击位置: (1126, 408)
+2025-09-04 17:28:06: 银行回单导出完成：23148_重信·渝安1号集合资金信托计划_银行回单_2025-03-01_2025-05-31.zip
+2025-09-04 17:28:06: 银行回单导出完成：23148_重信·渝安1号集合资金信托计划_银行回单_2025-03-01_2025-05-31.zip
+2025-09-04 17:28:07: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:28:07: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:28:07: 已进入托管账户明细查询页面
+2025-09-04 17:28:07: 已进入托管账户明细查询页面
+2025-09-04 17:28:07: 设置查询项目: 重庆信托·马鞍山振新单一资金信托
+2025-09-04 17:28:07: 设置查询项目: 重庆信托·马鞍山振新单一资金信托
+2025-09-04 17:28:11: 已选择项目: 马鞍山振新单
+2025-09-04 17:28:11: 已选择项目: 马鞍山振新单
+2025-09-04 17:28:11: 设置开始日期和结束日期...
+2025-09-04 17:28:11: 设置开始日期和结束日期...
+2025-09-04 17:28:11: 已设置开始日期: 2025-03-01
+2025-09-04 17:28:11: 已设置开始日期: 2025-03-01
+2025-09-04 17:28:11: 已设置结束日期: 2025-05-31
+2025-09-04 17:28:11: 已设置结束日期: 2025-05-31
+2025-09-04 17:28:11: 执行查询...
+2025-09-04 17:28:11: 执行查询...
+2025-09-04 17:28:11: 查询完成，等待页面加载...
+2025-09-04 17:28:11: 查询完成，等待页面加载...
+2025-09-04 17:28:12: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:28:13: 第1次尝试成功，找到图像位置: (93, 159)
+2025-09-04 17:28:13: 检测到无流水图片: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，跳过当前产品
+2025-09-04 17:28:13: 检测到无流水图片: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，跳过当前产品
+2025-09-04 17:28:13: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 17:28:13: 完成日期范围 2025-03-01 至 2025-05-31 的下载
+2025-09-04 17:28:13: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 17:28:13: 处理日期范围: 2025-06-01 至 2025-08-31
+2025-09-04 17:28:13: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:28:13: 处理产品：25148_重庆信托·凯什1号集合资金信托计划，托管账户：8111201011600732273
+2025-09-04 17:28:45: 已进入托管账户明细查询页面
+2025-09-04 17:28:45: 已进入托管账户明细查询页面
+2025-09-04 17:28:45: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:28:45: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:28:49: 已选择项目: 凯什1号集合
+2025-09-04 17:28:49: 已选择项目: 凯什1号集合
+2025-09-04 17:28:49: 设置开始日期和结束日期...
+2025-09-04 17:28:49: 设置开始日期和结束日期...
+2025-09-04 17:28:49: 已设置开始日期: 2025-06-01
+2025-09-04 17:28:49: 已设置开始日期: 2025-06-01
+2025-09-04 17:28:49: 已设置结束日期: 2025-08-31
+2025-09-04 17:28:49: 已设置结束日期: 2025-08-31
+2025-09-04 17:28:49: 执行查询...
+2025-09-04 17:28:49: 执行查询...
+2025-09-04 17:28:49: 查询完成，等待页面加载...
+2025-09-04 17:28:49: 查询完成，等待页面加载...
+2025-09-04 17:28:50: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:28:52: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:28:52: 开始导出流水...
+2025-09-04 17:28:52: 开始导出流水...
+2025-09-04 17:28:55: 进入下载中心，检查文件处理状态...
+2025-09-04 17:28:55: 进入下载中心，检查文件处理状态...
+2025-09-04 17:28:55: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:28:58: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:28:58: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:28:58: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:28:58: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:28:58: 等待文件下载...
+2025-09-04 17:28:58: 等待文件下载...
+2025-09-04 17:28:59: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:29:00: 银行流水导出完成：25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:29:00: 银行流水导出完成：25148_重庆信托·凯什1号集合资金信托计划_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:29:01: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:29:01: 设置查询项目: 重庆信托·凯什1号集合资金信托计划
+2025-09-04 17:29:05: 已选择项目: 凯什1号集合
+2025-09-04 17:29:05: 已选择项目: 凯什1号集合
+2025-09-04 17:29:06: 设置开始日期和结束日期...
+2025-09-04 17:29:06: 设置开始日期和结束日期...
+2025-09-04 17:29:07: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:07: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:07: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:07: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:08: 开始导出回单...
+2025-09-04 17:29:08: 开始导出回单...
+2025-09-04 17:29:10: 进入下载中心，检查文件处理状态...
+2025-09-04 17:29:10: 进入下载中心，检查文件处理状态...
+2025-09-04 17:29:10: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:29:14: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:29:14: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:29:14: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:29:14: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:29:14: 等待文件下载...
+2025-09-04 17:29:14: 等待文件下载...
+2025-09-04 17:29:14: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:29:15: 银行回单导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:29:15: 银行回单导出完成：25148_重庆信托·凯什1号集合资金信托计划_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:29:16: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:29:16: 处理产品：24432_重庆信托·安宁兴甬3号集合资金信托计划，托管账户：8110801013103028248
+2025-09-04 17:29:16: 已进入托管账户明细查询页面
+2025-09-04 17:29:16: 已进入托管账户明细查询页面
+2025-09-04 17:29:16: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:29:16: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:29:21: 已选择项目: 安宁兴甬3号
+2025-09-04 17:29:21: 已选择项目: 安宁兴甬3号
+2025-09-04 17:29:21: 设置开始日期和结束日期...
+2025-09-04 17:29:21: 设置开始日期和结束日期...
+2025-09-04 17:29:21: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:21: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:21: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:21: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:21: 执行查询...
+2025-09-04 17:29:21: 执行查询...
+2025-09-04 17:29:21: 查询完成，等待页面加载...
+2025-09-04 17:29:21: 查询完成，等待页面加载...
+2025-09-04 17:29:22: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:29:24: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:29:24: 开始导出流水...
+2025-09-04 17:29:24: 开始导出流水...
+2025-09-04 17:29:27: 进入下载中心，检查文件处理状态...
+2025-09-04 17:29:27: 进入下载中心，检查文件处理状态...
+2025-09-04 17:29:27: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:29:31: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:29:31: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:29:31: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:29:31: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:29:31: 等待文件下载...
+2025-09-04 17:29:31: 等待文件下载...
+2025-09-04 17:29:31: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:29:32: 银行流水导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:29:32: 银行流水导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:29:33: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:29:33: 设置查询项目: 重庆信托·安宁兴甬3号集合资金信托计划
+2025-09-04 17:29:37: 已选择项目: 安宁兴甬3号
+2025-09-04 17:29:37: 已选择项目: 安宁兴甬3号
+2025-09-04 17:29:38: 设置开始日期和结束日期...
+2025-09-04 17:29:38: 设置开始日期和结束日期...
+2025-09-04 17:29:38: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:38: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:38: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:38: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:39: 开始导出回单...
+2025-09-04 17:29:39: 开始导出回单...
+2025-09-04 17:29:42: 进入下载中心，检查文件处理状态...
+2025-09-04 17:29:42: 进入下载中心，检查文件处理状态...
+2025-09-04 17:29:42: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:29:44: 第2次尝试成功，找到图像位置: (1422, 462)
+2025-09-04 17:29:44: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:29:44: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:29:45: 第1次尝试成功，找到图像位置: (1422, 462)
+2025-09-04 17:29:45: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:29:45: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:29:46: 第1次尝试成功，找到图像位置: (1422, 462)
+2025-09-04 17:29:46: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:29:46: 检测到文件处理中，点击查询按钮...
+2025-09-04 17:29:51: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:29:51: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:29:51: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:29:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:29:51: 等待文件下载...
+2025-09-04 17:29:51: 等待文件下载...
+2025-09-04 17:29:51: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:29:52: 银行回单导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:29:52: 银行回单导出完成：24432_重庆信托·安宁兴甬3号集合资金信托计划_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:29:53: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:29:53: 处理产品：23148_重信·渝安1号集合资金信托计划，托管账户：8111201012300655217
+2025-09-04 17:29:53: 已进入托管账户明细查询页面
+2025-09-04 17:29:53: 已进入托管账户明细查询页面
+2025-09-04 17:29:53: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:29:53: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:29:58: 已选择项目: 渝安1号集合
+2025-09-04 17:29:58: 已选择项目: 渝安1号集合
+2025-09-04 17:29:58: 设置开始日期和结束日期...
+2025-09-04 17:29:58: 设置开始日期和结束日期...
+2025-09-04 17:29:58: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:58: 已设置开始日期: 2025-06-01
+2025-09-04 17:29:58: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:58: 已设置结束日期: 2025-08-31
+2025-09-04 17:29:58: 执行查询...
+2025-09-04 17:29:58: 执行查询...
+2025-09-04 17:29:58: 查询完成，等待页面加载...
+2025-09-04 17:29:58: 查询完成，等待页面加载...
+2025-09-04 17:29:59: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:30:01: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:30:01: 开始导出流水...
+2025-09-04 17:30:01: 开始导出流水...
+2025-09-04 17:30:04: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:04: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:04: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:30:08: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:30:08: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:08: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:30:08: 等待文件下载...
+2025-09-04 17:30:08: 等待文件下载...
+2025-09-04 17:30:08: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:30:09: 银行流水导出完成：23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:30:09: 银行流水导出完成：23148_重信·渝安1号集合资金信托计划_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:30:10: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:30:10: 设置查询项目: 重信·渝安1号集合资金信托计划
+2025-09-04 17:30:14: 已选择项目: 渝安1号集合
+2025-09-04 17:30:14: 已选择项目: 渝安1号集合
+2025-09-04 17:30:15: 设置开始日期和结束日期...
+2025-09-04 17:30:15: 设置开始日期和结束日期...
+2025-09-04 17:30:15: 已设置开始日期: 2025-06-01
+2025-09-04 17:30:15: 已设置开始日期: 2025-06-01
+2025-09-04 17:30:15: 已设置结束日期: 2025-08-31
+2025-09-04 17:30:15: 已设置结束日期: 2025-08-31
+2025-09-04 17:30:16: 开始导出回单...
+2025-09-04 17:30:16: 开始导出回单...
+2025-09-04 17:30:20: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:20: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:20: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:30:24: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:30:24: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:24: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:30:24: 等待文件下载...
+2025-09-04 17:30:24: 等待文件下载...
+2025-09-04 17:30:24: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:30:25: 银行回单导出完成：23148_重信·渝安1号集合资金信托计划_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:30:25: 银行回单导出完成：23148_重信·渝安1号集合资金信托计划_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:30:26: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:30:26: 处理产品：25321_重庆信托·马鞍山振新单一资金信托，托管账户：8112301014001110024
+2025-09-04 17:30:26: 已进入托管账户明细查询页面
+2025-09-04 17:30:26: 已进入托管账户明细查询页面
+2025-09-04 17:30:26: 设置查询项目: 重庆信托·马鞍山振新单一资金信托
+2025-09-04 17:30:26: 设置查询项目: 重庆信托·马鞍山振新单一资金信托
+2025-09-04 17:30:30: 已选择项目: 马鞍山振新单
+2025-09-04 17:30:30: 已选择项目: 马鞍山振新单
+2025-09-04 17:30:30: 设置开始日期和结束日期...
+2025-09-04 17:30:30: 设置开始日期和结束日期...
+2025-09-04 17:30:30: 已设置开始日期: 2025-06-01
+2025-09-04 17:30:30: 已设置开始日期: 2025-06-01
+2025-09-04 17:30:30: 已设置结束日期: 2025-08-31
+2025-09-04 17:30:30: 已设置结束日期: 2025-08-31
+2025-09-04 17:30:30: 执行查询...
+2025-09-04 17:30:30: 执行查询...
+2025-09-04 17:30:31: 查询完成，等待页面加载...
+2025-09-04 17:30:31: 查询完成，等待页面加载...
+2025-09-04 17:30:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp, 存在: True
+2025-09-04 17:30:34: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wuliushui.bmp，尝试次数: 2
+2025-09-04 17:30:34: 开始导出流水...
+2025-09-04 17:30:34: 开始导出流水...
+2025-09-04 17:30:37: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:37: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:30:41: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:30:41: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:41: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:41: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:30:41: 等待文件下载...
+2025-09-04 17:30:41: 等待文件下载...
+2025-09-04 17:30:41: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:30:42: 银行流水导出完成：25321_重庆信托·马鞍山振新单一资金信托_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:30:42: 银行流水导出完成：25321_重庆信托·马鞍山振新单一资金信托_中信银行流水_2025-06-01_2025-08-31.xlsx
+2025-09-04 17:30:43: 设置查询项目: 重庆信托·马鞍山振新单一资金信托
+2025-09-04 17:30:43: 设置查询项目: 重庆信托·马鞍山振新单一资金信托
+2025-09-04 17:30:47: 已选择项目: 马鞍山振新单
+2025-09-04 17:30:47: 已选择项目: 马鞍山振新单
+2025-09-04 17:30:49: 设置开始日期和结束日期...
+2025-09-04 17:30:49: 设置开始日期和结束日期...
+2025-09-04 17:30:49: 已设置开始日期: 2025-06-01
+2025-09-04 17:30:49: 已设置开始日期: 2025-06-01
+2025-09-04 17:30:49: 已设置结束日期: 2025-08-31
+2025-09-04 17:30:49: 已设置结束日期: 2025-08-31
+2025-09-04 17:30:50: 开始导出回单...
+2025-09-04 17:30:50: 开始导出回单...
+2025-09-04 17:30:53: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:53: 进入下载中心，检查文件处理状态...
+2025-09-04 17:30:53: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp, 存在: True
+2025-09-04 17:30:56: 未找到模板: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_wenjianchulizhong.bmp，尝试次数: 3
+2025-09-04 17:30:56: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:56: 文件处理完成或未检测到处理中状态，继续下载...
+2025-09-04 17:30:56: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data/cv2\zhongxin_xiazai.bmp, 存在: True
+2025-09-04 17:30:56: 等待文件下载...
+2025-09-04 17:30:56: 等待文件下载...
+2025-09-04 17:30:56: 第1次尝试成功，点击位置: (1604, 471)
+2025-09-04 17:30:58: 银行回单导出完成：25321_重庆信托·马鞍山振新单一资金信托_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:30:58: 银行回单导出完成：25321_重庆信托·马鞍山振新单一资金信托_银行回单_2025-06-01_2025-08-31.zip
+2025-09-04 17:30:58: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 17:30:58: 完成日期范围 2025-06-01 至 2025-08-31 的下载
+2025-09-04 17:30:58: 浏览器已关闭
+2025-09-04 17:30:58: 浏览器已关闭
+2025-09-04 17:30:58: 下载完成。

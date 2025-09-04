@@ -54,6 +54,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
         log_local("等待账户管理页面加载...")
         page.wait_for_selector('text=会员中心', timeout=30000)
         page.get_by_text("会员中心").click()
+        time.sleep(1)
 
         # 外层循环：遍历日期范围
         for start_date, end_date in date_ranges:
@@ -126,6 +127,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     )
                     if position:
                         log_local(f"检测到无流水图片: {wuliushui_template}，跳过当前产品")
+                        page.get_by_role("link", name="会员中心").click()
                         continue  # 跳到下一个产品
 
                     # 导出流水
