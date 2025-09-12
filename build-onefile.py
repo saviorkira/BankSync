@@ -23,6 +23,7 @@ def copy_required_files():
     required_items = [
         "playwright-browsers",
         "data",
+        "README.md",
         "config.json"
     ]
 
