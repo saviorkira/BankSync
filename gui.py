@@ -67,7 +67,6 @@ def main(page: Page):
     page.bgcolor = ft.Colors.WHITE
 
     # 加载自定义字体
-    # 加载自定义字体
     font_path_SourceHanSansRegular = os.path.join(project_root, "data", "font", "SourceHanSansSC-Regular.otf")
     font_path_SourceHanSansMedium = os.path.join(project_root, "data", "font", "SourceHanSansSC-Medium.otf")
 
@@ -87,9 +86,9 @@ def main(page: Page):
     log_messages = []
     is_maximized = [False]
     is_minimized = [True]
-    statement_folder = [r"D:\Desktop"]  # 流水文件夹路径，列表形式以支持闭包修改
-    export_path = [r"D:\Desktop"]  # 导出路径，列表形式以支持闭包修改
-    excel_file_path = [None]  # 新增：存储 Excel 文件路径
+    statement_folder = [r"D:\Desktop"]
+    export_path = [r"D:\Desktop"]
+    excel_file_path = [None]
 
     # 页面尺寸配置
     page_sizes = {
@@ -104,7 +103,6 @@ def main(page: Page):
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
         "hangzhou_bank": run_hangzhou_bank,
-
         # "shanghai_bank": run_shanghai_bank,
         # "zheshang_bank": run_zheshang_bank,
         "zhongxin_bank": run_zhongxin_bank,
@@ -190,7 +188,7 @@ def main(page: Page):
         heading_row_height=30,
         data_row_min_height=30,
         data_row_max_height=30,
-        column_spacing=10,  # 调整列间距
+        column_spacing=10,
     )
 
     log_area = ft.TextField(
@@ -200,8 +198,6 @@ def main(page: Page):
         read_only=True,
         expand=True,
         border_radius=8,
-        # filled=True,
-        # bgcolor=ft.Colors.WHITE,
         text_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
@@ -209,8 +205,6 @@ def main(page: Page):
         label="输入消息",
         expand=True,
         border_radius=8,
-        # filled=True,
-        # bgcolor=ft.Colors.WHITE,
         hint_text="输入消息后点击发送",
         text_style=ft.TextStyle(font_family="sansr", size=14),
         label_style=ft.TextStyle(font_family="sansr", size=14),
@@ -234,8 +228,6 @@ def main(page: Page):
         read_only=True,
         expand=True,
         border_radius=8,
-        # filled=True,
-        # bgcolor=ft.Colors.WHITE,
         text_style=ft.TextStyle(font_family="sansr", size=14),
     )
 
@@ -254,24 +246,15 @@ def main(page: Page):
         width=page.window.width-70,
     )
 
-    download_path_text = ft.Text(
-        f"下载路径: {download_path}",
-        size=14,
-        color=ft.Colors.GREY_700,
-        font_family="sansr",
-        no_wrap=True,
-        overflow=ft.TextOverflow.ELLIPSIS,
-    )
-
     select_path_button = ft.ElevatedButton(
-        text="选择下载路径",
+        text="选择保存目录",
         icon=ft.Icons.FOLDER_OPEN,
         style=ft.ButtonStyle(
             color=ft.Colors.WHITE,
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
-            padding=10,
-            text_style=ft.TextStyle(font_family="sansr", size=14),
+            padding=ft.padding.symmetric(horizontal=10),
+            text_style=ft.TextStyle(font_family="sansr", size=14, overflow=ft.TextOverflow.ELLIPSIS),
         ),
         tooltip="选择保存下载文件的目录",
         width=page.window.width-70,
@@ -292,14 +275,14 @@ def main(page: Page):
     )
 
     # 数据页面组件
-    statement_folder_text = ft.Text(
-        f"流水文件夹: {statement_folder[0]}",
-        size=14,
-        color=ft.Colors.GREY_700,
-        font_family="sansr",
-        no_wrap=True,
-        overflow=ft.TextOverflow.ELLIPSIS,
-    )
+    # statement_folder_text = ft.Text(
+    #     f"流水文件夹: {statement_folder[0]}",
+    #     size=14,
+    #     color=ft.Colors.GREY_700,
+    #     font_family="sansr",
+    #     no_wrap=True,
+    #     overflow=ft.TextOverflow.ELLIPSIS,
+    # )
 
     select_statement_folder_button = ft.ElevatedButton(
         text="选择银行流水文件夹",
@@ -308,9 +291,10 @@ def main(page: Page):
             color=ft.Colors.WHITE,
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
-            padding=10,
-            text_style=ft.TextStyle(font_family="sansr", size=14),
+            padding=ft.padding.symmetric(horizontal=10),
+            text_style=ft.TextStyle(font_family="sansr", size=14, overflow=ft.TextOverflow.ELLIPSIS),
         ),
+        # content_alignment=ft.MainAxisAlignment.CENTER,
         tooltip="选择包含银行流水的文件夹",
         width=page.window.width-70,
         on_click=lambda _: statement_dir_picker.get_directory_path(),
@@ -357,26 +341,18 @@ def main(page: Page):
         on_change=lambda e: update_log(f"已设置开始月份: {e.control.value}"),
     )
 
-    export_path_text = ft.Text(
-        f"导出文件夹: {export_path[0]}",
-        size=14,
-        color=ft.Colors.GREY_700,
-        font_family="sansr",
-        no_wrap=True,
-        overflow=ft.TextOverflow.ELLIPSIS,
-    )
-
     export_statement_button = ft.ElevatedButton(
-        text="选择导出文件夹",
+        text="选择保存目录",
         icon=ft.Icons.FOLDER_OPEN,
         style=ft.ButtonStyle(
             color=ft.Colors.WHITE,
             bgcolor=ft.Colors.BLUE_700,
             shape=ft.RoundedRectangleBorder(radius=8),
-            padding=10,
-            text_style=ft.TextStyle(font_family="sansr", size=14),
+            padding=ft.padding.symmetric(horizontal=10),
+            text_style=ft.TextStyle(font_family="sansr", size=14, overflow=ft.TextOverflow.ELLIPSIS),
         ),
-        tooltip="选择导出路径并导出流水",
+        # content_alignment=ft.MainAxisAlignment.CENTER,
+        tooltip="选择导出路径",
         width=page.window.width-70,
         on_click=lambda _: export_dir_picker.get_directory_path(),
     )
@@ -420,7 +396,7 @@ def main(page: Page):
 
     # 银行选择事件
     def on_bank_select(e):
-        nonlocal excel_data  # 移动到函数开头
+        nonlocal excel_data
         if bank_dropdown.value:
             update_log(f"已选择银行: {BANK_NAMES.get(bank_dropdown.value, bank_dropdown.value)}")
             # 如果已导入 Excel 文件，重新加载对应银行的 Sheet 数据
@@ -518,15 +494,19 @@ def main(page: Page):
         if e.path:
             nonlocal download_path
             download_path = e.path
-            download_path_text.value = f"下载路径: {download_path}"
-            update_log(f"下载路径设置为：{download_path}")
+            select_path_button.text = f"保存到: {download_path}"
+            select_path_button.style.padding = ft.padding.only(left=10)
+            select_path_button.content_alignment = ft.MainAxisAlignment.START
+            update_log(f"保存到：{download_path}")
             page.update()
 
     # 选择流水文件夹
     def select_statement_folder(e:FilePickerResultEvent):
         if e.path and os.path.exists(e.path):
             statement_folder[0] = e.path
-            statement_folder_text.value = f"流水文件夹: {statement_folder[0]}"
+            select_statement_folder_button.text = f"流水文件夹: {statement_folder[0]}"
+            select_statement_folder_button.style.padding = ft.padding.only(left=10)
+            select_statement_folder_button.content_alignment = ft.MainAxisAlignment.START
             update_log(f"流水文件夹设置为：{statement_folder[0]}")
             page.update()
 
@@ -534,7 +514,9 @@ def main(page: Page):
     def select_export_path(e: ft.FilePickerResultEvent):
         if e.path and os.path.exists(e.path):
             export_path[0] = e.path
-            export_path_text.value = f"导出文件夹: {export_path[0]}"
+            export_statement_button.text = f"导出文件夹: {export_path[0]}"
+            export_statement_button.style.padding = ft.padding.only(left=10)
+            export_statement_button.content_alignment = ft.MainAxisAlignment.START
             update_log(f"导出路径设置为：{export_path[0]}")
             # 这里可以添加导出逻辑，例如处理流水文件夹中的文件
             update_log(f"开始导出流水到：{export_path[0]}")
@@ -571,6 +553,9 @@ def main(page: Page):
         except ValueError:
             update_log("错误: 日期格式不正确，应为 YYYY-MM-DD")
             return
+
+        download_only_liushui = bank_export_content.controls[2].controls[0].value
+
         is_running[0] = True
         run_bankdownloader_button.disabled = True
         run_bankdownloader_button.text = "下载中..."
@@ -594,8 +579,11 @@ def main(page: Page):
                     update_log(f"错误: 下载路径不可访问或不可写: {download_path}")
                     return
                 with sync_playwright() as playwright:
-                    BANK_HANDLERS[bank_dropdown.value](playwright, project_root, download_path, excel_data, kaishi, jieshu,
-                                                       log_callback=update_log)
+                    BANK_HANDLERS[bank_dropdown.value](
+                        playwright, project_root, download_path, excel_data, kaishi, jieshu,
+                        log_callback=update_log,
+                        download_only_liushui=download_only_liushui
+                    )
                 update_log("下载完成。")
             except Exception as ex:
                 update_log(f"执行出错：{str(ex)}")
@@ -794,7 +782,7 @@ def main(page: Page):
         select_path_button.width = button_width
         import_excel_button.width = button_width
         bank_export_content.controls[1].width = button_width
-        bank_export_content.controls[5].width = button_width
+        bank_export_content.controls[4].width = button_width
         ai_content.controls[0].width = button_width
         ai_content.controls[1].width = button_width
         tools_content.width = button_width
@@ -802,10 +790,8 @@ def main(page: Page):
         statement_content.controls[0].width = button_width
         statement_content.controls[1].width = button_width
         statement_content.controls[2].width = button_width
+        statement_content.controls[3].width = button_width
         statement_content.controls[4].width = button_width
-        statement_content.controls[5].width = button_width
-        statement_content.controls[6].width = button_width
-        statement_content.controls[7].width = button_width
         # 更新 tools_content 内部的子控件宽度
         todo_content.controls[0].width = button_width
         log_content.controls[0].width = button_width
@@ -849,15 +835,29 @@ def main(page: Page):
                 expand=True,
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
             ),
+            ft.Row(
+                [
+                    ft.Checkbox(
+                        label="仅下载银行流水",
+                        value=False,  # 默认不勾选
+                        # check_color=ft.Colors.BLUE_700,
+                        # fill_color=ft.Colors.BLUE_100,
+                        tooltip="勾选则只下载银行流水，否则下载完整版（流水+回单+对账单）",
+                        on_change=lambda e: update_log(f"仅流水: {'勾选' if e.control.value else '取消'}")
+                    ),
+                ],
+                # spacing=10,
+                width=page.window.width-70,
+                alignment=ft.MainAxisAlignment.START,
+            ),
             select_path_button,
-            download_path_text,
             import_excel_button,
             ft.Container(
                 content=ft.ListView(
                     controls=[data_table],
                     auto_scroll=False,
-                    # clip_behavior=ft.ClipBehavior.HARD_EDGE,
-                    # horizontal=True,
+                    height=165,
+                    expand=True,
                 ),
                 # padding=5,
                 border_radius=8,
@@ -865,7 +865,7 @@ def main(page: Page):
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 # width=page.window.width-70,
                 # clip_behavior=ft.ClipBehavior.HARD_EDGE,
-                height=173,
+                height=165,
                 expand=True,
             ),
             run_bankdownloader_button,
@@ -966,9 +966,8 @@ def main(page: Page):
             statement_dropdown,
             start_date_statement,
             select_statement_folder_button,
-            statement_folder_text,
+            # statement_folder_text,
             export_statement_button,
-            export_path_text,
             start_export_button,
             select_match_excel_button,
         ],
@@ -1005,7 +1004,7 @@ def main(page: Page):
         unselected_label_color=ft.Colors.GREY_700,
         width=page.window.width-70,
         on_change=lambda e: [
-            setattr(drag_area_title, "value", ["待办", "日志", "新页面"][e.control.selected_index]),
+            setattr(drag_area_title, "value", ["待办", "日志"][e.control.selected_index]),
             drag_area_title.update(),
             page.update(),
         ],

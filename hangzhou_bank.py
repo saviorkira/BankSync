@@ -4,7 +4,7 @@ import os
 import time
 import pyautogui
 
-def run_hangzhou_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
+def run_hangzhou_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_only_liushui=False):
     """执行杭州银行流水、回单导出及对账单打印"""
     def log_local(msg):
         log(msg, project_root, log_callback)
@@ -75,8 +75,9 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                    os.makedirs(duizhangdan_path, exist_ok=True)
+                    if not download_only_liushui:
+                        os.makedirs(huidan_path, exist_ok=True)
+                        os.makedirs(duizhangdan_path, exist_ok=True)
 
                     # 查询账号
                     page.get_by_role("textbox", name="账号/户名").click()
@@ -119,6 +120,11 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                         log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
                         page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
                         continue
+
+                    # 如果仅下载流水，跳过回单和对账单
+                    if download_only_liushui:
+                        continue
+
 
                     # 导出对账单
                     try:

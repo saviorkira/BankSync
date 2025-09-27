@@ -5,7 +5,7 @@ from utils import log, read_bank_config, find_and_click_image, find_image, get_r
 import pyautogui
 
 def run_zhongxin_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi,
-                      log_callback=None):
+                      log_callback=None, download_only_liushui=False):
     """执行中信银行流水、回单导出及对账单打印"""
 
     def log_local(msg):
@@ -70,8 +70,9 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     # duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                # os.makedirs(duizhangdan_path, exist_ok=True)
+                    if not download_only_liushui:
+                        os.makedirs(huidan_path, exist_ok=True)
+                        # os.makedirs(duizhangdan_path, exist_ok=True)
 
                     # 导出流水
                     page.get_by_role("link", name="托管业务 ").click()
@@ -178,6 +179,9 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     download.save_as(os.path.join(liushui_path, filename))
                     log_local(f"银行流水导出完成：{filename}")
                     time.sleep(0.5)
+                    # 如果仅下载流水，跳过回单和对账单
+                    if download_only_liushui:
+                        continue
 
                     # 创建回单下载
                     page.get_by_role("link", name="托管业务 ").click()

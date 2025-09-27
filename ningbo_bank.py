@@ -4,7 +4,7 @@ import pyautogui
 from playwright.sync_api import Playwright
 from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog, find_image, split_date_ranges
 
-def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
+def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_only_liushui=False):
     """执行宁波银行流水、回单导出及对账单打印"""
     def log_local(msg):
         log(msg, project_root, log_callback)  # 日志保存到 download_path
@@ -66,11 +66,13 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                 try:
                     folder_name = f"{xiangmuid}_{xiangmu}"
                     liushui_path = os.path.join(download_path, folder_name, "银行流水")
+
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                    os.makedirs(duizhangdan_path, exist_ok=True)
+                    if not download_only_liushui:
+                        os.makedirs(huidan_path, exist_ok=True)
+                        os.makedirs(duizhangdan_path, exist_ok=True)
                     if index == 0:
                         page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
                         page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").fill(account)
@@ -113,6 +115,34 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         log_local(f"选中复选框失败（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）：{str(e)}")
                         page.screenshot(path=os.path.join(download_path, f"error_checkbox_{xiangmuid}_{xiangmu}.png"))
                         continue
+
+                    # 导出流水
+                    page.get_by_role("button", name="导出").click()
+                    with page.expect_download() as download_info:
+                        page.get_by_text("对账单导出", exact=True).click()
+                    download = download_info.value
+                    filename = f"{xiangmuid}_{xiangmu}_宁波银行流水_{start_date}_{end_date}.xlsx"
+                    download.save_as(os.path.join(liushui_path, filename))
+                    log_local(f"银行流水导出完成：{filename}")
+                    # 从第三个项目开始检查禁用通知提示
+                    if index >= 2 and not notification_handled[0]:
+                        chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
+                        if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
+                            log_local("检测到并点击‘禁用通知’提示")
+                            pyautogui.moveTo(800, 150)
+                            pyautogui.click()
+                            time.sleep(1)
+                            notification_handled[0] = True
+                        else:
+                            log_local("未检测到‘禁用通知’提示")
+                    # 如果仅下载流水，跳过回单和对账单
+                    if download_only_liushui:
+                        previous_xiangmu = xiangmu
+                        time.sleep(2)
+                        continue
+
+
+
                     # 导出回单
                     page.get_by_role("button", name="导出 ").click()
                     try:
@@ -147,25 +177,9 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                                 log_local("未检测到‘禁用通知’提示")
                     except Exception as e:
                         log_local(f"导出银行回单失败：{str(e)}")
-                    # 导出流水
-                    page.get_by_role("button", name="导出").click()
-                    with page.expect_download() as download_info:
-                        page.get_by_text("对账单导出", exact=True).click()
-                    download = download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_宁波银行流水_{start_date}_{end_date}.xlsx"
-                    download.save_as(os.path.join(liushui_path, filename))
-                    log_local(f"银行流水导出完成：{filename}")
-                    # 从第三个项目开始检查禁用通知提示
-                    if index >= 2 and not notification_handled[0]:
-                        chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
-                        if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
-                            log_local("检测到并点击‘禁用通知’提示")
-                            pyautogui.moveTo(800, 150)
-                            pyautogui.click()
-                            time.sleep(1)
-                            notification_handled[0] = True
-                        else:
-                            log_local("未检测到‘禁用通知’提示")
+
+
+
                     # 打印对账单为PDF
                     try:
                         page.get_by_role("button", name="打印 ").click()

@@ -22,13 +22,12 @@ def generate_months(start_str, end_str):
         current_month += relativedelta(months=1)
     return months
 
-def run_pingan_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_only_liushui=False):
+def run_pingan_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None):
     """执行平安银行流水、回单导出及对账单打印"""
     def log_local(msg):
         log(msg, project_root, log_callback)
     log_local("启动平安银行导出流程...")
     log_local(f"Playwright内核路径: {os.environ.get('PLAYWRIGHT_BROWSERS_PATH')}")
-    log_local(f"下载选项: 仅流水={'是' if download_only_liushui else '否'}")
     try:
         username, password, login_url, config_path = read_bank_config(project_root, "pingan_bank")
         log_local(f"加载配置文件: {config_path}")
@@ -59,7 +58,9 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
         log_local(f"访问登录页面: {login_url}")
         page.goto(login_url)
         log_local("输入用户名和密码...")
+
         page.get_by_role("textbox", name="企业网银/数字财资/企业用户名").fill(username)
+
         log_local("等待账户管理页面加载...")
         page.wait_for_selector('text=查询中心', timeout=60000)
 
@@ -77,9 +78,9 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(duizhang_path, exist_ok=True)
-                    if not download_only_liushui:
-                        os.makedirs(huidan_path, exist_ok=True)
-                        os.makedirs(duizhangdan_path, exist_ok=True)
+                    os.makedirs(huidan_path, exist_ok=True)
+                    os.makedirs(duizhangdan_path, exist_ok=True)
+
                     # 流水查询
                     page.get_by_text("首页").first.click()
                     page.get_by_text("查询中心").click()
@@ -90,6 +91,9 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     page.get_by_role("textbox", name="开始日期").fill(start_date)
                     page.get_by_role("textbox", name="结束日期").fill(end_date)
                     page.get_by_role("textbox", name="结束日期").press("Enter")
+
+
+    ###################
                     time.sleep(1)
                     page.get_by_role("textbox", name="请选择").first.click()
                     page.get_by_role("textbox").first.fill(account)
@@ -146,11 +150,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                         page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
                         continue
 
-                    # 如果仅下载流水，跳过回单和对账单
-                    if download_only_liushui:
-                        continue
-
-                    # 导出回单
+                    #导出回单
                     page.get_by_text("首页").first.click()
                     page.get_by_text("查询中心").first.click()
                     page.get_by_text("电子账单").click()

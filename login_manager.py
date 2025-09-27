@@ -84,6 +84,13 @@ def login_ningbo_bank(playwright, project_root, update_log):
         update_log("输入用户名和密码...")
         page.get_by_role("textbox", name="用户名").fill(username)
         page.get_by_role("textbox", name="请输入您的密码").fill(password)
+        page.wait_for_selector('text=账户管理', timeout=90000)
+        page.get_by_role("link", name="账户管理").click()
+        page.get_by_role("link", name="账户明细").click()
+
+
+
+
         update_log("用户名和密码已输入，请手动执行后续操作...")
         update_log("浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...")
         while True:
@@ -128,6 +135,13 @@ def login_hangzhou_bank(playwright, project_root, update_log):
 
         page.get_by_role("textbox", name="请输入客户号").fill(username)
         page.get_by_role("textbox", name="请输入操作员号").fill("2001")
+        page.wait_for_selector('text=账户', timeout=60000)
+        page.get_by_role("paragraph").filter(has_text="流水查询").locator("span").click()
+
+
+
+
+
         update_log("用户名和操作员号已输入，请手动执行后续操作...")
         update_log("浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...")
         while True:
@@ -174,8 +188,21 @@ def login_zhongxin_bank(playwright, project_root, update_log):
         update_log("输入用户名和密码...")
         page.get_by_role("textbox", name="手机号").click()
         page.get_by_role("textbox", name="手机号").fill(username)
+        page.wait_for_selector('text=会员中心', timeout=30000)
+        page.get_by_text("会员中心").click()
+        page.get_by_role("link", name="托管业务 ").click()
+        page.get_by_role("link", name="托管账户 ").click()
+        page.get_by_role("link", name="托管账户明细查询").click()
+
+
+
         update_log("用户名和操作员号已输入，请手动执行后续操作...")
         update_log("浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...")
+
+
+
+
+
         while True:
             time.sleep(1)
             if not browser.contexts:
@@ -216,8 +243,14 @@ def login_pingan_bank(playwright, project_root, update_log):
         update_log("输入用户名和密码...")
         page.locator("#new_header").get_by_text("登录").click()
 
-        log_local("输入用户名和密码...")
         page.get_by_role("textbox", name="企业网银/数字财资/企业用户名").fill(username)
+
+        page.wait_for_selector('text=查询中心', timeout=60000)
+        page.get_by_text("首页").first.click()
+        page.get_by_text("查询中心").click()
+        page.get_by_text("账户查询").click()
+        page.get_by_text("新版交易明细查询").click()
+
         update_log("用户名和操作员号已输入，请手动执行后续操作...")
         update_log("浏览器窗口将保持打开状态，手动关闭浏览器以继续程序...")
         while True:
