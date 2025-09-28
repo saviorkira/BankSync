@@ -97,7 +97,14 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     # page.get_by_role("textbox", name="9000 0000 80").fill(account)
                     # 格式化 account，添加空格（如 19036817777777 -> 1903 6817 7777 77）
                     formatted_account = f"{account[:4]} {account[4:8]} {account[8:12]} {account[12:]}"
-                    page.get_by_text(formatted_account).click()
+                    try:
+                        # 等待元素出现，最多等 5 秒
+                        page.wait_for_selector(f"text={formatted_account}", timeout=4000)
+                        page.get_by_text(formatted_account).click()
+                    except TimeoutError:
+                        print(f"没有找到: {formatted_account}，跳过")
+                        continue
+                    # page.get_by_text(formatted_account).click()
                     page.get_by_role("button", name="查 询").click()
                     time.sleep(2)
 
@@ -131,7 +138,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                             # 使用 cv2 识别 pingan_xiazaiexcelmingxi.bmp 并点击
                             xiazaiexcel_template = get_resource_path("pingan_xiazaiexcelmingxi.bmp", project_root,
                                                                      subfolder="data/cv2")
-                            if not find_and_click_image(xiazaiexcel_template, project_root, threshold=0.8, max_attempts=2):
+                            if not find_and_click_image(xiazaiexcel_template, project_root, threshold=0.8, max_attempts=1):
                                 log_local(f"未找到下载 Excel 明细按钮，产品：{xiangmuid}_{xiangmu}")
                                 page.screenshot(
                                     path=os.path.join(download_path, f"error_xiazaiexcel_{xiangmuid}_{xiangmu}.png"))
@@ -166,6 +173,8 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     page.get_by_role("textbox", name="开始日期").nth(1).fill(start_date)
                     page.get_by_text("~").first.click()
                     page.get_by_role("textbox", name="结束日期").nth(1).fill(end_date)
+                    # 模拟按两次回车
+                    pyautogui.click(x=900, y=200)
                     page.get_by_role("button", name="查 询").click()
                     time.sleep(2)
 

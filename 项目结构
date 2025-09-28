@@ -49,3 +49,10 @@ statement-processor增加字典
 修改下方
                 elif "平安银行" in filename:
                     bank_type = "pingan_bank"
+
+
+page.locator('input[name="开始日期").evaluate("(el, value) => { el.removeAttribute('readonly'); el.value = value; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }", "2025-07-25")
+
+page.locator('input[name="结束日期").evaluate("(el, value) => { el.removeAttribute('readonly'); el.value = value; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }", "2025-06-01")
+page.locator('input[name="开始日期"]').evaluate("(el, value) => { el.removeAttribute('readonly'); el.value = value; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }", "2025-07-25")
+page.get_by_role("textbox", name="开始日期").nth(1).evaluate("(el, value) => { el.removeAttribute('readonly'); el.value = value; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }", "2025-07-25")
