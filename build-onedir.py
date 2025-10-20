@@ -54,6 +54,7 @@ def run_pyinstaller():
         "--noconfirm",  # 覆盖已有输出目录
         "--onedir",     # 目录模式
         "--windowed",   # 无控制台窗口
+        "--noupx",      # 禁用 UPX 压缩，减少杀毒误报
         f"--icon={icon_path}",  # 设置图标
         "--name=BankSync",  # 设置可执行文件名
         "--hidden-import", "openai",

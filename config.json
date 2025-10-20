@@ -24,6 +24,11 @@
     "password": "",
     "login_url": "https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login"
   },
+    "xingye_bank": {
+    "username": "cqxt",
+    "password": "333222aa",
+    "login_url": "https://tgt.cib.com.cn/custody/"
+  },
   "shanghai_bank": {
     "username": "80064231302",
     "password": "",
@@ -38,5 +43,11 @@
     "username": "13983426184",
     "password": "",
     "login_url": "https://ib.citicbank.com/html/#/index"
+  },
+  "email_263": {
+    "username": "makunpeng@cqiti.com",
+    "password": "malum1ta1!!!",
+    "imap_server": "imap.263.net",
+    "port": 993
   }
 }

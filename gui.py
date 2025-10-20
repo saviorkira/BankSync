@@ -22,11 +22,14 @@ from statement_processor import process_bank_statements, update_with_match_data
 from ningbo_bank import run_ningbo_bank
 from hangzhou_bank import run_hangzhou_bank
 from pingan_bank import run_pingan_bank
+from xingye_bank import run_xingye_bank
 from shanghai_bank import run_shanghai_bank
 from zheshang_bank import run_zheshang_bank
 from zhongxin_bank import run_zhongxin_bank
 from utils import log, read_bank_config, get_resource_path, check_expiration_with_ntp
 from AI import update_ai_output, send_ai_message
+from email_downloader import download_attachments, create_email_ui  # 新增导入 create_email_ui
+from version_manager import create_version_ui
 
 def main(page: Page):
     """Flet 桌面应用主函数，带固定 NavigationRail 和美化界面"""
@@ -103,20 +106,22 @@ def main(page: Page):
     BANK_HANDLERS = {
         "ningbo_bank": run_ningbo_bank,
         "hangzhou_bank": run_hangzhou_bank,
-        # "shanghai_bank": run_shanghai_bank,
-        # "zheshang_bank": run_zheshang_bank,
         "zhongxin_bank": run_zhongxin_bank,
         "pingan_bank": run_pingan_bank,
+        "xingye_bank": run_xingye_bank,
+        # "shanghai_bank": run_shanghai_bank,
+        # "zheshang_bank": run_zheshang_bank,
     }
 
     # 银行名称映射
     BANK_NAMES = {
         "ningbo_bank": "宁波银行",
         "hangzhou_bank": "杭州银行",
+        "zhongxin_bank": "中信银行",
         "pingan_bank": "平安银行",
+        "xingye_bank": "兴业银行",
         "shanghai_bank": "上海银行",
         "zheshang_bank": "浙商银行",
-        "zhongxin_bank": "中信银行",
     }
 
     # 计算上个月的默认日期
@@ -389,7 +394,7 @@ def main(page: Page):
     def update_log(msg):
         log_messages.append(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}: {msg}\n")
         log_area.value = "".join(log_messages)
-        if selected_index.current == 4 and tools_content.selected_index == 1 and hasattr(log_area, 'page') and log_area.page is not None:
+        if selected_index.current == 4 and tools_content.selected_index == 2 and hasattr(log_area, 'page') and log_area.page is not None:
             log_area.update()
             page.scroll_to(key="log_area", duration=500)
         log(msg, project_root)
@@ -717,7 +722,7 @@ def main(page: Page):
     export_dir_picker = ft.FilePicker(on_result=select_export_path)
     match_file_picker = ft.FilePicker(on_result=select_match_excel)
     page.overlay.extend([file_picker, dir_picker, statement_dir_picker, export_dir_picker, match_file_picker])
-    page.update()  # 确保 FilePicker 控件初始化
+    page.update()
 
     # 切换窗口大小按钮
     toggle_size_button = ft.IconButton(
@@ -795,7 +800,8 @@ def main(page: Page):
         # 更新 tools_content 内部的子控件宽度
         todo_content.controls[0].width = button_width
         log_content.controls[0].width = button_width
-        new_page_content.controls[0].width = button_width
+        email_content.controls[0].width = button_width
+        version_content.width = button_width
         home_content.controls[0].width = button_width
         main_content.width = button_width
         page.update()
@@ -922,25 +928,6 @@ def main(page: Page):
         alignment=ft.MainAxisAlignment.START,
     )
 
-    new_page_content = ft.Column(
-        [
-            ft.Container(
-                content=ai_output,
-                padding=5,
-                border_radius=8,
-                bgcolor=ft.Colors.WHITE,
-                shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
-                width=page.window.width-70,
-                height=page.window.height-70,
-                alignment=ft.alignment.top_left,
-                expand=True,  # 确保容器填充可用空间
-            ),
-        ],
-        spacing=10,
-        scroll=ft.ScrollMode.AUTO,
-        alignment=ft.MainAxisAlignment.START,
-    )
-
     log_content = ft.Column(
         [
             ft.Container(
@@ -977,25 +964,18 @@ def main(page: Page):
         # width=page.window.width-70,
     )
 
+    # 从 email_downloader.py 中获取 email_content，并传入必要参数
+    email_content = create_email_ui(page, project_root, is_running, update_log)
+    version_content = create_version_ui(project_root, update_log)
+
     tools_content = ft.Tabs(
         selected_index=0,
         # animation_duration=0,
         tabs=[
-            ft.Tab(
-                text="待办",
-                content=todo_content,
-                icon=ft.Icons.TASK_OUTLINED,
-            ),
-            ft.Tab(
-                text="日志",
-                content=log_content,
-                icon=ft.Icons.SETTINGS_OUTLINED,
-            ),
-            # ft.Tab(
-            #     text="新页面",
-            #     content=new_page_content,
-            #     icon=ft.Icons.NEW_RELEASES_OUTLINED,
-            # ),
+            ft.Tab(text="待办", content=todo_content, icon=ft.Icons.TASK_OUTLINED),
+            ft.Tab(text="邮箱", content=email_content, icon=ft.Icons.EMAIL_OUTLINED),
+            ft.Tab(text="日志", content=log_content, icon=ft.Icons.SETTINGS_OUTLINED),
+            ft.Tab(text="版本", content=version_content, icon=ft.Icons.INFO_OUTLINED),  # 新增版本标签
         ],
         expand=True,
         tab_alignment=ft.TabAlignment.CENTER,
@@ -1004,7 +984,7 @@ def main(page: Page):
         unselected_label_color=ft.Colors.GREY_700,
         width=page.window.width-70,
         on_change=lambda e: [
-            setattr(drag_area_title, "value", ["待办", "日志"][e.control.selected_index]),
+            setattr(drag_area_title, "value", ["待办", "邮箱", "日志", "版本"][e.control.selected_index]),
             drag_area_title.update(),
             page.update(),
         ],
@@ -1084,7 +1064,7 @@ def main(page: Page):
         expand=False,
     )
 
-    content_ref = ft.Ref[ft.AnimatedSwitcher]()
+    content_ref = ft.Ref[ft.Container]()
     def get_content():
         return pages[selected_index.current]["content"]
 

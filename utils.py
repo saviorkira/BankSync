@@ -1,6 +1,6 @@
 import os
 import time
-import json  # 替换 configparser
+import json
 import numpy as np
 import cv2
 import pyautogui
@@ -40,6 +40,28 @@ def read_bank_config(project_root, site_name):
         if not login_url:
             raise ValueError(f"{site_name} 配置不完整，缺少 login_url")
         return username, password, login_url, config_path
+    except json.JSONDecodeError as e:
+        raise ValueError(f"JSON 配置文件解析失败: {str(e)}")
+
+def read_email_config(project_root, site_name="email_263"):
+    """读取邮箱配置文件"""
+    config_path = get_resource_path("config.json", project_root, subfolder="")
+    log(f"尝试加载邮箱配置文件: {config_path} for {site_name}", project_root)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f"配置文件不存在: {config_path}")
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        if site_name not in config:
+            raise KeyError(f"配置文件中缺少 '{site_name}' 配置项")
+        site_conf = config[site_name]
+        username = site_conf.get("username", "")
+        password = site_conf.get("password", "")
+        imap_server = site_conf.get("imap_server", "imap.263.net")
+        port = site_conf.get("port", 993)
+        if not (username and password and imap_server and port):
+            raise ValueError(f"{site_name} 配置不完整，缺少 username, password, imap_server 或 port")
+        return username, password, imap_server, port
     except json.JSONDecodeError as e:
         raise ValueError(f"JSON 配置文件解析失败: {str(e)}")
 
