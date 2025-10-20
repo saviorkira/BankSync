@@ -232,7 +232,7 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
                     horizontal_alignment=ft.CrossAxisAlignment.STRETCH,
                 ),
                 padding=5,
-                border_radius=8,
+                # border_radius=8,
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width - 70,
@@ -242,7 +242,7 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
             ),
         ],
         spacing=10,
-        scroll=ft.ScrollMode.AUTO,
+        # scroll=ft.ScrollMode.AUTO,
         alignment=ft.MainAxisAlignment.START,
     )
 

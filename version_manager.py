@@ -45,7 +45,7 @@ def create_version_ui(project_root, update_log):
             horizontal_alignment=ft.CrossAxisAlignment.STRETCH,
         ),
         padding=5,
-        border_radius=8,
+        # border_radius=8,
         bgcolor=ft.Colors.WHITE,
         shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
         width=300,  # 初始宽度，toggle_window_size 会动态更新

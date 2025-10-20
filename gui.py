@@ -914,7 +914,7 @@ def main(page: Page):
             ft.Container(
                 content=TodoApp(project_root),
                 padding=5,
-                border_radius=8,
+                # border_radius=8,
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width-70,
@@ -933,7 +933,7 @@ def main(page: Page):
             ft.Container(
                 content=log_area,
                 padding=5,
-                border_radius=8,
+                # border_radius=8,
                 bgcolor=ft.Colors.WHITE,
                 shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
                 width=page.window.width-70,
