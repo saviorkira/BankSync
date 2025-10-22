@@ -70,8 +70,8 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
         expand=True,
         filled=True,
         bgcolor=ft.Colors.WHITE,
-        hint_text="输入关键词（如 '华享;先融' 或 '华享；先融'）",
-        tooltip="筛选包含指定关键词的邮件标题，支持分号（; 或 ；）分隔多个关键词",
+        hint_text=";(；)分隔项目,*为代位符",
+        tooltip="例：华享*20251017；华睿*20251021",
         text_style=ft.TextStyle(font_family="sansr", size=14),
         label_style=ft.TextStyle(font_family="sansr", size=14),
     )
@@ -365,9 +365,20 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
 
             subject = decode_filename(msg['Subject']) or '无主题'
             # 检查标题是否包含筛选关键词
-            if subject_filter and subject_filter not in subject:
-                log_to_file(f"跳过邮件：{subject}（不匹配筛选 {subject_filter}）")
-                continue
+            # if subject_filter and subject_filter not in subject:
+            #     log_to_file(f"跳过邮件：{subject}（不匹配筛选 {subject_filter}）")
+            #     continue
+            if subject_filter:
+                # 支持 * 通配符 => 转为正则的 .*
+                pattern = re.escape(subject_filter).replace(r'\*', '.*')
+                try:
+                    if not re.search(pattern, subject, re.IGNORECASE):
+                        log_to_file(f"跳过邮件：{subject}（不匹配筛选 {subject_filter}）")
+                        continue
+                except re.error as ex:
+                    log_to_file(f"正则错误：{ex}，使用普通包含匹配")
+                    if subject_filter not in subject:
+                        continue
 
             matched_emails += 1
             log_to_file(f"处理邮件：{subject}")
