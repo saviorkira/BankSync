@@ -31606,3 +31606,147 @@ Call log:
 2025-10-22 15:23:21: 跳过邮件：巨发磐基一号私募证券投资基金-重信·北极23001·稳盈1号集合资金信托计划等-虚拟净值-2025-10-21（不匹配筛选 华睿*20251021）
 2025-10-22 15:23:21: 下载完成！
 2025-10-22 15:23:21: 邮件附件下载完成（筛选: 华睿*20251021）。
+2025-10-22 15:28:17: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2025-10-22 15:28:17: 从 cn.pool.ntp.org 获取时间成功: 2025-10-22 15:28:20.358576
+2025-10-22 15:28:17: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-10-22 15:28:17: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-10-22 15:28:17: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-10-22 15:28:17: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-10-22 15:28:17: 成功加载 config.json，任务数: 2
+2025-10-22 15:28:17: TodoApp 初始化完成，加载任务数: 2
+2025-10-22 15:28:17: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2025-11-18 16:43:01: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-11-18 16:43:03.733632
+2025-11-18 16:43:01: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-11-18 16:43:02: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-11-18 16:43:02: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-11-18 16:43:02: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-11-18 16:43:02: 成功加载 config.json，任务数: 2
+2025-11-18 16:43:02: TodoApp 初始化完成，加载任务数: 2
+2025-11-18 16:43:02: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2025-11-18 16:43:04: 已选择银行: 宁波银行
+2025-11-18 16:43:17: 保存到：D:\Desktop\11
+2025-11-18 16:43:27: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync\参照模板.xlsx，工作表：宁波银行，包含 2 条记录
+2025-11-18 16:43:28: 开始运行 宁波银行 下载，包含 2 条记录...
+2025-11-18 16:43:29: 启动宁波银行导出流程...
+2025-11-18 16:43:29: 启动宁波银行导出流程...
+2025-11-18 16:43:29: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-11-18 16:43:29: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-11-18 16:43:29: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-11-18 16:43:29: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-11-18 16:43:29: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-11-18 16:43:29: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-11-18 16:43:29: 日期范围已拆分为 1 个子范围: [('2025-09-01', '2025-10-31')]
+2025-11-18 16:43:29: 日期范围已拆分为 1 个子范围: [('2025-09-01', '2025-10-31')]
+2025-11-18 16:43:29: 启动浏览器...
+2025-11-18 16:43:29: 启动浏览器...
+2025-11-18 16:43:32: 访问登录页面: https://www.e-custody.com/#/login
+2025-11-18 16:43:32: 访问登录页面: https://www.e-custody.com/#/login
+2025-11-18 16:43:37: 输入用户名和密码...
+2025-11-18 16:43:37: 输入用户名和密码...
+2025-11-18 16:43:40: 等待账户管理页面加载...
+2025-11-18 16:43:40: 等待账户管理页面加载...
+2025-11-18 16:43:51: 处理日期范围: 2025-09-01 至 2025-10-31
+2025-11-18 16:43:51: 处理日期范围: 2025-09-01 至 2025-10-31
+2025-11-18 16:43:51: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-11-18 16:43:51: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-11-18 16:43:51: 使用托管账户查询：77970122000179566
+2025-11-18 16:43:51: 使用托管账户查询：77970122000179566
+2025-11-18 16:43:53: 复选框已选中
+2025-11-18 16:43:53: 复选框已选中
+2025-11-18 16:43:55: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-09-01_2025-10-31.xlsx
+2025-11-18 16:43:55: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-09-01_2025-10-31.xlsx
+2025-11-18 16:43:57: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-09-01_2025-10-31.pdf
+2025-11-18 16:43:57: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-09-01_2025-10-31.pdf
+2025-11-18 16:43:57: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-11-18 16:43:57: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-11-18 16:44:13: 导出失败（产品：24211_重庆信托·宁波鄞开集合资金信托计划）：Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="- None")
+
+2025-11-18 16:44:13: 导出失败（产品：24211_重庆信托·宁波鄞开集合资金信托计划）：Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="- None")
+
+2025-11-18 16:44:13: 完成日期范围 2025-09-01 至 2025-10-31 的下载
+2025-11-18 16:44:13: 完成日期范围 2025-09-01 至 2025-10-31 的下载
+2025-11-18 16:44:13: 下载完成。
+2025-11-18 16:55:54: 从 ntp.ntsc.ac.cn 获取时间成功: 2025-11-18 16:55:55.916227
+2025-11-18 16:55:54: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-11-18 16:55:54: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2025-11-18 16:55:54: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2025-11-18 16:55:54: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2025-11-18 16:55:54: 成功加载 config.json，任务数: 2
+2025-11-18 16:55:54: TodoApp 初始化完成，加载任务数: 2
+2025-11-18 16:55:54: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2025-11-18 16:55:59: 已选择银行: 宁波银行
+2025-11-18 16:56:07: 保存到：D:\Desktop\11
+2025-11-18 16:56:13: 成功导入 Excel 文件：D:\Desktop\Auto\BankSync\参照模板.xlsx，工作表：宁波银行，包含 2 条记录
+2025-11-18 16:56:13: 开始运行 宁波银行 下载，包含 2 条记录...
+2025-11-18 16:56:15: 启动宁波银行导出流程...
+2025-11-18 16:56:15: 启动宁波银行导出流程...
+2025-11-18 16:56:15: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-11-18 16:56:15: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2025-11-18 16:56:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2025-11-18 16:56:15: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for ningbo_bank
+2025-11-18 16:56:15: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-11-18 16:56:15: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2025-11-18 16:56:15: 日期范围已拆分为 1 个子范围: [('2025-09-01', '2025-10-31')]
+2025-11-18 16:56:15: 日期范围已拆分为 1 个子范围: [('2025-09-01', '2025-10-31')]
+2025-11-18 16:56:15: 启动浏览器...
+2025-11-18 16:56:15: 启动浏览器...
+2025-11-18 16:56:15: 访问登录页面: https://www.e-custody.com/#/login
+2025-11-18 16:56:15: 访问登录页面: https://www.e-custody.com/#/login
+2025-11-18 16:57:05: 输入用户名和密码...
+2025-11-18 16:57:05: 输入用户名和密码...
+2025-11-18 16:57:05: 等待账户管理页面加载...
+2025-11-18 16:57:05: 等待账户管理页面加载...
+2025-11-18 16:57:21: 处理日期范围: 2025-09-01 至 2025-10-31
+2025-11-18 16:57:21: 处理日期范围: 2025-09-01 至 2025-10-31
+2025-11-18 16:57:21: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-11-18 16:57:21: 处理产品：23014_重信·北极22026·华睿精选9号集合资金信托计划，托管账户：77970122000179566
+2025-11-18 16:57:23: 使用托管账户查询：77970122000179566
+2025-11-18 16:57:23: 使用托管账户查询：77970122000179566
+2025-11-18 16:57:25: 复选框已选中
+2025-11-18 16:57:25: 复选框已选中
+2025-11-18 16:57:27: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-09-01_2025-10-31.xlsx
+2025-11-18 16:57:27: 银行流水导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_宁波银行流水_2025-09-01_2025-10-31.xlsx
+2025-11-18 16:57:29: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-09-01_2025-10-31.pdf
+2025-11-18 16:57:29: 银行回单导出完成：23014_重信·北极22026·华睿精选9号集合资金信托计划_银行回单_2025-09-01_2025-10-31.pdf
+2025-11-18 16:57:29: 已跳过对账单打印（临时屏蔽） → 23014_重信·北极22026·华睿精选9号集合资金信托计划
+2025-11-18 16:57:29: 已跳过对账单打印（临时屏蔽） → 23014_重信·北极22026·华睿精选9号集合资金信托计划
+2025-11-18 16:57:29: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-11-18 16:57:29: 处理产品：24211_重庆信托·宁波鄞开集合资金信托计划，托管账户：86031110000310762
+2025-11-18 16:57:29: 使用托管账户查询：86031110000310762
+2025-11-18 16:57:29: 使用托管账户查询：86031110000310762
+2025-11-18 16:57:31: 复选框已选中
+2025-11-18 16:57:31: 复选框已选中
+2025-11-18 16:57:33: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-09-01_2025-10-31.xlsx
+2025-11-18 16:57:33: 银行流水导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_宁波银行流水_2025-09-01_2025-10-31.xlsx
+2025-11-18 16:57:37: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-09-01_2025-10-31.pdf
+2025-11-18 16:57:37: 银行回单导出完成：24211_重庆信托·宁波鄞开集合资金信托计划_银行回单_2025-09-01_2025-10-31.pdf
+2025-11-18 16:57:37: 已跳过对账单打印（临时屏蔽） → 24211_重庆信托·宁波鄞开集合资金信托计划
+2025-11-18 16:57:37: 已跳过对账单打印（临时屏蔽） → 24211_重庆信托·宁波鄞开集合资金信托计划
+2025-11-18 16:57:37: 完成日期范围 2025-09-01 至 2025-10-31 的下载
+2025-11-18 16:57:37: 完成日期范围 2025-09-01 至 2025-10-31 的下载
+2025-11-18 16:57:38: 下载完成。
