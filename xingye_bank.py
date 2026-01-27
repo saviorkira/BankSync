@@ -5,7 +5,7 @@ import time
 import pyautogui
 import re
 
-def run_xingye_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_only_liushui=False):
+def run_xingye_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_liushui=False, download_huidan=False, download_duizhangdan=False):
     """执行杭州银行流水、回单导出及对账单打印"""
     def log_local(msg):
         log(msg, project_root, log_callback)
@@ -61,7 +61,7 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    if not download_only_liushui:
+                    if not download_liushui:
                         os.makedirs(huidan_path, exist_ok=True)
                         os.makedirs(duizhangdan_path, exist_ok=True)
 
@@ -79,38 +79,40 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
 
 
                     # 导出流水
-                    try:
-                        with page.expect_download() as liushui_download_info:
-                            page.get_by_role("button", name="导出流水").click()
-                        download = liushui_download_info.value
-                        filename = f"{xiangmuid}_{xiangmu}_兴业银行流水_{start_date}_{end_date}.xlsx"
-                        download.save_as(os.path.join(liushui_path, filename))
-                        log_local(f"银行流水导出完成：{filename}")
-                    except Exception as e:
-                        log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                        page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
-                        continue
+                    if download_liushui:
+                        try:
+                            with page.expect_download() as liushui_download_info:
+                                page.get_by_role("button", name="导出流水").click()
+                            download = liushui_download_info.value
+                            filename = f"{xiangmuid}_{xiangmu}_兴业银行流水_{start_date}_{end_date}.xlsx"
+                            download.save_as(os.path.join(liushui_path, filename))
+                            log_local(f"银行流水导出完成：{filename}")
+                        except Exception as e:
+                            log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
+                            continue
+                    else:
+                        log_local("未勾选流水下载，跳过银行流水导出")
 
-                    # 如果仅下载流水，跳过回单和对账单
-                    if download_only_liushui:
-                        page.get_by_role("link", name="明细账单查询 关闭").click()
-                        continue
 
                     # 导出回单
-                    try:
-                        page.get_by_role("button", name="下载回单").click()
+                    if download_huidan:
+                        try:
+                            page.get_by_role("button", name="下载回单").click()
 
-                        with page.expect_download() as huidan_download_info:
-                            page.get_by_role("link", name="下载").click()
-                        download = huidan_download_info.value
-                        filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.pdf"
-                        download.save_as(os.path.join(huidan_path, filename))
-                        page.get_by_role("link", name="关闭", exact=True).click()
-                        log_local(f"银行回单导出完成：{filename}")
-                    except Exception as e:
-                        log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                        page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}.png"))
-                        continue
+                            with page.expect_download() as huidan_download_info:
+                                page.get_by_role("link", name="下载").click()
+                            download = huidan_download_info.value
+                            filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.pdf"
+                            download.save_as(os.path.join(huidan_path, filename))
+                            page.get_by_role("link", name="关闭", exact=True).click()
+                            log_local(f"银行回单导出完成：{filename}")
+                        except Exception as e:
+                            log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}.png"))
+                            continue
+                    else:
+                        log_local("未勾选回单下载，跳过银行回单导出")
 
                 except Exception as e:
                     log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
@@ -118,29 +120,32 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
                     continue
 
                 # 导出对账单
-                page.locator("a").filter(has_text="明细账单查询").click()
-                page.get_by_role("button", name=" 选择").click()
-                page.get_by_role("textbox", name="产品名称").fill(xiangmuid)
-                page.get_by_role("button", name="全选").click()
-                page.get_by_role("button", name="确定").click()
-                page.get_by_role("textbox", name="交易日期").click()
+                if download_duizhangdan:
+                    page.locator("a").filter(has_text="明细账单查询").click()
+                    page.get_by_role("button", name=" 选择").click()
+                    page.get_by_role("textbox", name="产品名称").fill(xiangmuid)
+                    page.get_by_role("button", name="全选").click()
+                    page.get_by_role("button", name="确定").click()
+                    page.get_by_role("textbox", name="交易日期").click()
 
 
-                page.get_by_role("button", name=" 查询").click()
+                    page.get_by_role("button", name=" 查询").click()
 
-                try:
-                    with page.expect_download() as duizhangdan_download_info:
-                        page.get_by_role("button", name="导出PDF").click()
-                    download = duizhangdan_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_银行对账单_{start_date}_{end_date}.pdf"
-                    download.save_as(os.path.join(duizhangdan_path, filename))
-                    page.get_by_role("link", name="明细账单查询 关闭").click()
-                    log_local(f"银行对账单导出完成：{filename}")
-                except Exception as e:
-                    log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                    page.screenshot(
-                        path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}.png"))
-                    continue
+                    try:
+                        with page.expect_download() as duizhangdan_download_info:
+                            page.get_by_role("button", name="导出PDF").click()
+                        download = duizhangdan_download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_银行对账单_{start_date}_{end_date}.pdf"
+                        download.save_as(os.path.join(duizhangdan_path, filename))
+                        page.get_by_role("link", name="明细账单查询 关闭").click()
+                        log_local(f"银行对账单导出完成：{filename}")
+                    except Exception as e:
+                        log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                        page.screenshot(
+                            path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}.png"))
+                        continue
+                else:
+                    log_local("未勾选对账单下载，跳过银行对账单导出")
 
 
 

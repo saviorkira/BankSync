@@ -4,7 +4,7 @@ import pyautogui
 from playwright.sync_api import Playwright
 from utils import log, read_bank_config, get_resource_path, find_and_click_image, handle_save_dialog, find_image, split_date_ranges
 
-def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_only_liushui=False):
+def run_ningbo_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_liushui=False, download_huidan=False, download_duizhangdan=False):
     """执行宁波银行流水、回单导出及对账单打印"""
     def log_local(msg):
         log(msg, project_root, log_callback)  # 日志保存到 download_path
@@ -54,6 +54,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
             if range_index > 0:
                 try:
                     page.get_by_role("button", name="全部关闭").click()
+                    # time.sleep(3)
                     log_local("点击‘全部关闭’按钮")
                 except Exception as e:
                     log_local(f"点击‘全部关闭’按钮失败: {str(e)}")
@@ -66,11 +67,10 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                 try:
                     folder_name = f"{xiangmuid}_{xiangmu}"
                     liushui_path = os.path.join(download_path, folder_name, "银行流水")
-
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    if not download_only_liushui:
+                    if not download_liushui:
                         os.makedirs(huidan_path, exist_ok=True)
                         os.makedirs(duizhangdan_path, exist_ok=True)
                     if index == 0:
@@ -84,6 +84,10 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                             log_local(f"点击搜索结果失败（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）：{str(e)}")
                             page.screenshot(path=os.path.join(download_path, f"error_select_{xiangmuid}_{xiangmu}.png"))
                             continue
+                        page.get_by_role("textbox", name="请选择").click()
+                        time.sleep(1)
+                        page.get_by_text("200条/页").click()
+                        time.sleep(1)
                         page.get_by_text("展开").first.click()
                         page.get_by_role("textbox", name="开始日期").fill(start_date)
                         page.get_by_role("textbox", name="开始日期").press("Enter")
@@ -117,55 +121,16 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                         continue
 
                     # 导出流水
-                    page.get_by_role("button", name="导出").click()
-                    with page.expect_download() as download_info:
-                        page.get_by_text("对账单导出", exact=True).click()
-                    download = download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_宁波银行流水_{start_date}_{end_date}.xlsx"
-                    download.save_as(os.path.join(liushui_path, filename))
-                    log_local(f"银行流水导出完成：{filename}")
-                    # 从第三个项目开始检查禁用通知提示
-                    if index >= 2 and not notification_handled[0]:
-                        chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
-                        if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
-                            log_local("检测到并点击‘禁用通知’提示")
-                            pyautogui.moveTo(800, 150)
-                            pyautogui.click()
-                            time.sleep(1)
-                            notification_handled[0] = True
-                        else:
-                            log_local("未检测到‘禁用通知’提示")
-                    # 如果仅下载流水，跳过回单和对账单
-                    if download_only_liushui:
-                        previous_xiangmu = xiangmu
-                        time.sleep(2)
-                        continue
-
-
-
-                    # 导出回单
-                    page.get_by_role("button", name="导出 ").click()
-                    try:
-                        page.wait_for_timeout(1000)
-                        menus = page.locator("css=[id^='dropdown-menu-']")
-                        count = menus.count()
-                        found = False
-                        for i in range(count):
-                            item = menus.nth(i).filter(has_text="凭证导出")
-                            if item.is_visible():
-                                with page.expect_download() as download_info:
-                                    item.click()
-                                download = download_info.value
-                                filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.pdf"
-                                download.save_as(os.path.join(huidan_path, filename))
-                                log_local(f"银行回单导出完成：{filename}")
-                                found = True
-                                break
-                        if not found:
-                            log_local(f"未找到‘凭证导出’菜单项（产品：{xiangmuid}_{xiangmu}）")
-                            page.screenshot(path=os.path.join(download_path, f"error_menu_{xiangmuid}_{xiangmu}.png"))
-                        # 从第三个项目开始检查禁用通知提示
-                        if index >= 2 and not notification_handled[0]:
+                    if download_liushui:
+                        page.get_by_role("button", name="导出").click()
+                        with page.expect_download() as download_info:
+                            page.get_by_text("对账单导出", exact=True).click()
+                        download = download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_宁波银行流水_{start_date}_{end_date}.xlsx"
+                        download.save_as(os.path.join(liushui_path, filename))
+                        log_local(f"银行流水导出完成：{filename}")
+                        # 检查禁用通知提示
+                        if not notification_handled[0]:
                             chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
                             if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
                                 log_local("检测到并点击‘禁用通知’提示")
@@ -175,107 +140,141 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                                 notification_handled[0] = True
                             else:
                                 log_local("未检测到‘禁用通知’提示")
-                    except Exception as e:
-                        log_local(f"导出银行回单失败：{str(e)}")
+                    else:
+                        log_local("未勾选流水下载，跳过银行流水导出")
 
+
+
+                    # 导出回单
+                    if download_huidan:
+                        page.get_by_role("button", name="导出 ").click()
+                        try:
+                            page.wait_for_timeout(1000)
+                            menus = page.locator("css=[id^='dropdown-menu-']")
+                            count = menus.count()
+                            found = False
+                            for i in range(count):
+                                item = menus.nth(i).filter(has_text="凭证导出")
+                                if item.is_visible():
+                                    with page.expect_download() as download_info:
+                                        item.click()
+                                    download = download_info.value
+                                    filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.pdf"
+                                    download.save_as(os.path.join(huidan_path, filename))
+                                    log_local(f"银行回单导出完成：{filename}")
+                                    found = True
+                                    break
+                            if not found:
+                                log_local(f"未找到‘凭证导出’菜单项（产品：{xiangmuid}_{xiangmu}）")
+                                page.screenshot(path=os.path.join(download_path, f"error_menu_{xiangmuid}_{xiangmu}.png"))
+                            # 从第三个项目开始检查禁用通知提示
+                            if not notification_handled[0]:
+                                chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
+                                if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
+                                    log_local("检测到并点击‘禁用通知’提示")
+                                    pyautogui.moveTo(800, 150)
+                                    pyautogui.click()
+                                    time.sleep(1)
+                                    notification_handled[0] = True
+                                else:
+                                    log_local("未检测到‘禁用通知’提示")
+                        except Exception as e:
+                            log_local(f"导出银行回单失败：{str(e)}")
+                    else:
+                        log_local("未勾选回单下载，跳过银行回单导出")
 
 
                     # 打印对账单为PDF
-                    try:
-                        page.get_by_role("button", name="打印 ").click()
-                        log_local("点击打印按钮，等待对账单打印按钮...")
-                        time.sleep(1)
-                        duizhangdan_button_path = get_resource_path("ningbo_duizhangdandayin.bmp", project_root)
-                        if not os.path.exists(duizhangdan_button_path):
-                            log_local(f"模板图像不存在: {duizhangdan_button_path}")
-                            raise FileNotFoundError(f"模板图像不存在: {duizhangdan_button_path}")
-                        log_local("定位‘对账单打印’按钮...")
-                        if find_and_click_image(duizhangdan_button_path, project_root, max_attempts=5):
-                            log_local("成功点击‘对账单打印’按钮")
-                        else:
-                            log_local("未找到‘对账单打印’按钮")
-                            pyautogui.screenshot(os.path.join(download_path, f"error_duizhangdan_button_{xiangmuid}_{xiangmu}.png"))
-                            continue
-                        log_local("等待 Chrome 打印窗口...")
-                        time.sleep(2)
-                        target_printer_path = get_resource_path("target_printer.bmp", project_root)
-                        save_as_pdf_default_path = get_resource_path("save_as_pdf_default.bmp", project_root)
-                        save_as_pdf_hover_path = get_resource_path("save_as_pdf_hover.bmp", project_root)
-                        save_button_path = get_resource_path("save_button.bmp", project_root)
-                        if not (os.path.exists(target_printer_path) and os.path.exists(save_as_pdf_default_path) and
-                                os.path.exists(save_as_pdf_hover_path) and os.path.exists(save_button_path)):
-                            log_local(f"模板图像缺失或大小为0")
-                            raise FileNotFoundError("请准备相关模板图像并放入 seek 文件夹")
-                        log_local("定位‘目标打印机’位置...")
-                        target_pos = find_and_click_image(target_printer_path, project_root)
-                        if not target_pos:
-                            log_local("未找到‘目标打印机’文字")
-                            pyautogui.screenshot(os.path.join(download_path, f"error_target_printer_{xiangmuid}_{xiangmu}.png"))
-                            continue
-                        x_target, y_target = target_pos
-                        x_offset = 250
-                        pyautogui.click(x_target + x_offset, y_target)
-                        log_local(f"模拟点击偏移位置: ({x_target + x_offset}, {y_target})")
-                        time.sleep(1)
-                        pdf_clicked = False
-                        for attempt in range(3):
-                            pyautogui.moveTo(x_target + x_offset, y_target + 20)
-                            time.sleep(0.5)
-                            if find_and_click_image(save_as_pdf_default_path, project_root):
-                                log_local("成功点击默认状态的‘另存为 PDF’按钮")
-                                pdf_clicked = True
-                                time.sleep(1)
-                                break
-                            elif find_and_click_image(save_as_pdf_hover_path, project_root):
-                                log_local("成功点击悬停状态的‘另存为 PDF’按钮")
-                                pdf_clicked = True
-                                time.sleep(1)
-                                break
-                        if not pdf_clicked:
-                            log_local("未找到‘另存为 PDF’按钮")
-                            pyautogui.screenshot(os.path.join(download_path, f"error_save_as_pdf_{xiangmuid}_{xiangmu}.png"))
-                            continue
-                        loading_image_path = get_resource_path("ningbo_dayinjiazai.bmp", project_root)
-                        if not os.path.exists(loading_image_path):
-                            log_local(f"加载中图像不存在: {loading_image_path}")
-                            raise FileNotFoundError(f"加载中图像不存在: {loading_image_path}")
-                        log_local("检查‘加载中’图片...")
-                        max_wait_attempts = 4
-                        for attempt in range(max_wait_attempts):
-                            if find_image(loading_image_path, project_root, max_attempts=1):
-                                log_local("检测到‘加载中’图片，等待1秒...")
+                    if download_duizhangdan:
+                        try:
+                            page.get_by_role("button", name="打印 ").click()
+                            log_local("点击打印按钮，等待对账单打印按钮...")
+                            time.sleep(1)
+                            duizhangdan_button_path = get_resource_path("ningbo_duizhangdandayin.bmp", project_root)
+                            if not os.path.exists(duizhangdan_button_path):
+                                log_local(f"模板图像不存在: {duizhangdan_button_path}")
+                                raise FileNotFoundError(f"模板图像不存在: {duizhangdan_button_path}")
+                            log_local("定位‘对账单打印’按钮...")
+                            if find_and_click_image(duizhangdan_button_path, project_root, max_attempts=5):
+                                log_local("成功点击‘对账单打印’按钮")
+                            else:
+                                log_local("未找到‘对账单打印’按钮")
+                                pyautogui.screenshot(os.path.join(download_path, f"error_duizhangdan_button_{xiangmuid}_{xiangmu}.png"))
+                                continue
+                            log_local("等待 Chrome 打印窗口...")
+                            time.sleep(2)
+                            target_printer_path = get_resource_path("target_printer.bmp", project_root)
+                            save_as_pdf_default_path = get_resource_path("save_as_pdf_default.bmp", project_root)
+                            save_as_pdf_hover_path = get_resource_path("save_as_pdf_hover.bmp", project_root)
+                            save_button_path = get_resource_path("save_button.bmp", project_root)
+                            if not (os.path.exists(target_printer_path) and os.path.exists(save_as_pdf_default_path) and
+                                    os.path.exists(save_as_pdf_hover_path) and os.path.exists(save_button_path)):
+                                log_local(f"模板图像缺失或大小为0")
+                                raise FileNotFoundError("请准备相关模板图像并放入 seek 文件夹")
+                            log_local("定位‘目标打印机’位置...")
+                            target_pos = find_and_click_image(target_printer_path, project_root)
+                            if not target_pos:
+                                log_local("未找到‘目标打印机’文字")
+                                pyautogui.screenshot(os.path.join(download_path, f"error_target_printer_{xiangmuid}_{xiangmu}.png"))
+                                continue
+                            x_target, y_target = target_pos
+                            x_offset = 250
+                            pyautogui.click(x_target + x_offset, y_target)
+                            log_local(f"模拟点击偏移位置: ({x_target + x_offset}, {y_target})")
+                            time.sleep(1)
+                            pdf_clicked = False
+                            for attempt in range(3):
+                                pyautogui.moveTo(x_target + x_offset, y_target + 20)
+                                time.sleep(0.5)
+                                if find_and_click_image(save_as_pdf_default_path, project_root):
+                                    log_local("成功点击默认状态的‘另存为 PDF’按钮")
+                                    pdf_clicked = True
+                                    time.sleep(1)
+                                    break
+                                elif find_and_click_image(save_as_pdf_hover_path, project_root):
+                                    log_local("成功点击悬停状态的‘另存为 PDF’按钮")
+                                    pdf_clicked = True
+                                    time.sleep(1)
+                                    break
+                            if not pdf_clicked:
+                                log_local("未找到‘另存为 PDF’按钮")
+                                pyautogui.screenshot(os.path.join(download_path, f"error_save_as_pdf_{xiangmuid}_{xiangmu}.png"))
+                                continue
+                            loading_image_path = get_resource_path("ningbo_dayinjiazai.bmp", project_root)
+                            if not os.path.exists(loading_image_path):
+                                log_local(f"加载中图像不存在: {loading_image_path}")
+                                raise FileNotFoundError(f"加载中图像不存在: {loading_image_path}")
+                            log_local("检查‘加载中’图片...")
+                            max_wait_attempts = 4
+                            for attempt in range(max_wait_attempts):
+                                if find_image(loading_image_path, project_root, max_attempts=1):
+                                    log_local("检测到‘加载中’图片，等待1秒...")
+                                    time.sleep(1)
+                                else:
+                                    log_local("未检测到‘加载中’图片，继续执行...")
+                                    break
+                            else:
+                                log_local("等待‘加载中’图片消失超时")
+                                continue
+                            if find_and_click_image(save_button_path, project_root):
+                                log_local("成功点击‘保存’按钮")
                                 time.sleep(1)
                             else:
-                                log_local("未检测到‘加载中’图片，继续执行...")
-                                break
-                        else:
-                            log_local("等待‘加载中’图片消失超时")
-                            continue
-                        if find_and_click_image(save_button_path, project_root):
-                            log_local("成功点击‘保存’按钮")
-                            time.sleep(1)
-                        else:
-                            log_local("未找到‘保存’按钮")
-                            pyautogui.screenshot(os.path.join(download_path, f"error_save_button_{xiangmuid}_{xiangmu}.png"))
-                            continue
-                        pdf_filename = f"{xiangmuid}_{xiangmu}_银行对账单_{start_date}_{end_date}.pdf"
-                        handle_save_dialog(duizhangdan_path, pdf_filename, project_root)
-                        pdf_path = os.path.join(duizhangdan_path, pdf_filename)
-                        if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 0:
-                            log_local(f"对账单打印 PDF 完成：{pdf_path}")
-                        else:
-                            log_local(f"PDF 文件生成失败或为空：{pdf_path}")
-                        # 检查禁用通知提示
-                        # if not notification_handled[0]:
-                        #     chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
-                        #     if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
-                        #         log_local("检测到并点击‘禁用通知’提示")
-                        #         notification_handled[0] = True
-                        #     else:
-                        #         log_local("未检测到‘禁用通知’提示")
-                    except Exception as e:
-                        log_local(f"打印对账单 PDF 失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                        page.screenshot(path=os.path.join(download_path, f"error_print_{xiangmuid}_{xiangmu}.png"))
+                                log_local("未找到‘保存’按钮")
+                                pyautogui.screenshot(os.path.join(download_path, f"error_save_button_{xiangmuid}_{xiangmu}.png"))
+                                continue
+                            pdf_filename = f"{xiangmuid}_{xiangmu}_银行对账单_{start_date}_{end_date}.pdf"
+                            handle_save_dialog(duizhangdan_path, pdf_filename, project_root)
+                            pdf_path = os.path.join(duizhangdan_path, pdf_filename)
+                            if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 0:
+                                log_local(f"对账单打印 PDF 完成：{pdf_path}")
+                            else:
+                                log_local(f"PDF 文件生成失败或为空：{pdf_path}")
+                        except Exception as e:
+                            log_local(f"打印对账单 PDF 失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_print_{xiangmuid}_{xiangmu}.png"))
+                    else:
+                        log_local("未勾选对账单下载，跳过对账单导出")
                     previous_xiangmu = xiangmu
                 except Exception as e:
                     log_local(f"导出失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")

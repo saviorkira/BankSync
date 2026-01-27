@@ -5,7 +5,7 @@ from utils import log, read_bank_config, find_and_click_image, find_image, get_r
 import pyautogui
 
 def run_zhongxin_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi,
-                      log_callback=None, download_only_liushui=False):
+                      log_callback=None, download_liushui=False, download_huidan=False, download_duizhangdan=False):
     """执行中信银行流水、回单导出及对账单打印"""
 
     def log_local(msg):
@@ -70,212 +70,220 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     # duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    if not download_only_liushui:
+                    if not download_liushui:
                         os.makedirs(huidan_path, exist_ok=True)
                         # os.makedirs(duizhangdan_path, exist_ok=True)
 
-                    # 导出流水
-                    page.get_by_role("link", name="托管业务 ").click()
-                    page.get_by_role("link", name="托管账户 ").click()
-                    page.get_by_role("link", name="托管账户明细查询").click()
-                    page.wait_for_load_state("networkidle", timeout=30000)
-                    log_local("已进入托管账户明细查询页面")
 
-                    # 设置查询项目
-                    log_local(f"设置查询项目: {xiangmu}")
-                    time.sleep(2)
-                    page.locator("#inputPro").click()
-                    # 提取“·”后6个字符
-                    project_name = xiangmu.split('·')[1][:6] if '·' in xiangmu else xiangmu
-                    page.locator("#inputPro").fill(project_name)
-                    time.sleep(1)
-                    page.locator("#inputPro").press("Enter")
-                    # time.sleep(1)
-                    # page.wait_for_selector("#ulPro", timeout=10000)
-                    page.locator("#ulPro").click()
-                    time.sleep(1)
-                    log_local(f"已选择项目: {project_name}")
 
-                    # 设置日期范围并查询
-                    log_local("设置开始日期和结束日期...")
-                    try:
-                        page.locator('input[name="startDate"]').evaluate(
-                            f'element => {{ element.value = "{start_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
-                        )
-                        log_local(f"已设置开始日期: {start_date}")
-                        page.locator('input[name="endDate"]').evaluate(
-                            f'element => {{ element.value = "{end_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
-                        )
-                        log_local(f"已设置结束日期: {end_date}")
-                    except Exception as e:
-                        log_local(f"设置日期失败: {str(e)}")
-                        raise
+                    if download_liushui:
+                        # 导出流水
+                        page.get_by_role("link", name="托管业务 ").click()
+                        page.get_by_role("link", name="托管账户 ").click()
+                        page.get_by_role("link", name="托管账户明细查询").click()
+                        page.wait_for_load_state("networkidle", timeout=30000)
+                        log_local("已进入托管账户明细查询页面")
 
-                    # 点击查询按钮
-                    log_local("执行查询...")
-                    page.get_by_text("查询", exact=True).click()
-                    page.wait_for_load_state("networkidle", timeout=30000)
-                    log_local("查询完成，等待页面加载...")
-                    time.sleep(1)
+                        # 设置查询项目
+                        log_local(f"设置查询项目: {xiangmu}")
+                        time.sleep(2)
+                        page.locator("#inputPro").click()
+                        # 提取“·”后6个字符
+                        project_name = xiangmu.split('·')[1][:6] if '·' in xiangmu else xiangmu
+                        page.locator("#inputPro").fill(project_name)
+                        time.sleep(1)
+                        page.locator("#inputPro").press("Enter")
+                        # time.sleep(1)
+                        # page.wait_for_selector("#ulPro", timeout=10000)
+                        page.locator("#ulPro").click()
+                        time.sleep(1)
+                        log_local(f"已选择项目: {project_name}")
 
-                    # 检查是否有流水
-                    wuliushui_template = get_resource_path("zhongxin_wuliushui.bmp", project_root)
-                    position = find_image(
-                        template_path=wuliushui_template,
-                        project_root=project_root,
-                        threshold=0.8,
-                        max_attempts=2
-                    )
-                    if position:
-                        log_local(f"检测到无流水图片: {wuliushui_template}，跳过当前产品")
-                        page.get_by_role("link", name="会员中心").click()
-                        continue  # 跳到下一个产品
+                        # 设置日期范围并查询
+                        log_local("设置开始日期和结束日期...")
+                        try:
+                            page.locator('input[name="startDate"]').evaluate(
+                                f'element => {{ element.value = "{start_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
+                            )
+                            log_local(f"已设置开始日期: {start_date}")
+                            page.locator('input[name="endDate"]').evaluate(
+                                f'element => {{ element.value = "{end_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
+                            )
+                            log_local(f"已设置结束日期: {end_date}")
+                        except Exception as e:
+                            log_local(f"设置日期失败: {str(e)}")
+                            raise
 
-                    # 导出流水
-                    log_local("开始导出流水...")
-                    page.get_by_text("导出").click()
-                    page.get_by_role("button", name="确认").click()
-                    time.sleep(1)
-                    page.get_by_role("link", name="下载中心 ").click()
-                    page.get_by_role("link", name="异步下载").click()
-                    log_local("进入下载中心，检查文件处理状态...")
+                        # 点击查询按钮
+                        log_local("执行查询...")
+                        page.get_by_text("查询", exact=True).click()
+                        page.wait_for_load_state("networkidle", timeout=30000)
+                        log_local("查询完成，等待页面加载...")
+                        time.sleep(1)
 
-                    # 检查文件处理状态
-                    wenjianchulizhong_template = get_resource_path("zhongxin_wenjianchulizhong.bmp", project_root)
-                    while True:
+                        # 检查是否有流水
+                        wuliushui_template = get_resource_path("zhongxin_wuliushui.bmp", project_root)
                         position = find_image(
-                            template_path=wenjianchulizhong_template,
+                            template_path=wuliushui_template,
                             project_root=project_root,
                             threshold=0.8,
-                            max_attempts=3
+                            max_attempts=2
                         )
                         if position:
-                            log_local("检测到文件处理中，点击查询按钮...")
-                            page.get_by_role("button", name="查询").click()
-                            time.sleep(2)  # 等待2秒
-                        else:
-                            log_local("文件处理完成或未检测到处理中状态，继续下载...")
-                            break
+                            log_local(f"检测到无流水图片: {wuliushui_template}，跳过当前产品")
+                            page.get_by_role("link", name="会员中心").click()
+                            continue  # 跳到下一个产品
 
-                    # 使用识图点击下载按钮并捕获下载
-                    template_path = get_resource_path("zhongxin_xiazai.bmp", project_root)
-                    with page.expect_download() as liushui_download_info:
-                        log_local("等待文件下载...")
-                        position = find_and_click_image(
-                            template_path=template_path,
-                            project_root=project_root,
-                            offset_y=8,  # 向下偏移4像素
-                            threshold=0.8,  # 提高阈值以确保准确性
-                            max_attempts=3
-                        )
-                        if not position:
-                            log_local(f"识图失败，未找到下载按钮: {template_path}")
-                            raise Exception("识图失败，未找到下载按钮")
-                        # 使用 pyautogui 移动鼠标到屏幕左上角 (0, 0)
-                        pyautogui.moveTo(50, 50)
-                        time.sleep(1)  # 确保点击后下载触发
-                    download = liushui_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_中信银行流水_{start_date}_{end_date}.xlsx"
-                    download.save_as(os.path.join(liushui_path, filename))
-                    log_local(f"银行流水导出完成：{filename}")
-                    time.sleep(0.5)
-                    # 如果仅下载流水，跳过回单和对账单
-                    if download_only_liushui:
-                        continue
+                        # 导出的流水下载
+                        log_local("开始导出流水...")
+                        page.get_by_text("导出").click()
+                        page.get_by_role("button", name="确认").click()
+                        time.sleep(1)
+                        page.get_by_role("link", name="下载中心 ").click()
+                        page.get_by_role("link", name="异步下载").click()
+                        log_local("进入下载中心，检查文件处理状态...")
+
+                        # 检查文件处理状态
+                        wenjianchulizhong_template = get_resource_path("zhongxin_wenjianchulizhong.bmp", project_root)
+                        while True:
+                            position = find_image(
+                                template_path=wenjianchulizhong_template,
+                                project_root=project_root,
+                                threshold=0.8,
+                                max_attempts=3
+                            )
+                            if position:
+                                log_local("检测到文件处理中，点击查询按钮...")
+                                page.get_by_role("button", name="查询").click()
+                                time.sleep(2)  # 等待2秒
+                            else:
+                                log_local("文件处理完成或未检测到处理中状态，继续下载...")
+                                break
+
+                        # 使用识图点击下载按钮并捕获下载
+                        template_path = get_resource_path("zhongxin_xiazai.bmp", project_root)
+                        with page.expect_download() as liushui_download_info:
+                            log_local("等待文件下载...")
+                            position = find_and_click_image(
+                                template_path=template_path,
+                                project_root=project_root,
+                                offset_y=8,  # 向下偏移4像素
+                                threshold=0.8,  # 提高阈值以确保准确性
+                                max_attempts=3
+                            )
+                            if not position:
+                                log_local(f"识图失败，未找到下载按钮: {template_path}")
+                                raise Exception("识图失败，未找到下载按钮")
+                            # 使用 pyautogui 移动鼠标到屏幕左上角 (0, 0)
+                            pyautogui.moveTo(50, 50)
+                            time.sleep(1)  # 确保点击后下载触发
+                        download = liushui_download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_中信银行流水_{start_date}_{end_date}.xlsx"
+                        download.save_as(os.path.join(liushui_path, filename))
+                        log_local(f"银行流水导出完成：{filename}")
+                        time.sleep(0.5)
+                    else:
+                        log_local("未勾选流水下载，跳过银行流水导出")
+
 
                     # 创建回单下载
-                    page.get_by_role("link", name="托管业务 ").click()
-                    page.get_by_role("link", name="托管账户 ").click()
-                    page.get_by_role("link", name="托管账户回单查询").click()
-
-                    # 设置查询项目
-                    log_local(f"设置查询项目: {xiangmu}")
-                    time.sleep(2)
-                    page.locator("#inputPro").click()
-                    # 提取“·”后6个字符
-                    project_name = xiangmu.split('·')[1][:6] if '·' in xiangmu else xiangmu
-                    page.locator("#inputPro").fill(project_name)
-                    time.sleep(1)
-                    page.locator("#inputPro").press("Enter")
-                    # time.sleep(1)
-                    # page.wait_for_selector("#ulPro", timeout=10000)
-                    page.locator("#ulPro").click()
-                    time.sleep(1)
-                    log_local(f"已选择项目: {project_name}")
-
-                    # 设置账户信息
-                    page.get_by_role("listitem").filter(has_text=f"账户信息： {account}").locator("span").click()
-                    page.get_by_role("checkbox", name=account).check()
-                    page.get_by_role("listitem").filter(has_text=f"账户信息： {account}").locator("span").click()
-                    time.sleep(1)
-
-                    # 设置为历史信息查询
-                    page.locator("input[name=\"hisDay\"]").check()
-
-                    # 设置日期范围并查询
-                    log_local("设置开始日期和结束日期...")
-                    try:
-                        page.locator('input[name="startDate"]').evaluate(
-                            f'element => {{ element.value = "{start_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
-                        )
-                        log_local(f"已设置开始日期: {start_date}")
-                        page.locator('input[name="endDate"]').evaluate(
-                            f'element => {{ element.value = "{end_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
-                        )
-                        log_local(f"已设置结束日期: {end_date}")
-                    except Exception as e:
-                        log_local(f"设置日期失败: {str(e)}")
-                        raise
-                    time.sleep(1)
-
                     # 导出回单
-                    log_local("开始导出回单...")
-                    page.get_by_role("button", name="批量下载").click()
-                    page.get_by_role("button", name="确认").click()
-                    time.sleep(1)
-                    page.get_by_role("link", name="下载中心 ").click()
-                    page.get_by_role("link", name="异步下载").click()
-                    log_local("进入下载中心，检查文件处理状态...")
+                    if download_huidan:
+                        page.get_by_role("link", name="托管业务 ").click()
+                        page.get_by_role("link", name="托管账户 ").click()
+                        page.get_by_role("link", name="托管账户回单查询").click()
 
-                    # 检查文件处理状态
-                    wenjianchulizhong_template = get_resource_path("zhongxin_wenjianchulizhong.bmp", project_root)
-                    while True:
-                        position = find_image(
-                            template_path=wenjianchulizhong_template,
-                            project_root=project_root,
-                            threshold=0.8,
-                            max_attempts=3
-                        )
-                        if position:
-                            log_local("检测到文件处理中，点击查询按钮...")
-                            page.get_by_role("button", name="查询").click()
-                            time.sleep(1)  # 等待2秒
-                        else:
-                            log_local("文件处理完成或未检测到处理中状态，继续下载...")
-                            break
+                        # 设置查询项目
+                        log_local(f"设置查询项目: {xiangmu}")
+                        time.sleep(2)
+                        page.locator("#inputPro").click()
+                        # 提取“·”后6个字符
+                        project_name = xiangmu.split('·')[1][:6] if '·' in xiangmu else xiangmu
+                        page.locator("#inputPro").fill(project_name)
+                        time.sleep(1)
+                        page.locator("#inputPro").press("Enter")
+                        # time.sleep(1)
+                        # page.wait_for_selector("#ulPro", timeout=10000)
+                        page.locator("#ulPro").click()
+                        time.sleep(1)
+                        log_local(f"已选择项目: {project_name}")
 
-                    # 使用识图点击下载按钮并捕获下载
-                    template_path = get_resource_path("zhongxin_xiazai.bmp", project_root)
-                    with page.expect_download() as huidan_download_info:
-                        log_local("等待文件下载...")
-                        position = find_and_click_image(
-                            template_path=template_path,
-                            project_root=project_root,
-                            offset_y=8,  # 向下偏移4像素
-                            threshold=0.8,  # 提高阈值以确保准确性
-                            max_attempts=10
-                        )
-                        if not position:
-                            log_local(f"识图失败，未找到下载按钮: {template_path}")
-                            raise Exception("识图失败，未找到下载按钮")
-                        # 使用 pyautogui 移动鼠标到屏幕左上角 (0, 0)
-                        pyautogui.moveTo(50, 50)
-                        time.sleep(1)  # 确保点击后下载触发
-                    download = huidan_download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.zip"
-                    download.save_as(os.path.join(huidan_path, filename))
-                    log_local(f"银行回单导出完成：{filename}")
-                    time.sleep(0.5)
+                        # 设置账户信息
+                        page.get_by_role("listitem").filter(has_text=f"账户信息： {account}").locator("span").click()
+                        page.get_by_role("checkbox", name=account).check()
+                        page.get_by_role("listitem").filter(has_text=f"账户信息： {account}").locator("span").click()
+                        time.sleep(1)
+
+                        # 设置为历史信息查询
+                        page.locator("input[name=\"hisDay\"]").check()
+
+                        # 设置日期范围并查询
+                        log_local("设置开始日期和结束日期...")
+                        try:
+                            page.locator('input[name="startDate"]').evaluate(
+                                f'element => {{ element.value = "{start_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
+                            )
+                            log_local(f"已设置开始日期: {start_date}")
+                            page.locator('input[name="endDate"]').evaluate(
+                                f'element => {{ element.value = "{end_date}"; element.dispatchEvent(new Event("input", {{ bubbles: true }})); element.dispatchEvent(new Event("change", {{ bubbles: true }})); }}'
+                            )
+                            log_local(f"已设置结束日期: {end_date}")
+                        except Exception as e:
+                            log_local(f"设置日期失败: {str(e)}")
+                            raise
+                        time.sleep(1)
+
+                        # 导出回单
+                        log_local("开始导出回单...")
+                        page.get_by_role("button", name="批量下载").click()
+                        page.get_by_role("button", name="确认").click()
+                        time.sleep(1)
+                        page.get_by_role("link", name="下载中心 ").click()
+                        page.get_by_role("link", name="异步下载").click()
+                        log_local("进入下载中心，检查文件处理状态...")
+
+
+                        # 检查文件处理状态
+                        wenjianchulizhong_template = get_resource_path("zhongxin_wenjianchulizhong.bmp", project_root)
+                        while True:
+                            position = find_image(
+                                template_path=wenjianchulizhong_template,
+                                project_root=project_root,
+                                threshold=0.8,
+                                max_attempts=3
+                            )
+                            if position:
+                                log_local("检测到文件处理中，点击查询按钮...")
+                                page.get_by_role("button", name="查询").click()
+                                time.sleep(1)  # 等待2秒
+                            else:
+                                log_local("文件处理完成或未检测到处理中状态，继续下载...")
+                                break
+
+                        # 使用识图点击下载按钮并捕获下载
+                        template_path = get_resource_path("zhongxin_xiazai.bmp", project_root)
+                        with page.expect_download() as huidan_download_info:
+                            log_local("等待文件下载...")
+                            position = find_and_click_image(
+                                template_path=template_path,
+                                project_root=project_root,
+                                offset_y=8,  # 向下偏移4像素
+                                threshold=0.8,  # 提高阈值以确保准确性
+                                max_attempts=10
+                            )
+                            if not position:
+                                log_local(f"识图失败，未找到下载按钮: {template_path}")
+                                raise Exception("识图失败，未找到下载按钮")
+                            # 使用 pyautogui 移动鼠标到屏幕左上角 (0, 0)
+                            pyautogui.moveTo(50, 50)
+                            time.sleep(1)  # 确保点击后下载触发
+                        download = huidan_download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.zip"
+                        download.save_as(os.path.join(huidan_path, filename))
+                        log_local(f"银行回单导出完成：{filename}")
+                        time.sleep(0.5)
+                    else:
+                        log_local("未勾选回单下载，跳过银行回单导出")
 
                 except Exception as e:
                     log_local(f"处理产品 {xiangmuid}_{xiangmu} 失败: {str(e)}")

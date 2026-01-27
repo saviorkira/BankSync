@@ -22,13 +22,13 @@ def generate_months(start_str, end_str):
         current_month += relativedelta(months=1)
     return months
 
-def run_pingan_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_only_liushui=False):
+def run_pingan_bank(playwright: Playwright, project_root, download_path, projects_accounts, kaishiriqi, jieshuriqi, log_callback=None, download_liushui=False, download_huidan=False, download_duizhangdan=False):
     """执行平安银行流水、回单导出及对账单打印"""
     def log_local(msg):
         log(msg, project_root, log_callback)
     log_local("启动平安银行导出流程...")
     log_local(f"Playwright内核路径: {os.environ.get('PLAYWRIGHT_BROWSERS_PATH')}")
-    log_local(f"下载选项: 仅流水={'是' if download_only_liushui else '否'}")
+    log_local(f"下载选项: 仅流水={'是' if download_liushui else '否'}")
     try:
         username, password, login_url, config_path = read_bank_config(project_root, "pingan_bank")
         log_local(f"加载配置文件: {config_path}")
@@ -77,7 +77,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(duizhang_path, exist_ok=True)
-                    if not download_only_liushui:
+                    if not download_liushui:
                         os.makedirs(huidan_path, exist_ok=True)
                         os.makedirs(duizhangdan_path, exist_ok=True)
                     # 流水查询
@@ -133,147 +133,154 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     time.sleep(1)
 
                     # 导出流水
-                    try:
-                        with page.expect_download() as liushui_download_info:
-                            # 使用 cv2 识别 pingan_xiazaiexcelmingxi.bmp 并点击
-                            xiazaiexcel_template = get_resource_path("pingan_xiazaiexcelmingxi.bmp", project_root,
-                                                                     subfolder="data/cv2")
-                            if not find_and_click_image(xiazaiexcel_template, project_root, threshold=0.8, max_attempts=1):
-                                log_local(f"未找到下载 Excel 明细按钮，产品：{xiangmuid}_{xiangmu}")
-                                page.screenshot(
-                                    path=os.path.join(download_path, f"error_xiazaiexcel_{xiangmuid}_{xiangmu}.png"))
-                                continue
-                            # page.get_by_role("button", name="导出Excel").click()
-                        download = liushui_download_info.value
-                        filename = f"{xiangmuid}_{xiangmu}_平安银行流水_{start_date}_{end_date}.xlsx"
-                        download.save_as(os.path.join(duizhang_path, filename))
-                        log_local(f"银行流水导出完成：{filename}")
-                    except Exception as e:
-                        log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                        page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
-                        continue
+                    if download_liushui:
+                        try:
+                            with page.expect_download() as liushui_download_info:
+                                # 使用 cv2 识别 pingan_xiazaiexcelmingxi.bmp 并点击
+                                xiazaiexcel_template = get_resource_path("pingan_xiazaiexcelmingxi.bmp", project_root,
+                                                                         subfolder="data/cv2")
+                                if not find_and_click_image(xiazaiexcel_template, project_root, threshold=0.8, max_attempts=1):
+                                    log_local(f"未找到下载 Excel 明细按钮，产品：{xiangmuid}_{xiangmu}")
+                                    page.screenshot(
+                                        path=os.path.join(download_path, f"error_xiazaiexcel_{xiangmuid}_{xiangmu}.png"))
+                                    continue
+                                # page.get_by_role("button", name="导出Excel").click()
+                            download = liushui_download_info.value
+                            filename = f"{xiangmuid}_{xiangmu}_平安银行流水_{start_date}_{end_date}.xlsx"
+                            download.save_as(os.path.join(duizhang_path, filename))
+                            log_local(f"银行流水导出完成：{filename}")
+                        except Exception as e:
+                            log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
+                            continue
+                    else:
+                        log_local("未勾选流水下载，跳过银行流水导出")
 
-                    # 如果仅下载流水，跳过回单和对账单
-                    if download_only_liushui:
-                        continue
 
                     # 导出回单
-                    page.get_by_text("首页").first.click()
-                    page.get_by_text("查询中心").first.click()
-                    page.get_by_text("电子账单").click()
-                    # page.get_by_text("电子回单(新)").first.click()
-                    # 账号选择
-                    page.locator("text=/请输入账号[0-9]{14}/").click()
-                    time.sleep(2)
-                    page.get_by_role("combobox").filter(has=page.locator("text=/请输入账号[0-9]{14}/")).get_by_role("textbox").fill(account)
-                    time.sleep(2)
-                    formatted_account = f"{account[4:8]} {account[8:12]} {account[12:]}"
-                    page.get_by_text(formatted_account).click()
-                    page.get_by_text("~").first.click()
-                    page.get_by_role("textbox", name="开始日期").nth(1).fill(start_date)
-                    page.get_by_text("~").first.click()
-                    page.get_by_role("textbox", name="结束日期").nth(1).fill(end_date)
-                    # 模拟按两次回车
-                    pyautogui.click(x=900, y=200)
-                    page.get_by_role("button", name="查 询").click()
-                    time.sleep(2)
+                    if download_huidan:
+                        page.get_by_text("首页").first.click()
+                        page.get_by_text("查询中心").first.click()
+                        page.get_by_text("电子账单").click()
+                        # page.get_by_text("电子回单(新)").first.click()
+                        # 账号选择
+                        page.locator("text=/请输入账号[0-9]{14}/").click()
+                        time.sleep(2)
+                        page.get_by_role("combobox").filter(has=page.locator("text=/请输入账号[0-9]{14}/")).get_by_role("textbox").fill(account)
+                        time.sleep(2)
+                        formatted_account = f"{account[4:8]} {account[8:12]} {account[12:]}"
+                        page.get_by_text(formatted_account).click()
+                        page.get_by_text("~").first.click()
+                        page.get_by_role("textbox", name="开始日期").nth(1).fill(start_date)
+                        page.get_by_text("~").first.click()
+                        page.get_by_role("textbox", name="结束日期").nth(1).fill(end_date)
+                        # 模拟按两次回车
+                        pyautogui.click(x=900, y=200)
+                        page.get_by_role("button", name="查 询").click()
+                        time.sleep(2)
 
-                    # 检查无数据
-                    zanwushuju_template = get_resource_path("pingan_zanwushuju.bmp", project_root, subfolder="data/cv2")
-                    if find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=2):
-                        log_local(f"产品 {xiangmuid}_{xiangmu} 回单无数据，跳过...")
-                        continue
+                        # 检查无数据
+                        zanwushuju_template = get_resource_path("pingan_zanwushuju.bmp", project_root, subfolder="data/cv2")
+                        if find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=2):
+                            log_local(f"产品 {xiangmuid}_{xiangmu} 回单无数据，跳过...")
+                            continue
 
-                    page.get_by_role("combobox").filter(has_text="条/页").click()
-                    page.get_by_role("option", name="50 条/页").click()
-                    time.sleep(1)
-                    page.get_by_role("row", name="交易类型 付款方账号/户名 收款方账号/户名 交易币种 交易金额 交易日期 交易用途 操作").get_by_label("").check()
-                    time.sleep(2)
-                    page.get_by_role("button", name="导出").click()
+                        page.get_by_role("combobox").filter(has_text="条/页").click()
+                        page.get_by_role("option", name="50 条/页").click()
+                        time.sleep(1)
+                        page.get_by_role("row", name="交易类型 付款方账号/户名 收款方账号/户名 交易币种 交易金额 交易日期 交易用途 操作").get_by_label("").check()
+                        time.sleep(2)
+                        page.get_by_role("button", name="导出").click()
 
-                    with page.expect_download() as download_info:
-                        page.get_by_role("menuitem", name="一页(A4)三张电子回单").click()
-                    download = download_info.value
-                    filename = f"{xiangmuid}_{xiangmu}_平安银行回单_{start_date}_{end_date}.pdf"
-                    download.save_as(os.path.join(huidan_path, filename))
-                    log_local(f"银行回单导出完成：{filename}")
-                    time.sleep(2)
+                        with page.expect_download() as download_info:
+                            page.get_by_role("menuitem", name="一页(A4)三张电子回单").click()
+                        download = download_info.value
+                        filename = f"{xiangmuid}_{xiangmu}_平安银行回单_{start_date}_{end_date}.pdf"
+                        download.save_as(os.path.join(huidan_path, filename))
+                        log_local(f"银行回单导出完成：{filename}")
+                        time.sleep(2)
+                    else:
+                        log_local("未勾选回单下载，跳过银行回单导出")
 
                     # 导出对账单
-                    # page.get_by_text("首页").first.click()
-                    # page.get_by_text("查询中心").click()
-                    # page.get_by_text("电子账单").click()
-                    page.get_by_text("电子月结单下载(新)").click()
-                    time.sleep(1)
-                    page.get_by_placeholder("请输入账号").click()
-                    page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).wait_for(state="visible", timeout=30000)
-                    time.sleep(1)
-                    page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).fill(account)
-                    time.sleep(2)
-                    page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).press("Enter")
-                    time.sleep(1)
-                    formatted_account = f"{account[4:8]} {account[8:12]} {account[12:]}"
-                    page.get_by_text(formatted_account).click()
+                    if download_duizhangdan:
+                        # page.get_by_text("首页").first.click()
+                        # page.get_by_text("查询中心").click()
+                        # page.get_by_text("电子账单").click()
+                        page.get_by_text("电子月结单下载(新)").click()
+                        time.sleep(1)
+                        page.get_by_placeholder("请输入账号").click()
+                        page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).wait_for(state="visible", timeout=30000)
+                        time.sleep(1)
+                        page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).fill(account)
+                        time.sleep(2)
+                        page.get_by_role("textbox", name=re.compile(r"[0-9]{4}\s[0-9]{4}\s[0-9]{2}")).press("Enter")
+                        time.sleep(1)
+                        formatted_account = f"{account[4:8]} {account[8:12]} {account[12:]}"
+                        page.get_by_text(formatted_account).click()
 
-                    def format_date(date_str):
-                        return date_str[:7]  # 截取 "2025-xx"
+                        def format_date(date_str):
+                            return date_str[:7]  # 截取 "2025-xx"
 
-                    formatted_start_date = format_date(start_date)
-                    formatted_end_date = format_date(end_date)
-                    months = generate_months(formatted_start_date, formatted_end_date)
-                    if not months:
-                        log_local(f"产品 {xiangmuid}_{xiangmu} 无可用对账单月份，跳过...")
-                        continue
-
-                    page.get_by_role("textbox", name="开始月份").fill(formatted_start_date)
-                    page.get_by_role("textbox", name="结束月份").fill(formatted_end_date)
-                    page.get_by_role("button", name="查 询").click()
-                    time.sleep(2)
-
-                    # 使用 CV2 找到所有 "下载PDF" 按钮
-                    pdf_template = get_resource_path("pingan_xiazaipdf.bmp", project_root, subfolder="data/cv2")
-                    points, w, h = find_all_images(pdf_template, project_root, threshold=0.8, max_attempts=3)
-
-                    if len(points) != len(months):
-                        log_local(f"警告: 找到 {len(points)} 个按钮，但预期 {len(months)} 个月份，可能数据不全")
-
-                    # 动态映射月份：按钮数量不足时，从末尾开始
-                    start_index = max(0, len(months) - len(points))  # 计算起始月份索引
-                    for i, pt in enumerate(points):
-                        if i >= len(months):
-                            log_local(f"警告: 按钮数量多于月份数，跳过多余按钮: {i+1}")
-                            break
-                        month = months[start_index + i]  # 从后几月开始映射
-                        try:
-                            with page.expect_download() as download_info:
-                                pyautogui.click(pt[0] + w // 2, pt[1] + h // 2)
-                                time.sleep(1)
-                            download = download_info.value
-                            filename = f"{xiangmuid}_{xiangmu}_平安银行对账单_{month}.pdf"
-                            download.save_as(os.path.join(duizhangdan_path, filename))
-                            log_local(f"银行对账单导出完成：{filename}")
-                            pyautogui.moveTo(500, 500)
-                            pyautogui.click()
-                            time.sleep(2)
-                            # 从第三个项目开始检查禁用通知提示
-                            # if index >= 1 and not notification_handled[0]:
-                            #     chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
-                            #     if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
-                            #         log_local("检测到并点击‘禁用通知’提示")
-                            #         pyautogui.moveTo(495, 495)
-                            #         pyautogui.click()
-                            #         time.sleep(1)
-                            #         notification_handled[0] = True
-                            #     else:
-                            #         log_local("未检测到‘禁用通知’提示")
-                        except Exception as e:
-                            log_local(f"导出对账单 {month} 失败：{str(e)}")
+                        formatted_start_date = format_date(start_date)
+                        formatted_end_date = format_date(end_date)
+                        months = generate_months(formatted_start_date, formatted_end_date)
+                        if not months:
+                            log_local(f"产品 {xiangmuid}_{xiangmu} 无可用对账单月份，跳过...")
                             continue
+
+                        page.get_by_role("textbox", name="开始月份").fill(formatted_start_date)
+                        page.get_by_role("textbox", name="结束月份").fill(formatted_end_date)
+                        page.get_by_role("button", name="查 询").click()
+                        time.sleep(2)
+
+                        # 使用 CV2 找到所有 "下载PDF" 按钮
+                        pdf_template = get_resource_path("pingan_xiazaipdf.bmp", project_root, subfolder="data/cv2")
+                        points, w, h = find_all_images(pdf_template, project_root, threshold=0.8, max_attempts=3)
+
+                        if len(points) != len(months):
+                            log_local(f"警告: 找到 {len(points)} 个按钮，但预期 {len(months)} 个月份，可能数据不全")
+
+                        # 动态映射月份：按钮数量不足时，从末尾开始
+                        start_index = max(0, len(months) - len(points))  # 计算起始月份索引
+                        for i, pt in enumerate(points):
+                            if i >= len(months):
+                                log_local(f"警告: 按钮数量多于月份数，跳过多余按钮: {i+1}")
+                                break
+                            month = months[start_index + i]  # 从后几月开始映射
+                            try:
+                                with page.expect_download() as download_info:
+                                    pyautogui.click(pt[0] + w // 2, pt[1] + h // 2)
+                                    time.sleep(1)
+                                download = download_info.value
+                                filename = f"{xiangmuid}_{xiangmu}_平安银行对账单_{month}.pdf"
+                                download.save_as(os.path.join(duizhangdan_path, filename))
+                                log_local(f"银行对账单导出完成：{filename}")
+                                pyautogui.moveTo(500, 500)
+                                pyautogui.click()
+                                time.sleep(2)
+                                # 从第三个项目开始检查禁用通知提示
+                                # if index >= 1 and not notification_handled[0]:
+                                #     chrome_notification_path = get_resource_path("chrome_jinyongtongzhi.bmp", project_root)
+                                #     if find_and_click_image(chrome_notification_path, project_root, max_attempts=3):
+                                #         log_local("检测到并点击‘禁用通知’提示")
+                                #         pyautogui.moveTo(495, 495)
+                                #         pyautogui.click()
+                                #         time.sleep(1)
+                                #         notification_handled[0] = True
+                                #     else:
+                                #         log_local("未检测到‘禁用通知’提示")
+                            except Exception as e:
+                                log_local(f"导出对账单 {month} 失败：{str(e)}")
+                                continue
+                    else:
+                        log_local("未勾选对账单下载，跳过银行对账单导出")
 
                 except Exception as e:
                     log_local(f"处理产品 {xiangmuid}_{xiangmu} 失败：{str(e)}")
                     page.screenshot(path=os.path.join(download_path, f"error_{xiangmuid}_{xiangmu}.png"))
                     continue
+
 
             log_local(f"完成日期范围 {start_date} 至 {end_date} 的下载")
 

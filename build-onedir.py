@@ -58,6 +58,7 @@ def run_pyinstaller():
         f"--icon={icon_path}",  # 设置图标
         "--name=BankSync",  # 设置可执行文件名
         "--hidden-import", "openai",
+        "--manifest=dpi.manifest",
         "--hidden-import", "pandas",
         "--hidden-import", "flet",
         "--hidden-import", "playwright",

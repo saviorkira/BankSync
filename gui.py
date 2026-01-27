@@ -9,7 +9,7 @@ from dateutil.relativedelta import relativedelta
 from playwright.sync_api import sync_playwright, Playwright
 import flet as ft
 from flet import (
-    Page, FilePicker, FilePickerResultEvent, Theme, Container, Column, Row, Text,
+    Page, FilePicker, Theme, Container, Column, Row, Text,
     ElevatedButton, Dropdown, DataTable, DataColumn, DataRow, DataCell, TextField, ListView,
     NavigationRail, NavigationRailDestination, Ref, AnimatedSwitcher, Checkbox, IconButton,
     FloatingActionButton, Tabs, Tab, OutlinedButton, Image
@@ -58,7 +58,7 @@ def main(page: Page):
             primary=ft.Colors.BLUE_700,
             primary_container=ft.Colors.BLUE_100,
             secondary=ft.Colors.GREEN_600,
-            background=ft.Colors.WHITE,
+            # background=ft.Colors.WHITE,
         ),
         visual_density=ft.VisualDensity.COMPACT,
         font_family="sansr",
@@ -559,7 +559,10 @@ def main(page: Page):
             update_log("错误: 日期格式不正确，应为 YYYY-MM-DD")
             return
 
-        download_only_liushui = bank_export_content.controls[2].controls[0].value
+        download_liushui = bank_export_content.controls[2].controls[0].value
+        download_huidan = bank_export_content.controls[2].controls[1].value
+        download_duizhangdan = bank_export_content.controls[2].controls[2].value
+
 
         is_running[0] = True
         run_bankdownloader_button.disabled = True
@@ -587,7 +590,9 @@ def main(page: Page):
                     BANK_HANDLERS[bank_dropdown.value](
                         playwright, project_root, download_path, excel_data, kaishi, jieshu,
                         log_callback=update_log,
-                        download_only_liushui=download_only_liushui
+                        download_liushui=download_liushui,
+                        download_huidan=download_huidan,
+                        download_duizhangdan=download_duizhangdan
                     )
                 update_log("下载完成。")
             except Exception as ex:
@@ -844,12 +849,22 @@ def main(page: Page):
             ft.Row(
                 [
                     ft.Checkbox(
-                        label="仅下载银行流水",
+                        label="流水",
                         value=False,  # 默认不勾选
-                        # check_color=ft.Colors.BLUE_700,
-                        # fill_color=ft.Colors.BLUE_100,
-                        tooltip="勾选则只下载银行流水，否则下载完整版（流水+回单+对账单）",
-                        on_change=lambda e: update_log(f"仅流水: {'勾选' if e.control.value else '取消'}")
+                        # tooltip="勾选则只下载银行流水，否则下载完整版（流水+回单+对账单）",
+                        on_change=lambda e: update_log(f"流水: {'勾选' if e.control.value else '取消'}")
+                    ),
+                    ft.Checkbox(
+                        label="回单",
+                        value=False,  # 默认不勾选
+                        # tooltip="勾选则只下载银行流水，否则下载完整版（流水+回单+对账单）",
+                        on_change=lambda e: update_log(f"回单: {'勾选' if e.control.value else '取消'}")
+                    ),
+                    ft.Checkbox(
+                        label="对账单",
+                        value=False,  # 默认不勾选
+                        # tooltip="勾选则只下载银行流水，否则下载完整版（流水+回单+对账单）",
+                        on_change=lambda e: update_log(f"对账单: {'勾选' if e.control.value else '取消'}")
                     ),
                 ],
                 # spacing=10,
