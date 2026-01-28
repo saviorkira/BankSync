@@ -75,9 +75,8 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    if not download_liushui:
-                        os.makedirs(huidan_path, exist_ok=True)
-                        os.makedirs(duizhangdan_path, exist_ok=True)
+                    os.makedirs(huidan_path, exist_ok=True)
+                    os.makedirs(duizhangdan_path, exist_ok=True)
 
                     # 查询账号
                     page.get_by_role("textbox", name="账号/户名").click()

@@ -77,9 +77,8 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(duizhang_path, exist_ok=True)
-                    if not download_liushui:
-                        os.makedirs(huidan_path, exist_ok=True)
-                        os.makedirs(duizhangdan_path, exist_ok=True)
+                    os.makedirs(huidan_path, exist_ok=True)
+                    os.makedirs(duizhangdan_path, exist_ok=True)
                     # 流水查询
                     page.get_by_text("首页").first.click()
                     page.get_by_text("查询中心").click()

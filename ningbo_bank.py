@@ -70,9 +70,8 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                     huidan_path = os.path.join(download_path, folder_name, "银行回单")
                     duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
                     os.makedirs(liushui_path, exist_ok=True)
-                    if not download_liushui:
-                        os.makedirs(huidan_path, exist_ok=True)
-                        os.makedirs(duizhangdan_path, exist_ok=True)
+                    os.makedirs(huidan_path, exist_ok=True)
+                    os.makedirs(duizhangdan_path, exist_ok=True)
                     if index == 0:
                         page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").click()
                         page.get_by_role("textbox", name="输入项目名称或项目对应账号关键字进行查询").fill(account)
@@ -107,6 +106,7 @@ def run_ningbo_bank(playwright: Playwright, project_root, download_path, project
                     page.get_by_role("button", name=" 查询").click()
                     page.wait_for_selector('role=checkbox[name="Toggle Selection of All Rows"]', timeout=10000)
                     checkbox = page.get_by_role("checkbox", name="Toggle Selection of All Rows")
+
                     if not (checkbox.is_visible() and checkbox.is_enabled()):
                         log_local(f"无回单或流水数据，跳过导出（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
                         page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmuid}_{xiangmu}.png"))
