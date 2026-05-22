@@ -221,7 +221,8 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
         email_download_button.text = "下载中..."
         email_download_button.icon = ft.Icons.HOURGLASS_TOP
         email_download_button.update()
-        update_log("正在启动全局高速下载进程...")
+        # page.update()
+        update_log("正在启动邮件下载进程...")
 
         def worker():
             try:
@@ -250,7 +251,8 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
                 email_download_button.disabled = False
                 email_download_button.text = "开始下载"
                 email_download_button.icon = ft.Icons.PLAY_CIRCLE
-                email_download_button.update()
+                # email_download_button.update()
+                page.update()
 
         threading.Thread(target=worker, daemon=True).start()
 
