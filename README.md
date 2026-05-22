@@ -1,5 +1,5 @@
 # BankSync
-**Version:** v1.2.1  
+**Version:** v1.2.2 
 **Author:** MA
 ## 功能
 - 一键登录银行

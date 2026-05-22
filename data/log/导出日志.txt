@@ -35293,3 +35293,63 @@ Call log:
 2026-05-22 15:15:31: 成功加载 config.json，任务数: 2
 2026-05-22 15:15:31: TodoApp 初始化完成，加载任务数: 2
 2026-05-22 15:15:31: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-22 15:45:32: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-22 15:45:32: 从 cn.pool.ntp.org 获取时间成功: 2026-05-22 15:45:35.491613
+2026-05-22 15:45:32: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-22 15:45:33: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-22 15:45:33: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-22 15:45:33: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-22 15:45:33: 成功加载 config.json，任务数: 2
+2026-05-22 15:45:33: TodoApp 初始化完成，加载任务数: 2
+2026-05-22 15:45:33: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-22 15:45:37: 启动杭州银行登录流程...
+2026-05-22 15:45:37: Playwright内核路径: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-22 15:45:37: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-22 15:45:37: 尝试加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for hangzhou_bank
+2026-05-22 15:45:37: 加载配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json
+2026-05-22 15:45:37: 启动浏览器...
+2026-05-22 15:45:39: 访问登录页面: https://custody.hzbank.com.cn/#/login
+2026-05-22 15:45:44: 输入用户名和密码...
+2026-05-22 15:46:44: 杭州银行登录失败：Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("text=账户") to be visible
+
+2026-05-22 16:07:22: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-22 16:07:23: 从 cn.pool.ntp.org 获取时间成功: 2026-05-22 16:07:26.030867
+2026-05-22 16:07:23: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-22 16:07:23: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-22 16:07:23: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-22 16:07:23: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-22 16:07:23: 成功加载 config.json，任务数: 2
+2026-05-22 16:07:23: TodoApp 初始化完成，加载任务数: 2
+2026-05-22 16:07:23: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-22 16:07:44: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-22 16:07:45: 从 cn.pool.ntp.org 获取时间成功: 2026-05-22 16:07:47.956663
+2026-05-22 16:07:45: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-22 16:07:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-22 16:07:45: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-22 16:07:45: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-22 16:07:45: 成功加载 config.json，任务数: 2
+2026-05-22 16:07:45: TodoApp 初始化完成，加载任务数: 2
+2026-05-22 16:07:45: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
