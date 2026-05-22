@@ -11,6 +11,64 @@ from imaplib import IMAP4
 
 def create_email_ui(page: ft.Page, project_root, is_running, update_log):
     """创建邮件下载相关的 UI 组件和事件处理，参考 TodoApp 的自适应布局"""
+
+    # ====================== 【新增】邮箱选择下拉框 ======================
+    email_account_dropdown = ft.Dropdown(
+        label="选择账号",
+        options=[
+            ft.dropdown.Option(key="email_ziguan", text="fcoperation@cqiti.com"),
+            ft.dropdown.Option(key="email_caiwu", text="zhqjy@cqiti.com"),
+            ft.dropdown.Option(key="custom", text="其他"),
+        ],
+        value="email_ziguan",  # 默认选中
+        width=page.window.width-70,
+        border_radius=8,
+        filled=True,
+        bgcolor=ft.Colors.WHITE,
+        fill_color=ft.Colors.WHITE,
+        content_padding=10,
+        border_color=ft.Colors.GREY_300,
+        color=ft.Colors.BLACK,
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
+    )
+
+    # ====================== 【新增】自定义邮箱输入框（默认隐藏） ======================
+    custom_username = ft.TextField(
+        label="用户名",
+        value="",
+        border_radius=8,
+        expand=True,
+        filled=True,
+        bgcolor=ft.Colors.WHITE,
+        visible=False,
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
+    )
+    custom_password = ft.TextField(
+        label="密码",
+        value="",
+        password=True,
+        border_radius=8,
+        expand=True,
+        filled=True,
+        bgcolor=ft.Colors.WHITE,
+        visible=False,
+        text_style=ft.TextStyle(font_family="sansr", size=14),
+        label_style=ft.TextStyle(font_family="sansr", size=14),
+    )
+    # 切换显示/隐藏
+    def on_email_account_change(e):
+        if email_account_dropdown.value == "custom":
+            custom_username.visible = True
+            custom_password.visible = True
+        else:
+            custom_username.visible = False
+            custom_password.visible = False
+        page.update()
+
+    email_account_dropdown.on_change = on_email_account_change
+
     # 文件类型 Checkbox，'ALL' 第一个，默认选中
     email_file_types = {
         'ALL': ft.Checkbox(label="ALL", value=True, tooltip="下载所有文件类型"),
@@ -167,7 +225,8 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
 
         def worker():
             try:
-                # 💡 优化点：不再循环调用后端，而是把关键词列表 subject_filters 整体传过去
+                # ====================== 【关键】根据下拉框选择邮箱 ======================
+                selected_email_key = email_account_dropdown.value
                 success = download_attachments(
                     project_root,
                     start,
@@ -175,7 +234,10 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
                     file_types,
                     subject_filters,
                     email_download_path[0],
-                    update_log
+                    update_log,
+                    selected_email_key,
+                    custom_username.value.strip(),
+                    custom_password.value.strip()
                 )
                 if success:
                     update_log("邮件附件高速下载任务全部完成！")
@@ -194,8 +256,12 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
 
     email_download_button.on_click = run_email_downloader
 
+    # ====================== 界面布局（最上方是邮箱选择框） ======================
     return ft.Column(
         [
+            email_account_dropdown,
+            custom_username,
+            custom_password,
             email_subject_filter,
             ft.Row(
                 [email_start_date, email_end_date],
@@ -224,12 +290,18 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
     )
 
 
-
-
+# ====================== 【升级】支持多邮箱下载函数 ======================
 def download_attachments(project_root, start_date, end_date, file_types, subject_filters, download_folder,
-                         log_callback):
+                         log_callback, email_key="email_ziguan", custom_user="", custom_pwd=""):
     try:
-        username, password, imap_server, port = read_email_config(project_root, "email_263")
+        # 根据下拉框选择读取哪个邮箱
+        if email_key == "custom":
+            username = custom_user
+            password = custom_pwd
+            imap_server = "imap.263.com"
+            port = 993
+        else:
+            username, password, imap_server, port = read_email_config(project_root, email_key)
     except Exception as e:
         log_callback(f"加载邮箱配置失败：{e}")
         return False
@@ -318,7 +390,6 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
     for folder in folders:
         friendly_folder_title = get_friendly_folder_name(folder)
 
-        # 扩充过滤：跳过已发送、已删除、草稿、垃圾箱等
         if any(skip in folder.upper() for skip in
                ['&XFJT0ZAB-', '&XFJFUMHJ-', '&XFJSIJZK-', '&G0L6P3UX-', '&U05BIY1EE6E-']):
             continue
@@ -345,11 +416,8 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
 
         log_to_file(f"在【{friendly_folder_title}】中发现 {len(msg_nums)} 封在日期范围内的邮件，正在提取标题...")
 
-        # ⚡ 优化点 1：批量拉取所有邮件的头部信息（仅包含主题和基本元数据，极快）
-        # 将所有编号组合成类似 b"1:506" 或者 b"1,2,3..."
         range_bytes = b",".join(msg_nums)
         try:
-            # 仅获取 BODY[HEADER.FIELDS (SUBJECT)] 极大地减少网络I/O
             status, header_data = mail.fetch(range_bytes, '(BODY[HEADER.FIELDS (SUBJECT)])')
             if status != 'OK':
                 header_data = []
@@ -357,22 +425,18 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
             log_to_file(f"批量提取标题失败，降级为逐封检查: {e}")
             header_data = []
 
-        # 解析批量获取的标题映射
         subject_map = {}
         current_num = None
         for response_part in header_data:
             if isinstance(response_part, tuple):
-                # 提取邮件编号
                 num_match = re.search(r'^(\d+)\s+', response_part[0].decode('utf-8', errors='ignore'))
                 if num_match:
                     current_num = num_match.group(1).encode()
                     header_msg = email.message_from_bytes(response_part[1])
                     subject_map[current_num] = decode_filename(header_msg['Subject']) or '无主题'
 
-        # 开始遍历比对
         for num in msg_nums:
             try:
-                # 优先从映射中拿标题，拿不到再单独去取（确保兼容性）
                 if num in subject_map:
                     subject = subject_map[num]
                 else:
@@ -400,12 +464,11 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
                                 matched_keyword = f_word
                                 break
                     if not matched:
-                        continue  # 🎯 标题不匹配，直接跳过！绝不下载整封邮件！
+                        continue
 
                 log_to_file(
                     f"命中匹配 -> 文件夹:[{friendly_folder_title}] | 命中词:[{matched_keyword}] | 主题:{subject}")
 
-                # ⚡ 优化点 2：只有标题命中后，才拉取该邮件的完整内容（RFC822）
                 status, msg_data = mail.fetch(num, '(RFC822)')
                 if status != 'OK' or not msg_data or not msg_data[0]:
                     continue
@@ -413,7 +476,6 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
                 raw_email = msg_data[0][1]
                 msg = email.message_from_bytes(raw_email)
 
-                # 开始处理附件
                 for part in msg.walk():
                     if part.get_content_maintype() == 'multipart':
                         continue

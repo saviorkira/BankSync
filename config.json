@@ -44,10 +44,16 @@
     "password": "",
     "login_url": "https://ib.citicbank.com/html/#/index"
   },
-  "email_263": {
+  "email_ziguan": {
     "username": "fcoperation@cqiti.com",
     "password": "FCO@1234567",
     "imap_server": "imap.263.net",
     "port": 993
+  },
+  "email_cqiti": {
+      "username": "zhqjy@cqiti.com",
+      "password": "@8889ZHQJY",
+      "imap_server": "imap.263.com",
+      "port": 993
   }
 }
