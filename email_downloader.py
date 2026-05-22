@@ -196,49 +196,34 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
 
     return ft.Column(
         [
-            ft.Container(
-                content=ft.Column(
-                    [
-                        email_subject_filter,
-                        ft.Row(
-                            [email_start_date, email_end_date],
-                            spacing=10,
-                            expand=True,
-                            alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                        ),
-                        ft.Row(
-                            [email_file_types['ALL'], email_file_types['.xls'], email_file_types['.xlsx'],
-                             email_file_types['.zip'], email_file_types['.rar'], email_file_types['.png']],
-                            wrap=False,
-                            scroll=ft.ScrollMode.AUTO,
-                            spacing=10,
-                            run_spacing=5,
-                            alignment=ft.MainAxisAlignment.START,
-                            expand=True,
-                        ),
-                        email_download_path_button,
-                        email_download_button,
-                    ],
-                    spacing=10,
-                    scroll=ft.ScrollMode.AUTO,
-                    alignment=ft.MainAxisAlignment.START,
-                    expand=True,
-                    horizontal_alignment=ft.CrossAxisAlignment.STRETCH,
-                ),
-                padding=5,
-                # border_radius=8,
-                bgcolor=ft.Colors.WHITE,
-                shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.GREY_400),
-                width=page.window.width - 70,
-                height=page.window.height - 70,
-                alignment=ft.alignment.top_left,
+            email_subject_filter,
+            ft.Row(
+                [email_start_date, email_end_date],
+                spacing=10,
+                expand=True,
+                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+            ),
+            ft.Row(
+                [email_file_types['ALL'], email_file_types['.xls'], email_file_types['.xlsx'],
+                 email_file_types['.zip'], email_file_types['.rar'], email_file_types['.png']],
+                wrap=False,
+                scroll=ft.ScrollMode.AUTO,
+                spacing=10,
+                run_spacing=5,
+                alignment=ft.MainAxisAlignment.START,
                 expand=True,
             ),
+            email_download_path_button,
+            email_download_button,
         ],
         spacing=10,
-        # scroll=ft.ScrollMode.AUTO,
+        scroll=ft.ScrollMode.AUTO,
         alignment=ft.MainAxisAlignment.START,
+        horizontal_alignment=ft.CrossAxisAlignment.STRETCH,
+        expand=True,
     )
+
+
 
 
 def download_attachments(project_root, start_date, end_date, file_types, subject_filters, download_folder,

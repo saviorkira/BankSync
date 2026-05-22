@@ -33,13 +33,7 @@ from version_manager import create_version_ui
 
 import ctypes
 
-try:
-    ctypes.windll.shcore.SetProcessDpiAwareness(2)  # Per-monitor DPI aware
-except Exception:
-    try:
-        ctypes.windll.user32.SetProcessDPIAware()  # Win7 fallback
-    except Exception:
-        pass
+
 
 
 def main(page: Page):
@@ -402,7 +396,7 @@ def main(page: Page):
             text_style=ft.TextStyle(font_family="sansr", size=14),
         ),
         tooltip="选择包含项目信息的 Excel 文件，参照模板",
-        width=page.window.width - 70,
+        width=page.window.width-70,
     )
 
     # 日志更新函数
@@ -817,6 +811,7 @@ def main(page: Page):
         statement_content.controls[2].width = button_width
         statement_content.controls[3].width = button_width
         statement_content.controls[4].width = button_width
+        statement_content.controls[5].width = button_width
         # 更新 tools_content 内部的子控件宽度
         todo_content.controls[0].width = button_width
         log_content.controls[0].width = button_width
@@ -1003,7 +998,7 @@ def main(page: Page):
         # animation_duration=0,
         tabs=[
             ft.Tab(text="待办", content=todo_content, icon=ft.Icons.TASK_OUTLINED),
-            ft.Tab(text="邮箱", content=email_content, icon=ft.Icons.EMAIL_OUTLINED),
+            # ft.Tab(text="邮箱", content=email_content, icon=ft.Icons.EMAIL_OUTLINED),
             ft.Tab(text="日志", content=log_content, icon=ft.Icons.SETTINGS_OUTLINED),
             ft.Tab(text="版本", content=version_content, icon=ft.Icons.INFO_OUTLINED),  # 新增版本标签
         ],
@@ -1014,7 +1009,7 @@ def main(page: Page):
         unselected_label_color=ft.Colors.GREY_700,
         width=page.window.width-70,
         on_change=lambda e: [
-            setattr(drag_area_title, "value", ["待办", "邮箱", "日志", "版本"][e.control.selected_index]),
+            setattr(drag_area_title, "value", ["待办", "日志", "版本"][e.control.selected_index]),
             drag_area_title.update(),
             page.update(),
         ],
@@ -1022,8 +1017,12 @@ def main(page: Page):
 
     pages = [
         {"icon": ft.Icons.HOME_OUTLINED, "selected_icon": ft.Icons.HOME, "label": "登录", "content": home_content},
-        {"icon": ft.Icons.DOWNLOAD_OUTLINED, "selected_icon": ft.Icons.DOWNLOAD, "label": "下载", "content": bank_export_content},
-        {"icon": ft.Icons.DATA_USAGE_OUTLINED, "selected_icon": ft.Icons.DATA_USAGE, "label": "流水", "content": statement_content},
+        {"icon": ft.Icons.DOWNLOAD_OUTLINED, "selected_icon": ft.Icons.DOWNLOAD, "label": "下载",
+         "content": bank_export_content},
+        {"icon": ft.Icons.EMAIL_OUTLINED, "selected_icon": ft.Icons.EMAIL, "label": "邮箱", "content": email_content},
+        # 👈 新加在这里
+        {"icon": ft.Icons.DATA_USAGE_OUTLINED, "selected_icon": ft.Icons.DATA_USAGE, "label": "流水",
+         "content": statement_content},
         {"icon": ft.Icons.CHAT_OUTLINED, "selected_icon": ft.Icons.CHAT, "label": "AI", "content": ai_content},
         {"icon": ft.Icons.APPS_OUTLINED, "selected_icon": ft.Icons.APPS, "label": "其他", "content": tools_content},
     ]
