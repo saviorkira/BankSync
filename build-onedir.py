@@ -23,6 +23,7 @@ def copy_required_files():
     required_items = [
         "playwright-browsers",
         "data",
+        "README.md",
         "config.json"
     ]
 
@@ -58,7 +59,7 @@ def run_pyinstaller():
         f"--icon={icon_path}",  # 设置图标
         "--name=BankSync",  # 设置可执行文件名
         "--hidden-import", "openai",
-        "--manifest=dpi.manifest",
+        # "--manifest=dpi.manifest",
         "--hidden-import", "pandas",
         "--hidden-import", "flet",
         "--hidden-import", "playwright",

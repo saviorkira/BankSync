@@ -31,6 +31,17 @@ from AI import update_ai_output, send_ai_message
 from email_downloader import download_attachments, create_email_ui  # 新增导入 create_email_ui
 from version_manager import create_version_ui
 
+import ctypes
+
+try:
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)  # Per-monitor DPI aware
+except Exception:
+    try:
+        ctypes.windll.user32.SetProcessDPIAware()  # Win7 fallback
+    except Exception:
+        pass
+
+
 def main(page: Page):
     """Flet 桌面应用主函数，带固定 NavigationRail 和美化界面"""
     # 设置窗口和主题
@@ -39,10 +50,14 @@ def main(page: Page):
     icon_path = get_resource_path("S.ico", project_root, subfolder="data")
     page.window.icon = icon_path
 
+
+
     page.window.title_bar_hidden = True
     page.window.title_bar_buttons_hidden = True
     page.padding = 0
     page.window.maximizable = False
+
+    page.text_scale_factor = 1.0
     page.window.left = 100
     page.window.top = 100
     page.window.width = 380
@@ -1018,7 +1033,7 @@ def main(page: Page):
             icon=page["icon"],
             selected_icon=page["selected_icon"],
             label=page["label"],
-            label_content=ft.Text(page["label"], font_family="sansm", size=14),
+            label_content=ft.Text(page["label"], font_family="sansm", size=6),
         ) for page in pages
     ]
 
