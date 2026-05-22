@@ -137,10 +137,6 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
             if start_date > end_date:
                 update_log("错误: 开始日期不能晚于结束日期")
                 return
-            if end_date.date() == datetime.now().date():
-                update_log("提示: 结束日期为今天，邮件可能尚未到达")
-            elif end_date > datetime.now():
-                update_log("警告: 结束日期为未来日期，可能无邮件")
         except ValueError:
             update_log("错误: 日期格式不正确，应为 YYYY-MM-DD")
             return
@@ -157,36 +153,34 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
         # 支持 ; 和 ； 作为分隔符
         subject_filters = [f.strip() for f in re.split(r'[;；]', email_subject_filter.value.strip()) if f.strip()]
         if not subject_filters:
-            subject_filters = ['']
-        update_log(f"分割后的标题筛选关键词: {subject_filters}")
+            subject_filters = []  # 如果空，代表下载所有邮件
+            update_log("无标题筛选，下载所有匹配日期的附件")
+        else:
+            update_log(f"识别到所有标题筛选关键词: {subject_filters}")
 
         is_running[0] = True
         email_download_button.disabled = True
         email_download_button.text = "下载中..."
         email_download_button.icon = ft.Icons.HOURGLASS_TOP
         email_download_button.update()
-        update_log("开始下载邮件附件...")
+        update_log("正在启动全局高速下载进程...")
 
         def worker():
             try:
-                for subj_filter in subject_filters:
-                    if subj_filter:
-                        update_log(f"处理标题筛选: {subj_filter}")
-                    else:
-                        update_log("无标题筛选，下载所有匹配日期的附件")
-                    success = download_attachments(
-                        project_root,
-                        start,
-                        end,
-                        file_types,
-                        subj_filter,
-                        email_download_path[0],
-                        update_log
-                    )
-                    if success:
-                        update_log(f"邮件附件下载完成（筛选: {subj_filter or 'ALL'}）。")
-                    else:
-                        update_log(f"邮件附件下载失败（筛选: {subj_filter or 'ALL'}），请检查日志。")
+                # 💡 优化点：不再循环调用后端，而是把关键词列表 subject_filters 整体传过去
+                success = download_attachments(
+                    project_root,
+                    start,
+                    end,
+                    file_types,
+                    subject_filters,
+                    email_download_path[0],
+                    update_log
+                )
+                if success:
+                    update_log("邮件附件高速下载任务全部完成！")
+                else:
+                    update_log("邮件附件下载终止，请检查日志。")
             except Exception as ex:
                 update_log(f"邮件附件下载出错：{str(ex)}")
             finally:
@@ -246,7 +240,9 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
         alignment=ft.MainAxisAlignment.START,
     )
 
-def download_attachments(project_root, start_date, end_date, file_types, subject_filter, download_folder, log_callback):
+
+def download_attachments(project_root, start_date, end_date, file_types, subject_filters, download_folder,
+                         log_callback):
     try:
         username, password, imap_server, port = read_email_config(project_root, "email_263")
     except Exception as e:
@@ -280,132 +276,185 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
                 return decoded.decode('utf-8', errors='replace')
             return decoded
         except Exception as e:
-            log_to_file(f"文件名解码失败：{e}，使用原始名")
             return filename
 
+    folder_translation = {
+        'INBOX': '收件箱',
+        '&XfJT0ZAB-': '已发送',
+        '&XfJSIJZk-': '已删除',
+        '&g0l6P3ux-': '草稿箱',
+        '&XfJfUmhj-': '已发送邮件箱',
+        '&U05biY1Ee6E-': '垃圾邮件'
+    }
+
+    def get_friendly_folder_name(raw_name):
+        return folder_translation.get(raw_name, raw_name)
+
     try:
-        start = datetime.strptime(start_date, '%Y-%m-%d')
-        end = datetime.strptime(end_date, '%Y-%m-%d')
-        end_plus_one = (end + timedelta(days=1)).strftime('%d-%b-%Y')
-        start = start.strftime('%d-%b-%Y')
+        start_dt = datetime.strptime(start_date.strip(), '%Y-%m-%d')
+        end_dt = datetime.strptime(end_date.strip(), '%Y-%m-%d')
+        imap_start_str = start_dt.strftime('%d-%b-%Y')
+        imap_end_plus_one_str = (end_dt + timedelta(days=1)).strftime('%d-%b-%Y')
     except ValueError as e:
         log_to_file(f"日期格式错误：{e}")
         return False
 
-    log_to_file(f"搜索 {start} 至 {end} 的邮件")
+    log_to_file(f"开始扫描全邮箱，时间范围: {start_dt.strftime('%Y-%m-%d')} 至 {end_dt.strftime('%Y-%m-%d')}")
 
     context = ssl.create_default_context()
     context.check_hostname = False
     context.verify_mode = ssl.CERT_NONE
+
     try:
         mail = imaplib.IMAP4_SSL(imap_server, port, ssl_context=context)
         mail.login(username, password)
-        status, folders = mail.list()
-        log_to_file(f"邮箱文件夹列表: {folders}")
-        try:
-            mail.select('INBOX')
-        except Exception as e:
-            log_to_file(f"选择 INBOX 失败：{e}，尝试其他文件夹")
-            for folder in [b'"[Gmail]/All Mail"', b'INBOX.', b'"inbox"']:
-                try:
-                    mail.select(folder)
-                    log_to_file(f"成功选择文件夹: {folder.decode()}")
-                    break
-                except:
-                    continue
+        status, folder_list = mail.list()
+
+        folders = []
+        for f in folder_list:
+            f_str = f.decode('utf-8', errors='ignore')
+            match = re.search(r'"([^"]+)"\s*$', f_str)
+            if match:
+                folders.append(match.group(1))
             else:
-                log_to_file("无法选择有效文件夹")
-                mail.logout()
-                return False
+                parts = f_str.split(' "/" ')
+                if len(parts) > 1:
+                    folders.append(parts[-1].strip())
+
+        friendly_folders = [get_friendly_folder_name(f) for f in folders]
+        log_to_file(f"识别到邮箱文件夹: {friendly_folders}")
     except Exception as e:
         log_to_file(f"IMAP 连接或登录失败：{e}")
         return False
 
-    # 只按日期搜索
-    search_query = f'SINCE {start} BEFORE {end_plus_one}'
-    try:
-        status, messages = mail.search('utf-8', search_query)
-        log_to_file(f"搜索结果（UTF-8）: status={status}, messages={messages}")
-        if status != 'OK' or not messages or not messages[0]:
-            log_to_file("UTF-8 搜索无有效结果，尝试默认字符集")
-            status, messages = mail.search(None, search_query)
-            log_to_file(f"搜索结果（默认字符集）: status={status}, messages={messages}")
-        if status != 'OK' or not messages or not messages[0]:
-            log_to_file("无符合条件的邮件，可能是日期范围无邮件或服务器限制")
-            if start == end_plus_one.strip():
-                log_to_file("提示: 单日搜索可能因邮件尚未到达而为空")
-            mail.logout()
-            return True
-    except Exception as e:
-        log_to_file(f"搜索邮件失败：{str(e)}")
-        mail.logout()
-        return False
+    search_query = f'SINCE {imap_start_str} BEFORE {imap_end_plus_one_str}'
+    total_downloaded = 0
 
-    messages = [num for num in messages[0].split(b' ') if num and num.isdigit()]
-    log_to_file(f"过滤后邮件编号: {messages}")
+    for folder in folders:
+        friendly_folder_title = get_friendly_folder_name(folder)
 
-    if not messages:
-        log_to_file("无符合条件的邮件，退出。")
-        if start == end_plus_one.strip():
-            log_to_file("提示: 单日搜索可能因邮件尚未到达而为空")
-        mail.logout()
-        return True
-
-    log_to_file(f"找到 {len(messages)} 封邮件（{start} 至 {end}）。")
-
-    matched_emails = 0
-    for num in messages:
-        try:
-            status, msg_data = mail.fetch(num, '(RFC822)')
-            if status != 'OK' or not msg_data or not msg_data[0]:
-                log_to_file(f"获取邮件 {num.decode()} 失败：无有效数据")
-                continue
-            raw_email = msg_data[0][1]
-            msg = email.message_from_bytes(raw_email)
-
-            subject = decode_filename(msg['Subject']) or '无主题'
-            # 检查标题是否包含筛选关键词
-            # if subject_filter and subject_filter not in subject:
-            #     log_to_file(f"跳过邮件：{subject}（不匹配筛选 {subject_filter}）")
-            #     continue
-            if subject_filter:
-                # 支持 * 通配符 => 转为正则的 .*
-                pattern = re.escape(subject_filter).replace(r'\*', '.*')
-                try:
-                    if not re.search(pattern, subject, re.IGNORECASE):
-                        log_to_file(f"跳过邮件：{subject}（不匹配筛选 {subject_filter}）")
-                        continue
-                except re.error as ex:
-                    log_to_file(f"正则错误：{ex}，使用普通包含匹配")
-                    if subject_filter not in subject:
-                        continue
-
-            matched_emails += 1
-            log_to_file(f"处理邮件：{subject}")
-
-            for part in msg.walk():
-                if part.get_content_maintype() == 'multipart':
-                    continue
-                if part.get('Content-Disposition') is None:
-                    continue
-                filename = decode_filename(part.get_filename())
-                if filename and (not file_types or any(filename.lower().endswith(ext) for ext in file_types)):
-                    filename = sanitize_filename(filename)
-                    filepath = os.path.join(download_folder, filename)
-                    if not os.path.exists(filepath):
-                        with open(filepath, 'wb') as f:
-                            f.write(part.get_payload(decode=True))
-                        log_to_file(f"下载附件：{filename}")
-                    else:
-                        log_to_file(f"附件已存在，跳过：{filename}")
-        except Exception as e:
-            log_to_file(f"处理邮件 {num.decode()} 失败：{str(e)}")
+        # 扩充过滤：跳过已发送、已删除、草稿、垃圾箱等
+        if any(skip in folder.upper() for skip in
+               ['&XFJT0ZAB-', '&XFJFUMHJ-', '&XFJSIJZK-', '&G0L6P3UX-', '&U05BIY1EE6E-']):
             continue
 
-    if matched_emails == 0 and subject_filter:
-        log_to_file(f"无邮件标题包含关键词：{subject_filter}")
+        log_to_file(f"正在切换至文件夹: 【{friendly_folder_title}】")
+        try:
+            mail.select(f'"{folder}"', readonly=True)
+        except Exception as e:
+            log_to_file(f"无法打开文件夹 【{friendly_folder_title}】，跳过。")
+            continue
 
-    mail.close()
-    mail.logout()
-    log_to_file("下载完成！")
+        try:
+            status, messages = mail.search('utf-8', search_query)
+            if status != 'OK' or not messages or not messages[0]:
+                status, messages = mail.search(None, search_query)
+            if status != 'OK' or not messages or not messages[0]:
+                continue
+        except Exception as e:
+            continue
+
+        msg_nums = [num for num in messages[0].split(b' ') if num and num.isdigit()]
+        if not msg_nums:
+            continue
+
+        log_to_file(f"在【{friendly_folder_title}】中发现 {len(msg_nums)} 封在日期范围内的邮件，正在提取标题...")
+
+        # ⚡ 优化点 1：批量拉取所有邮件的头部信息（仅包含主题和基本元数据，极快）
+        # 将所有编号组合成类似 b"1:506" 或者 b"1,2,3..."
+        range_bytes = b",".join(msg_nums)
+        try:
+            # 仅获取 BODY[HEADER.FIELDS (SUBJECT)] 极大地减少网络I/O
+            status, header_data = mail.fetch(range_bytes, '(BODY[HEADER.FIELDS (SUBJECT)])')
+            if status != 'OK':
+                header_data = []
+        except Exception as e:
+            log_to_file(f"批量提取标题失败，降级为逐封检查: {e}")
+            header_data = []
+
+        # 解析批量获取的标题映射
+        subject_map = {}
+        current_num = None
+        for response_part in header_data:
+            if isinstance(response_part, tuple):
+                # 提取邮件编号
+                num_match = re.search(r'^(\d+)\s+', response_part[0].decode('utf-8', errors='ignore'))
+                if num_match:
+                    current_num = num_match.group(1).encode()
+                    header_msg = email.message_from_bytes(response_part[1])
+                    subject_map[current_num] = decode_filename(header_msg['Subject']) or '无主题'
+
+        # 开始遍历比对
+        for num in msg_nums:
+            try:
+                # 优先从映射中拿标题，拿不到再单独去取（确保兼容性）
+                if num in subject_map:
+                    subject = subject_map[num]
+                else:
+                    status, msg_data = mail.fetch(num, '(BODY[HEADER.FIELDS (SUBJECT)])')
+                    if status == 'OK' and msg_data[0]:
+                        header_msg = email.message_from_bytes(msg_data[0][1])
+                        subject = decode_filename(header_msg['Subject']) or '无主题'
+                    else:
+                        subject = '无主题'
+
+                matched = False
+                matched_keyword = "ALL"
+
+                if subject_filters:
+                    for f_word in subject_filters:
+                        pattern = re.escape(f_word).replace(r'\*', '.*')
+                        try:
+                            if re.search(pattern, subject, re.IGNORECASE):
+                                matched = True
+                                matched_keyword = f_word
+                                break
+                        except re.error:
+                            if f_word in subject:
+                                matched = True
+                                matched_keyword = f_word
+                                break
+                    if not matched:
+                        continue  # 🎯 标题不匹配，直接跳过！绝不下载整封邮件！
+
+                log_to_file(
+                    f"命中匹配 -> 文件夹:[{friendly_folder_title}] | 命中词:[{matched_keyword}] | 主题:{subject}")
+
+                # ⚡ 优化点 2：只有标题命中后，才拉取该邮件的完整内容（RFC822）
+                status, msg_data = mail.fetch(num, '(RFC822)')
+                if status != 'OK' or not msg_data or not msg_data[0]:
+                    continue
+
+                raw_email = msg_data[0][1]
+                msg = email.message_from_bytes(raw_email)
+
+                # 开始处理附件
+                for part in msg.walk():
+                    if part.get_content_maintype() == 'multipart':
+                        continue
+                    if part.get('Content-Disposition') is None:
+                        continue
+                    filename = decode_filename(part.get_filename())
+                    if filename and (not file_types or any(filename.lower().endswith(ext) for ext in file_types)):
+                        filename = sanitize_filename(filename)
+                        filepath = os.path.join(download_folder, filename)
+
+                        if not os.path.exists(filepath):
+                            with open(filepath, 'wb') as f:
+                                f.write(part.get_payload(decode=True))
+                            log_to_file(f"   ↳ 📥 下载附件：{filename}")
+                            total_downloaded += 1
+                        else:
+                            log_to_file(f"   ↳ ⏭️ 附件已存在，跳过：{filename}")
+            except Exception as e:
+                log_to_file(f"处理邮件编号 {num.decode()} 失败：{str(e)}")
+                continue
+
+    try:
+        mail.close()
+        mail.logout()
+    except:
+        pass
+
+    log_to_file(f"扫描完成！共成功保存了 {total_downloaded} 个附件。")
     return True

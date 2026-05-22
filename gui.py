@@ -1033,7 +1033,7 @@ def main(page: Page):
             icon=page["icon"],
             selected_icon=page["selected_icon"],
             label=page["label"],
-            label_content=ft.Text(page["label"], font_family="sansm", size=6),
+            label_content=ft.Text(page["label"], font_family="sansm", size=8),
         ) for page in pages
     ]
 
@@ -1051,7 +1051,7 @@ def main(page: Page):
 
     rail = ft.NavigationRail(
         selected_index=selected_index.current,
-        label_type=ft.NavigationRailLabelType.ALL,
+        label_type=ft.NavigationRailLabelType.NONE,
         min_width=50,
         min_extended_width=50,
         expand=True,

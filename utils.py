@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import json
 import numpy as np
@@ -215,7 +216,7 @@ def handle_save_dialog(save_path, pdf_filename, project_root):
         log(f"快速保存失败，错误: {e}", project_root)
         raise
 
-def check_expiration_with_ntp(project_root, ntp_servers=["ntp.ntsc.ac.cn", "cn.pool.ntp.org", "time.edu.cn", "ntp.aliyun.com"], expire_date_str="2026-12-31"):
+def check_expiration_with_ntp(project_root, ntp_servers=["ntp.ntsc.ac.cn", "cn.pool.ntp.org", "time.edu.cn", "ntp.aliyun.com"], expire_date_str="2027-12-31"):
     """检查程序是否过期，使用 NTP 服务器获取时间"""
     ntp_time = None
     for server in ntp_servers:
