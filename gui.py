@@ -1,3 +1,4 @@
+#gui.py
 import os
 import sys
 import threading
@@ -989,8 +990,25 @@ def main(page: Page):
         # width=page.window.width-70,
     )
 
+    # ====================== 跳转日志函数 ======================
+    def go_to_logs():
+        # 1. 切换左侧导航选中状态 → 选中【其他】
+        selected_index.current = 5
+        rail.selected_index = 5  # 👈 这一行让左边高亮！
+
+        # 2. 切换到【其他】里的【日志】标签
+        tools_content.selected_index = 1
+
+        # 3. 刷新标题
+        drag_area_title.value = "其他"
+        drag_area_title.update()
+
+        # 4. 刷新页面
+        content_ref.current.content = get_content()
+        page.update()
+
     # 从 email_downloader.py 中获取 email_content，并传入必要参数
-    email_content = create_email_ui(page, project_root, is_running, update_log)
+    email_content = create_email_ui(page, project_root, is_running, update_log, navigate_to_logs=go_to_logs)
     version_content = create_version_ui(project_root, update_log)
 
     tools_content = ft.Tabs(

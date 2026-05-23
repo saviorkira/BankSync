@@ -1,4 +1,6 @@
 import os
+import re
+
 import flet as ft
 from datetime import datetime
 
@@ -9,7 +11,12 @@ def create_version_ui(project_root, update_log):
     try:
         with open(readme_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        update_log(f"成功读取 README.md: {readme_path}")
+        # update_log(f"成功读取 README.md: {readme_path}")
+        match = re.search(r"### (v[\d\.]+ - \d{4}-\d{2}-\d{2})", content)
+        if match:
+            update_log(f"启动成功，版本 {match.group(1)}")
+        else:
+            update_log("启动成功，版本未知")
     except UnicodeDecodeError:
         try:
             with open(readme_path, 'r', encoding='gbk') as f:

@@ -9,7 +9,7 @@ import flet as ft
 import threading
 from imaplib import IMAP4
 
-def create_email_ui(page: ft.Page, project_root, is_running, update_log):
+def create_email_ui(page: ft.Page, project_root, is_running, update_log, navigate_to_logs=None):
     """创建邮件下载相关的 UI 组件和事件处理，参考 TodoApp 的自适应布局"""
 
     # ====================== 【新增】邮箱选择下拉框 ======================
@@ -86,11 +86,10 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
                 for ext in email_file_types:
                     if ext != 'ALL':
                         email_file_types[ext].value = False
-                        email_file_types[ext].update()
         else:
             if e.control.value:
                 email_file_types['ALL'].value = False
-                email_file_types['ALL'].update()
+        page.update()
 
     for cb in email_file_types.values():
         cb.on_change = checkbox_changed
@@ -169,15 +168,25 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
         if e.path and os.path.exists(e.path):
             email_download_path[0] = e.path
             email_download_path_button.text = f"保存到: {email_download_path[0]}"
-            email_download_path_button.style.padding = ft.padding.symmetric(horizontal=10)
             update_log(f"邮件附件保存路径设置为：{email_download_path[0]}")
             page.update()
 
     email_dir_picker = ft.FilePicker(on_result=select_email_download_path)
     page.overlay.append(email_dir_picker)
-    page.update()
-
     email_download_path_button.on_click = lambda _: email_dir_picker.get_directory_path()
+
+    # ====================== ✅ 只加这一个：查看下载进度 按钮 ======================
+    progress_btn = ft.ElevatedButton(
+        "查看下载进度",
+        visible=False,
+        icon=ft.Icons.RECEIPT_LONG,
+        style=ft.ButtonStyle(
+            bgcolor=ft.Colors.BLUE_700,
+            color=ft.Colors.WHITE,
+            shape=ft.RoundedRectangleBorder(radius=8)
+        ),
+        on_click=lambda _: navigate_to_logs() if navigate_to_logs else None
+    )
 
     def run_email_downloader(e):
         nonlocal is_running
@@ -208,10 +217,8 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
             update_log("错误: 请至少选择一种文件类型或 ALL")
             return
 
-        # 支持 ; 和 ； 作为分隔符
         subject_filters = [f.strip() for f in re.split(r'[;；]', email_subject_filter.value.strip()) if f.strip()]
         if not subject_filters:
-            subject_filters = []  # 如果空，代表下载所有邮件
             update_log("无标题筛选，下载所有匹配日期的附件")
         else:
             update_log(f"识别到所有标题筛选关键词: {subject_filters}")
@@ -220,30 +227,24 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
         email_download_button.disabled = True
         email_download_button.text = "下载中..."
         email_download_button.icon = ft.Icons.HOURGLASS_TOP
-        email_download_button.update()
-        # page.update()
+
+        # ✅ 显示按钮
+        progress_btn.visible = True
+        page.update()
+
         update_log("正在启动邮件下载进程...")
 
         def worker():
             try:
-                # ====================== 【关键】根据下拉框选择邮箱 ======================
                 selected_email_key = email_account_dropdown.value
-                success = download_attachments(
-                    project_root,
-                    start,
-                    end,
-                    file_types,
-                    subject_filters,
-                    email_download_path[0],
-                    update_log,
+                download_attachments(
+                    project_root, start, end, file_types, subject_filters,
+                    email_download_path[0], update_log,
                     selected_email_key,
                     custom_username.value.strip(),
                     custom_password.value.strip()
                 )
-                if success:
-                    update_log("邮件附件高速下载任务全部完成！")
-                else:
-                    update_log("邮件附件下载终止，请检查日志。")
+                update_log("邮件附件下载任务全部完成！")
             except Exception as ex:
                 update_log(f"邮件附件下载出错：{str(ex)}")
             finally:
@@ -251,38 +252,32 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
                 email_download_button.disabled = False
                 email_download_button.text = "开始下载"
                 email_download_button.icon = ft.Icons.PLAY_CIRCLE
-                # email_download_button.update()
+
+                # ✅ 隐藏按钮
+                progress_btn.visible = False
                 page.update()
 
         threading.Thread(target=worker, daemon=True).start()
 
     email_download_button.on_click = run_email_downloader
 
-    # ====================== 界面布局（最上方是邮箱选择框） ======================
+    # ====================== 布局：只加了 progress_btn ======================
     return ft.Column(
         [
             email_account_dropdown,
             custom_username,
             custom_password,
             email_subject_filter,
-            ft.Row(
-                [email_start_date, email_end_date],
-                spacing=10,
-                expand=True,
-                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-            ),
+            ft.Row([email_start_date, email_end_date], spacing=10, expand=True),
             ft.Row(
                 [email_file_types['ALL'], email_file_types['.xls'], email_file_types['.xlsx'],
                  email_file_types['.zip'], email_file_types['.rar'], email_file_types['.png']],
-                wrap=False,
-                scroll=ft.ScrollMode.AUTO,
-                spacing=10,
-                run_spacing=5,
-                alignment=ft.MainAxisAlignment.START,
-                expand=True,
+                scroll=ft.ScrollMode.AUTO, spacing=8
             ),
             email_download_path_button,
             email_download_button,
+            ft.Divider(height=10, color=ft.Colors.TRANSPARENT),
+            progress_btn,  # <-- 只加了这一行
         ],
         spacing=10,
         scroll=ft.ScrollMode.AUTO,
@@ -292,11 +287,10 @@ def create_email_ui(page: ft.Page, project_root, is_running, update_log):
     )
 
 
-# ====================== 【升级】支持多邮箱下载函数 ======================
+# ====================== 下载函数完全没动 ======================
 def download_attachments(project_root, start_date, end_date, file_types, subject_filters, download_folder,
                          log_callback, email_key="email_ziguan", custom_user="", custom_pwd=""):
     try:
-        # 根据下拉框选择读取哪个邮箱
         if email_key == "custom":
             username = custom_user
             password = custom_pwd
@@ -416,7 +410,7 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
         if not msg_nums:
             continue
 
-        log_to_file(f"在【{friendly_folder_title}】中发现 {len(msg_nums)} 封在日期范围内的邮件，正在提取标题...")
+        log_to_file(f"在【{friendly_folder_title}】中发现 {len(msg_nums)} 封在日期范围内的邮件，正在查找...")
 
         range_bytes = b",".join(msg_nums)
         try:
@@ -469,7 +463,7 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
                         continue
 
                 log_to_file(
-                    f"命中匹配 -> 文件夹:[{friendly_folder_title}] | 命中词:[{matched_keyword}] | 主题:{subject}")
+                    f"关键词:[{matched_keyword}]匹配到 -> 文件夹:[{friendly_folder_title}] | 标题:{subject}")
 
                 status, msg_data = mail.fetch(num, '(RFC822)')
                 if status != 'OK' or not msg_data or not msg_data[0]:

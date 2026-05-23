@@ -26,7 +26,7 @@ SITE_HANDLERS = {
 def load_site_icons(project_root: str, update_log, login_callback):
     """加载网站图标，返回图标控件列表（按 SITE_HANDLERS 顺序排列）"""
     login_dir = os.path.join(project_root, "data", "login")
-    update_log(f"扫描图标目录: {login_dir}")
+    # update_log(f"扫描图标目录: {login_dir}")
     icons = []
     if os.path.exists(login_dir):
         # 按照 SITE_HANDLERS 的键顺序加载图标
@@ -35,7 +35,7 @@ def load_site_icons(project_root: str, update_log, login_callback):
             for ext in ('.png', '.jpg', '.jpeg'):
                 icon_path = os.path.join(login_dir, f"{site_name}{ext}")
                 if os.path.exists(icon_path):
-                    update_log(f"找到图标: {icon_path}")
+                    # update_log(f"找到图标: {icon_path}")
                     icon = ft.Image(
                         src=icon_path,
                         width=100,

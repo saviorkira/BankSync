@@ -35756,3 +35756,245 @@ Call log:
 2026-05-23 02:25:26:    ↳ 📥 下载附件：GZ24304T.dbf
 2026-05-23 02:25:26: 扫描完成！共成功保存了 4 个附件。
 2026-05-23 02:25:26: 邮件附件高速下载任务全部完成！
+2026-05-23 03:53:07: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 03:53:07: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 03:53:07.491287
+2026-05-23 03:53:07: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 03:53:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 03:53:08: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-23 03:53:08: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-23 03:53:08: 成功加载 config.json，任务数: 2
+2026-05-23 03:53:08: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 03:53:08: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-23 03:59:02: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 03:59:02: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 03:59:02.586535
+2026-05-23 03:59:02: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 03:59:03: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 03:59:03: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-23 03:59:03: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-23 03:59:03: 成功加载 config.json，任务数: 2
+2026-05-23 03:59:03: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 03:59:03: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-23 03:59:26: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-23 03:59:28: 识别到所有标题筛选关键词: ['华享31', '华享32']
+2026-05-23 03:59:28: 正在启动邮件下载进程...
+2026-05-23 03:59:28: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-23 03:59:28: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_ziguan
+2026-05-23 03:59:28: 开始扫描全邮箱，时间范围: 2026-05-22 至 2026-05-23
+2026-05-23 03:59:28: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '垃圾邮件']
+2026-05-23 03:59:28: 正在切换至文件夹: 【收件箱】
+2026-05-23 03:59:29: 在【收件箱】中发现 363 封在日期范围内的邮件，正在提取标题...
+2026-05-23 04:00:05: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:00:05:    ↳ 📥 下载附件：20260521_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:00:05:    ↳ 📥 下载附件：GZ24303T.dbf
+2026-05-23 04:00:05: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:00:06:    ↳ 📥 下载附件：20260521_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:00:06:    ↳ 📥 下载附件：GZ24304T.dbf
+2026-05-23 04:00:06: 扫描完成！共成功保存了 4 个附件。
+2026-05-23 04:00:06: 邮件附件高速下载任务全部完成！
+2026-05-23 04:00:51: 从 ntp.ntsc.ac.cn 获取时间成功: 2026-05-23 04:00:52.032989
+2026-05-23 04:00:51: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 04:00:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 04:00:52: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-23 04:00:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-23 04:00:52: 成功加载 config.json，任务数: 2
+2026-05-23 04:00:52: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 04:00:52: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-23 04:01:13: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-23 04:01:15: 识别到所有标题筛选关键词: ['华享31', '华享32']
+2026-05-23 04:01:15: 正在启动邮件下载进程...
+2026-05-23 04:01:15: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-23 04:01:15: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_ziguan
+2026-05-23 04:01:15: 开始扫描全邮箱，时间范围: 2026-05-22 至 2026-05-23
+2026-05-23 04:01:15: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '垃圾邮件']
+2026-05-23 04:01:15: 正在切换至文件夹: 【收件箱】
+2026-05-23 04:01:15: 在【收件箱】中发现 363 封在日期范围内的邮件，正在提取标题...
+2026-05-23 04:01:43: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:01:44:    ↳ ⏭️ 附件已存在，跳过：20260521_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:01:44:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 04:01:44: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:01:44:    ↳ ⏭️ 附件已存在，跳过：20260521_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:01:44:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 04:01:44: 扫描完成！共成功保存了 0 个附件。
+2026-05-23 04:01:44: 邮件附件高速下载任务全部完成！
+2026-05-23 04:03:51: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 04:03:51: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 04:03:51.882006
+2026-05-23 04:03:51: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 04:03:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 04:03:52: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-23 04:03:52: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-23 04:03:52: 成功加载 config.json，任务数: 2
+2026-05-23 04:03:52: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 04:03:52: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-23 04:04:05: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-23 04:04:05: 识别到所有标题筛选关键词: ['华享31', '华享32']
+2026-05-23 04:04:05: 正在启动邮件下载进程...
+2026-05-23 04:04:05: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-23 04:04:05: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_ziguan
+2026-05-23 04:04:05: 开始扫描全邮箱，时间范围: 2026-05-22 至 2026-05-23
+2026-05-23 04:04:06: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '垃圾邮件']
+2026-05-23 04:04:06: 正在切换至文件夹: 【收件箱】
+2026-05-23 04:04:07: 在【收件箱】中发现 363 封在日期范围内的邮件，正在提取标题...
+2026-05-23 04:04:35: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:04:35:    ↳ ⏭️ 附件已存在，跳过：20260521_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:04:35:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 04:04:35: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:04:35:    ↳ ⏭️ 附件已存在，跳过：20260521_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:04:35:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 04:04:36: 扫描完成！共成功保存了 0 个附件。
+2026-05-23 04:04:36: 邮件附件高速下载任务全部完成！
+2026-05-23 04:06:09: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 04:06:09: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 04:06:09.929799
+2026-05-23 04:06:09: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 04:06:10: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 04:06:10: 扫描图标目录: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\ningbo_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\hangzhou_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhongxin_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\pingan_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\xingye_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\shanghai_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zheshang_bank.png
+2026-05-23 04:06:10: 找到图标: D:\OneDrive\Documents\PycharmProjects\BankSync\data\login\zhaoshang_bank.png
+2026-05-23 04:06:10: 成功加载 config.json，任务数: 2
+2026-05-23 04:06:10: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 04:06:10: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-23 04:06:31: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-23 04:06:32: 识别到所有标题筛选关键词: ['华享31']
+2026-05-23 04:06:32: 正在启动邮件下载进程...
+2026-05-23 04:06:32: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-23 04:06:32: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_ziguan
+2026-05-23 04:06:32: 开始扫描全邮箱，时间范围: 2026-05-22 至 2026-05-23
+2026-05-23 04:06:32: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '垃圾邮件']
+2026-05-23 04:06:32: 正在切换至文件夹: 【收件箱】
+2026-05-23 04:06:32: 在【收件箱】中发现 363 封在日期范围内的邮件，正在提取标题...
+2026-05-23 04:06:59: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 04:06:59:    ↳ ⏭️ 附件已存在，跳过：20260521_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 04:06:59:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 04:06:59: 扫描完成！共成功保存了 0 个附件。
+2026-05-23 04:06:59: 邮件附件下载任务全部完成！
+2026-05-23 09:22:20: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 09:22:20: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 09:22:21.497602
+2026-05-23 09:22:20: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 09:22:21: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 09:22:21: 成功加载 config.json，任务数: 2
+2026-05-23 09:22:21: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 09:22:21: 成功读取 README.md: D:\OneDrive\Documents\PycharmProjects\BankSync\README.md
+2026-05-23 09:23:28: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 09:23:28: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 09:23:29.899588
+2026-05-23 09:23:28: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 09:23:29: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 09:23:29: 成功加载 config.json，任务数: 2
+2026-05-23 09:23:29: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 09:30:07: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 09:30:08: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 09:30:08.970740
+2026-05-23 09:30:08: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 09:30:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 09:30:08: 成功加载 config.json，任务数: 2
+2026-05-23 09:30:08: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 09:30:08: 读取 README.md 失败：name 're' is not defined
+2026-05-23 09:30:24: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 09:30:24: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 09:30:25.248149
+2026-05-23 09:30:24: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 09:30:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 09:30:24: 成功加载 config.json，任务数: 2
+2026-05-23 09:30:24: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 09:30:24: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-23 09:31:45: 从 ntp.ntsc.ac.cn 获取时间成功: 2026-05-23 09:31:46.835474
+2026-05-23 09:31:45: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 09:31:46: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 09:31:46: 成功加载 config.json，任务数: 2
+2026-05-23 09:31:46: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 09:31:46: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-23 09:32:09: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-23 09:32:10: 识别到所有标题筛选关键词: ['华享31', '华享32']
+2026-05-23 09:32:10: 正在启动邮件下载进程...
+2026-05-23 09:32:10: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-23 09:32:10: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_ziguan
+2026-05-23 09:32:10: 开始扫描全邮箱，时间范围: 2026-05-18 至 2026-05-23
+2026-05-23 09:32:10: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '垃圾邮件']
+2026-05-23 09:32:10: 正在切换至文件夹: 【收件箱】
+2026-05-23 09:32:10: 在【收件箱】中发现 1895 封在日期范围内的邮件，正在提取标题...
+2026-05-23 09:36:20: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260515【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:20:    ↳ 📥 下载附件：20260515_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:20:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 09:36:20: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260515【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:20:    ↳ 📥 下载附件：20260515_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:20:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 09:36:20: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260518【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:21:    ↳ 📥 下载附件：20260518_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:21:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 09:36:21: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260518【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:21:    ↳ 📥 下载附件：20260518_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:21:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 09:36:21: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260519【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:21:    ↳ 📥 下载附件：20260519_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:21:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 09:36:21: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260519【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:21:    ↳ 📥 下载附件：20260519_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:21:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 09:36:21: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260520【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:22:    ↳ 📥 下载附件：20260520_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:22:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 09:36:22: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260520【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:22:    ↳ 📥 下载附件：20260520_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:22:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 09:36:22: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享31] | 主题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:22:    ↳ ⏭️ 附件已存在，跳过：20260521_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:22:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 09:36:22: 命中匹配 -> 文件夹:[收件箱] | 命中词:[华享32] | 主题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 09:36:23:    ↳ ⏭️ 附件已存在，跳过：20260521_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 09:36:23:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 09:36:23: 扫描完成！共成功保存了 8 个附件。
+2026-05-23 09:36:23: 邮件附件下载任务全部完成！
+2026-05-23 10:11:35: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 10:11:36: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 10:11:37.118405
+2026-05-23 10:11:36: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 10:11:36: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 10:11:36: 成功加载 config.json，任务数: 2
+2026-05-23 10:11:36: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 10:11:36: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-23 10:11:51: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-23 10:11:52: 识别到所有标题筛选关键词: ['华享31', '华享32']
+2026-05-23 10:11:52: 正在启动邮件下载进程...
+2026-05-23 10:11:52: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-23 10:11:52: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_ziguan
+2026-05-23 10:11:52: 开始扫描全邮箱，时间范围: 2026-05-22 至 2026-05-23
+2026-05-23 10:11:53: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '垃圾邮件']
+2026-05-23 10:11:53: 正在切换至文件夹: 【收件箱】
+2026-05-23 10:11:53: 在【收件箱】中发现 363 封在日期范围内的邮件，正在查找...
+2026-05-23 10:12:37: 关键词:[华享31匹配到 -> 文件夹:[收件箱] | 标题:24303T重庆信托・华享31号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 10:12:37:    ↳ ⏭️ 附件已存在，跳过：20260521_(24303T)重庆信托・华享31号单一资金信托_证券投资基金估值表.xls
+2026-05-23 10:12:37:    ↳ ⏭️ 附件已存在，跳过：GZ24303T.dbf
+2026-05-23 10:12:37: 关键词:[华享32匹配到 -> 文件夹:[收件箱] | 标题:24304T重庆信托・华享32号单一资金信托每日产品估值表20260521【相关基金估值信息与托管机构核对一致】
+2026-05-23 10:12:37:    ↳ ⏭️ 附件已存在，跳过：20260521_(24304T)重庆信托・华享32号单一资金信托_证券投资基金估值表.xls
+2026-05-23 10:12:37:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
+2026-05-23 10:12:37: 扫描完成！共成功保存了 0 个附件。
+2026-05-23 10:12:37: 邮件附件下载任务全部完成！
