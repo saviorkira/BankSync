@@ -50,10 +50,10 @@
     "imap_server": "imap.263.net",
     "port": 993
   },
-  "email_cqiti": {
+  "email_caiwu": {
       "username": "zhqjy@cqiti.com",
       "password": "@8889ZHQJY",
-      "imap_server": "imap.263.com",
+      "imap_server": "imap.263.net",
       "port": 993
   }
 }

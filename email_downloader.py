@@ -294,7 +294,7 @@ def download_attachments(project_root, start_date, end_date, file_types, subject
         if email_key == "custom":
             username = custom_user
             password = custom_pwd
-            imap_server = "imap.263.com"
+            imap_server = "imap.263.net"
             port = 993
         else:
             username, password, imap_server, port = read_email_config(project_root, email_key)

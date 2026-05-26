@@ -35998,3 +35998,66 @@ Call log:
 2026-05-23 10:12:37:    ↳ ⏭️ 附件已存在，跳过：GZ24304T.dbf
 2026-05-23 10:12:37: 扫描完成！共成功保存了 0 个附件。
 2026-05-23 10:12:37: 邮件附件下载任务全部完成！
+2026-05-23 18:27:53: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-23 18:27:53: 从 cn.pool.ntp.org 获取时间成功: 2026-05-23 18:27:55.713381
+2026-05-23 18:27:53: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-23 18:27:54: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-23 18:27:54: 成功加载 config.json，任务数: 2
+2026-05-23 18:27:54: TodoApp 初始化完成，加载任务数: 2
+2026-05-23 18:27:54: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-26 09:36:50: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-26 09:36:50: 从 cn.pool.ntp.org 获取时间成功: 2026-05-26 09:36:51.916239
+2026-05-26 09:36:50: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-26 09:36:51: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-26 09:36:51: 成功加载 config.json，任务数: 2
+2026-05-26 09:36:51: TodoApp 初始化完成，加载任务数: 2
+2026-05-26 09:36:51: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-26 09:37:07: 从 ntp.ntsc.ac.cn 获取时间成功: 2026-05-26 09:37:08.844765
+2026-05-26 09:37:07: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-26 09:37:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-26 09:37:08: 成功加载 config.json，任务数: 2
+2026-05-26 09:37:08: TodoApp 初始化完成，加载任务数: 2
+2026-05-26 09:37:08: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-26 09:37:20: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-26 09:37:24: 识别到所有标题筛选关键词: ['估值']
+2026-05-26 09:37:24: 正在启动邮件下载进程...
+2026-05-26 09:37:24: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-26 09:37:24: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_caiwu
+2026-05-26 09:37:24: 开始扫描全邮箱，时间范围: 2026-05-25 至 2026-05-25
+2026-05-26 09:37:25: IMAP 连接或登录失败：[Errno 11001] getaddrinfo failed
+2026-05-26 09:37:25: 邮件附件下载任务全部完成！
+2026-05-26 09:38:07: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-26 09:38:07: 从 cn.pool.ntp.org 获取时间成功: 2026-05-26 09:38:08.475448
+2026-05-26 09:38:07: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-26 09:38:08: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-26 09:38:08: 成功加载 config.json，任务数: 2
+2026-05-26 09:38:08: TodoApp 初始化完成，加载任务数: 2
+2026-05-26 09:38:08: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-26 09:38:20: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-26 09:38:20: 识别到所有标题筛选关键词: ['估值']
+2026-05-26 09:38:20: 正在启动邮件下载进程...
+2026-05-26 09:38:20: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json, 存在: True
+2026-05-26 09:38:20: 尝试加载邮箱配置文件: D:\OneDrive\Documents\PycharmProjects\BankSync\config.json for email_caiwu
+2026-05-26 09:38:20: 开始扫描全邮箱，时间范围: 2026-05-25 至 2026-05-25
+2026-05-26 09:38:21: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '已发送邮件箱', '&fSuUa1v5jSZTVQ-']
+2026-05-26 09:38:21: 正在切换至文件夹: 【收件箱】
+2026-05-26 09:38:21: 在【收件箱】中发现 468 封在日期范围内的邮件，正在查找...
+2026-05-26 09:38:44: 无法连接到 ntp.ntsc.ac.cn: No response received from ntp.ntsc.ac.cn.
+2026-05-26 09:38:44: 从 cn.pool.ntp.org 获取时间成功: 2026-05-26 09:38:45.457450
+2026-05-26 09:38:44: 设置 PLAYWRIGHT_BROWSERS_PATH: D:\OneDrive\Documents\PycharmProjects\BankSync\playwright-browsers
+2026-05-26 09:38:45: 检查路径: D:\OneDrive\Documents\PycharmProjects\BankSync\data\S.ico, 存在: True
+2026-05-26 09:38:45: 成功加载 config.json，任务数: 2
+2026-05-26 09:38:45: TodoApp 初始化完成，加载任务数: 2
+2026-05-26 09:38:45: 启动成功，版本 v1.2.2 - 2026-05-22
+2026-05-26 09:39:13: 邮件附件保存路径设置为：D:\Desktop\新建文件夹\9999\8888
+2026-05-26 09:39:14: 识别到所有标题筛选关键词: ['估值']
+2026-05-26 09:39:14: 正在启动邮件下载进程...
+2026-05-26 09:39:14: 开始扫描全邮箱，时间范围: 2026-05-26 至 2026-05-26
+2026-05-26 09:39:14: 识别到邮箱文件夹: ['收件箱', '已发送', '已删除', '草稿箱', '&V4NXPpCuTvY-', '已发送邮件箱', '&TzBQPA-']
+2026-05-26 09:39:14: 正在切换至文件夹: 【收件箱】
+2026-05-26 09:39:14: 在【收件箱】中发现 24 封在日期范围内的邮件，正在查找...
+2026-05-26 09:39:16: 关键词:[估值]匹配到 -> 文件夹:[收件箱] | 标题:SB3110_正仁春晓中性私募证券投资基金_重信·开阳25056·金翎6号集合资金信托计划_3级科目估值表PDF版_20260522
+2026-05-26 09:39:17:    ↳ 📥 下载附件：SB3110_正仁春晓中性私募证券投资基金_2026-05-22_估值表.pdf
+2026-05-26 09:39:17: 关键词:[估值]匹配到 -> 文件夹:[收件箱] | 标题:【估值表】先锋瑞驰私募基金管理（北京）有限公司管理人旗下“先锋瑞驰策略七号私募证券投资基金-SQJ920”等1个产品估值表发送_20260525
+2026-05-26 09:39:17:    ↳ 📥 下载附件：SQJ920先锋瑞驰策略七号私募证券投资基金委托资产资产估值表20260525.pdf
+2026-05-26 09:39:17: 关键词:[估值]匹配到 -> 文件夹:[收件箱] | 标题:【估值表】上海吉余私募基金管理有限公司管理人旗下“吉余李字壹号私募证券投资基金-SAAK02”等1个产品估值表发送_20260525
