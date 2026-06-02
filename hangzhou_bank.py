@@ -93,7 +93,8 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                     page.wait_for_timeout(3000)  # 替换 time.sleep(3)
 
                     # 等待复选框加载
-                    checkbox = page.get_by_role("row", name="交易时间 交易流水号 收入金额 支出金额 余额 对方 对方开户行 用途 操作").locator("span").nth(1)
+                    # checkbox = page.get_by_role("row", name="交易时间 交易流水号 收入金额 支出金额 余额 对方 对方开户行 用途 操作").locator("span").nth(1)
+                    checkbox = page.get_by_role("row",name="交易时间 主交易流水号 明细流水号 收入金额 支出金额 余额 对方 对方开户行 用途 操作").locator("span").nth(1)
                     try:
                         checkbox.wait_for(state="visible", timeout=10000)
                     except Exception:

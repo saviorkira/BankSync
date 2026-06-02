@@ -26,8 +26,9 @@ if __name__ == "__main__":
             # downloads_path="D:/Downloads"  # 设置下载路径
         )
         page = context.new_page()
-        # page.goto("https://www.e-custody.com/#/")
-        page.goto("https://www.e-custody.com/#/")  # 你可以换成你的银行地址 民生
+        page.goto("https://custody.hzbank.com.cn/#/login")  #杭州
+        # page.goto("https://www.e-custody.com/#/")  # 你可以换成你的银行地址 民生
+        # page.goto("https://www.e-custody.com/#/")  # 你可以换成你的银行地址 民生
         # page.goto("https://tgt.cib.com.cn/custody/")  # 你可以换成你的银行地址 兴业
         # page.goto("https://auth.orangebank.com.cn/cimp-ccs-pc/#/p/ebank-login")  # 你可以换成你的银行地址 平安
         # page.goto("https://ib.citicbank.com/html/#/index")  # 你可以换成你的银行地址 中信
