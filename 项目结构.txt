@@ -1,4 +1,6 @@
-BankSync/
+资管邮箱密码：27CB0CE449E676dB、196327D699058fCD
+
+ankSync/
 ├── data/
 │   ├── CV2/
 │   │   ├── ningbo_duizhangdandayin.bmp
