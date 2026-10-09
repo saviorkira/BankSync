@@ -1,0 +1,7 @@
+程序启动时间: 2026-10-09 11:11:00.863842
+sys.executable: D:\OneDrive\Documents\PycharmProjects\BankSync\.venv\Scripts\python.exe
+project_root: E:\project\BankSync_update
+frozen: False
+NTP检查开始...
+NTP检查完成
+启动 flet 应用...

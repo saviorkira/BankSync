@@ -46,30 +46,28 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
         page.wait_for_selector('text=账务查询', timeout=30000)
 
 
-        # 外层循环：遍历日期范围
-        for range_index, (start_date, end_date) in enumerate(date_ranges):
-            log_local(f"处理日期范围: {start_date} 至 {end_date}")
+        # 外层循环：遍历项目，每个项目走完所有日期范围后再处理下一个项目
+        for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
+            log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            # 创建文件夹（每个项目只创建一次）
+            folder_name = f"{xiangmuid}_{xiangmu}"
+            liushui_path = os.path.join(download_path, folder_name, "银行流水")
+            huidan_path = os.path.join(download_path, folder_name, "银行回单")
+            duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
+            os.makedirs(liushui_path, exist_ok=True)
+            os.makedirs(huidan_path, exist_ok=True)
+            os.makedirs(duizhangdan_path, exist_ok=True)
 
-
-
-            for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
-                log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            # 内层循环：遍历日期范围
+            for range_index, (start_date, end_date) in enumerate(date_ranges):
+                log_local(f"处理日期范围: {start_date} 至 {end_date}")
                 try:
-                    # 创建文件夹
-                    folder_name = f"{xiangmuid}_{xiangmu}"
-                    liushui_path = os.path.join(download_path, folder_name, "银行流水")
-                    huidan_path = os.path.join(download_path, folder_name, "银行回单")
-                    duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
-                    os.makedirs(liushui_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                    os.makedirs(duizhangdan_path, exist_ok=True)
-
                     # 查询账号
                     page.locator("a").filter(has_text="账务查询").click()
                     page.locator("a").filter(has_text=re.compile(r"^流水查询$")).click()
 
                     page.get_by_role("textbox", name="请点击选择按钮 选择产品").click()
-                    page.get_by_role("button", name=" 选择").click()
+                    page.get_by_role("button", name=" 选择").click()
                     page.get_by_role("textbox", name="产品名称").fill(xiangmu)  # 项目
                     page.get_by_role("button", name="全选").click()
                     page.get_by_role("button", name="确定").click()
@@ -88,7 +86,7 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
                             log_local(f"银行流水导出完成：{filename}")
                         except Exception as e:
                             log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                            page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
+                            page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                             continue
                     else:
                         log_local("未勾选流水下载，跳过银行流水导出")
@@ -100,7 +98,7 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
                             page.get_by_role("button", name="下载回单").click()
 
                             with page.expect_download() as huidan_download_info:
-                                page.get_by_role("link", name="下载").click()
+                                page.get_by_role("link", name="下载").click()
                             download = huidan_download_info.value
                             filename = f"{xiangmuid}_{xiangmu}_银行回单_{start_date}_{end_date}.pdf"
                             download.save_as(os.path.join(huidan_path, filename))
@@ -108,27 +106,27 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
                             log_local(f"银行回单导出完成：{filename}")
                         except Exception as e:
                             log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                            page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}.png"))
+                            page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                             continue
                     else:
                         log_local("未勾选回单下载，跳过银行回单导出")
 
                 except Exception as e:
-                    log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_project_{xiangmuid}_{xiangmu}.png"))
+                    log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}，日期范围 {start_date} 至 {end_date}）：{str(e)}")
+                    page.screenshot(path=os.path.join(download_path, f"error_project_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                     continue
 
                 # 导出对账单
                 if download_duizhangdan:
                     page.locator("a").filter(has_text="明细账单查询").click()
-                    page.get_by_role("button", name=" 选择").click()
+                    page.get_by_role("button", name=" 选择").click()
                     page.get_by_role("textbox", name="产品名称").fill(xiangmuid)
                     page.get_by_role("button", name="全选").click()
                     page.get_by_role("button", name="确定").click()
                     page.get_by_role("textbox", name="交易日期").click()
 
 
-                    page.get_by_role("button", name=" 查询").click()
+                    page.get_by_role("button", name=" 查询").click()
 
                     try:
                         with page.expect_download() as duizhangdan_download_info:
@@ -141,14 +139,12 @@ def run_xingye_bank(playwright: Playwright, project_root, download_path, project
                     except Exception as e:
                         log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
                         page.screenshot(
-                            path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}.png"))
+                            path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                         continue
                 else:
                     log_local("未勾选对账单下载，跳过银行对账单导出")
 
-
-
-            log_local(f"完成日期范围 {start_date} 至 {end_date} 的下载")
+            log_local(f"完成产品 {xiangmuid}_{xiangmu} 的所有日期范围下载")
 
         context.close()
         browser.close()

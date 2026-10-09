@@ -56,29 +56,26 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
         page.get_by_text("会员中心").click()
         time.sleep(1)
 
-        # 外层循环：遍历日期范围
-        for start_date, end_date in date_ranges:
-            log_local(f"处理日期范围: {start_date} 至 {end_date}")
+        # 外层循环：遍历项目，每个项目走完所有日期范围后再处理下一个项目
+        for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
+            log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            # 创建文件夹（每个项目只创建一次）
+            folder_name = f"{xiangmuid}_{xiangmu}"
+            liushui_path = os.path.join(download_path, folder_name, "银行流水")
+            huidan_path = os.path.join(download_path, folder_name, "银行回单")
 
-            # 内层循环：遍历所有项目
-            for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
-                log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            os.makedirs(liushui_path, exist_ok=True)
+            os.makedirs(huidan_path, exist_ok=True)
+            # os.makedirs(duizhangdan_path, exist_ok=True)
+
+            # 内层循环：遍历日期范围
+            for start_date, end_date in date_ranges:
+                log_local(f"处理日期范围: {start_date} 至 {end_date}")
                 try:
-                    # 创建文件夹
-                    folder_name = f"{xiangmuid}_{xiangmu}"
-                    liushui_path = os.path.join(download_path, folder_name, "银行流水")
-                    huidan_path = os.path.join(download_path, folder_name, "银行回单")
-
-                    os.makedirs(liushui_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                    # os.makedirs(duizhangdan_path, exist_ok=True)
-
-
-
                     if download_liushui:
                         # 导出流水
-                        page.get_by_role("link", name="托管业务 ").click()
-                        page.get_by_role("link", name="托管账户 ").click()
+                        page.get_by_role("link", name="托管业务 ").click()
+                        page.get_by_role("link", name="托管账户 ").click()
                         page.get_by_role("link", name="托管账户明细查询").click()
                         page.wait_for_load_state("networkidle", timeout=30000)
                         log_local("已进入托管账户明细查询页面")
@@ -129,16 +126,16 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                             max_attempts=2
                         )
                         if position:
-                            log_local(f"检测到无流水图片: {wuliushui_template}，跳过当前产品")
+                            log_local(f"检测到无流水图片: {wuliushui_template}，跳过当前日期范围")
                             page.get_by_role("link", name="会员中心").click()
-                            continue  # 跳到下一个产品
+                            continue  # 跳到下一个日期范围
 
                         # 导出的流水下载
                         log_local("开始导出流水...")
                         page.get_by_text("导出").click()
                         page.get_by_role("button", name="确认").click()
                         time.sleep(1)
-                        page.get_by_role("link", name="下载中心 ").click()
+                        page.get_by_role("link", name="下载中心 ").click()
                         page.get_by_role("link", name="异步下载").click()
                         log_local("进入下载中心，检查文件处理状态...")
 
@@ -188,8 +185,8 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                     # 创建回单下载
                     # 导出回单
                     if download_huidan:
-                        page.get_by_role("link", name="托管业务 ").click()
-                        page.get_by_role("link", name="托管账户 ").click()
+                        page.get_by_role("link", name="托管业务 ").click()
+                        page.get_by_role("link", name="托管账户 ").click()
                         page.get_by_role("link", name="托管账户回单查询").click()
 
                         # 设置查询项目
@@ -237,7 +234,7 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                         page.get_by_role("button", name="批量下载").click()
                         page.get_by_role("button", name="确认").click()
                         time.sleep(1)
-                        page.get_by_role("link", name="下载中心 ").click()
+                        page.get_by_role("link", name="下载中心 ").click()
                         page.get_by_role("link", name="异步下载").click()
                         log_local("进入下载中心，检查文件处理状态...")
 
@@ -285,10 +282,10 @@ def run_zhongxin_bank(playwright: Playwright, project_root, download_path, proje
                         log_local("未勾选回单下载，跳过银行回单导出")
 
                 except Exception as e:
-                    log_local(f"处理产品 {xiangmuid}_{xiangmu} 失败: {str(e)}")
-                    continue  # 继续处理下一个产品
+                    log_local(f"处理产品 {xiangmuid}_{xiangmu}（日期范围 {start_date} 至 {end_date}）失败: {str(e)}")
+                    continue  # 继续处理下一个日期范围
 
-            log_local(f"完成日期范围 {start_date} 至 {end_date} 的下载")
+            log_local(f"完成产品 {xiangmuid}_{xiangmu} 的所有日期范围下载")
 
     except Exception as e:
         log_local(f"中信银行导出流程异常: {str(e)}")

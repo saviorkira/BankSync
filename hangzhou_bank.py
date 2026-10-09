@@ -47,41 +47,42 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
         # page.get_by_text("账户", exact=True).click()
         # page.get_by_role("menuitem", name="流水查询").click()
 
-        # 外层循环：遍历日期范围
-        for range_index, (start_date, end_date) in enumerate(date_ranges):
-            log_local(f"处理日期范围: {start_date} 至 {end_date}")
-            # 从第二次日期范围循环开始，执行“全部关闭”和重新导航
-            if range_index > 0:
+        # 外层循环：遍历项目，每个项目走完所有日期范围后再处理下一个项目
+        for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
+            log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            # 创建文件夹（每个项目只创建一次）
+            folder_name = f"{xiangmuid}_{xiangmu}"
+            liushui_path = os.path.join(download_path, folder_name, "银行流水")
+            huidan_path = os.path.join(download_path, folder_name, "银行回单")
+            duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
+            os.makedirs(liushui_path, exist_ok=True)
+            os.makedirs(huidan_path, exist_ok=True)
+            os.makedirs(duizhangdan_path, exist_ok=True)
+
+            # 内层循环：遍历日期范围
+            for range_index, (start_date, end_date) in enumerate(date_ranges):
+                log_local(f"处理日期范围: {start_date} 至 {end_date}")
+                # 从第二次日期范围循环开始，执行“全部关闭”和重新导航
+                if range_index > 0:
+                    try:
+                        page.get_by_text("全部关闭").click()
+                        page.locator("span").filter(has_text="流水查询").click()
+                    except Exception as e:
+                        log_local(f"重置页面失败: {str(e)}")
+
+                    log_local("重新导航到‘流水查询’页面")
+
+                # 设置日期范围
+                page.get_by_role("combobox", name="开始日期").fill(start_date)
+                page.get_by_role("combobox", name="结束日期").fill(end_date)
+                # page.get_by_role("combobox", name="开始日期").press("Enter")
+                # page.get_by_role("combobox", name="结束日期").press("Enter")
+
                 try:
-                    page.get_by_text("全部关闭").click()
-                    page.locator("span").filter(has_text="流水查询").click()
-                except Exception as e:
-                    log_local(f"重置页面失败: {str(e)}")
-
-                log_local("重新导航到‘流水查询’页面")
-
-            # 设置日期范围
-            page.get_by_role("combobox", name="开始日期").fill(start_date)
-            page.get_by_role("combobox", name="结束日期").fill(end_date)
-            # page.get_by_role("combobox", name="开始日期").press("Enter")
-            # page.get_by_role("combobox", name="结束日期").press("Enter")
-
-            for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
-                log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
-                try:
-                    # 创建文件夹
-                    folder_name = f"{xiangmuid}_{xiangmu}"
-                    liushui_path = os.path.join(download_path, folder_name, "银行流水")
-                    huidan_path = os.path.join(download_path, folder_name, "银行回单")
-                    duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
-                    os.makedirs(liushui_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                    os.makedirs(duizhangdan_path, exist_ok=True)
-
                     # 查询账号
                     page.get_by_role("textbox", name="账号/户名").click()
                     page.wait_for_timeout(2000)  # 替换 time.sleep(2)
-                    if index > 0:
+                    if range_index > 0:
                         page.get_by_role("textbox", name="账号/户名").press("ControlOrMeta+a")
                         page.get_by_role("textbox", name="账号/户名").fill(account)
                     else:
@@ -98,14 +99,14 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                     try:
                         checkbox.wait_for(state="visible", timeout=10000)
                     except Exception:
-                        log_local(f"数据加载超时或无数据（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
-                        page.screenshot(path=os.path.join(download_path, f"error_data_load_{xiangmuid}_{xiangmu}.png"))
+                        log_local(f"数据加载超时或无数据（产品：{xiangmuid}_{xiangmu}，托管账户：{account}，日期范围：{start_date} 至 {end_date}）")
+                        page.screenshot(path=os.path.join(download_path, f"error_data_load_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                         continue
 
                     # 检查复选框是否可交互
                     if not checkbox.is_enabled():
-                        log_local(f"无回单或流水数据，跳过导出（产品：{xiangmuid}_{xiangmu}，托管账户：{account}）")
-                        page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmuid}_{xiangmu}.png"))
+                        log_local(f"无回单或流水数据，跳过导出（产品：{xiangmuid}_{xiangmu}，托管账户：{account}，日期范围：{start_date} 至 {end_date}）")
+                        page.screenshot(path=os.path.join(download_path, f"error_no_data_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                         continue
 
                     # 导出流水
@@ -118,12 +119,11 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                             download.save_as(os.path.join(liushui_path, filename))
                             log_local(f"银行流水导出完成：{filename}")
                         except Exception as e:
-                            log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                            page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}.png"))
+                            log_local(f"导出银行流水失败（产品：{xiangmuid}_{xiangmu}，日期范围：{start_date} 至 {end_date}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_export_excel_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                             continue
                     else:
                         log_local("未勾选流水下载，跳过银行流水导出")
-
 
 
                     # 导出对账单
@@ -136,8 +136,8 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                             download.save_as(os.path.join(duizhangdan_path, filename))
                             log_local(f"银行对账单导出完成：{filename}")
                         except Exception as e:
-                            log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                            page.screenshot(path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}.png"))
+                            log_local(f"导出银行对账单失败（产品：{xiangmuid}_{xiangmu}，日期范围：{start_date} 至 {end_date}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_export_duizhangdan_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                             continue
                     else:
                         log_local("未勾选对账单下载，跳过银行对账单导出")
@@ -157,18 +157,18 @@ def run_hangzhou_bank(playwright: Playwright, project_root, download_path, proje
                             download.save_as(os.path.join(huidan_path, filename))
                             log_local(f"银行回单导出完成：{filename}")
                         except Exception as e:
-                            log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                            page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}.png"))
+                            log_local(f"导出银行回单失败（产品：{xiangmuid}_{xiangmu}，日期范围：{start_date} 至 {end_date}）：{str(e)}")
+                            page.screenshot(path=os.path.join(download_path, f"error_export_huidan_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                             continue
                     else:
                         log_local("未勾选回单下载，跳过银行回单导出")
 
                 except Exception as e:
-                    log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}）：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_project_{xiangmuid}_{xiangmu}.png"))
+                    log_local(f"处理产品失败（产品：{xiangmuid}_{xiangmu}，日期范围 {start_date} 至 {end_date}）：{str(e)}")
+                    page.screenshot(path=os.path.join(download_path, f"error_project_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                     continue
 
-            log_local(f"完成日期范围 {start_date} 至 {end_date} 的下载")
+            log_local(f"完成产品 {xiangmuid}_{xiangmu} 的所有日期范围下载")
 
         context.close()
         browser.close()

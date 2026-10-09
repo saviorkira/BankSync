@@ -40,10 +40,10 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
         log_local(f"Playwright 浏览器路径不存在: {browser_path}")
         raise FileNotFoundError(f"Playwright 浏览器路径不存在: {browser_path}")
 
-    # 拆分日期范围
+    # 拆分日期范围（平安银行最长支持1年下载，按年拆分提升效率）
     try:
-        date_ranges = split_date_ranges(kaishiriqi, jieshuriqi, max_months=3)
-        log_local(f"日期范围已拆分为 {len(date_ranges)} 个子范围: {date_ranges}")
+        date_ranges = split_date_ranges(kaishiriqi, jieshuriqi, max_months=12)
+        log_local(f"日期范围已按年拆分为 {len(date_ranges)} 个子范围: {date_ranges}")
     except Exception as e:
         log_local(f"日期拆分失败: {str(e)}")
         raise
@@ -63,22 +63,22 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
         log_local("等待账户管理页面加载...")
         page.wait_for_selector('text=查询中心', timeout=60000)
 
-        # 外层循环：遍历日期范围
-        for range_index, (start_date, end_date) in enumerate(date_ranges):
-            log_local(f"处理日期范围: {start_date} 至 {end_date}")
+        # 外层循环：遍历项目，每个项目走完所有日期范围后再处理下一个项目
+        for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
+            log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            # 创建文件夹（每个项目只创建一次）
+            folder_name = f"{xiangmuid}_{xiangmu}"
+            duizhang_path = os.path.join(download_path, folder_name, "银行流水")
+            huidan_path = os.path.join(download_path, folder_name, "银行回单")
+            duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
+            os.makedirs(duizhang_path, exist_ok=True)
+            os.makedirs(huidan_path, exist_ok=True)
+            os.makedirs(duizhangdan_path, exist_ok=True)
 
-
-            for index, (xiangmuid, xiangmu, account) in enumerate(projects_accounts):
-                log_local(f"处理产品：{xiangmuid}_{xiangmu}，托管账户：{account}")
+            # 内层循环：遍历日期范围
+            for range_index, (start_date, end_date) in enumerate(date_ranges):
+                log_local(f"处理日期范围: {start_date} 至 {end_date}")
                 try:
-                    # 创建文件夹
-                    folder_name = f"{xiangmuid}_{xiangmu}"
-                    duizhang_path = os.path.join(download_path, folder_name, "银行流水")
-                    huidan_path = os.path.join(download_path, folder_name, "银行回单")
-                    duizhangdan_path = os.path.join(download_path, folder_name, "银行对账单")
-                    os.makedirs(duizhang_path, exist_ok=True)
-                    os.makedirs(huidan_path, exist_ok=True)
-                    os.makedirs(duizhangdan_path, exist_ok=True)
                     # 流水查询
                     page.get_by_text("首页").first.click()
                     page.get_by_text("查询中心").click()
@@ -114,7 +114,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     second_attempt = find_image(zanwushuju_template, project_root, threshold=0.8, max_attempts=1)
                     if first_attempt is not None and second_attempt is not None:
                         log_local(
-                            f"产品 {xiangmuid}_{xiangmu} 无数据（两次检测均成功，位置：{first_attempt}, {second_attempt}），跳过...")
+                            f"产品 {xiangmuid}_{xiangmu} 在 {start_date} 至 {end_date} 范围内无数据，跳过该日期范围（后续年份范围仍会继续处理）")
                         page.get_by_text("首页").first.click()
                         page.get_by_text("查询中心").first.click()
                         page.get_by_text("电子账单").click()
@@ -128,7 +128,7 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                     #     log_local(f"产品 {xiangmuid}_{xiangmu} 无数据，跳过...")
                     #     continue  # 跳到下一个项目
 
-                    page.get_by_role("button", name="下 载 ").click()
+                    page.get_by_role("button", name="下 载 ").click()
                     time.sleep(1)
 
                     # 导出流水
@@ -276,12 +276,11 @@ def run_pingan_bank(playwright: Playwright, project_root, download_path, project
                         log_local("未勾选对账单下载，跳过银行对账单导出")
 
                 except Exception as e:
-                    log_local(f"处理产品 {xiangmuid}_{xiangmu} 失败：{str(e)}")
-                    page.screenshot(path=os.path.join(download_path, f"error_{xiangmuid}_{xiangmu}.png"))
+                    log_local(f"处理产品 {xiangmuid}_{xiangmu}（日期范围 {start_date} 至 {end_date}）失败：{str(e)}")
+                    page.screenshot(path=os.path.join(download_path, f"error_{xiangmuid}_{xiangmu}_{start_date}_{end_date}.png"))
                     continue
 
-
-            log_local(f"完成日期范围 {start_date} 至 {end_date} 的下载")
+            log_local(f"完成产品 {xiangmuid}_{xiangmu} 的所有日期范围下载")
 
         context.close()
         browser.close()
